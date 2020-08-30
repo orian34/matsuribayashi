@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	DrawScene( "black", 400 );
 
@@ -18,7 +18,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ルールＸに狂う園崎詩音のカケラ。",
-		   NULL, "This is the piece of Shion Sonozaki, who goes mad after being taken in by Rule X.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce fragment nous montre Shion Sonozaki devenir folle à cause de la loi X.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -27,34 +27,34 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　同情の余地もなく、哀れむ他ない心の痛むカケラだけれど。",
-		   NULL, "With no room for sympathy, this is such a painful piece that one can only have pity.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est un fragment sans concessions, qui ne permet pas de compatir avec elle. On ne peut qu'avoir de la peine pour elle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ルールＺという錠前の鍵穴をはっきりとさせることができたに違いない。",
-		   NULL, "It distinctly identifies the keyhole of the padlock called Rule Z.", Line_Normal);
+		   NULL, "Mais au moins, il a le mérite de montrer le trou de serrure du cadenas qui maintient les chaînes de la loi Z en place.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その鍵穴には、やがて前原圭一が自ら鍵となって抉じ開けるのだ。",
-		   NULL, "Keiichi Maebara becomes a key himself to pry open this padlock.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "En fin de compte, ce sera Keiichi qui sera la clef nécessaire pour ouvrir ce cadenas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、園崎魅音が望んでいたように、…村に立ち込める澱んだ空気を一掃する。",
-		   NULL, "And as Mion Sonozaki wished for, he becomes a wind that clears out the stagnant air filling the village.", Line_Normal);
+		   NULL, "Et lorsque ce sera le cas, le souhait de Mion Sonozaki se réalisera, et l'air vicié qui plombe le village pourra se disperser.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/fure1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このカケラもまた、学ぶ上での重要な課程なのだ。",
-		   NULL, "This piece also teaches us an important lesson.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce fragment aussi est une étape très importante.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎詩音はこのカケラで学び、以後、北条沙都子の心強い味方となっていく。",
-		   NULL, "Shion Sonozaki learns through this piece, and then becomes a strong ally for Satoko Houjou.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il est une leçon pour Shion, et après ce fragment-ci, elle deviendra une alliée fidèle pour Satoko.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -62,27 +62,27 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そう言えば、北条沙都子とは、ルールＺの錠前そのものを示す駒なのかもしれない。",
-		   NULL, "In that way, maybe Satoko Houjou is a piece that represents the padlock for Rule Z.", Line_Normal);
+		   NULL, "... D'ailleurs, on peut carrément considérer Satoko comme étant un bon indicateur de l'état de ces lois Z.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女を救わなければ、ルールＺは破られない。",
-		   NULL, "Unless she is saved, Rule Z can't be defeated.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tant que l'on ne l'aura pas sauvée, les chaînes de la loi Z ne seront pas brisées.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女を救うことで、ルールＺが打ち破られたことが示される。",
-		   NULL, "And when she is saved, that means Rule Z is defeated.", Line_Normal);
+		   NULL, "Et dès qu'elle est sauvée, on peut considérer que la loi Z n'a plus d'emprise sur l'échiquier.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このカケラが示したのは、それだけのこと。",
-		   NULL, "This piece indicates only that.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Voilà ce que ce fragment nous apprend.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎詩音が命を賭して学んだのは、それだけのこと。",
-		   NULL, "That's the only thing Shion Sonozaki learned by gambling her life.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Voilà ce que Shion Sonozaki apprendra au prix de sa vie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -90,12 +90,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、それはとても重要なことだったんだと、今は思える。",
-		   NULL, "But now, I think that it's very important.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais ça valait le coup de le regarder, ce fragment.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子と詩音が、カボチャで戯れている姿を見る度に、ね。",
-		   NULL, "Every time I see Satoko and Shion argue about pumpkins, I think about that.", Line_Normal);
+		   NULL, "Ne serait-ce que pour voir Shion pourchasser joyeusement Satoko avec une cuiller de potiron...", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eye" );

@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	DrawScene( "black", 400 );
 
@@ -18,14 +18,14 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このカケラは、沙都子を取り巻く理不尽なルールＺの存在と、ゲーム盤におけるもっとも強敵な法則であるルールＹがその姿を見せる。",
-		   NULL, "This piece shows us the existence of the unreasonable Rule Z surrounding Satoko, and reveals the most powerful adversary rule on the game board, Rule Y.", Line_Normal);
+		   NULL, "Dans ce fragment-ci, nous en apprenons plus sur les tenants et les aboutissants de la loi Z en découvrant les traitements injustes infligés à Satoko. De plus, c'est ici que la loi la plus puissante de l'échiquier, la loi Y, fait son apparition.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これで、ルール、Ｘ、Ｙ、Ｚの姿が浮き彫りにされたのだろうか。",
-		   NULL, "Can the Rules X, Y, and Z be seen now?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Avec ce fragment, nous pouvons constater les lois X, Y et Z.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -33,30 +33,30 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私たちが戦うべき相手。",
-		   NULL, "The enemy we need to fight.", Line_WaitForInput);
+		   NULL, "Nous pouvons découvrir contre qui ou quoi nous battre.", Line_WaitForInput);
 	OutputLine(NULL, "学ぶべきこと。",
-		   NULL, " The things we need to learn.", Line_WaitForInput);
+		   NULL, " Et bien sûr, ce qu'il nous faut apprendre à faire.", Line_WaitForInput);
 	OutputLine(NULL, "それらが全て揃い、明かされるカケラ。",
-		   NULL, " All are gathered and revealed here in this Fragment.", Line_Normal);
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/fure1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この時点ではルールＹの存在には至れない。",
-		   NULL, "At this point, it's impossible to reach Rule Y.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais à la première vision du fragment, il est impossible ou presque de déduire l'existence de la loi Y.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…せいぜい、沙都子を取り巻くルールＺと戦うのが限界だ。",
-		   NULL, "...Fighting against Rule Z's effect on Satoko is the best that can be done.", Line_Normal);
+		   NULL, "Tout au plus peut-on essayer de combattre la loi Z.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "background/ryuuketu1", "maskaa", 1, 0, 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、このカケラでは戦い方を誤る。",
-		   NULL, "But, in this piece, we make a mistake in our approach for fighting it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Or, dans ce fragment, la méthode employée à cette fin n'est pas la bonne.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -64,22 +64,22 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　誤った方法で手に入れた結果は、誤ったものでしかない。",
-		   NULL, "The outcome we gained through erroneous means is erroneous itself.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et le résultat obtenu est donc biaisé et inexploitable.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……それを、前原圭一は自らの経験を経て、学び取る。",
-		   NULL, "Keiichi Maebara learned that through his own experiences.", Line_Normal);
+		   NULL, "Grâce à ce fragment, Keiichi Maebara apprend ce qu'il ne faut pas faire.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　惨劇に打ち勝つ力は、惨劇じゃない。",
-		   NULL, "A tragedy doesn't possess the power to overcome tragedy.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La bonne méthode pour vaincre la tragédie n'était pas de provoquer soi-même une autre tragédie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　暴力に打ち勝つ力も、暴力じゃない。",
-		   NULL, "Violence doesn't possess the power to overcome violence.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tout comme, par ailleurs, la violence n'est jamais une réponse adéquate à la violence.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -87,7 +87,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを学び取ることができれば、……駒たちは、このゲーム盤の上での、本当の戦い方を覚えることができる。",
-		   NULL, "If they can grasp that, all the pieces on this game board will learn the true way to fight.", Line_Normal);
+		   NULL, "Et c'est seulement par cet essai soldé par un échec cuisant que les différentes pièces du jeu pourront faire le deuil de cette méthode, et enfin en découvrir une autre, plus à-propos.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -95,17 +95,17 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、……鷹野たちはあまりに強大。",
-		   NULL, "But Takano is too powerful.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Malheureusement, Takano et ses hommes sont beaucoup trop puissants pour nous.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　カケラの最後に待つ強烈な最期は、",
-		   NULL, "The shocking end of this piece", Line_ContinueAfterTyping);
+		   NULL, "Et la fin catastrophique qui nous attend à la fin de ce fragment", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…それを容易に学び取らすことを許さないのだ…。",
-		   NULL, " doesn't allow us to learn it that easily.", Line_Normal);
+		   NULL, " ne nous laisse pas le loisir d'en tirer quelque leçon.", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eye" );

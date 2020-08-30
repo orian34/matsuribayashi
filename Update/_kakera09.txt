@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	DrawScene( "black", 400 );
 
@@ -14,10 +14,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1247", 128, TRUE);
 	OutputLine(NULL, "「…いやぁ、遅くなって申し訳ございません。",
-		   NULL, "\"...Sorry for being late.", Line_WaitForInput);
+		   NULL, "— ... Aaah, je suis vraiment désolé d'être en retard,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1248", 128, TRUE);
 	OutputLine(NULL, "今日はどういうわけか患者さんが多くて多くて。」",
-		   NULL, " I had an unusually large number of patients today.\"", Line_Normal);
+		   NULL, " mais aujourd'hui, j'ai eu tellement de monde à la clinique, je me demande bien pourquoi !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -27,12 +27,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1019", 128, TRUE);
 	OutputLine(NULL, "「お疲れ様です、入江二佐！」",
-		   NULL, "\"Thank you for coming, Lieutenant Colonel Irie!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Merci pour tout votre travail, Lieutenant-Colonel.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　くつろいだ様子だった富竹は、入江がやって来るのを見ると立ち上がり背筋を伸ばした。",
-		   NULL, "Tomitake stood up suddenly and saluted when he saw Irie come into the room.", Line_Normal);
+		   NULL, "Tomitake était apparemment très détendu, mais il se leva pour saluer Irie au garde-à-vous.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -41,13 +41,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1249", 128, TRUE);
 	OutputLine(NULL, "「あぁあぁ、その二佐というのはどうか止めてください…！",
-		   NULL, "\"Alright, alright, stop calling me Lieutenant Colonel!", Line_WaitForInput);
+		   NULL, "— Allons, arrêtez avec ce grade militaire,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1250", 128, TRUE);
 	OutputLine(NULL, "　私は医者です、どうもその軍隊的な階級には馴染めません。",
-		   NULL, " I'm a doctor. I just can't get used to military ranks.", Line_WaitForInput);
+		   NULL, " je suis médecin, moi !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1251", 128, TRUE);
 	OutputLine(NULL, "せめて所長でお願いします…。」",
-		   NULL, " Can you call me Director instead?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Si vous tenez vraiment à m'appeler par ma fonction, appelez-moi encore plutôt “Monsieur le Directeur”...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -56,25 +56,25 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1020", 128, TRUE);
 	OutputLine(NULL, "「了解しました、入江所長。",
-		   NULL, "\"Understood, Director Irie.", Line_WaitForInput);
+		   NULL, "— À vos ordres, Monsieur le Directeur.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1021", 128, TRUE);
 	OutputLine(NULL, "あはははは…！」",
-		   NULL, " Ahahahaha!\"", Line_Normal);
+		   NULL, " Ahahahahaha !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それはもはや、入江が二佐と呼ばれることをあまり好まないことを知っていての、冗談のようなものとなっていた。",
-		   NULL, "Tomitake, of course, knew that Irie didn't like to be called Lieutenant Colonel, so it was something of a joke.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les deux hommes savaient bien que le docteur Irie détestait être traîté comme un militaire. C'était devenu une blague récurrente entre eux deux.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富竹たちは気さくに笑い合う。",
-		   NULL, "They laughed casually together.", Line_Normal);
+		   NULL, "Tomitake partit d'un grand rire, qui se propagea parmi les autres membres présents à la réunion.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もっとも、鷹野としてはうんざりとした様子。",
-		   NULL, "On the other hand, Takano looked rather fed up with it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Enfin, pas tout à fait. Madame Takano avait l'air de s'ennuyer ferme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -82,7 +82,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　同じネタを何度も繰り返すというのがどうも好きになれず、機会があれば富竹に、もうその二佐というのを止めろと言うつもりだった。",
-		   NULL, "She couldn't stand hearing the same joke over and over, and was even thinking about talking to Tomitake about it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle n'aimait pas répéter plusieurs fois la même chose, et c'était encore pire lorsque les gens lui disaient à elle plusieurs fois les mêmes choses. Et là, cette blague commençait vraiment à se faire vieille.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -90,12 +90,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……言えば、柄にもなく傷つくだろうなと思うので、言い出し損ねてしまっていたが。",
-		   NULL, "....But she didn't want to hurt his feelings, so she simply never had the chance.", Line_Normal);
+		   NULL, "Mais elle n'osait pas le dire à Tomitake ; il aurait pu se vexer, elle savait qu'il était très sensible...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あと、富竹の発音のせいなのか、二佐がどうしても「リサ」と聞こえてしまう。",
-		   NULL, "Maybe it's because of how Tomitake pronounces it, but she keeps hearing \"Risa\". (Lieutenant Colonel in Japanese: Nisa)", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Une fois, elle avait remarqué qu'il écrivait assez mal son propre nom. L'idéogramme de “take” (竹) était tellement mal écrit que l'on aurait pu le confondre avec un “ri” et un “sa” (リサ).", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -103,19 +103,19 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一度そう聞こえてしまったら、彼が言う度に「入江リサ」「入江リサ」と聞こえてしまうのだ。",
-		   NULL, "Once she heard it that way, she kept hearing\n\"Irie Risa\" every time Tomitake said it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle en avait parlé un jour en secret au docteur Irie, qui avait ri à en manquer d'oxygène.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野がこっそりそれを入江に話したら、それは大いに受けたのだった…。",
-		   NULL, "When Takano told Irie about it, he had a good laugh.", Line_Normal);
+		   NULL, "Tomitake lui en avait beaucoup voulu, d'ailleurs...", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "background/ka1_01", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日は単なる挨拶で、明日がミーティングの日になっていた。",
-		   NULL, "Today was just a simple meet-and-greet, and tomorrow was the actual meeting.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Aujourd'hui, il était seulement ici par politesse, puisqu'il était déjà arrivé en ville. Mais la véritable réunion devait avoir lieu demain.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -123,7 +123,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富竹は今日から来ているが、明日、東京から監査が何人かやって来て合流し、機関の研究進捗状況について説明を受けることになっている。",
-		   NULL, "Tomitake had already arrived, but there would be more inspectors from Tokyo at the meeting, waiting to hear about the progress that had been made.", Line_Normal);
+		   NULL, "Demain, plusieurs autres agents de contrôle viendraient de Tôkyô. Ils devaient obtenir des informations sur les projets en cours, l'avancement des recherches, tout.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -132,7 +132,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1022", 128, TRUE);
 	OutputLine(NULL, "「それはそうと、ダムのことで村中が盛り上がってるみたいですね。」",
-		   NULL, "\"Anyway, I heard the whole village is all up in arms about the dam construction project.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Mais par contre, autre chose. J'ai trouvé l'ambiance particulièrement agitée au village aujourd'hui.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -141,13 +141,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1252", 128, TRUE);
 	OutputLine(NULL, "「えぇ、それはもう…！",
-		   NULL, "\"You can say that again!", Line_WaitForInput);
+		   NULL, "— Oh, oui, ne m'en parlez pas...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1253", 128, TRUE);
 	OutputLine(NULL, "　村中、大変な騒ぎですよ。",
-		   NULL, " The village is in such a mess.", Line_WaitForInput);
+		   NULL, " La révolte gronde dans les chaumières, c'est moi qui vous le dis !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1254", 128, TRUE);
 	OutputLine(NULL, "私も、役員として自治体の地元説明会に参加してきたのですが、…怒声と罵声のそれはもう賑やかな説明会となりました。」",
-		   NULL, " I participated in the local municipal explanation meeting as an official, but... the whole thing was alive with angry shouts and profanities.\"", Line_Normal);
+		   NULL, " En tant que Directeur de l'Institut, j'avais été convié par le Conseil Régional à la réunion d'information pour ce barrage, mais croyez-moi, il en fallait, de la patience, pour supporter tous ces cris et toutes ces insultes...", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 0, 400, FALSE );
@@ -158,7 +158,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢ダム基本計画の発表後、当然、雛見沢は大騒ぎとなった。",
-		   NULL, "After the basic Hinamizawa Dam Project was announced, the village was consumed with uproar.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Après l'annonce du plan de construction du barrage à Hinamizawa, bien sûr, les habitants avaient explosé de colère.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -166,12 +166,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　政府は割りと早期の内に譲歩案を撤回。",
-		   NULL, "The government retracted their plans for concessions rather early on.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le gouvernement avait très vite cessé de tenter le compromis.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　攻撃的姿勢を明白にする。",
-		   NULL, "They made their aggressive stance clear.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il avait montré une volonté politique agressive.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -179,12 +179,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　交渉の余地を見せることが、かえって相手を付け上がらせることになるという考えらしかった。",
-		   NULL, "They didn't want the locals to take advantage of them by showing their willingness to compromise.", Line_Normal);
+		   NULL, "En fait, les gens de l'administration avaient pensé que s'ils laissaient entrevoir la possibilité d'un compromis, ils encourageraient les gens à rejeter le programme.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、その目論見は裏目に出ることになる。",
-		   NULL, "However, that backfired horribly.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sauf que justement, ça n'était clairement pas la meilleure idée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -192,9 +192,9 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　地縁による結束が歴史的に強いこの雛見沢の地では、そういう態度に対し逆に団結を招く結果となり、",
-		   NULL, "As they had historical ties to the land, the government's actions only made their bonds stronger.", Line_WaitForInput);
+		   NULL, "Hinamizawa avait une longue histoire, un lourd “passif” qui poussait les gens de la région à se serrer les coudes.", Line_WaitForInput);
 	OutputLine(NULL, "政府も村も、互いに一歩も引けぬ泥沼の様相を示していたのである。",
-		   NULL, " Neither the government nor the locals wanted to back down.", Line_Normal);
+		   NULL, " Désormais, le gouvernement et le village formaient deux blocs compacts, et aucun des deux ne laisserait le moindre centimètre de corde à l'autre.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "background/ka1_01", "maskup", 1, 0, 300 );
@@ -202,13 +202,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1212", 128, TRUE);
 	OutputLine(NULL, "「くすくすくす。",
-		   NULL, "\"Hee hee hee.", Line_WaitForInput);
+		   NULL, "— Hmpfhfhfhf...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1213", 128, TRUE);
 	OutputLine(NULL, "雛見沢の人は気性が激しいですものねぇ。",
-		   NULL, " People from Hinamizawa are rather hot-tempered.", Line_WaitForInput);
+		   NULL, " Les gens d'ici sont tellement prompts à s'énerver.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1214", 128, TRUE);
 	OutputLine(NULL, "やっぱり鬼の血が流れてるからなのかしら。」",
-		   NULL, " Maybe because they're the descendants of demons.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Il faut croire que la légende dit vrai : ils ont vraiment du sang de démon dans les veines.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -217,10 +217,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1255", 128, TRUE);
 	OutputLine(NULL, "「笑い事じゃないですよ…。",
-		   NULL, "\"It's not funny.", Line_WaitForInput);
+		   NULL, "— Ce n'est vraiment pas drôle, je vous assure.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1256", 128, TRUE);
 	OutputLine(NULL, "あの説明会に、夜中まで付き合わされた方の身にもなってみてください。」",
-		   NULL, " That wild meeting lasted all night!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mettez-vous un peu à ma place ! Ils m'ont gardé là-bas jusqu'au milieu de la nuit !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -229,10 +229,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1023", 128, TRUE);
 	OutputLine(NULL, "「それはお気の毒でしたね。",
-		   NULL, "\"I feel your pain.", Line_WaitForInput);
+		   NULL, "— Eh bien, vous n'avez vraiment pas eu de chance !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1024", 128, TRUE);
 	OutputLine(NULL, "はっはっはっは…！」",
-		   NULL, " Ha ha ha ha...!\"", Line_Normal);
+		   NULL, " Ahahahahaha !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -241,13 +241,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1257", 128, TRUE);
 	OutputLine(NULL, "「いや、…本当に笑い事ではないですよ、富竹さん。",
-		   NULL, "\"Really, it's not funny, Tomitake-san.", Line_WaitForInput);
+		   NULL, "— Non mais, vous ne comprenez pas : il n'y a vraiment rien de drôle à cette situation.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1258", 128, TRUE);
 	OutputLine(NULL, "ダム計画はどうなってるんですか？",
-		   NULL, " So, what's going on with the dam construction?", Line_WaitForInput);
+		   NULL, " C'est quoi, cette histoire de barrage ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1259", 128, TRUE);
 	OutputLine(NULL, "　本当にこの村はダム湖に沈められてしまうんですか？」",
-		   NULL, " Are they really going to submerge this village?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " La région va vraiment se retrouver sous les eaux ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -256,10 +256,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1025", 128, TRUE);
 	OutputLine(NULL, "「それについては、東京の方でも圧力を掛けています。",
-		   NULL, "\"Tokyo's applying their pressure to the situation too.", Line_WaitForInput);
+		   NULL, "— Eh bien, d'autres gens à Tôkyô se débrouillent pour faire pression.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1026", 128, TRUE);
 	OutputLine(NULL, "表向きは騒ぎになっていますが、実際の裏方ではかなり屋台骨がぐらついているはずです。」",
-		   NULL, " Things might seem clamorous on the surface, but in truth, the supporters behind it are wavering rather hard.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Vu d'ici, le gouvernement a l'air prêt à passer outre, mais croyez-moi, en interne, ce projet est sur la sellette.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -268,23 +268,23 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1260", 128, TRUE);
 	OutputLine(NULL, "「……その圧力が早く効くといいんですがね。",
-		   NULL, "\"...I hope their pressure produces results soon.", Line_WaitForInput);
+		   NULL, "— ... Mouais. Espérons que ces pressions fassent rapidement de l'effet.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1261", 128, TRUE);
 	OutputLine(NULL, "村は朝から晩まで賑やかで、村人の心もこのところ、荒んできたように思います。",
-		   NULL, " The whole village is buzzing with action from dusk to dawn, and I worry the villagers' minds are growing agitated. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Tous les habitants sont soumis à un stress rarement atteint. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1262", 128, TRUE);
 	OutputLine(NULL, "診察に来るお年寄りに捕まって、たっぷりと反ダム論争を聞かされる時がありますよ。」",
-		   NULL, "Sometimes I have to listen to my patients go on and on about their opinion on the dam construction plan.\"", Line_Normal);
+		   NULL, "J'ai même eu un vieillard qui m'a chopé par le col pour me secouer en m'expliquant pourquoi ce barrage était une mauvaise idée.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1215", 128, TRUE);
 	OutputLine(NULL, "「くすくす。",
-		   NULL, "\"Hee hee.", Line_WaitForInput);
+		   NULL, "— Hmpfhfhfhf.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1216", 128, TRUE);
 	OutputLine(NULL, "付き合わなければいいのに。入江所長は人がいいから。」",
-		   NULL, " Why do you even listen to them? You're too nice.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Monsieur le Directeur, c'est parce que vous êtes trop gentil avec les gens. Vous n'avez qu'à les envoyer paître.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -293,13 +293,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1263", 128, TRUE);
 	OutputLine(NULL, "「そうも行きません。",
-		   NULL, "\"I have to.", Line_WaitForInput);
+		   NULL, "— Oui, mais je ne peux pas me le permettre.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1264", 128, TRUE);
 	OutputLine(NULL, "私は研究所長である以前に診療所長でもあります。",
-		   NULL, " I'm a clinic director first, and research center director second.", Line_WaitForInput);
+		   NULL, " Je suis à la tête de ces recherches, mais je suis aussi à la tête de cette clinique.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1265", 128, TRUE);
 	OutputLine(NULL, "話を聞くのもケアの一環ですので。」",
-		   NULL, " It's part of my job to listen to them.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Et parler aux patients fait partie de mes devoirs.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -308,10 +308,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1027", 128, TRUE);
 	OutputLine(NULL, "「それはとても良いことです。",
-		   NULL, "\"That's very nice of you.", Line_WaitForInput);
+		   NULL, "— Vous savez, je suis très impressionné par votre professionalisme.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1028", 128, TRUE);
 	OutputLine(NULL, "感服いたします。」",
-		   NULL, " It's admirable.\"", Line_Normal);
+		   NULL, " Vraiment, votre attitude vous honore.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
@@ -320,39 +320,39 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1266", 128, TRUE);
 	OutputLine(NULL, "「私は、東京の皆さんがうまく圧力を掛けてくれて、いずれはダム計画を撤回してくれるものとわかっているからいいですが。",
-		   NULL, "\"I know the people in Tokyo will call off the plan sooner or later, but the villagers won't.", Line_WaitForInput);
+		   NULL, "— Vous oubliez une chose : moi, je sais que des gens travaillent dans l'ombre pour faire retirer ce plan de barrage, et je sais que ce n'est plus qu'une question de temps.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1267", 128, TRUE);
 	OutputLine(NULL, "村人にとっては、先祖代々から住んできた土地を追い出されかねないと、本当にすごい騒ぎです。」",
-		   NULL, " So they have to live in fear that they might be forced to leave the land where they've lived for generations.\"", Line_Normal);
+		   NULL, " Mais les habitants, eux, s'imaginent qu'ils vont être chassés comme des malpropres des terres de leurs ancêtres ! Ils sont vraiment remontés, et je les pense prêts à absolument tout et n'importe quoi.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1216a", 128, TRUE);
 	OutputLine(NULL, "「立ち退けと言われても、引っ越せるほどのお金もなく若さもなく。",
-		   NULL, "\"Even if they're told to leave, they don't have money, and a lot of them are old.", Line_WaitForInput);
+		   NULL, "— Céder les terrains, c'est bien, mais ils n'ont ni l'âge ni les ressources pour déménager ailleurs.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1216b", 128, TRUE);
 	OutputLine(NULL, "立ち退き補償金の額の吊り上げが狙いだったのかもしれないけど、…急にお役所の態度が変わっちゃって全面衝突。",
-		   NULL, " Maybe some wanted an increase in the amount of compensation they'd be offered, but the government changed its mind. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " J'imagine bien que certains voulaient faire grimper les primes, mais comme l'administration a changé de tactique, les gens ont opté pour l'attaque de front. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1217", 128, TRUE);
 	OutputLine(NULL, "……こうなってしまったら、穏便に決着というのは無理かも知れませんわね。」",
-		   NULL, "I don't think it's possible for them to come to a peaceful agreement at this point.\"", Line_Normal);
+		   NULL, "Nous ne pourrons plus régler ça avec calme et diplomatie, j'en ai bien peur.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1270", 128, TRUE);
 	OutputLine(NULL, "「かつては、補償金に納得して立ち退きに応じようという人たちも少しはいたんですが。",
-		   NULL, "\"There were actually some villagers who were satisfied with that amount and were willing to leave.", Line_WaitForInput);
+		   NULL, "— Avant, certaines personnes étaient prêtes à jouer le jeu et à partir.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1271", 128, TRUE);
 	OutputLine(NULL, "御三家の園崎家さんが強硬意見で村人をリードしてましてね。",
-		   NULL, " However, the Sonozaki family didn't want to change their stance against the issue. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais les Sonozaki se sont imposés en leader pour rallier les gens contre ce projet. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1272", 128, TRUE);
 	OutputLine(NULL, "国との対決姿勢を煽っているようなんです。",
-		   NULL, "They're actually leading the villagers in the fight against the government.", Line_WaitForInput);
+		   NULL, "Et ils sont plutôt du genre démonstratif.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1273", 128, TRUE);
 	OutputLine(NULL, "街宣車みたいなのがよく騒がしくしてますし、ビラやらチラシやら機関紙やらが回覧板と一緒によく回ってきますよ。」",
-		   NULL, " There are blaring announcement vans everywhere, and ads and flyers are attached to the circulation notices.\"", Line_Normal);
+		   NULL, " Ils ont des voitures avec de grands haut-parleurs, et je les ai vu imprimer et distribuer des tracts un peu partout.", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(1, 8, "sprite/tomi1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
@@ -361,10 +361,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1029", 128, TRUE);
 	OutputLine(NULL, "「ここに住む人にとっては大変な問題ですからね。",
-		   NULL, "\"It's a serious matter for them.", Line_WaitForInput);
+		   NULL, "— Oui, j'imagine que ce problème doit beaucoup les préoccuper.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1030", 128, TRUE);
 	OutputLine(NULL, "気持ちはわからなくもありません。」",
-		   NULL, " I guess I can understand.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je dois avouer que je comprends un peu leur position.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -373,19 +373,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1274", 128, TRUE);
 	OutputLine(NULL, "「……そういう意味では、思惑は多少違うかもしれませんが、そんな皆さんのためにも、このダム計画は早く撤回になるよう交渉を進めてほしいものです。",
-		   NULL, "\"...I hope the construction plan will be called off soon, for their sake.", Line_WaitForInput);
+		   NULL, "— ... Disons que même si nos motivations ne sont pas les mêmes que les leurs, il serait bon de faire pression un peu plus sur le gouvernement pour obtenir l'assurance que le projet sera retiré.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1275", 128, TRUE);
 	OutputLine(NULL, "撤回されれば、この村もすぐに落ち着きのある元の村に戻るのでしょうから。」",
-		   NULL, " Once it's called off, this village will become peaceful once again.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Dès l'annonce de l'abandon du projet, les gens pourront retrouver un peu leur calme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1031", 128, TRUE);
 	OutputLine(NULL, "「もちろんわかってます。",
-		   NULL, "\"I know that, of course.", Line_WaitForInput);
+		   NULL, "— Oui, j'entends bien.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1032", 128, TRUE);
 	OutputLine(NULL, "それについては東京の方で交渉を進めておりますので、もうしばらく私どもにお任せください。」",
-		   NULL, " Things are moving right along in Tokyo, so please give us a little more time.\"", Line_Normal);
+		   NULL, " Mais je vous assure que nous sommes déjà sur l'affaire. Laissez-moi juste un peu de temps.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/ka1_01", 200 );
@@ -394,7 +394,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1218", 128, TRUE);
 	OutputLine(NULL, "「…東京の方で噂を聞いたんですけれど、建設省の方になかなかうまく圧力を掛けられるコネクションがなくて苦労してるとか？」",
-		   NULL, "\"...I've heard a rumor from Tokyo that you're having problems finding a way to pressure the Minister of Construction. Is that true?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— ... C'est un bruit de couloir que j'ai entendu, mais il paraît que vous n'avez pas beaucoup de gens placés au ministère du développement urbain et que cela vous empêche de réellement exercer des pressions, est-ce vrai ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -403,15 +403,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1033", 128, TRUE);
 	OutputLine(NULL, "「いやぁ…、はっはっは…。",
-		   NULL, "\"Oh... ha ha ha...", Line_WaitForInput);
+		   NULL, "— Eh bien, euh, ahahaha,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1034", 128, TRUE);
 	OutputLine(NULL, "私如きでは詳しくは知りませんが、水面下調整がうまく行っていないのではという話も少し聞きます。」",
-		   NULL, " I'm not sure, but I've heard myself that they are having a little problem with some of the details.\"", Line_Normal);
+		   NULL, " je dois avouer que je suis mal placé pour vous en parler, je ne suis pas vraiment au courant, mais c'est vrai que les négociations ne se passent pas aussi bien que prévu.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野の持つ後ろ盾は非常に強力な勢力ではあるが、だからと言って日本全てを網羅しているわけではない。",
-		   NULL, "Takano had powerful people supporting her, but they didn't control all of Japan.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le bouclier protecteur qui assurait les arrières de Takano était puissant, mais il ne couvrait pas tout le Japon non plus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -419,12 +419,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　得意とする方面もあれば、不得手とする方面もある。",
-		   NULL, "There were some things they excelled in, but also other things that they weren't too good at.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il était parfaitement à même de protéger de certaines choses, mais il avait aussi ses faiblesses.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……建設省に圧力を掛けられるコネクションについては、あまり得意ではないに違いない。",
-		   NULL, "Finding a way to put pressure onto the Minister of Construction fell into the latter.", Line_Normal);
+		   NULL, "Et mettre la pression au ministère du développement urbain, c'était clairement pas son domaine de prédilection.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -433,10 +433,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1219", 128, TRUE);
 	OutputLine(NULL, "「冗談抜きで。",
-		   NULL, "\"In all seriousness, though...", Line_WaitForInput);
+		   NULL, "— En attendant, et sans rire maintenant, j'aimerais savoir pour de bon :", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1220", 128, TRUE);
 	OutputLine(NULL, "ダムができますからここを立ち退いてくださいなんて話には、本当にならないんですわよね…？」",
-		   NULL, " We really won't be facing any requests to leave this area because of the dam, right...?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " le gouvernement ne va pas venir nous jeter dehors, vous pouvez nous le promettre ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -445,17 +445,17 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1035", 128, TRUE);
 	OutputLine(NULL, "「も、もちろんです。",
-		   NULL, "\"Of course not.", Line_WaitForInput);
+		   NULL, "— Mais oui, bien sûr !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1036", 128, TRUE);
 	OutputLine(NULL, "それだけは絶対に問題ありません。",
-		   NULL, " I can guarantee that won't happen.", Line_WaitForInput);
+		   NULL, " Ça, ça ne risque vraiment pas d'arriver.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1037", 128, TRUE);
 	OutputLine(NULL, "時間が掛かっているだけですので、皆さんはどうかそこは任せて研究を進めてください。",
-		   NULL, " It's just taking longer than we thought, that's all. So please continue your research. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " C'est juste que ça prend du temps à mettre en place, mais ne vous en faites pas et continuez vos recherches. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1038", 128, TRUE);
 	OutputLine(NULL, "穏便に済ませることが出来ない場合は、最終的な荒療治も辞さないことで意見はまとまっておりますので。」",
-		   NULL, "We were told that if things can't be resolved peacefully, then we may have to use drastic measures.\"", Line_Normal);
+		   NULL, "De toute façon, si la manière douce ne marche pas, nous projetons d'employer la force.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -465,7 +465,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1276", 128, TRUE);
 	OutputLine(NULL, "「荒療治、…とはなんですか、富竹さん。」",
-		   NULL, "\"Drastic measures? What do you mean, Tomitake-san?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Et... vous voulez dire quoi au juste par là, M. Tomitake ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -474,13 +474,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1039", 128, TRUE);
 	OutputLine(NULL, "「そこは我々の領分です。",
-		   NULL, "\"You don't need to worry about that part,", Line_WaitForInput);
+		   NULL, "— Ah, ça, c'est notre affaire. Vous n'avez pas à vous préoccuper l'esprit avec ça,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1040", 128, TRUE);
 	OutputLine(NULL, "入江所長は気にされなくて結構です。",
-		   NULL, " Director Irie.", Line_WaitForInput);
+		   NULL, " Monsieur le Directeur.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1041", 128, TRUE);
 	OutputLine(NULL, "どうかお任せください。」",
-		   NULL, " Please let us take care of it.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je vous en prie, faites-moi confiance.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -489,13 +489,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1277", 128, TRUE);
 	OutputLine(NULL, "「………そうですか。",
-		   NULL, "\"...I see.", Line_WaitForInput);
+		   NULL, "— ... Je vois.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1278", 128, TRUE);
 	OutputLine(NULL, "…わかりました。",
-		   NULL, " Okay.", Line_WaitForInput);
+		   NULL, " Eh bien, soit.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1279", 128, TRUE);
 	OutputLine(NULL, "よろしくお願いいたします。」",
-		   NULL, " Thank you for your work.\"", Line_Normal);
+		   NULL, " Je compte sur vous.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -503,16 +503,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1221", 128, TRUE);
 	OutputLine(NULL, "「大丈夫ですわよ、入江所長。",
-		   NULL, "\"It's fine, Director Irie.", Line_WaitForInput);
+		   NULL, "— N'ayez donc crainte, Monsieur le Directeur.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1222", 128, TRUE);
 	OutputLine(NULL, "ダム計画は絶対に撤回されますわ。",
-		   NULL, " The dam construction plan will be called off.", Line_WaitForInput);
+		   NULL, " Le projet de barrage sera retiré.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1223", 128, TRUE);
 	OutputLine(NULL, "……だって、そう決まっているんですもの。",
-		   NULL, " ...It's already been decided.", Line_WaitForInput);
+		   NULL, " C'est déjà décidé, en fait.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1224", 128, TRUE);
 	OutputLine(NULL, "…くすくす。」",
-		   NULL, " ...Hee hee.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Hmpfhfhfhfhf...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -520,17 +520,17 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野がくすくすと笑うと、富竹もそれに習い薄く笑った。",
-		   NULL, "As Takano giggled, Tomitake laughed too.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Lorsque Takano se mit à pouffer de rire, Tomitake aussi eut un petit rire complice.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…入江だけがその笑いについて行けず、わずかの疎外感を味わう…。",
-		   NULL, "However, Irie couldn't understand what was so funny, so he felt left out.", Line_Normal);
+		   NULL, "Seul Irie resta là, sans trop savoir ce qu'il y avait de si drôle.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………後に入江は、村で見掛けない１人の少年の診察を求められた時、その荒療治の意味を知ることになった。",
-		   NULL, "......Irie only understood the meaning of those drastic measures when he examined a young boy he had never seen in the village before.", Line_Normal);
+		   NULL, "... Ce n'est que plus tard, lorsqu'il dut aller examiner un enfant qui n'était clairement pas du village, que le docteur Irie comprit de quoi ses collègues avaient parlé.", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eye" );
