@@ -193,7 +193,7 @@ void StartFragmentLoop()
 
 	CallSection("FragmentChapterDisplay");
 
-	SavePoint("カケラ紡ぎをする", "Connecting Fragments");
+	SavePoint("カケラ紡ぎをする", "Enchâsser les fragments");
 }
 
 void FragmentChapterDisplay()
@@ -202,7 +202,7 @@ void FragmentChapterDisplay()
 
 	SetValidityOfSaving( TRUE );
 
-	SavePoint("カケラ紡ぎをする", "Connecting Fragments");
+	SavePoint("カケラ紡ぎをする", "Enchâsser les fragments");
 
 	DisableWindow();
 
