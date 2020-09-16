@@ -689,7 +689,7 @@
 		   NULL, "— Oui, oui, je sais, les temps changent, avant, c'était normal, et cætera.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1140", 128, TRUE);
 	OutputLine(NULL, "当時は医者が治療をいちいち説明することなどなかったし、事前承諾なんて大したものではなかった。",
-		   NULL, " Et puis, à l'époque, les médecins ne perdaient pas leur temps à expliquer les opérations et les actes chirugicaux à leurs patients, alors des autorisations, vous pensez bien que c'était le dernier de leurs soucis.", Line_WaitForInput);
+		   NULL, " Et puis, à l'époque, les médecins ne perdaient pas leur temps à expliquer les opérations et les actes chirurgicaux à leurs patients, alors des autorisations, vous pensez bien que c'était le dernier de leurs soucis.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1141", 128, TRUE);
 	OutputLine(NULL, "だから、当時のことは気にしなくていいんじゃないですかしら？",
 		   NULL, " Vous ne devriez pas vous tourmenter, Monsieur le Directeur. ", GetGlobalFlag(GLinemodeSp));
@@ -785,7 +785,7 @@
 		   NULL, " fût-ce après sa mort !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1160", 128, TRUE);
 	OutputLine(NULL, "　それは強い信念と揺らぎのない鉄の意思があるから成し遂げられること。",
-		   NULL, " C'est cette foi inébranlabre en ses propres convictions qui mène à la réussite.", Line_WaitForInput);
+		   NULL, " C'est cette foi inébranlable en ses propres convictions qui mène à la réussite.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1161", 128, TRUE);
 	OutputLine(NULL, "そうでなければ時代の無理解に高野先生は屈していたはず。",
 		   NULL, " Sans elle, le Professeur Takano aurait abandonné.", Line_Normal);
