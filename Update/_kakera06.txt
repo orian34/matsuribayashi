@@ -415,7 +415,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1111", 128, TRUE);
 	OutputLine(NULL, "「経過観察のため入院ということにしましょう。",
-		   NULL, "Commençons par la garder ici, officiellement en observation.", Line_WaitForInput);
+		   NULL, "— Commençons par la garder ici, officiellement en observation.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1112", 128, TRUE);
 	OutputLine(NULL, "スタッフの皆さんへの手配をお願いいたします。」",
 		   NULL, " Je compte sur vous pour faire passer les ordres aux équipes compétentes.", Line_Normal);
