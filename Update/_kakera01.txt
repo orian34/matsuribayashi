@@ -564,13 +564,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……神社の巫女という存在は人の悩みや懺悔を聞くこともあるのだろうか？",
-		   NULL, "Si les prêtresses shintoïstes doivent savoir être à l'écoute des problèmes des gens et les absoudre de leurs péchés, alors cette petite fille, à cet âge si tendre, était certainement une prêtresse aguerrie...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　だとしたら、彼女はこの歳ですでに、立派な古手神社の巫女だった。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　……神社の巫女という存在は人の悩みや懺悔を聞くこともあるのだろうか？　だとしたら、彼女はこの歳ですでに、立派な古手神社の巫女だった。",
+		   NULL, "Si les prêtresses shintoïstes doivent savoir être à l'écoute des problèmes des gens et les absoudre de leurs péchés, alors cette petite fille, à cet âge si tendre, était certainement une prêtresse aguerrie...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
