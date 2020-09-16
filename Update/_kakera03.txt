@@ -112,23 +112,16 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　だから、…何かの拍子か偶然で、その薬の薬効が切れた時。",
+	OutputLine(NULL, "　だから、…何かの拍子か偶然で、その薬の薬効が切れた時。　私は二度とあの薬を飲んではいけないと気付いた。",
 		   NULL, "C'est pourquoi un jour où curieusement, ce médicament ne fit pas son effet, je pus me rendre compte que je devais à tout prix éviter d'en reprendre.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　私は二度とあの薬を飲んではいけないと気付いた。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……そう。",
-		   NULL, "A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "これは治療薬なんかじゃない。",
-		   NULL, " Ces gélules n'étaient pas prescrites pour me soigner.", Line_WaitForInput);
+	OutputLine(NULL, "　……そう。これは治療薬なんかじゃない。",
+		   NULL, "Ces gélules n'étaient pas prescrites pour me soigner.", Line_WaitForInput);
 	OutputLine(NULL, "私を緩慢に殺すための毒薬なのだ。",
 		   NULL, " Elles me tuaient, petit à petit, lentement mais sûrement.", Line_Normal);
 	ClearMessage();
@@ -691,12 +684,12 @@
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "わらわらわらわらわら、",
-		   NULL, " à n'en plus finir...", Line_ContinueAfterTyping);
+		   NULL, " à n'en plus finir", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "わらわらわらわらわらわらわら…！！",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, "...", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
@@ -775,10 +768,8 @@
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "……私以外の「せい」が必要だったのだ。",
+	OutputLine(NULL, "……私以外の「せい」が必要だったのだ。私以外の誰かのせい。",
 		   NULL, " Pour ça, il me fallait rejeter la faute sur quelqu'un d'autre.", Line_WaitForInput);
-	OutputLine(NULL, "私以外の誰かのせい。",
-		   NULL, " A REMOVE", Line_WaitForInput);
 	OutputLine(NULL, "そんなものは存在しない。",
 		   NULL, " Sauf qu'il n'y avait personne d'autre. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1082,10 +1073,10 @@
 	OutputLine(NULL, "　思い出せば、オヤシロさまはずっと私にそれを教えてくれようとしていた。",
 		   NULL, "D'ailleurs, elle avait toujours essayé de me le dire.", Line_WaitForInput);
 	OutputLine(NULL, "お母さんが出て行ってしまって、何のせいでこうなったのかわからず、",
-		   NULL, " Depuis l'époque où Maman était partie, depuis l'époque où je ne savais plus sur quoi passer mes nerfs, elle était restée près de moi, à essayer de m'expliquer ce qu'il se passait. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Depuis l'époque où Maman était partie, depuis l'époque où je ne savais plus sur quoi passer mes nerfs,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "何に怒りを向ければいいのかわからなかったあの頃から、私にそれを伝えようといつもいつも付いてきていたんだもの。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " elle était restée près de moi, à essayer de m'expliquer ce qu'il se passait.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
