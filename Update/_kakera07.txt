@@ -928,12 +928,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　オヤシロさまが示す、奇跡。",
-		   NULL, "Cela me rendait capable d'accomplir le miracle de la déesse Yashiro...", Line_WaitForInput);
-	OutputLine(NULL, "祟り。",
-		   NULL, " A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "………それを、ワタシが築く。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　オヤシロさまが示す、奇跡。祟り。………それを、ワタシが築く。",
+		   NULL, "Cela me rendait capable d'accomplir le miracle de la déesse Yashiro...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
