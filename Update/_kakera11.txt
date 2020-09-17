@@ -545,7 +545,7 @@
 		   NULL, " Tout ce que je peux vous promettre, c'est que la fièvre de Rika n'a rien à voir avec nous.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1233", 128, TRUE);
 	OutputLine(NULL, "もし、どうしても御不審ということでございましたら、」",
-		   NULL, " Et si vraiment si vous ne voulez pas me croire, je peux--", Line_Normal);
+		   NULL, " Et si vraiment vous ne voulez pas me croire, je peux--", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 100 );
