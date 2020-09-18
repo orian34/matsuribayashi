@@ -455,16 +455,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　とにかく、具合が悪いと訴えた神主が診療所へ運び込まれた。",
 		   NULL, "Et ensuite, en à peine vingt minutes, le prêtre est mort de maladie,", Line_WaitForInput);
-	OutputLine(NULL, "妻がそれに付き添った。",
-		   NULL, " et sa femme s'est suicidée, ou bien elle a disparu...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そして、わずか二十分の間に、神主は病死し、妻は沼に入水自殺、あるいは失踪したのだ。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "妻がそれに付き添った。　そして、わずか二十分の間に、神主は病死し、妻は沼に入水自殺、あるいは失踪したのだ。",
+		   NULL, " et sa femme s'est suicidée, ou bien elle a disparu...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
