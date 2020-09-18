@@ -384,10 +384,8 @@
 	PlayBGM( 0, "B08_Izyou", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　この頃には誰もが理屈抜きで直感していた。",
+	OutputLine(NULL, "　この頃には誰もが理屈抜きで直感していた。…監督は普通じゃない。",
 		   NULL, "Les ouvriers comprirent alors instinctivement que leur chef de chantier n'était clairement pas normal.", Line_WaitForInput);
-	OutputLine(NULL, "…監督は普通じゃない。",
-		   NULL, " A REMOVE", Line_WaitForInput);
 	OutputLine(NULL, "今の監督には何の手加減もなく、…もしこちらが防いだり避けたりしないなら、容赦なく脳天を割ってくる…！",
 		   NULL, " Il ne ferait aucun cadeau cette fois-ci ; il n'hésiterait pas à leur briser le crâne s'ils ne faisaient rien pour se protéger !", Line_Normal);
 	ClearMessage();
@@ -531,7 +529,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1019", 128, TRUE);
 	OutputLine(NULL, "「隠すんだよ！",
-		   NULL, "Il faut cacher le corps !", Line_WaitForInput);
+		   NULL, "— Il faut cacher le corps !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1020", 128, TRUE);
 	OutputLine(NULL, "　こいつの死体を隠してスッとぼけるしかねぇんだッ！！」",
 		   NULL, " On va cacher son corps et on fait comme si de rien n'était !", Line_Normal);
