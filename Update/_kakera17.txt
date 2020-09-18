@@ -272,7 +272,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ある日、私をいつも励ましてくれる田舎からの手紙の雰囲気が、少し変わった。",
-		   NULL, "Un jour, alors que je recevais encore une de ces lettres qui me remontaient le moral et me removitaient, je remarquai quelque chose de différent.", Line_Normal);
+		   NULL, "Un jour, alors que je recevais encore une de ces lettres qui me remontaient le moral et me remotivaient, je remarquai quelque chose de différent.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
