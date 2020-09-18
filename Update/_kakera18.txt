@@ -526,15 +526,13 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　存命中の患者に死亡宣告を出し、",
-		   NULL, "Pratiquer une autopsie sur un être vivant que l'on aurait déclaré mort un peu trop tôt, donc...", Line_WaitForInput);
-	OutputLine(NULL, "…それを“検死”する。",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　存命中の患者に死亡宣告を出し、…それを“検死”する。",
+		   NULL, "Pratiquer une autopsie sur un être vivant que l'on aurait déclaré mort un peu trop tôt,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "生きながらに。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " donc...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
