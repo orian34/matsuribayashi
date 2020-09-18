@@ -21,13 +21,8 @@
 	OutputLine(NULL, "　雛見沢症候群のメカニズムは、前頭葉を支配する病原体が、疑心暗鬼に対し特に過敏になる状態に誘導し、",
 		   NULL, "En effet, l'agent pathogène de la maladie, niché dans le lobe frontal, déclenche un état mental très réceptif à la paranoïa chez son hôte, ce qui pousse le patient à se défendre “de lui-même” de manière disproportionnée -- en tuant un adversaire, de peur de se faire tuer, par exemple. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "その結果、患者が“自発的に”過剰な防衛行動（問題行動）に出ることがわかっている。",
-		   NULL, "Donc, si nous réussissions à couper les voies de transmission des ordres de l'agent pathogène, nous pourrions tout du moins empêcher un patient en phase terminale de devenir complètement fou.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　その誘導を絶つ事ができれば、末期発症者を錯乱から救うことは可能なのだ。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "その結果、患者が“自発的に”過剰な防衛行動（問題行動）に出ることがわかっている。　その誘導を絶つ事ができれば、末期発症者を錯乱から救うことは可能なのだ。",
+		   NULL, "Donc, si nous réussissions à couper les voies de transmission des ordres de l'agent pathogène, nous pourrions tout du moins empêcher un patient en phase terminale de devenir complètement fou.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -493,12 +488,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢症候群をもっとも知る自分だからこそ、",
-		   NULL, "C'était justement parce que je connaissais si bien le syndrome de Hinamizawa que je pouvais en avoir la certitude.", Line_ContinueAfterTyping);
+		   NULL, "C'était justement parce que je connaissais si bien le syndrome de Hinamizawa", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…確信した。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " que je pouvais en avoir la certitude.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
