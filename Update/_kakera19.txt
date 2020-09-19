@@ -27,7 +27,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanryoub1006", 128, TRUE);
 	OutputLine(NULL, "「仮に進むとしても１０年単位で三歩進んで二歩下がるような研究になると思っていました。」",
-		   NULL, "Enfin, en tout cas, je pensais que cela prendrait des dizaines d'années, avec de nombreux échecs jalonnant le chemin.", Line_Normal);
+		   NULL, "— Enfin, en tout cas, je pensais que cela prendrait des dizaines d'années, avec de nombreux échecs jalonnant le chemin.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
@@ -158,7 +158,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanryoua1011", 128, TRUE);
 	OutputLine(NULL, "「これだけの成果があれば、東京はねちっこく予算を削減しろとは言いますまい。」",
-		   NULL, "Je pense que désormais, mes supérieurs seront moins regardants sur les budgets qui vous seront alloués...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Je pense que désormais, nos supérieurs seront moins regardants sur les budgets qui vous seront alloués...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
