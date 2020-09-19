@@ -359,7 +359,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1022", 128, TRUE);
 	OutputLine(NULL, "「某大先生がどういうわけかこのプロジェクトをやたら後押しされてたみたいでしてね。",
-		   NULL, "Il y avait un des gros poissons qui poussait tout le temps le projet,", Line_WaitForInput);
+		   NULL, "— Il y avait un des gros poissons qui poussait tout le temps le projet,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1023", 128, TRUE);
 	OutputLine(NULL, "その絡みもあって、結局、誰も文句が言えず放置されてきたってのが実際のようです。」",
 		   NULL, " je crois que c'est surtout à cause de lui que personne n'osait dire non aux budgets et qu'ils laissaient faire.", GetGlobalFlag(GLinemodeSp));
@@ -769,12 +769,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…そして私は、祖父の懐かしい姿に涙すると共に、",
-		   NULL, "Au fur et à mesure que les larmes brouillèrent l'image que je voyais de mon grand-père, j'entendis à nouveau les critiques vexantes et insultantes qu'il avait subies à l'époque... ", Line_ContinueAfterTyping);
+		   NULL, "Au fur et à mesure que les larmes brouillèrent l'image que je voyais de mon grand-père,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……その偉業を蔑み、馬鹿にする彼らの悲しき悪口雑言を目にした…。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, " j'entendis à nouveau les critiques vexantes et insultantes qu'il avait subies à l'époque...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
