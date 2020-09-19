@@ -385,7 +385,7 @@
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんは、きっとドジを踏んで怪我をしてしまったのでしょう、みっともないとくすくす笑う。",
 		   NULL, "— Vous vous êtes blessé en manipulant une arme ? Hmpfhfhfhf !", Line_Normal);
 	ClearMessage();
