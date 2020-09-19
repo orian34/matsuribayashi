@@ -464,7 +464,7 @@
 	OutputLine(NULL, "「もちろん信じてるわ。",
 		   NULL, "— Oh, mais je vous crois.", Line_Continue);
 	OutputLine(NULL, "……理事会をうまく説得できる方法があったら、ぜひ、教えてね。」",
-		   NULL, " Si vous deviez découvrir le moyen de convaincre le conseil d'aministration, je suis tout ouïe.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Si vous deviez découvrir le moyen de convaincre le conseil d'administration, je suis tout ouïe.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
