@@ -1,0 +1,8 @@
+[
+   {
+      "Id":51,
+      "Title":"Le trésor interdit",
+      "TitleJp":"禁宝「鬼狩柳桜」",
+      "Script":"_mats_tips_01"
+   }
+]
