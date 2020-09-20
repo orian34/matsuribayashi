@@ -483,7 +483,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　表だって批判できなかったものが、次々と批判され見直されるようになっている。",
-		   NULL, "C'est pourquoi peu à peu, les gens faisaient crever l'abcès, et toutes les choses comdamnables étaient changées.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pourquoi peu à peu, les gens faisaient crever l'abcès, et toutes les choses condamnables étaient changées.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
