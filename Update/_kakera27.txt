@@ -154,7 +154,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いつの間にか、北条家は村の敵、裏切り者という図式が出来上がってしまい、",
-		   NULL, "Je ne sais plus depuis quand exactement, mais je me suis rendu compte un jour que les médisances sur les Hôjô étaient un peu une sorte de dénomiteur commun pour le village.", Line_WaitForInput);
+		   NULL, "Je ne sais plus depuis quand exactement, mais je me suis rendu compte un jour que les médisances sur les Hôjô étaient un peu une sorte de dénominateur commun pour le village.", Line_WaitForInput);
 	OutputLine(NULL, "北条家の陰口話なら、誰もが気軽に乗れる最大公約数的話題になってしまっている。",
 		   NULL, " Quand les gens cassaient du sucre sur les Hôjô, tout le monde pouvait se joindre à la conversation...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
