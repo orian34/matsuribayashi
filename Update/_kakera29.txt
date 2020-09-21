@@ -254,21 +254,21 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、悟史くんがこれほどのストレスを抱えていたならば、",
-		   NULL, "La seule chose qui me chagrinait était que si Satoshi avait autant de stress, il ne pouvait qu'en être de même de sa petite sœur Satoko.", Line_WaitForInput);
+		   NULL, "La seule chose qui me chagrinait était que si Satoshi avait autant de stress,", Line_WaitForInput);
 	OutputLine(NULL, "同じ家庭環境を持つ沙都子ちゃんだって、まったく同じに違いない。",
-		   NULL, " Et j'étais tellement fier de ce que j'avais pu faire de Satoshi que je n'avais pas pensé à elle.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " il ne pouvait qu'en être de même de sa petite sœur Satoko.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　浅はかにも、この頃の私は沙都子ちゃんのことまでは考えていなかった。",
-		   NULL, "... Et je l'ai regretté amèrement le jour où elle a été emmenée chez nous en observation.", Line_Normal);
+		   NULL, "Et j'étais tellement fier de ce que j'avais pu faire de Satoshi que je n'avais pas pensé à elle.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………だから、沙都子ちゃんが私の前に患者として運ばれてきた時、沙都子ちゃんの境遇を失念していたことをひどく後悔した。",
-		   NULL, "C'est là que je compris enfin que pendant tout le temps que j'avais passé à aider Satoshi, Satoko avait, quant à elle, connu une situation de pire en pire.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Et je l'ai regretté amèrement le jour où elle a été emmenée chez nous en observation.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -276,7 +276,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんが、私の指導のもとで次第に元気さを取り戻していく間にも、沙都子ちゃんはストレス環境にひとり置き去りにされていたのだ。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, "C'est là que je compris enfin que pendant tout le temps que j'avais passé à aider Satoshi, Satoko avait, quant à elle, connu une situation de pire en pire.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
