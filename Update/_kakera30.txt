@@ -270,7 +270,7 @@
 	OutputLine(NULL, "お昼ご飯を抜きにされましたわ。",
 		   NULL, " Il m'a privée de nourriture.", Line_WaitForInput);
 	OutputLine(NULL, "煙草の種類が違うと言われましたわ、好き嫌いは駄目だってほっぺたを叩かれましたわ！",
-		   NULL, " M'a passé un savon pour m'être trompée de marque de cigarettes, m'a gifflée pour avoir des préférences alimentaires !", Line_WaitForInput);
+		   NULL, " M'a passé un savon pour m'être trompée de marque de cigarettes, m'a giflée pour avoir des préférences alimentaires !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk1_satoko1014", 128, TRUE);
 	OutputLine(NULL, "　それからそれから…！！」",
 		   NULL, " ... Qu'a-t-il fait d'autre...", Line_Normal);
@@ -480,7 +480,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……今日が、家族と出掛ける日だと事前に知らされていたから、…わざとひとりでこんな時間まで裏山で遊んでいるのだ。",
-		   NULL, "Ele était donc venue exprès ici, exprès aujourd'hui, pour ne pas avoir à nous accompagner.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle était donc venue exprès ici, exprès aujourd'hui, pour ne pas avoir à nous accompagner.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
