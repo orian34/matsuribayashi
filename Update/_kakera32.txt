@@ -626,10 +626,10 @@
 		   NULL, " J'entends le bruit de ses pas dans mon dos, tout le temps.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1053", 128, TRUE);
 	OutputLine(NULL, "…だからそれかと思って……。",
-		   NULL, " Alors j'ai cru que c'était ça, tout à l'heure", Line_WaitForInput);
+		   NULL, " Alors j'ai cru que c'était ça, tout à l'heure.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1054", 128, TRUE);
 	OutputLine(NULL, "…って、あははははは、ごめん。",
-		   NULL, " . Ahahahaha ! J'ai un peu flippé, désolé.", Line_WaitForInput);
+		   NULL, " Ahahahaha ! J'ai un peu flippé, désolé.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1055", 128, TRUE);
 	OutputLine(NULL, "僕は一体何を言っているんだか。」",
 		   NULL, " Je... Je sais, c'est un peu bizarre, ce que je raconte, cherche pas.", Line_Normal);
