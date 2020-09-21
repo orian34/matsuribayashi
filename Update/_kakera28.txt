@@ -589,10 +589,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　悟史くんは、常に妹を庇う良い兄だ。",
-		   NULL, "Ce n'est pas parce qu'il la protégeait toujours qu'il n'en pensait pas moins...", Line_WaitForInput);
-	OutputLine(NULL, "…でも、だからといって何の負担にも感じていないわけもない…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　悟史くんは、常に妹を庇う良い兄だ。…でも、だからといって何の負担にも感じていないわけもない…。",
+		   NULL, "Ce n'est pas parce qu'il la protégeait toujours qu'il n'en pensait pas moins...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
