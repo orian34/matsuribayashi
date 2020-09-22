@@ -626,12 +626,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それはつまり、",
-		   NULL, "Cela permit à certaines communautés de ne pas se détruire et s'entretuer. ", Line_ContinueAfterTyping);
+		   NULL, "Cela permit à certaines communautés", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…穢れが降りかかっても、誰のせいにしなくてもみんなが生きていけることを示す。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, " de ne pas se détruire et s'entretuer.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/moon", 400 );
