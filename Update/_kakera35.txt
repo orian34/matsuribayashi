@@ -43,19 +43,9 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　村の中で北条家が孤立していて、大人たちが陰口を言っていることをそれとなく知っていても、学校の中にそれが持ち込まれることはなかった。",
+	OutputLine(NULL, "　村の中で北条家が孤立していて、大人たちが陰口を言っていることをそれとなく知っていても、学校の中にそれが持ち込まれることはなかった。　子供の世界では、その価値観は子供が決める。　……彼らが理不尽だと思ったルールはここには及ばないのだ。",
 		   NULL, "Les Hôjô étaient mis à l'écart des autres dans le village, et les adultes n'arrêtaient pas de se plaindre d'eux dans leur dos, tous les enfants le savaient, mais à l'école, ils ne voulaient pas de ces règles-là.", Line_Normal);
 	ClearMessage();
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　子供の世界では、その価値観は子供が決める。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……彼らが理不尽だと思ったルールはここには及ばないのだ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
