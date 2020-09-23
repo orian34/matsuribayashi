@@ -968,13 +968,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　当時の小泉先生が、各界の権威を連れて来てくれた時。",
+	OutputLine(NULL, "　当時の小泉先生が、各界の権威を連れて来てくれた時。　…彼らは事前の評価とは手の平を返したように祖父をなじった。",
 		   NULL, "À l'époque où Maître Koizumi avait fait venir les grands académiciens chez nous, ceux-ci avaient eu des réactions très différentes entre leur première lecture de la thèse et le jour où ils nous avaient effectivement rendu visite.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…彼らは事前の評価とは手の平を返したように祖父をなじった。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
