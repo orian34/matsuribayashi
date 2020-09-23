@@ -309,10 +309,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そして、堂々と買い物に来る度胸もなく、娘に買い物をやらせるとは。",
-		   NULL, "« Ils n'ont même pas le courage de venir se montrer eux-mêmes, non mais voyez donc ça, envoyer la gamine faire les courses... »", Line_WaitForInput);
-	OutputLine(NULL, "…ぐちぐち、ぐちぐち…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　そして、堂々と買い物に来る度胸もなく、娘に買い物をやらせるとは。…ぐちぐち、ぐちぐち…。",
+		   NULL, "« Ils n'ont même pas le courage de venir se montrer eux-mêmes, non mais voyez donc ça, envoyer la gamine faire les courses... »", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -381,7 +379,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　平和だった頃は、互助の精神でそれを大目に見て、いつかまとめて払ってくれればいいと寛容だったのだが、",
-		   NULL, "En tant de paix, bien sûr, cela ne posait aucun problème, le conseil d'administration leur avait d'ailleurs dit de simplement payer lorsqu'ils le pourraient, sans fixer aucune date.", Line_WaitForInput);
+		   NULL, "En temps de paix, bien sûr, cela ne posait aucun problème, le conseil d'administration leur avait d'ailleurs dit de simplement payer lorsqu'ils le pourraient, sans fixer aucune date.", Line_WaitForInput);
 	OutputLine(NULL, "ここに来て一気に風向きが変わり、滞納分の町会費を一括ですぐに払えと北条家に迫ったのだ。",
 		   NULL, " Mais depuis l'incident, il leur avait été dit de payer intégralement la somme due dans les plus brefs délais.", Line_Normal);
 	ClearMessage();
@@ -522,9 +520,7 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……いつから村は、こんなにも沙都子に冷たくなったのか。",
-		   NULL, "A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "…沙都子の親友としてとても悲しかった。",
+	OutputLine(NULL, "　……いつから村は、こんなにも沙都子に冷たくなったのか。…沙都子の親友としてとても悲しかった。",
 		   NULL, " Et je dois dire que ça me faisait mal de voir le sort qui lui était réservé.", Line_Normal);
 	ClearMessage();
 
@@ -771,10 +767,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…悔しい、",
 		   NULL, "Putain de merde...", Line_WaitForInput);
-	OutputLine(NULL, "悲しい、",
-		   NULL, " Saloperie de putain de merde !", Line_WaitForInput);
-	OutputLine(NULL, "辛い。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "悲しい、辛い。",
+		   NULL, " Saloperie de putain de merde !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
