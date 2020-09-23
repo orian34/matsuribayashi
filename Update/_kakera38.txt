@@ -26,7 +26,7 @@
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "魅音ちゃん、",
-		   NULL, " Mes amis ne pouvaient pas faire comme tout le monde,  sonner", Line_ContinueAfterTyping);
+		   NULL, " Mes amis ne pouvaient pas faire comme tout le monde, sonner", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
@@ -48,7 +48,7 @@
 	Wait( 400 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "　と言っただけでは私の耳にまで届かないのだ。",
-		   NULL, "  je ne les aurais jamais entendus.", Line_Normal);
+		   NULL, " je ne les aurais jamais entendus.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
@@ -775,12 +775,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花ちゃんの言うような、白馬の王子さまが村の外からやってきて、",
-		   NULL, "C'est pas comme si un prince charmant allait arriver sur son beau cheval blanc et purifier l'air vicié qui a croupi ici pendant des siècles.", Line_ContinueAfterTyping);
+		   NULL, "C'est pas comme si un prince charmant allait arriver sur son beau cheval blanc", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……数百年間にわたり閉ざされ、澱んできたこの村の空気に新風を送り込んでくれるのか。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " et purifier l'air vicié qui a croupi ici pendant des siècles.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
