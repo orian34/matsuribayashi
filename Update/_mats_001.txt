@@ -527,12 +527,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、父さんともう永遠に言葉を交わすことができなくなることも、",
-		   NULL, "Tout comme personne ne prit la peine de venir me prévenir que mon père ne pourrait plus jamais me parler.", Line_ContinueAfterTyping);
+		   NULL, "Tout comme personne ne prit la peine de venir me prévenir", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…誰も教えてはくれなかった…。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " que mon père ne pourrait plus jamais me parler.", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 0, 1000, FALSE );
