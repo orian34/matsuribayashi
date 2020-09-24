@@ -293,10 +293,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　もう少女は一目散。",
-		   NULL, "La jeune fille se mit instantanément à prendre le chemin du retour.", Line_WaitForInput);
-	OutputLine(NULL, "今来た道を駆け戻ろうとする。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　もう少女は一目散。今来た道を駆け戻ろうとする。",
+		   NULL, "La jeune fille se mit instantanément à prendre le chemin du retour.", Line_Normal);
 	ClearMessage();
 
 
@@ -310,13 +308,8 @@
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
-	OutputLine(NULL, "……しないのね……？」",
-		   NULL, " le regretter ?", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　不思議な女は、念を押すようにそう言う。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "……しないのね……？」　不思議な女は、念を押すようにそう言う。",
+		   NULL, " le regretter ?", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -470,17 +463,12 @@
 	ModDrawCharacter(0, 48, "portrait/miyo1_komari_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　今日は揺れるね。",
+	OutputLine(NULL, "　今日は揺れるね。そう少女は、座席の上に膝立ちして外を見ながら言う。",
 		   NULL, "La jeune fille se tint sur la banquette debout sur ses genoux, regardant par la fenêtre, et fit remarquer que le train bougeait beaucoup.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	FadeBustshot( 0, FALSE, 0, 0, 0, 0, 200, TRUE );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "そう少女は、座席の上に膝立ちして外を見ながら言う。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -510,12 +498,12 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……とてもとても急な、",
-		   NULL, " Un virage qui devenait de plus en plus sec.", Line_ContinueAfterTyping);
+		   NULL, " Un virage qui devenait", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……カーブにさしかかる。",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " de plus en plus sec.", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
