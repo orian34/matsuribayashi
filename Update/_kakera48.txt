@@ -34,10 +34,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私たちが戦うべき相手。",
 		   NULL, "Nous pouvons découvrir contre qui ou quoi nous battre.", Line_WaitForInput);
-	OutputLine(NULL, "学ぶべきこと。",
-		   NULL, " Et bien sûr, ce qu'il nous faut apprendre à faire.", Line_WaitForInput);
-	OutputLine(NULL, "それらが全て揃い、明かされるカケラ。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "学ぶべきこと。それらが全て揃い、明かされるカケラ。",
+		   NULL, " Et bien sûr, ce qu'il nous faut apprendre à faire.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/fure1", 400 );
