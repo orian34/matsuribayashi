@@ -125,12 +125,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……………一体、このカケラ屑がくっつくと、",
-		   NULL, "... Je me demande bien ce que l'ajout de cet éclat a changé dans l'histoire...", Line_ContinueAfterTyping);
+		   NULL, "... Je me demande bien ce que l'ajout de cet éclat", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……どう世界が変わるというのか。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " a changé dans l'histoire...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -736,10 +736,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　赤坂は自分と彼らの立ち位置を理解していた。",
 		   NULL, "Akasaka savait exactement où les deux gardes extérieurs se trouvaient.", Line_WaitForInput);
-	OutputLine(NULL, "だから彼らを目で確認する必要がまったくなかった。",
+	OutputLine(NULL, "だから彼らを目で確認する必要がまったくなかった。…だから、にもかかわらず！",
 		   NULL, " Il n'avait pas besoin de les voir pour savoir où frapper !", Line_WaitForInput);
-	OutputLine(NULL, "…だから、にもかかわらず！",
-		   NULL, " A REMOVE", Line_WaitForInput);
 
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
@@ -912,10 +910,8 @@
 	DrawScene( "black", 50 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　その男は、赤坂の拳から繰り出される一撃に対し、ガードを間に合わせたことだけが見せ場だったろう。",
-		   NULL, "Akasaka se mit en position et lança son poing, tout droit ; le boxeur remonta ses bras pour parer, ce qui était seulement destiné à impressionner l'adversaire.", Line_WaitForInput);
-	OutputLine(NULL, "でも、そもそもガードになんかなってない！！",
-		   NULL, " A REMOVE ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　その男は、赤坂の拳から繰り出される一撃に対し、ガードを間に合わせたことだけが見せ場だったろう。でも、そもそもガードになんかなってない！！",
+		   NULL, "Akasaka se mit en position et lança son poing, tout droit ; le boxeur remonta ses bras pour parer, ce qui était seulement destiné à impressionner l'adversaire. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　赤坂の鍛え抜かれた豪拳は、ガードの腕ごと骨ごと打ち抜かれるだけなのだから！！",
 		   NULL, "Sauf que cela n'eut pas du tout l'effet escompté, puisque le poing d'Akasaka brisa les deux avant-bras du boxeur comme si de rien n'était !", GetGlobalFlag(GLinemodeSp));
@@ -976,9 +972,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから赤坂は充分に距離も間合いも理解していた。",
-		   NULL, "Il entendait son adversaire approcher, et il savait où il se trouvait par rapport à lui.", Line_WaitForInput);
+		   NULL, "Il entendait son adversaire approcher,", Line_WaitForInput);
 	OutputLine(NULL, "……今日までのいくつもの修羅場が教えてくれていた。",
-		   NULL, " A REMOVE ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " et il savait où il se trouvait par rapport à lui. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "許しがたい悪人たちが、数に飽かせて襲い来る時、背後を襲ってくるタイミングと間合いを充分に体で覚えていた…！！",
 		   NULL, "Et il avait survécu à suffisamment de bagarres avec des crapules pour savoir qu'ils adoraient vaincre par le nombre ou en attaquant par derrière !", Line_Normal);
@@ -2040,12 +2036,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…その二つが、",
-		   NULL, "C'étaient ces deux remords qui le rongeaient de l'intérieur depuis toutes ces années...", Line_ContinueAfterTyping);
+		   NULL, "C'étaient ces deux remords qui le rongeaient de l'intérieur", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……どうしても拭えぬ後悔となって、私を苛むのだ…。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " depuis toutes ces années...", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/tk_dojo", 1000 );
