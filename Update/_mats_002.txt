@@ -187,9 +187,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　誰一人逃がさないのが職員たちの意地に違いなかったから。",
-		   NULL, "Et à voir la manière dont tout avait été par la suite cadenassé, ils devaient s'être jurés de ne plus jamais en laisser sortir un seul.", Line_WaitForInput);
+		   NULL, "Et à voir la manière dont tout avait été par la suite cadenassé,", Line_WaitForInput);
 	OutputLine(NULL, "…その意地は、その後の偏執的な施錠ぶりから容易にうかがえた。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " ils devaient s'être jurés de ne plus jamais en laisser sortir un seul.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -1706,7 +1706,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500001", 128, TRUE);
 	OutputLine(NULL, "「あああぁあぁ…、",
-		   NULL, "— Aaaaah", Line_Continue);
+		   NULL, "— Aaaaah...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
