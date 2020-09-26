@@ -1173,12 +1173,9 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200028", 128, TRUE);
-	OutputLine(NULL, "「旧日本軍で言うところの少佐ですよ。",
-		   NULL, "— A REMOVE (La phrase en VO ne marche qui les grades ont des noms différents entre l'Armée Impériale et l'Armée d'autodéfense, hors, en français, le traducteur à fait le choix d'avoir deux commandants)", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200029", 128, TRUE);
-	OutputLine(NULL, "……そう言えば奇遇ですなぁ。",
-		   NULL, " C'est vraiment un hasard extraordinaire !", Line_WaitForInput);
+	OutputLine(NULL, "「旧日本軍で言うところの少佐ですよ。……そう言えば奇遇ですなぁ。",
+		   NULL, "— C'est vraiment un hasard extraordinaire !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200030", 128, TRUE);
 	OutputLine(NULL, "高野先生も、旧軍では少佐の階級にあられたそうではありませんか。」",
 		   NULL, " Hifumi Takano était aussi Commandant dans l'armée impériale, non ?", GetGlobalFlag(GLinemodeSp));
