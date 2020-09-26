@@ -2283,10 +2283,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "一気に。",
 		   NULL, "Il fallait faire tourner le cadran lentement pour composer chaque chiffre du numéro, ", Line_WaitForInput);
-	OutputLine(NULL, "　でも焦ってはいけない。",
-		   NULL, "sinon je tomberai sur quelqu'un d'autre.", Line_WaitForInput);
-	OutputLine(NULL, "ダイヤルはゆっくり確実に回さないと、番号が変わってしまう。",
-		   NULL, " A REMOVE ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　でも焦ってはいけない。ダイヤルはゆっくり確実に回さないと、番号が変わってしまう。",
+		   NULL, "sinon je tomberai sur quelqu'un d'autre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2861,7 +2859,7 @@
 	OutputLine(NULL, "　…今はまったく逆だ。",
 		   NULL, "Alors que justement, maintenant, c'était tout le contraire :", Line_WaitForInput);
 	OutputLine(NULL, "生き延びたいという強い力がみなぎるのを感じた。",
-		   NULL, " je sentais une force et une volonté en moi qui me poussaient à survvire, coûte que coûte.", Line_Normal);
+		   NULL, " je sentais une force et une volonté en moi qui me poussaient à survivre, coûte que coûte.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3445,17 +3443,17 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そのマットは、",
-		   NULL, "Le tapis de sol était l'un de ces longs trucs que l'on met pour réceptionner les chutes avant ou après les sauts aux agrès.", Line_ContinueAfterTyping);
+		   NULL, "Le tapis de sol était l'un de ces longs trucs", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ほら、",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " que l'on met pour réceptionner les chutes", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "連続前転なんかをする時に使うような、特に長い特別なものに違いない。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " avant ou après les sauts aux agrès.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3653,10 +3651,8 @@
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……あぁ、何て違和感…。",
 		   NULL, " ils avaient couché un grand casier en fer.", Line_WaitForInput);
-	OutputLine(NULL, "ロッカーが横倒しにされていて、シャワーを浴びているのだ。",
-		   NULL, " Je n'arrivais pas à imaginer la logique derrière un truc aussi abscons.", Line_WaitForInput);
-	OutputLine(NULL, "…こんな妙な光景を私はこれまで想像したことすらない。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "ロッカーが横倒しにされていて、シャワーを浴びているのだ。…こんな妙な光景を私はこれまで想像したことすらない。",
+		   NULL, " Je n'arrivais pas à imaginer la logique derrière un truc aussi abscons.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
