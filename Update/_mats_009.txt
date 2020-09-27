@@ -66,7 +66,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何も関わらないということは、いないのと同じ。",
-		   NULL, "Mais lorsque vous ne vous mêler ni de rien, ni à rien, c'est comme si vous n'existiez pas.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais lorsque vous ne vous mêlez ni de rien, ni à rien, c'est comme si vous n'existiez pas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -620,10 +620,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そうだよな。",
-		   NULL, "A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "沈黙でプレッシャーを与えるなんて気の毒だぜ。",
-		   NULL, " En même temps, la pauvre, elle était au milieu de la pièce, et le silence assourdissant avait vraiment de quoi impressionner.", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　そうだよな。沈黙でプレッシャーを与えるなんて気の毒だぜ。",
+		   NULL, "En même temps, la pauvre, elle était au milieu de la pièce, et le silence assourdissant avait vraiment de quoi impressionner.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1120,13 +1118,8 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s13/02/ds41020023", 128, TRUE);
-	OutputLine(NULL, "あははははは。」",
-		   NULL, "Ahahahahaha !", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　羽入とクラスメートの微笑ましい交流を見て、俺とレナは笑い合った。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "あははははは。」　羽入とクラスメートの微笑ましい交流を見て、俺とレナは笑い合った。",
+		   NULL, "Ahahahahaha !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1204,7 +1197,7 @@
 		   NULL, " Il n'y a que moi qui l'ai vue ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s13/02/ds41020033", 128, TRUE);
 	OutputLine(NULL, "　圭一くんも気付いてたよね？」",
-		   NULL, " Ca ne te dis rien, Keiichi ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Ça ne te dis rien, Keiichi ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1537,7 +1530,7 @@
 		   NULL, " Bah, c'est le premier jour, elle doit être fatiguée.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s13/01/ds41010036", 128, TRUE);
 	OutputLine(NULL, "きっと帰ったらバタンキュウだぜ。」",
-		   NULL, " Je vous parie qu'elle va s'écrouler dès qu'elle sera chez elle", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je vous parie qu'elle va s'écrouler dès qu'elle sera chez elle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -2585,7 +2578,7 @@
 	Wait( 800 );
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "あの…、",
-		   NULL, "Je les connais, ces cartes-là, elles s'en sont servi pour me bizuther !", Line_ContinueAfterTyping);
+		   NULL, "Je les connais, ces cartes-là, elles s'en sont servi pour me bizuter !", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
@@ -2624,7 +2617,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり、このトランプで遊んだ年季がそのまま強さに跳ね返る、新人イジメとしてはこの上ないゲームなのだ…！",
-		   NULL, "Plus on joue avec ce paquet de cartes en particulier, plus les anciens joueurs sont avantagés. Les nouveaux joueurs n'ont absolument aucune chance, c'est donc l'instrument parfait pour les bizuther...", Line_Normal);
+		   NULL, "Plus on joue avec ce paquet de cartes en particulier, plus les anciens joueurs sont avantagés. Les nouveaux joueurs n'ont absolument aucune chance, c'est donc l'instrument parfait pour les bizuter...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -2876,7 +2869,7 @@
 
 	ModPlayVoiceLS(4, 1, "ps3/s13/01/ds41010054", 128, TRUE);
 	OutputLine(NULL, "　入部試験の洗礼を思い知れぇえ！！」",
-		   NULL, " Et maintenant, je vais te montrer ce que c'est qu'un bizuthage en règle !", Line_Continue);
+		   NULL, " Et maintenant, je vais te montrer ce que c'est qu'un bizutage en règle !", Line_Continue);
 
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 241, 40, 0, 0, 5*2, FALSE );
