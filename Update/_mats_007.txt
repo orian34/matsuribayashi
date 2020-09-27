@@ -652,10 +652,8 @@
 	PlayBGM( 0, "Iru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　祖父は日頃から、自分には友人はひとりもいない、",
-		   NULL, "Grand-père m'avait souvent dit qu'il n'avait pas d'amis car ils étaient tous morts pendant la guerre.", Line_WaitForInput);
-	OutputLine(NULL, "みんな戦争で死んでしまった、と私に言っていた。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　祖父は日頃から、自分には友人はひとりもいない、みんな戦争で死んでしまった、と私に言っていた。",
+		   NULL, "Grand-père m'avait souvent dit qu'il n'avait pas d'amis car ils étaient tous morts pendant la guerre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -892,7 +890,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/550200122", 128, TRUE);
 	OutputLine(NULL, "村人たちがオヤシロさま信仰を作り出し、厳しい戒律で自らを縛った頃は、かなり危険な病気だったかもしれない。",
-		   NULL, "Par contre, à l'époque des débuts de l'épidémie, lorsque les habitants ont été forcés de créer le culte de la déesse Yashiro et toutes ces règles pour se limiter eux-mêmes dans leurs déplacements, là oui, ce devait une maladie terrible... ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Par contre, à l'époque des débuts de l'épidémie, lorsque les habitants ont été forcés de créer le culte de la déesse Yashiro et toutes ces règles pour se limiter eux-mêmes dans leurs déplacements, là oui, ce devait être une maladie terrible... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/550200123", 128, TRUE);
 	OutputLine(NULL, "…でも、時間と共にそれは薄まり、今ではよっぽどのことがない限り発症することはないようです。」",
@@ -1050,14 +1048,8 @@
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　自身の輝かしい実績である黄熱病ワクチン。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　それが、北アフリカの黄熱病には効かないという話が出て、",
+	OutputLine(NULL, "　自身の輝かしい実績である黄熱病ワクチン。　それが、北アフリカの黄熱病には効かないという話が出て、",
 		   NULL, "Il avait entendu dire que son vaccin n'avait aucun effet sur la fièvre jaune africaine.", Line_WaitForInput);
 	OutputLine(NULL, "彼はそれを研究すべく北アフリカへ飛び、",
 		   NULL, " Alors il était allé voir sur place, en Afrique du Nord,", Line_WaitForInput);
@@ -2147,7 +2139,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000020", 128, TRUE);
 	OutputLine(NULL, "いえいえ、神秘的分野を研究する人間にはよくありえることですよ。",
-		   NULL, "— Il ne faut pas trop vous en vouloir, cela arrive fréquemment --", Line_WaitForInput);
+		   NULL, "Il ne faut pas trop vous en vouloir, cela arrive fréquemment --", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000021", 128, TRUE);
 	OutputLine(NULL, "我々も日々、気をつけています。」",
 		   NULL, " même nous, nous sommes obligés de faire attention pour ne pas sombrer dans ce travers.", Line_Normal);
@@ -2362,7 +2354,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　先々週、小泉氏が来た時の感触では、彼らは非常に興味深い研究だと絶賛していたんじゃなかったっけ…？",
-		   NULL, "Il y a deux semaines, ils ont pourtant dit à Monsieur Koizumi que les recherhces de grand-père étaient fascinantes ! Qu'ils étaient très intéressés !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il y a deux semaines, ils ont pourtant dit à Monsieur Koizumi que les recherches de grand-père étaient fascinantes ! Qu'ils étaient très intéressés !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2964,12 +2956,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……結局彼らは、",
-		   NULL, "Ce fut comme si je n'avais pas existé.", Line_ContinueAfterTyping);
+		   NULL, "Ce fut comme si", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "私の叫びなど意にも介せず、",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " je n'avais pas existé.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -4602,7 +4594,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500191", 128, TRUE);
 	OutputLine(NULL, "…私は私の理想を勝ち取ってみせる。」",
-		   NULL, " Ma détermination est sans faille ; je ferai triompher mes plans et je saurai imposer mes idées.", Line_Normal);
+		   NULL, "Ma détermination est sans faille ; je ferai triompher mes plans et je saurai imposer mes idées.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -5200,72 +5192,72 @@
 		   NULL, " j'ai réussi à réunir autour de moi suffisamment de gens pour obtenir une force incommensurable.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500222", 128, TRUE);
 	OutputLine(NULL, "貴様如き小娘では私に指一本触れることも叶わないでしょうね。くすくす…！」",
-		   NULL, " Pour l'obtenir, j'ai dû donner tout ce que j'avais.", Line_Normal);
+		   NULL, " Pour l'obtenir, j'ai dû donner tout ce que j'avais. Je parie que tu n'arriverais même pas à porter la main sur moi. Hmpfhfhfhfhf !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>少女</color>", NULL, "<color=#6972c1>Fille</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/550600022", 128, TRUE);
 	OutputLine(NULL, "「……わかってる。",
-		   NULL, "Je parie que tu n'arriverais même pas à porter la main sur moi. Hmpfhfhfhfhf !", Line_WaitForInput);
+		   NULL, "— Ne t'inquiète pas,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/550600023", 128, TRUE);
 	OutputLine(NULL, "あなたの強大さはわかってる。",
-		   NULL, " — Ne t'inquiète pas,", Line_WaitForInput);
+		   NULL, " je sais à quel point tu es forte.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/550600024", 128, TRUE);
 	OutputLine(NULL, "それに比べて僕や僕の仲間たちの力はあまりにか細いかもしれない。",
-		   NULL, " je sais à quel point tu es forte.", Line_WaitForInput);
+		   NULL, " Je sais que nous et nos amis ne faisons pas le poids.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/550600025", 128, TRUE);
 	OutputLine(NULL, "でも、私は諦めないことを選ぶことができる。",
-		   NULL, " Je sais que nous et nos amis ne faisons pas le poids. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais j'ai un choix que tu n'as pas. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>少女</color>", NULL, "<color=#6972c1>Fille</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/550600026", 128, TRUE);
 	OutputLine(NULL, "…………三途の川原で永遠に石を積み続けるように、あなたのサイコロに１が並び、僕のサイコロに６が並ぶその日まで決して負けを認めず諦めない。",
-		   NULL, "Mais j'ai un choix que tu n'as pas.", Line_WaitForInput);
+		   NULL, "J'ai le choix de ne pas abandonner.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/550600027", 128, TRUE);
 	OutputLine(NULL, "気が遠くなるほどの長い時間、あなたに屈しないことで意思の強さを示して見せよう……！",
-		   NULL, " J'ai le choix de ne pas abandonner. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Lorsque j'arrive devant le fleuve à trois lits des enfers, je peux y placer des cailloux, pendant toute l'éternité. Je peux faire le choix d'attendre que les dés de ton Destin soient tous des 1 et agencer les miens avec des 6. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>少女</color>", NULL, "<color=#6972c1>Fille</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/550600028", 128, TRUE);
 	OutputLine(NULL, "　そして、川原に石が積みあがった時、…僕たちはその川を越えることができ、あなたの前に対等な存在として現れるでしょうッ…！",
-		   NULL, "Lorsque j'arrive devant le fleuve à trois lits des enfers, je peux y placer des cailloux, pendant toute l'éternité. Je peux faire le choix d'attendre que les dés de ton Destin soient tous des 1 et agencer les miens avec des 6.", Line_WaitForInput);
+		   NULL, "Je te montrerai ma force. Ma détermination ne faiblira jamais, même après des siècles et des siècles !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/550600029", 128, TRUE);
 	OutputLine(NULL, "　その時こそ、この永きにわたる運命の戦いに決着がつく！」",
-		   NULL, " Je te montrerai ma force. Ma détermination ne faiblira jamais, même après les siècles et les siècles !", Line_Normal);
+		   NULL, " Et lorsque les cailloux s'amoncelleront tant qu'ils dépasseront le niveau de la rivière des morts, nous pourrons la traverser sans crainte et nous mesurer à toi !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500223", 128, TRUE);
 	OutputLine(NULL, "「くすくすくすあはははははは！",
-		   NULL, "Et lorsque les cailloux s'amoncelleront tant qu'ils dépasseront le niveau de la rivière des morts, nous pourrons la traverser sans crainte et nous mesurer à toi !", Line_WaitForInput);
+		   NULL, "— Hmpfhfhfhfhf, ahahahahAHAHAHAHA !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500224", 128, TRUE);
 	OutputLine(NULL, "　ならば結構、かかっておいでなさい！！",
-		   NULL, " — Hmpfhfhfhfhf, ahahahahAHAHAHAHA !", Line_WaitForInput);
+		   NULL, " Bien, très bien ma grande, alors viens, amène-toi !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500225", 128, TRUE);
 	OutputLine(NULL, "　どちらの想いが強いか！",
-		   NULL, " Bien, très bien ma grande, alors viens, amène-toi !", Line_WaitForInput);
+		   NULL, " Voyons donc qui de nous deux a la volonté la plus forte !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500226", 128, TRUE);
 	OutputLine(NULL, "　強かった方が未来を作る。",
-		   NULL, " Voyons donc qui de nous deux a la volonté la plus forte !", Line_WaitForInput);
+		   NULL, " Celle qui vaincra pourra forger le futur.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500227", 128, TRUE);
 	OutputLine(NULL, "強かった方の望んだ未来が訪れる。",
-		   NULL, " Celle qui vaincra pourra forger le futur. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Quant à moi, je te préviens, je ne changerai pas mes plans, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500228", 128, TRUE);
 	OutputLine(NULL, "私は私の未来を一歩も譲らない！",
-		   NULL, "Quant à moi, je te préviens, je ne changerai pas mes plans,", Line_WaitForInput);
+		   NULL, "pas d'un millimètre, pas d'un seul détail, même infime !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500229", 128, TRUE);
 	OutputLine(NULL, "　その未来では祖父の偉業は讃えられ神となり、かつて私を不幸にて試すような真似をした神に対して復讐をする。」",
-		   NULL, " pas d'un millimètre, pas d'un seul détail, même infime !", Line_Normal);
+		   NULL, " Dans mon futur, grand-père sera reconnu comme étant l'un des plus grands scientifiques au monde, et il deviendra un dieu ! Et ainsi, je me vengerai des dieux qui m'ont imposé tant d'épreuves injustes et cruelles !", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　くすくすくす、あっはははははははっはっはっは！！",
-		   NULL, "Dans mon futur, grand-père sera reconnu comme étant l'un des plus grands scientifiques au monde, et il deviendra un dieu ! Et ainsi, je me vengerai des dieux qui m'ont imposé tant d'épreuves injustes et cruelles !", Line_WaitForInput);
+		   NULL, "Pauvre imbécile !", Line_WaitForInput);
 	OutputLine(NULL, "　間抜けなチビ神め！",
-		   NULL, " Pauvre imbécile !", Line_WaitForInput);
+		   NULL, " Ahahahahahahahaha !", Line_WaitForInput);
 	OutputLine(NULL, "　身の程を思い知らせてやる！",
-		   NULL, " Ahahahahahahahaha !", Line_Normal);
+		   NULL, " Apprends ta place, naine !", Line_Normal);
 	ClearMessage();
 
 	ModSetLayerFilter(2, 256, "none");
@@ -5280,7 +5272,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500230", 128, TRUE);
 	OutputLine(NULL, "「貴様を神の座から引き摺り下ろしてやる！！",
-		   NULL, "Apprends ta place, naine !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Je te ferai tomber de ton socle,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -5289,7 +5281,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500231", 128, TRUE);
 	OutputLine(NULL, "　かかってこい、この――――！！」",
-		   NULL, "— Je te ferai tomber de ton socle,", Line_Normal);
+		   NULL, "", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eye" );
