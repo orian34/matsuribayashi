@@ -5281,7 +5281,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500231", 128, TRUE);
 	OutputLine(NULL, "　かかってこい、この――――！！」",
-		   NULL, "", Line_Normal);
+		   NULL, " Déesse !", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eye" );
