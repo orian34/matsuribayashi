@@ -56,7 +56,7 @@
 	{
 		"Id":7,
 		"Title":"Le troisième sacrifice",
-		"Description":"Il vous faut voir le sceau du pacifise être apposé au père de Rika.\nIl vous faut constater la méfiance de la mère de Rika envers le groupe de Irie.",
+		"Description":"Il vous faut voir le sceau du pacifisme être apposé au père de Rika.\nIl vous faut constater la méfiance de la mère de Rika envers le groupe de Irie.",
 		"TitleJp":"生贄第三号",
 		"DescriptionJp":"梨花の父に日和見主義者の烙印が必要です。\n梨花の母に入江機関への不信感が必要です。",
 		"Script":"_kakera07",
