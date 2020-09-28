@@ -1002,7 +1002,7 @@
 
 	DrawScene( "background/ka1_01", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役員</color>", NULL, "<color=#f5e6d3>Officiers</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「うおっす！！」」",
 		   NULL, "Les hommes lui répondirent d'une seule voix.", Line_Normal);
 	ClearMessage();
@@ -1329,10 +1329,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　根拠は何もない。",
-		   NULL, "Il pouvait donc raisonnablement estimer qu'elle avait sauvé la vie de sa femme.", Line_WaitForInput);
-	OutputLine(NULL, "でも、私は彼女の予言によって救えたと、そう信じている。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　根拠は何もない。でも、私は彼女の予言によって救えたと、そう信じている。",
+		   NULL, "Il pouvait donc raisonnablement estimer qu'elle avait sauvé la vie de sa femme.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
