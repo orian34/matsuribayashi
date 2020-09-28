@@ -559,7 +559,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>神主</color>", NULL, "<color=#f5e6d3>Priest</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、鬼の血に侵された村人たちは、人であるか鬼であるかの見分けも付かず、",
 		   NULL, "Malheureusement, la peur s'est installée en nos rangs. Personne parmi nous n'est capable de dire qui est humain et qui ne l'est pas.", Line_WaitForInput);
 	OutputLine(NULL, "村人たちは互いに互いを疑い合い、疑心暗鬼に取り憑かれてしまった。",
@@ -569,22 +569,22 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>神主</color>", NULL, "<color=#f5e6d3>Priest</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まずはそれを払ってくれぬことには、共存の道も開かれぬ。",
 		   NULL, "La voie de la cohabitation ne pourra s'ouvrir que lorsque nous aurons réglé ce problème.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>神主</color>", NULL, "<color=#f5e6d3>Priest</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……私たちとあなたたちが共存するには、いくつか守らなければならない掟を設けなければなりません。",
 		   NULL, "... Pour cela, nos deux peuples devront observer plusieurs règles, et ne jamais s'en défaire.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>神主</color>", NULL, "<color=#f5e6d3>Priest</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それはとても厳しく、今まで平和に暮らしてきたあなた方に強いるのはとてもとても申し訳なく思います。",
 		   NULL, "Elles sont très strictes, et il m'en coûte de venir vous les imposer désormais ; je sais que tout s'est bien passé jusqu'à présent.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>神主</color>", NULL, "<color=#f5e6d3>Priest</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ですが、それら掟を守って下されば、村は鬼の災禍から解放されるでしょう。",
 		   NULL, "Mais si vous pouviez nous promettre d'observer ces règles, je pense que le village sera libéré de ce poids.", Line_Normal);
 	ClearMessage();
@@ -592,12 +592,12 @@
 	DrawBustshot(2, "waku_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/flashback/jy2", "maskright", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>神主</color>", NULL, "<color=#f5e6d3>Priest</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　良かろう、その掟を守ろうぞ。",
 		   NULL, "Fort bien, humain, qu'il en soit ainsi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>神主</color>", NULL, "<color=#f5e6d3>Priest</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…しかし、村はすでに多くの血を流してしまった。",
 		   NULL, "Il me peine seulement de voir tout le sang déjà versé.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -668,12 +668,12 @@
 		   NULL, "Je comprends. Est-ce donc ainsi que va le monde des humains ? Si d'aventure cette loi vous semble trop contraignante, que diriez-vous de nous laisser semer le terreau d'un monde dans lequel vous n'auriez plus à sacrifier l'un des vôtres pour vous laver de vos péchés ? Le prix en sera, bien sûr, de nous laisser nous installer vivre ici.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>神主</color>", NULL, "<color=#f5e6d3>Priest</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……それはどのような世界なのか。",
 		   NULL, "... Que voulez-vous dire par là ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>神主</color>", NULL, "<color=#f5e6d3>Priest</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　人の世である限り、必ず罪が起こり、穢れが生まれる。",
 		   NULL, "Tant que nous resterons dans le monde des humains, nous commettrons des fautes et souillerons nos corps et nos âmes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -768,7 +768,7 @@
 	OutputLine(NULL, "その腹を割いて腸を引き出し、",
 		   NULL, " puis sortit leurs entrailles,", Line_WaitForInput);
 	OutputLine(NULL, "千切って沢に流し、",
-		   NULL, " les coupant et recoupant jusqu'à en faire milliers, puis jeta ylceux dans la rivière,", Line_WaitForInput);
+		   NULL, " les coupant et recoupant jusqu'à en faire des milliers, puis jeta ceux y dans la rivière,", Line_WaitForInput);
 	OutputLine(NULL, "遺骸は沼に沈めて葬ったという。",
 		   NULL, " et disposa des os en les replongeant dans le marais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1464,7 +1464,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　親を葬るは子の務め。",
-		   NULL, "“Il est des devoirs de la progéniture que de veiller aux funérailles de ceux qui les ont engendrés.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "“Il est des devoirs de la progéniture que de veiller aux funérailles de ceux qui les ont engendrés.”", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1472,7 +1472,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>子よ</color>", NULL, "<color=#f5e6d3>Child</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかし母上。",
-		   NULL, "Certes, Mère,", Line_WaitForInput);
+		   NULL, "“Certes, Mère,", Line_WaitForInput);
 	OutputLine(NULL, "子が親を殺し葬らなければならぬとは聞いたことがありませぬ。",
 		   NULL, " mais pas de tuer et de brûler le ventre géniteur !”", Line_Normal);
 	ClearMessage();
@@ -1503,7 +1503,7 @@
 	OutputLine(NULL, "　人の罪は、人の罪。",
 		   NULL, "Qui commet crime doit porter son propre fardeau.", Line_WaitForInput);
 	OutputLine(NULL, "母上の罪ではありませぬ。",
-		   NULL, " Un tiers crime ne saurait devenir le vôtre, assurément.", Line_Normal);
+		   NULL, " Un tiers crime ne saurait devenir le vôtre, assurément.”", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
@@ -1520,22 +1520,22 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その押し付けられる一人になりたくないから、互いに罪を押し付けあう。",
-		   NULL, "Et comme chacun ne veut pas payer pour les autres, alors chacun rejette ses responsabilités et accuse son voisin.”", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et comme chacun ne veut pas payer pour les autres, alors chacun rejette ses responsabilités et accuse son voisin.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それこそが鬼、人の世を乱す、真の鬼。",
-		   NULL, "“C'est cela, en vérité, qui trouble l'harmonie du monde des humains. C'est lorsque l'homme se comporte de cette manière cruelle et égoïste qu'il devient démon.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est cela, en vérité, qui trouble l'harmonie du monde des humains. C'est lorsque l'homme se comporte de cette manière cruelle et égoïste qu'il devient démon.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　我がそれを背負い、人が祓うことで、人は人を疑い争う宿命から解放される。",
-		   NULL, "Mais si je prends sur moi le poids des péchés humains, alors les hommes n'auront plus à se rejeter leurs fautes, ils auront un exutoire et seront sauvés de la spirale infernale du doute et du mensonge.”", Line_Normal);
+		   NULL, "Mais si je prends sur moi le poids des péchés humains, alors les hommes n'auront plus à se rejeter leurs fautes, ils auront un exutoire et seront sauvés de la spirale infernale du doute et du mensonge.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　全ての罪と穢れを、業と呪いを我が身に。",
-		   NULL, "“Accuse-moi de tous les maux et de toutes les souillures de ce monde.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Accuse-moi de tous les maux et de toutes les souillures de ce monde.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
@@ -1547,12 +1547,12 @@
 	OutputLine(NULL, "　それは人の身であってはならぬ。",
 		   NULL, "Car si ceci est nécessaire à ce monde, il faut surtout veiller à ce qu'un être humain ne subisse ce châtiment --", Line_WaitForInput);
 	OutputLine(NULL, "人の身でない者が引き受ける宿命。",
-		   NULL, " n'étant point humaine, je me dois donc d'y être volontaire.”", GetGlobalFlag(GLinemodeSp));
+		   NULL, " n'étant point humaine, je me dois donc d'y être volontaire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　人の身に負わせるようなことがあっては、人は疑心の鬼から解放されぬのだ。",
-		   NULL, "“Si jamais un être humain devait être sacrifié, alors le cœur des hommes ne serait jamais plus épargné par la peur d'être le prochain, et le doute s'installerait pour toujours entre eux.”", Line_Normal);
+		   NULL, "Si jamais un être humain devait être sacrifié, alors le cœur des hommes ne serait jamais plus épargné par la peur d'être le prochain, et le doute s'installerait pour toujours entre eux.”", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>子よ</color>", NULL, "<color=#f5e6d3>Child</color>", NULL, Line_ContinueAfterTyping); }
@@ -1824,7 +1824,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080004", 128, TRUE);
 	OutputLine(NULL, "「あら、非番の時の私は、野鳥撮影家なのよ？",
-		   NULL, "— Une infimière ? Je ne suis pas de service aujourd'hui, alors je suis officiellement une photographe.", Line_WaitForInput);
+		   NULL, "— Une infirmière ? Je ne suis pas de service aujourd'hui, alors je suis officiellement une photographe.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080005", 128, TRUE);
 	OutputLine(NULL, "　ねぇジロウさん。」",
 		   NULL, " N'est-ce pas, Jirô ?", GetGlobalFlag(GLinemodeSp));
