@@ -373,7 +373,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s13/13/ds41120071", 128, TRUE);
 	OutputLine(NULL, "　一気飲みしろって言ってんじゃない！",
-		   NULL, "'I'm not saying that you have to drink up in one gulp!", Line_WaitForInput);
+		   NULL, "Je leur dis pas de le boire cul sec", Line_WaitForInput);
 	ModPlayVoiceLS(4, 13, "ps3/s13/13/ds41120072", 128, TRUE);
 	OutputLine(NULL, "　とにかく最初の一杯だけは中ジョッキ！！」",
 		   NULL, " mais de prendre simplement une gorgée en même temps que tout le monde et de finir un demi !", Line_Normal);
@@ -2076,14 +2076,9 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……ついさっき「正解」を見てきた彼女にとって、記憶を持たず、本当の正解にきょとんとしている私が信じられないのだろう。",
+	OutputLine(NULL, "　……ついさっき「正解」を見てきた彼女にとって、記憶を持たず、本当の正解にきょとんとしている私が信じられないのだろう。　自分が見たことなら、動機などなくても簡単に信じられる。",
 		   NULL, "J'imagine que ça devait être extrêmement frustrant de me voir la regarder comme si elle avait plusieurs têtes, refusant plus ou moins ce qui était pour elle une évidence irréfutable.", Line_Normal);
 	ClearMessage();
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　自分が見たことなら、動機などなくても簡単に信じられる。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、自分が見てないことが、こんなにも飲み込みにくいなんて…。",
@@ -2176,10 +2171,10 @@
 		   NULL, " Je suis montée sur les planches, je suis venue jouer un rôle, et je suis venue pour vous dire que je crois en vous.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070110", 128, TRUE);
 	OutputLine(NULL, "だから、奇跡が起こせる…！",
-		   NULL, " Je crois en un miracle, et si vous y croyez aussi, alors, il s'accomplira.", Line_WaitForInput);
+		   NULL, " Je crois en un miracle,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070111", 128, TRUE);
 	OutputLine(NULL, "　これは昭和５８年６月を賭けたゲームの世界なのです。",
-		   NULL, " A REMOVE", Line_WaitForInput);
+		   NULL, " et si vous y croyez aussi, alors, il s'accomplira.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070112", 128, TRUE);
 	OutputLine(NULL, "戦っているのは、梨花と鷹野。",
 		   NULL, " Ce monde, c'est un peu comme un jeu, un match entre Takano et toi. ", GetGlobalFlag(GLinemodeSp));
