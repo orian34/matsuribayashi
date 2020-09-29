@@ -2388,10 +2388,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ぷ。",
-		   NULL, "Je pouffai de rire en entendant Hanyû formuler la question.", Line_WaitForInput);
-	OutputLine(NULL, "羽入の例えに思わず噴き出してしまう。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　ぷ。羽入の例えに思わず噴き出してしまう。",
+		   NULL, "Je pouffai de rire en entendant Hanyû formuler la question.", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(0, 1, "sprite/kei1_def1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
