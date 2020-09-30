@@ -532,7 +532,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090042", 128, TRUE);
 	OutputLine(NULL, "「………………………ぅ………。",
-		   NULL, "... Hmmm... Ouais...", Line_WaitForInput);
+		   NULL, "— ... Hmmm... Ouais...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090043", 128, TRUE);
 	OutputLine(NULL, "………むむむ………。」",
 		   NULL, " Ouais, ouais ouais...", Line_Normal);
@@ -759,10 +759,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……だからこそ、今、鷹野がとても傷ついていて、",
-		   NULL, "C'est pour ça qu'il savait que la possibilité dont je lui avais parlé était tout à fait plausible...", Line_WaitForInput);
-	OutputLine(NULL, "……それを利用してもおかしくない何者かがありえることがわかる…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　……だからこそ、今、鷹野がとても傷ついていて、……それを利用してもおかしくない何者かがありえることがわかる…。",
+		   NULL, "C'est pour ça qu'il savait que la possibilité dont je lui avais parlé était tout à fait plausible...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1347,12 +1345,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石に促され、……現れた精悍な男は、",
-		   NULL, "L'homme vaillant et assuré qui apparut alors devant moi était bien plus impressionnant, plus calme, et plus rassurant que dans mes souvenirs.", Line_ContinueAfterTyping);
+		   NULL, "L'homme vaillant et assuré qui apparut alors devant moi était", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………私の知る赤坂よりずっと頼もしそうに成長していた。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " bien plus impressionnant, plus calme, et plus rassurant que dans mes souvenirs.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -4339,16 +4337,11 @@
 		   NULL, " Tu sais quoi, c'est pas bête du tout.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 13, "ps3/s13/13/ds41120220", 128, TRUE);
 	OutputLine(NULL, "梨花ちゃんさえ良ければ、その手で行きましょう。」",
-		   NULL, " Si jamais ça ne te dérange pas, je crois que c'est la meilleure chose à faire.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　赤坂は事も無げにいうと、妙案だとでも言うようにポンと手を打った。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, " Si jamais ça ne te dérange pas, je crois que c'est la meilleure chose à faire.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……少しは恥らったり、照れたりしてほしかったというのは、私のわがままだろうか。",
+	OutputLine(NULL, "　赤坂は事も無げにいうと、妙案だとでも言うようにポンと手を打った。　……少しは恥らったり、照れたりしてほしかったというのは、私のわがままだろうか。",
 		   NULL, "... Il ne pouvait pas, je ne sais pas, moi, avoir des hésitations, ou bien, se sentir gêné ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
