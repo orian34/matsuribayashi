@@ -376,11 +376,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　入江機関という後ろめたさのある機関らしい、なんと言うかよそよそしい関係だった。",
-		   NULL, "L'Institut était un lieu de recherches où il valait mieux ne pas trop en savoir sur les autres, en tout cas, c'était un peu la règle tacite qui s'était installée parmi nous. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "互いの立場や真意に深入りしないのが暗黙の了解というか。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　入江機関という後ろめたさのある機関らしい、なんと言うかよそよそしい関係だった。互いの立場や真意に深入りしないのが暗黙の了解というか。",
+		   NULL, "L'Institut était un lieu de recherches où il valait mieux ne pas trop en savoir sur les autres, en tout cas, c'était un peu la règle tacite qui s'était installée parmi nous.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
