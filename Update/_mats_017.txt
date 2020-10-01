@@ -965,13 +965,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　大石は墓石に呟く。",
-		   NULL, "Il finit d'installer les fleurs sur la tombe, puis reprit son monologue à voix basse.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　先ほどの白い桔梗が飾られていた。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　大石は墓石に呟く。　先ほどの白い桔梗が飾られていた。",
+		   NULL, "Il finit d'installer les fleurs sur la tombe, puis reprit son monologue à voix basse.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1189,7 +1184,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女が持っている紫陽花の花束を見て、全てを察した。",
-		   NULL, "Le bouquet d'hortendias bleus qu'elle tenait était largement assez visible.", Line_Normal);
+		   NULL, "Le bouquet d'hortensias bleus qu'elle tenait était largement assez visible.", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 300, FALSE );
@@ -1341,7 +1336,7 @@
 		   NULL, " Je viendrai mettre des hortensias sur ta tombe aussi, si tu veux.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 16, "ps3/s14/16/222200017", 128, TRUE);
 	OutputLine(NULL, "　あとうちの組の店にツケが残ってるだろ。",
-		   NULL, " Ca me fait penser que t'as toujours pas payées tout ce que tu as pris dans certains de nos établissements.", Line_WaitForInput);
+		   NULL, " Ça me fait penser que t'as toujours pas payé tout ce que tu as pris dans certains de nos établissements.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 16, "ps3/s14/16/222200018", 128, TRUE);
 	OutputLine(NULL, "そいつの請求書を供えに来てやるよ。」",
 		   NULL, " Je te ramènerai aussi un rappel des factures.", Line_Normal);
@@ -1487,10 +1482,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　でも茜は、そんなのは当然のことだという。",
-		   NULL, "Ôishi ne comprenait pas les valeurs d'Akane Sonozaki.", Line_WaitForInput);
-	OutputLine(NULL, "…………茜と大石の価値観が合わない。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　でも茜は、そんなのは当然のことだという。…………茜と大石の価値観が合わない。",
+		   NULL, "Ôishi ne comprenait pas les valeurs d'Akane Sonozaki.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6bd09f>茜</color>", NULL, "<color=#6bd09f>Akane</color>", NULL, Line_ContinueAfterTyping); }
@@ -1505,7 +1498,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s13/11/ds41110277", 128, TRUE);
 	OutputLine(NULL, "「んっふっふ！",
-		   NULL, "—  Éhhéhéh !", Line_WaitForInput);
+		   NULL, "— Éhhéhéh !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s13/11/ds41110278", 128, TRUE);
 	OutputLine(NULL, "　まさか。",
 		   NULL, " Allons bon !", Line_WaitForInput);
