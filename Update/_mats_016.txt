@@ -1661,10 +1661,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ようやく気付いたようだった。",
-		   NULL, "Comment est-ce qu'on faisait pour avoir des idées aussi géniales ?", Line_WaitForInput);
-	OutputLine(NULL, "何でこんな面白ぇ作戦を思いつかなかったんだろうな俺たちは！！",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　ようやく気付いたようだった。何でこんな面白ぇ作戦を思いつかなかったんだろうな俺たちは！！",
+		   NULL, "Comment est-ce qu'on faisait pour avoir des idées aussi géniales ?", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/heya1", 300 );
@@ -1803,7 +1801,7 @@
 		   NULL, "— La dernière fois que les gens l'ont vue, c'était hier, après l'école.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030291", 128, TRUE);
 	OutputLine(NULL, "だから、それから４８時間だから、明後日の早朝くらいに死体が見付かったということになるととても好都合だねぇ！」",
-		   NULL, " Si on compte 48h, ça veut dire qu'on peut faire découvrir son corps disons après-demain matin ? Ça nous arrangerrait bien !", Line_Normal);
+		   NULL, " Si on compte 48h, ça veut dire qu'on peut faire découvrir son corps disons après-demain matin ? Ça nous arrangerait bien !", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/heya1", 300 );
@@ -1903,7 +1901,7 @@
 		   NULL, " Ce sera un piège magnifique !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s13/04/ds41040140", 128, TRUE);
 	OutputLine(NULL, "　鷹野さんが慌てふためく姿が目に浮かぶようですわ！」",
-		   NULL, " Je peux déjà voir Mme Takano s'arracher les cheveux en assayant de comprendre ce qu'il se passe !", Line_Normal);
+		   NULL, " Je peux déjà voir Mme Takano s'arracher les cheveux en essayant de comprendre ce qu'il se passe !", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/heya1", 300 );
@@ -3302,13 +3300,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……果たせなかった祖父の意思。",
-		   NULL, "Elle est en train de tout mettre en place pour mettre un point final tragique et grandiose aux vœux à jamais irréalisables de son défunt grand-père...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　それに対する壮大な最期を、彼女は演出しようと企んでいる…。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　……果たせなかった祖父の意思。　それに対する壮大な最期を、彼女は演出しようと企んでいる…。",
+		   NULL, "Elle est en train de tout mettre en place pour mettre un point final tragique et grandiose aux vœux à jamais irréalisables de son défunt grand-père...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
