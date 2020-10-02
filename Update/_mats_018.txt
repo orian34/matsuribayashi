@@ -14,13 +14,8 @@
 	OutputLine(NULL, "「お待たせしましたわ、野村さん。",
 		   NULL, "— Je m'excuse de vous avoir fait attendre, Mme Nomura.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080095", 128, TRUE);
-	OutputLine(NULL, "………………いえいえ、失礼しました。」",
-		   NULL, " ... ... Non, non, j'insiste, vraiment, c'est indigne.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　鷹野が取る受話器の相手は女性のようだった。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "………………いえいえ、失礼しました。」　鷹野が取る受話器の相手は女性のようだった。",
+		   NULL, " ... ... Non, non, j'insiste, vraiment, c'est indigne.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>Nomura</color>", NULL, Line_ContinueAfterTyping); }
@@ -755,7 +750,7 @@
 	OutputLine(NULL, "祖父が私の生きる目的を教えてくれた。",
 		   NULL, " Il m'avait donné une raison de vivre.", Line_WaitForInput);
 	OutputLine(NULL, "それに甘えた。",
-		   NULL, " Alors je m'étais laissé porter par ça.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Alors je m'étais laissée porter par ça.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -944,7 +939,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　研究の手伝いという名の、書籍を積み木に見立てた整理ごっこで遊んでいる…。",
-		   NULL, "Nous disions toujours que je l'aidais dans ces recherches, mais il fallait être honnête, je jouais surtout à empiler ses livres en les rangeant...", Line_Normal);
+		   NULL, "Nous disions toujours que je l'aidais dans ses recherches, mais il fallait être honnête, je jouais surtout à empiler ses livres en les rangeant...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1121,7 +1116,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな被虐的な願いが、……今の私を、自身が否定していることを物語る。",
-		   NULL, "En fait, ma conscience n'était pas d'accord avec ce que je m'appêtais à faire, et ça en disait long sur moi.", Line_Normal);
+		   NULL, "En fait, ma conscience n'était pas d'accord avec ce que je m'apprêtais à faire, et ça en disait long sur moi.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1418,10 +1413,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　だから、その造りかけの塔はその地に長く残り、決して天には届いていないわけだけど、",
-		   NULL, "A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "……見る者があったなら、かつて偉大な挑戦をした勇者がいたことに感銘を受け、讃えるに違いない。",
-		   NULL, " Mais ses fondations immenses restèrent longtemps visibles, et malgré son échec cuisant, tous ceux qui regardaient cette tour pouvaient se souvenir des temps jadis, où leurs semblables avaient défié la puissance de Dieu, et probablement qu'ils s'en félicitaient et que cela les motivaient à toujours aller de l'avant.", Line_Normal);
+	OutputLine(NULL, "　だから、その造りかけの塔はその地に長く残り、決して天には届いていないわけだけど、……見る者があったなら、かつて偉大な挑戦をした勇者がいたことに感銘を受け、讃えるに違いない。",
+		   NULL, "Mais ses fondations immenses restèrent longtemps visibles, et malgré son échec cuisant, tous ceux qui regardaient cette tour pouvaient se souvenir des temps jadis, où leurs semblables avaient défié la puissance de Dieu, et probablement qu'ils s'en félicitaient et que cela les motivaient à toujours aller de l'avant.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2202,7 +2195,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………それが、神に挑もうとした罪深い人間への仕打ちだってこと…？",
-		   NULL, "Pourquoi ? Parce ce que c'est la punition pour avoir eu l'audace de te mettre au défi ?", Line_Normal);
+		   NULL, "Pourquoi ? Parce que c'est la punition pour avoir eu l'audace de te mettre au défi ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2725,21 +2718,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その様子を見て、祭りの準備の村人たちが、容態はどうですかどうですかと声をかけて来るのだった。",
-		   NULL, "Voyant cela, les gens qui s'affairaient aux préparatifs du lendemain allèrent lui demander comment les deux jeunes filles se portaient.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　それが、梨花１人に限ったものでなかったので、入江は小さな嬉しさを感じていたのだった。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, "Voyant cela, les gens qui s'affairaient aux préparatifs du lendemain allèrent lui demander comment les deux jeunes filles se portaient.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/sora2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　昨日のお魎の言葉の意味は、いつの間にか村の老人の間に知れ渡っている。",
+	OutputLine(NULL, "　それが、梨花１人に限ったものでなかったので、入江は小さな嬉しさを感じていたのだった。　昨日のお魎の言葉の意味は、いつの間にか村の老人の間に知れ渡っている。",
 		   NULL, "Irie fut d'ailleurs plutôt content de voir que les gens ne demandaient pas seulement des nouvelles de la prêtresse du village.", Line_Normal);
 	ClearMessage();
 
