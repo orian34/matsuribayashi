@@ -283,7 +283,7 @@
 		   NULL, "Attendez, ils se sont peut-être trompés, tout simplement...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080156", 128, TRUE);
 	OutputLine(NULL, "……だって、私の作戦なら、今日の夜、私は岐阜県警内の工作員を使って、同じ手法で偽装死を装うつもりだったんじゃない…。",
-		   NULL, " J'avais l'intention de camoufler ma mort grâce à un agent infilré au commissariat principal de Gifu...", Line_WaitForInput);
+		   NULL, " J'avais l'intention de camoufler ma mort grâce à un agent infiltré au commissariat principal de Gifu...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080157", 128, TRUE);
 	OutputLine(NULL, "……こ、これは偽装よ。",
 		   NULL, " C'est la même chose, ici !", Line_WaitForInput);
@@ -1438,7 +1438,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　興宮署の死体がＲでないと確認できれば、全て仕切りなおせるんだ。",
-		   NULL, "S'ils pouvaient prouver que le corps non-identifié au commissariat d'Okinomiya n'était pas celui de R, alors tout pourrait ête maintenu.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "S'ils pouvaient prouver que le corps non-identifié au commissariat d'Okinomiya n'était pas celui de R, alors tout pourrait être maintenu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3384,7 +3384,7 @@
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "そうでしょう？",
-		   NULL, " tu vois ?", Line_WaitForInput);
+		   NULL, " Tu vois ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_ootaka1063", 128, TRUE);
 	OutputLine(NULL, "　その園崎議員から、大至急、本当に古手梨花の死体なのかどうか確かめてほしいと依頼されたのです。",
 		   NULL, " Et ce député, il m'a demandé de vérifier en urgence si réellement, il s'agissait bien du corps de la petite Rika Furude.", Line_WaitForInput);
@@ -3521,13 +3521,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……大高はそのヒソヒソ声に、ニヤリと笑う。",
-		   NULL, "Ôdaka eut un rictus de victoire en entendant ces messes basses derrière lui.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　自分の脅し文句が、この興宮では想像以上の効果とわかるからだ。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　……大高はそのヒソヒソ声に、ニヤリと笑う。　自分の脅し文句が、この興宮では想像以上の効果とわかるからだ。",
+		   NULL, "Ôdaka eut un rictus de victoire en entendant ces messes basses derrière lui.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -3562,10 +3557,10 @@
 		   NULL, " Héhéhé, alors", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_ootaka1084", 128, TRUE);
 	OutputLine(NULL, "　大石さん。",
-		   NULL, " Ôishi ? Finalement,", Line_WaitForInput);
+		   NULL, " Ôishi ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_ootaka1085", 128, TRUE);
 	OutputLine(NULL, "さすがに降参では？",
-		   NULL, " ce serait pas une mauvaise idée que de me laisser passer, non ?", Line_WaitForInput);
+		   NULL, " Finalement, ce serait pas une mauvaise idée que de me laisser passer, non ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_ootaka1086", 128, TRUE);
 	OutputLine(NULL, "　ふっふっふっふ！」",
 		   NULL, " Héhéhéhéhé !", Line_Normal);
@@ -3800,7 +3795,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6bd09f>茜</color>", NULL, "<color=#6bd09f>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 16, "ps3/s14/16/222200097", 128, TRUE);
 	OutputLine(NULL, "三郎さんが、それは抗議した方がいいって言って、こうしてついてきてくれたわけなんだよ。」",
-		   NULL, "J'en parlais à Saburô, et il m'a dit qu'après tout, je pouvais tenter de faire valoir ma bonne fois en allant me plaindre de cette contravention. Et c'est pour ça que nous sommes là.", Line_Normal);
+		   NULL, "J'en parlais à Saburô, et il m'a dit qu'après tout, je pouvais tenter de faire valoir ma bonne foi en allant me plaindre de cette contravention. Et c'est pour ça que nous sommes là.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
