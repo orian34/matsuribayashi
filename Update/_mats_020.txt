@@ -1531,16 +1531,9 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　隊員たちは追いながら驚く。",
+	OutputLine(NULL, "　隊員たちは追いながら驚く。　飛び降りたあの体制からすぐにあれだけの速度で疾駆できるとは…！",
 		   NULL, "Les hommes à sa poursuite ne dirent rien, mais ils étaient tous plutôt surpris de le voir capable de redémarrer aussi vite après une chute pareille...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　飛び降りたあの体制からすぐにあれだけの速度で疾駆できるとは…！",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1687,7 +1680,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、富竹は突進の重量感からは想像もつかないくらい軽やかに身を翻ると、二人の顔面が互いに勢い込んでぶつかるように頭を抱え、猛烈な力を加えて打ちつけ合ってやった。",
-		   NULL, "Mais Tomitake, aidé par la force cinétique de sa frénétique fuite en avant, put prendre un second élan et les prendre de vitesse. Il écarta les mains et saisit la tête des deux hommes, pour les faire se cogner l'un l'autre violemment !", Line_ContinueAfterTyping);
+		   NULL, "Mais Tomitake, aidé par la force kinétique de sa frénétique fuite en avant, put prendre un second élan et les prendre de vitesse. Il écarta les mains et saisit la tête des deux hommes, pour les faire se cogner l'un l'autre violemment !", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_tataku", 128, 64 );
 	StartShakingOfWindow( 241, 40, 0, 0, 4*2, FALSE );
@@ -2406,7 +2399,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　入江は所長席の受話器を取り、梨花の家の短縮番号のボタンを押してから受話器を脇に置き、掛けっぱなしの状態のまま放置した。",
-		   NULL, "Irie retorna dans son bureau, appuya sur la touche qui servait de raccourci pour appeler Rika, puis posa le combiné bien en place, caché, et laissa sonner.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Irie retourna dans son bureau, appuya sur la touche qui servait de raccourci pour appeler Rika, puis posa le combiné bien en place, caché, et laissa sonner.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2806,7 +2799,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　入江の全身から、これ以上まだ出るのかというほど、嫌な汗がぶわっと湧き出る！",
-		   NULL, "Irie se mit à transpirer de plus belle, de tous le spores de la peau. Comment faisait-il pour transpirer autant ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Irie se mit à transpirer de plus belle, de tous les pores de la peau. Comment faisait-il pour transpirer autant ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	FadeOutBGM( 0, 300, FALSE );
