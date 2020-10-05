@@ -7446,10 +7446,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "“んで、圭ちゃんに譲って私だけ生き残ったら。",
 		   NULL, "« Je n'ai plus personne dans ma vie,", Line_WaitForInput);
-	OutputLine(NULL, "私ゃお姉に一生恨まれますって。",
-		   NULL, " mais ma sœur, si. »", Line_WaitForInput);
-	OutputLine(NULL, "……私の想い人はもういないけど、お姉にはいるもん。”",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "私ゃお姉に一生恨まれますって。……私の想い人はもういないけど、お姉にはいるもん。”",
+		   NULL, " mais ma sœur, si.»", Line_Normal);
 	ClearMessage();
 
 	DrawBustshot(0, "waku_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
