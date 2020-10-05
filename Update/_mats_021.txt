@@ -2850,13 +2850,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　………でも、多分、魅音と詩音だけが直感していた。",
-		   NULL, "Mais elle -- et probablement sa sœur jumelle -- étaient les seules à savoir que si tout le monde sortait par là un à un, les derniers se feraient tuer.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　この縦穴をこの人数で降りていこうとしたら、殿は間に合わないかもしれないと。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　………でも、多分、魅音と詩音だけが直感していた。　この縦穴をこの人数で降りていこうとしたら、殿は間に合わないかもしれないと。",
+		   NULL, "Mais elle -- et probablement sa sœur jumelle -- étaient les seules à savoir que si tout le monde sortait par là un à un, les derniers se feraient tuer.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3238,10 +3233,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　あとは魅音の灯りさえあれば充分だ。",
-		   NULL, "Elle sut alors qu'elle pouvait demander au prochain de commencer à descendre.", Line_WaitForInput);
-	OutputLine(NULL, "次の人はもう降りてきていい。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　あとは魅音の灯りさえあれば充分だ。次の人はもう降りてきていい。",
+		   NULL, "Elle sut alors qu'elle pouvait demander au prochain de commencer à descendre.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "background/so_chikafuroa", "maskup", 7, 0, 300 );
@@ -4423,13 +4416,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　魅音が圭一に猛然と食って掛かる。",
-		   NULL, "Après s'être fait copieusement insulté, Keiichi ne put que se taire et regretter d'avoir parlé sans savoir.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　圭一は軽率な言葉を悔いるしかなかった。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　魅音が圭一に猛然と食って掛かる。　圭一は軽率な言葉を悔いるしかなかった。",
+		   NULL, "Après s'être fait copieusement insulter, Keiichi ne put que se taire et regretter d'avoir parlé sans savoir.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 200 );
@@ -4895,12 +4883,12 @@
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………俺たちへの、",
-		   NULL, " Elle était persuadée à 100% que ses amis la sauveraient.", Line_ContinueAfterTyping);
+		   NULL, " Elle était persuadée à 100%", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…１００％の信頼。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " que ses amis la sauveraient.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5962,7 +5950,7 @@
 	OutputLine(NULL, "　鍛え上げられた無敵の拳が、小此木の次の瞬き、その次の瞬きの間に次々と山狗たちに叩き込まれていく。",
 		   NULL, "Ses poings poursuivirent leur œuvre, indomptables, imbattables.", Line_WaitForInput);
 	OutputLine(NULL, "……いずれも、一打必殺。",
-		   NULL, " Okonogi eut l'impression qu'à chaque fois qu'il clignait les yeux, il manquait d'une seul coup un autre de ses hommes.", Line_WaitForInput);
+		   NULL, " Okonogi eut l'impression qu'à chaque fois qu'il clignait les yeux, il manquait d'un seul coup un autre de ses hommes.", Line_WaitForInput);
 	OutputLine(NULL, "それこそが空手の真髄の体現ッ！！",
 		   NULL, " Oui, Akasaka faisait là l'éclatante démonstration de ses talents au karaté, se débarrassant de chaque ennemi en un seul coup précis !", Line_Normal);
 	ClearMessage();
@@ -6221,11 +6209,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…赤坂は思っている。",
-		   NULL, "Akasaka partait du principe qu'ils ne jouaient pas dans la même catégorie !", Line_WaitForInput);
-
-	OutputLine(NULL, "「多少」できるのかと、その程度に見ている。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　…赤坂は思っている。「多少」できるのかと、その程度に見ている。",
+		   NULL, "Akasaka partait du principe qu'ils ne jouaient pas dans la même catégorie !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -6452,10 +6437,8 @@
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "…聞こえなかった。",
-		   NULL, " sans comprendre.", Line_WaitForInput);
-	OutputLine(NULL, "理解できなかった。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…聞こえなかった。理解できなかった。",
+		   NULL, " sans comprendre.", Line_Normal);
 	ClearMessage();
 
 	ModPlayVoiceLS(4, 13, "ps3/s13/13/ds41120361", 128, TRUE);
@@ -6938,14 +6921,14 @@
 	OutputLine(NULL, "　そこにあるのは、車のスライドドアの淵。",
 		   NULL, "Il avait frappé dans la carrosserie, au niveau de la porte coulissante.", Line_WaitForInput);
 	OutputLine(NULL, "…両側のガラスが割れて砕け散り、フレームが、まるで車にでも突っ込まれたように歪み、",
-		   NULL, " Les vitres de part et d'autre s'étaient brisées, le cadre de la porte s'était déformé comme si une voiture l'avait embouti, et la vitre de l'autre côté du véhicule avait elle aussi volé en éclats !", Line_WaitForInput);
+		   NULL, " Les vitres de part et d'autre s'étaient brisées,", Line_WaitForInput);
 	OutputLine(NULL, "…………反対側の窓ガラスまで砕け散るなんて、",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " le cadre de la porte s'était déformé comme si une voiture l'avait embouti,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……か、考えられないッ！！！",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " et la vitre de l'autre côté du véhicule avait elle aussi volé en éclats !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -7372,10 +7355,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　こんなんじゃいけない！",
-		   NULL, "Alors ils décidèrent de se ressaisir et de se remotiver !", Line_WaitForInput);
-	OutputLine(NULL, "　気合を入れねぇと！！",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　こんなんじゃいけない！　気合を入れねぇと！！",
+		   NULL, "Alors ils décidèrent de se ressaisir et de se remotiver !", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 0, 1000, FALSE );
@@ -7497,7 +7478,7 @@
 		   NULL, " Je me demande bien où il peut se planquer, en ce moment.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s13/06/ds41060082", 128, TRUE);
 	OutputLine(NULL, "…生きてるのか死んでるのかもわかりませんけど。」",
-		   NULL, " Je ne sais même pas s'il est vivant où s'il est mort, d'ailleurs.", Line_Normal);
+		   NULL, " Je ne sais même pas s'il est vivant ou s'il est mort, d'ailleurs.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 100 );
