@@ -1014,20 +1014,11 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　だから、",
+	OutputLine(NULL, "　だから、永遠。",
 		   NULL, "Et nous serons ensemble.", Line_ContinueAfterTyping);
 	Wait( 1000 );
-	OutputLine(NULL, "永遠。",
-		   NULL, " Pour les siècles et les siècles...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ずっとずっと、",
-		   NULL, "A REMOVE", Line_ContinueAfterTyping);
-	Wait( 1000 );
-	OutputLine(NULL, "一緒…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　ずっとずっと、一緒…。",
+		   NULL, " Pour les siècles et les siècles...", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 4000 );
