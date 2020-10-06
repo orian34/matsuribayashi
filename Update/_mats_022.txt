@@ -955,12 +955,12 @@
 	OutputLine(NULL, "　………私は、…認めなければならない。",
 		   NULL, "Je dois bien avouer que", Line_WaitForInput);
 	OutputLine(NULL, "……彼が、",
-		   NULL, " j'ai vraiment besoin de sa présence...", Line_ContinueAfterTyping);
+		   NULL, " j'ai vraiment besoin", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……必要なのだ。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " de sa présence...", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/ke5", 400 );
@@ -4200,7 +4200,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかも、拘束されるのが便所とあっては尚更だ。",
-		   NULL, "Et surtout pas attachés sur les W.-C.__!", Line_Normal);
+		   NULL, "Et surtout pas attachés sur les W.-C. !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4687,10 +4687,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　どうしてそんな面倒な真似を？",
-		   NULL, "Ça irait pourtant beaucoup plus vite d'ouvrir la porte avec leur carte à eux !", Line_WaitForInput);
-	OutputLine(NULL, "　自分でやった方が早いだろうに？？",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　どうしてそんな面倒な真似を？　自分でやった方が早いだろうに？？",
+		   NULL, "Ça irait pourtant beaucoup plus vite d'ouvrir la porte avec leur carte à eux !", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 200, FALSE );
@@ -5147,17 +5145,17 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………だから、",
-		   NULL, "Et c'est pourquoi ils n'avaient pas pensé que l'ennemi viendrait à la porte grande ouverte pour la refermer.", Line_ContinueAfterTyping);
+		   NULL, "Et c'est pourquoi ils n'avaient pas pensé", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…彼らが開け放った扉が、",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " que l'ennemi viendrait à la porte grande ouverte", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…再び閉められるなんて想定もしなかった。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " pour la refermer.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_MGun", 128, 64 );
@@ -5742,16 +5740,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　かつて鹿骨にその人ありと恐れられた、",
-		   NULL, "Alors c'était pour ça que les gens lui avaient donné son surnom...", Line_ContinueAfterTyping);
+		   NULL, "Alors", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	OutputLine(NULL, "「散弾銃の辰」。",
-		   NULL, " A REMOVE", Line_WaitForInput);
-
-	OutputLine(NULL, "……その片鱗であった…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "「散弾銃の辰」。……その片鱗であった…。",
+		   NULL, " c'était pour ça que les gens lui avaient donné son surnom...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
@@ -6868,18 +6863,12 @@
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　入江は、…この期に及んで詩音に条件を突きつけた。",
-		   NULL, "Shion le regarda avec un regard incendiaire, outrée de le voir poser des conditions dans un moment pareil.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 	DisableWindow();
 	ModDrawCharacter(1, 6, "sprite/si1a_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……詩音は何をもったいぶるのかと目に怒りを灯す。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　入江は、…この期に及んで詩音に条件を突きつけた。　……詩音は何をもったいぶるのかと目に怒りを灯す。",
+		   NULL, "Shion le regarda avec un regard incendiaire, outrée de le voir poser des conditions dans un moment pareil.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -7336,14 +7325,14 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこにあるのは、あの日の悲しみのカケラ。",
-		   NULL, "Et sur eux, superposés, ses parents, et cette impossible tristesse,", Line_WaitForInput);
+		   NULL, "Et sur eux, superposés, ses parents,", Line_WaitForInput);
 	OutputLine(NULL, "……あの日の後悔の、",
-		   NULL, " ces regrets infinis.", Line_ContinueAfterTyping);
+		   NULL, " et cette impossible tristesse,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "カケラ。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " ces regrets infinis.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
