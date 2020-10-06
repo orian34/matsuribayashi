@@ -1441,7 +1441,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………すでに山狗は壊滅状態だが、……連中の行動範囲もかなり狭まっている。",
-		   NULL, "Cela avait bien marché jusqu'à présent -- les chiens de montagne étaient à deux doigts de la débandande -- mais le terrain commençait à manquer !", Line_Normal);
+		   NULL, "Cela avait bien marché jusqu'à présent -- les chiens de montagne étaient à deux doigts de la débandade -- mais le terrain commençait à manquer !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1719,7 +1719,7 @@
 	OutputLine(NULL, "　陽動の可能性ももちろん、多少は考えていた。",
 		   NULL, "Bien sûr, il avait envisagé la possibilité d'une manœuvre de diversion.", Line_WaitForInput);
 	OutputLine(NULL, "だが、山狗の中でもっとも重武装の研究区画武装保安隊が、奇襲を目論むような小規模別働隊に壊滅されるとは夢にも思わなかった。",
-		   NULL, " Mais il avait laissé ses meileurs hommes, les plus armés, à la clinique. Il n'aurait jamais cru une petite unité capable de les prendre d'assaut par surprise avec succès !", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais il avait laissé ses meilleurs hommes, les plus armés, à la clinique. Il n'aurait jamais cru une petite unité capable de les prendre d'assaut par surprise avec succès !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1972,10 +1972,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…時計を見る。",
+	OutputLine(NULL, "　…時計を見る。……もうすぐで正午だ。",
 		   NULL, "La montre indiquait quasiment midi.", Line_WaitForInput);
-	OutputLine(NULL, "……もうすぐで正午だ。",
-		   NULL, " A REMOVE", Line_WaitForInput);
 	OutputLine(NULL, "お腹が空くのも当然だった。",
 		   NULL, " Pas étonnant d'avoir faim, à une heure pareille...", Line_Normal);
 	ClearMessage();
@@ -3002,10 +3000,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ここの電話線は山狗たちが抑えているのとは別系統。",
-		   NULL, "Elle fonctionnait, ce qui signifiait qu'elle ne faisait pas partie du réseau trafiqué par les chiens de montagne.", Line_WaitForInput);
-	OutputLine(NULL, "通話が可能だった。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　ここの電話線は山狗たちが抑えているのとは別系統。通話が可能だった。",
+		   NULL, "Elle fonctionnait, ce qui signifiait qu'elle ne faisait pas partie du réseau trafiqué par les chiens de montagne.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
