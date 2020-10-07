@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	DrawScene( "black", 400 );
 
@@ -7,22 +7,22 @@ void main()
 	PlayBGM( 0, "Iru", 120, 0 );
 
 	ClearMessage();
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Real Estate Agent</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Agent immobilier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2005", 128, TRUE);
 	OutputLine(NULL, "「それじゃ、俺はそろそろお暇しますわ。",
-		   NULL, "\"Okay, I'll get going.", Line_WaitForInput);
+		   NULL, "— Bon, ben c'est pas tout, mais faut qu'j'me sauve.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2006", 128, TRUE);
 	OutputLine(NULL, "どうもご馳走様でした。」",
-		   NULL, " Thank you!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Merci pour le thé, hein !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2001", 128, TRUE);
 	OutputLine(NULL, "「えぇんねえぇんね。",
-		   NULL, "\"Don't mention it.", Line_WaitForInput);
+		   NULL, "— Mais c'est rien, va.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2002", 128, TRUE);
 	OutputLine(NULL, "また来たってぇな。」",
-		   NULL, " Come back anytime, okay?\"", Line_Normal);
+		   NULL, " Reviens me voir quand tu veux.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -32,25 +32,25 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2001", 128, TRUE);
 	OutputLine(NULL, "「ただいまー！",
-		   NULL, "\"Hi, I'm home!", Line_WaitForInput);
+		   NULL, "— J'suis là !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2002", 128, TRUE);
 	OutputLine(NULL, "　って、あれ、弘叔父さん。",
-		   NULL, " Hey, Uncle Hiroshi.", Line_WaitForInput);
+		   NULL, " Eh ? Ben, c'est toi, oncle Hiroshi ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2003", 128, TRUE);
 	OutputLine(NULL, "お久し振りですー！」",
-		   NULL, " Long time no see!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Ça faisait longtemps !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Real Estate Agent</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Agent immobilier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2007", 128, TRUE);
 	OutputLine(NULL, "「おう、魅音ちゃん。",
-		   NULL, "\"Hey, Mion-chan.", Line_WaitForInput);
+		   NULL, "— Salut, Mion !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2008", 128, TRUE);
 	OutputLine(NULL, "今、帰りかい。",
-		   NULL, " Are you going home?", Line_WaitForInput);
+		   NULL, " Désolé, je suis justement en train de partir.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2009", 128, TRUE);
 	OutputLine(NULL, "叔父さんは今から送迎だよ。」",
-		   NULL, " I have to give my clients a ride.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " J'ai des gens à accompagner.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -59,10 +59,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2004", 128, TRUE);
 	OutputLine(NULL, "「送迎？",
-		   NULL, "\"A ride?", Line_WaitForInput);
+		   NULL, "— À accompagner ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2005", 128, TRUE);
 	OutputLine(NULL, "　あぁ、不動産屋さんのお仕事？」",
-		   NULL, " Ah, you're talking about your realtor business, huh?\"", Line_Normal);
+		   NULL, " Aaaah, oui, tu joues les agents immobiliers ?", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -70,12 +70,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎家は雛見沢屈指の大地主だ。",
-		   NULL, "The Sonozaki family is one of the largest landowners here in the Hinamizawa area.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les Sonozaki étaient, de très loin, les plus grands propriétaires de terrains du village.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もっともこんな田舎の余った土地だから、荒れるに任せているだけで有効利用しているわけじゃない。",
-		   NULL, "However, since all the land is out here in the countryside, it just ends up sitting there.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Enfin, en même temps, ils avaient simplement récupéré les morceaux de terre dont personne ne voulait à la campagne. Ils les laissaient un peu à l'abandon, sans vraiment les exploiter.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -83,19 +83,19 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな村内の園崎家地所を、最近は分譲地として売りに出していた。",
-		   NULL, "Recently, the land owned by the Sonozaki family was put on sale in lots.", Line_Normal);
+		   NULL, "Et récemment, ils s'étaient décidés à transformer une partie de ces terrains en parcelles alloties.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ご先祖様から受け継いだ土地を余所者に切り売りしていいのかという批判も、一応、親族会議では出たが、婆っちゃが、しゃあらしいわぁ！",
-		   NULL, "At the family meeting, some of our relatives opposed the idea by saying we shouldn't sell off land that was handed down from our ancestors.", Line_WaitForInput);
+		   NULL, "Ils avaient fait une grande réunion du clan, et évidemment, quelqu'un n'avait pas manqué de poser la question : pouvait-on se permettre de vendre les terres héritées de nos ancêtres à de parfaits inconnus ?", Line_WaitForInput);
 	OutputLine(NULL, "　と一喝してそれにて決着。",
-		   NULL, " But Granny snapped and shut them right up.", Line_Normal);
+		   NULL, " Mais l'argumentaire raisonné du chef de clan Oryô Sonozaki -- “Raaah, ferme donc ta schneuss !” -- avait fait instantanément entériner la décision, à l'unanimité.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　休耕地のいくつかが更地にされて、分譲地として解放されることになったのだ。",
-		   NULL, "Some of the unused fields were made into vacant lots and released for public sale.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et c'est pourquoi ils avaient pris certains des terrains en jachère pour les mettre en vente.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -103,17 +103,17 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…これに関しては、私も疑問があった。",
-		   NULL, "Actually, I had some questions about it too.", Line_Normal);
+		   NULL, "Pour ma part, ça me laissait un peu dubitative.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だって、園崎家は大金持ちだ。",
-		   NULL, "The Sonozaki family is very wealthy.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nous étions riches, très riches.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　土地も余ってるがお金だって余ってる。",
-		   NULL, "We have plenty of land, as well as money.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nous avions des terrains et mêmes des sous à ne plus savoir quoi en faire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -121,90 +121,90 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　わざわざ土地を切り売りしなければならない理由がない。",
-		   NULL, "So why did we have to sell it off?", Line_Normal);
+		   NULL, "Nous n'avions aucune raison de vouloir à tout prix vendre des terrains.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いや、それどころか、先祖の土地を余所者に売るなんて話、婆っちゃが言い出すなんて。",
-		   NULL, "What's more surprising to me is that Granny was the one who came up with the idea.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et puis d'abord, pourquoi est-ce que c'était elle qui avait proposé de vendre à de parfaits inconnus ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それどころかむしろ、血管を浮かせるほどに怒鳴って反対しそうなのに。",
-		   NULL, "I would have thought she'd get furious if someone even mentioned something like that.", Line_Normal);
+		   NULL, "Elle était plutôt du genre à péter un câble pour justement empêcher ce genre de choses d'arriver...", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	DrawSceneWithMask( "background/so_g1", "maskright", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Real Estate Agent</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Agent immobilier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2010", 128, TRUE);
 	OutputLine(NULL, "「じゃあね、駅前に寄った時はぜひ遊びにおいでよ。",
-		   NULL, "\"Okay, if you're ever near the station, be sure to stop by.", Line_WaitForInput);
+		   NULL, "— Bon, je dois me sauver. Si tu passes près de la gare, rentre donc !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2011", 128, TRUE);
 	OutputLine(NULL, "麦茶くらいご馳走するから。」",
-		   NULL, " I'll treat you to cup of barley tea!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je n'ai que du thé d'orge à t'offrir, mais il est offert de bon cœur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2006", 128, TRUE);
 	OutputLine(NULL, "「はい、ありがとうございます。",
-		   NULL, "\"Sure, thank you very much!", Line_WaitForInput);
+		   NULL, "— Oui, merci.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2007", 128, TRUE);
 	OutputLine(NULL, "お仕事はどんな感じですか？」",
-		   NULL, " So how is your business going?\"", Line_Normal);
+		   NULL, " Comment ça marche, alors ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Real Estate Agent</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Agent immobilier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2012", 128, TRUE);
 	OutputLine(NULL, "「都会の人が案外、興味を持ってくれたからびっくりだわ！",
-		   NULL, "\"I'm surprised there are actually city folks who are interested!", Line_WaitForInput);
+		   NULL, "— Ben en fait, j'ai eu pas mal de gens de la ville qu'étaient très intéressés, c'est une bonne surprise !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2013", 128, TRUE);
 	OutputLine(NULL, "　便利な都会に住みながら、わざわざこんな田舎に別荘が持ちたい小金持ちばっかりだね。」",
-		   NULL, " They must be those nouveau riche types who live in the big city, yet also want a house in the countryside.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais ce sont tous des riches qui veulent avoir une deuxième maison ici, pour leurs vacances.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2008", 128, TRUE);
 	OutputLine(NULL, "「やれやれ、物好きなことで！」",
-		   NULL, "\"Well, I guess some people are curious!\"", Line_Normal);
+		   NULL, "— Eh ben, y a vraiment des gens qui sont spéciaux !", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Real Estate Agent</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Agent immobilier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2014", 128, TRUE);
 	OutputLine(NULL, "「一軒、別荘じゃなくて、引越しで検討されてるお宅があったね。",
-		   NULL, "\"There's one family seeking to move here, not purchase a villa.", Line_WaitForInput);
+		   NULL, "— Par contre, j'ai aussi eu une personne qui voulait emménager chez nous.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2015", 128, TRUE);
 	OutputLine(NULL, "アトリエが持ちたいとか言ってたから、画家さんとかかねぇ？」",
-		   NULL, " He said he wants to build a studio, so he must be an artist of some sort.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Il m'a dit qu'il voulait avoir son propre atelier. Je suppose que c'est un artiste, un peintre probablement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2009", 128, TRUE);
 	OutputLine(NULL, "「へー！",
-		   NULL, "\"Ho!", Line_WaitForInput);
+		   NULL, "— Ah ouais ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2010", 128, TRUE);
 	OutputLine(NULL, "　そりゃすごいや！」",
-		   NULL, " That's great!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " La vache, mais c'est super !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Real Estate Agent</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Agent immobilier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2016", 128, TRUE);
 	OutputLine(NULL, "「おっと、いけねぇわ！",
-		   NULL, "\"Oh, gosh!", Line_WaitForInput);
+		   NULL, "— Ouh là, j'suis en retard, moi !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2017", 128, TRUE);
 	OutputLine(NULL, "　じゃ、叔父さんはバスに戻るわ！」",
-		   NULL, " I better go now!\"", Line_Normal);
+		   NULL, " Allez, je file au bus !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　分譲地の見学ツアーを企画したらしく、それの送迎バスの運転をしてきた、ということらしい。",
-		   NULL, "Supposedly, he planned a tour to show them the lots, and he's the one driving the bus.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il avait organisé des voyages pour visiter les terrains allotis, et c'était lui qui conduisait le bus pour ramener les gens depuis la gare d'Okinomiya.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そろそろ見学や説明が終わる頃合なのだろう。",
-		   NULL, "It should be about time for the tour and explanations to end.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'imagine que c'était bientôt l'heure du retour.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -212,7 +212,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　叔父さんは松の枝をくぐって、ぱたぱたと駆けて行った。",
-		   NULL, "He left in a hurry.", Line_Normal);
+		   NULL, "Mon oncle passa la porte et repartit presqu'en courant.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
@@ -221,101 +221,101 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2011", 128, TRUE);
 	OutputLine(NULL, "「…ねぇ、聞いていい？",
-		   NULL, "\"Hey, can I ask you something?", Line_WaitForInput);
+		   NULL, "— Dis, Mémé, j'peux te poser une question ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2012", 128, TRUE);
 	OutputLine(NULL, "　余所者嫌いの婆っちゃがさ、どうしてわざわざ分譲地なんかにしたの？」",
-		   NULL, " Why did you want to sell our land? You don't like newcomers...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " T'aimes pas les gens qui ne sont pas de chez nous, alors pourquoi insister pour vendre des terrains ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2003", 128, TRUE);
 	OutputLine(NULL, "「私ゃあ余所者なんか嫌いだし都会者も大嫌いだ。",
-		   NULL, "\"I don't like newcomers and I don't like big city people either.", Line_WaitForInput);
+		   NULL, "— J'aime pas les étrangers et j'aime encore moins les citadins.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2004", 128, TRUE);
 	OutputLine(NULL, "……だが、村にゃ必要なんよ。",
-		   NULL, " ...But the village needs them.", Line_WaitForInput);
+		   NULL, " Mais le village a besoin d'eux.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2005", 128, TRUE);
 	OutputLine(NULL, "空気の入れ替えみたいなもんさな。」",
-		   NULL, " It's like ventilating a room.\"", Line_Normal);
+		   NULL, " Il faut aérer, de temps en temps.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2013", 128, TRUE);
 	OutputLine(NULL, "「外の人が来ることで、…何か村にいい影響があるということ？」",
-		   NULL, "\"Is it good for the village to have new people move in?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Alors en amenant des gens ici... c'est bon pour le village ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2006", 128, TRUE);
 	OutputLine(NULL, "「ここはいい村だぁね。",
-		   NULL, "\"This is a wonderful village.", Line_WaitForInput);
+		   NULL, "— C'est un joli village, chez nous.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2007", 128, TRUE);
 	OutputLine(NULL, "……今は忙しい世の中だから、一日たりともそったぁしといとくらんがな。",
-		   NULL, " But the world is changing quickly.", Line_WaitForInput);
+		   NULL, " Aujourd'hui, nous vivons une époque agitée, il se passe des choses tous les jours,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2008", 128, TRUE);
 	OutputLine(NULL, "昔だったら、十年二十年住んでてもなぁんにも変わらん、変化のない静かな村だったんよ。」",
-		   NULL, " In the past, a very small change took ten or even twenty years to happen. It was such a quiet and unchanging village.\"", Line_Normal);
+		   NULL, " mais avant, il se passait parfois dix, vingt ans sans aucun changement.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2014", 128, TRUE);
 	OutputLine(NULL, "「まぁ、それが田舎ってもんだしねぇ。",
-		   NULL, "\"Well, that's rural life.", Line_WaitForInput);
+		   NULL, "— Bah, c'est la campagne, quoi.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2015", 128, TRUE);
 	OutputLine(NULL, "この村じゃ、昨日と今日と明日に、何の違いもない。",
-		   NULL, " In this village, nothing is different from yesterday and today.", Line_WaitForInput);
+		   NULL, " Ici, il n'y a pas trop de différence entre hier et aujourd'hui, et demain, ce sera un peu la même chose.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2016", 128, TRUE);
 	OutputLine(NULL, "……私ゃ退屈だけどねぇ！」",
-		   NULL, " ...It's too boring for me, though!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Moi, je m'ennuie ici...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2009", 128, TRUE);
 	OutputLine(NULL, "「でも、友達ができたろ。",
-		   NULL, "\"But you made a friend, didn't you?", Line_WaitForInput);
+		   NULL, "— Mais pourtant, t'as une grande copine, maintenant, non ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2010", 128, TRUE);
 	OutputLine(NULL, "外から竜宮のレナちゃんが引っ越してきて友達になってくれたんだろが。",
-		   NULL, " Rena Ryuugu-chan moved here and you got along great.", Line_WaitForInput);
+		   NULL, " La p'tite Rena est arrivée au village.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2011", 128, TRUE);
 	OutputLine(NULL, "近い歳の友達ができて嬉しい、言うとったがな。」",
-		   NULL, " You told me you were happy that you had a friend your age.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Tu m'as dit l'autre jour que t'étais contente de voir une fille de ton âge.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2017", 128, TRUE);
 	OutputLine(NULL, "「うん。",
-		   NULL, "\"Yeah.", Line_WaitForInput);
+		   NULL, "— Oui, ben, c'est vrai, quoi.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2018", 128, TRUE);
 	OutputLine(NULL, "予期せぬ友達が突然できるのは楽しいね。」",
-		   NULL, " Making friends unexpectedly is fun.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je m'attendais pas à me faire une nouvelle amie, alors c'est plutôt agréable.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2012", 128, TRUE);
 	OutputLine(NULL, "「レナちゃんが来んとな、魅音、学校が退屈だぁ退屈だぁ言うとったんね。",
-		   NULL, "\"I remember you saying that school is boring when Rena-chan is absent.", Line_WaitForInput);
+		   NULL, "— Avant qu'elle soit là, tu disais toujours que l'école, c'était barbant, tu me le rabâchais tous les jours.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2013", 128, TRUE);
 	OutputLine(NULL, "よぅお、覚えとる。",
-		   NULL, " Do you remember that?", Line_WaitForInput);
+		   NULL, " Oh, j'm'en souviens !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2014", 128, TRUE);
 	OutputLine(NULL, "くっくっくっく！」",
-		   NULL, " Heh heh heh heh!\"", Line_Normal);
+		   NULL, " Ahahahah !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2019", 128, TRUE);
 	OutputLine(NULL, "「それが、外から引っ越してくることによる効果だって言いたいわけ？」",
-		   NULL, "\"Are you saying that's the good thing about letting new people move here?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Et donc c'est ça que tu veux dire ? Que les gens qui viennent d'ailleurs apportent de la nouveauté ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2015", 128, TRUE);
 	OutputLine(NULL, "「…どんな寒い冬場にかて、たまには換気をせんとな、囲炉裏の悪い空気が溜まって窒息しちまうん。",
-		   NULL, "\"...No matter how cold it gets, you still have to ventilate your living space. Otherwise, it gets filled with bad air and you'll suffocate to death. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "— ... Quand il fait très froid, on garde tout fermé, mais à force, l'air vicié dans la salle où tu fais du feu peut devenir dangereux. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2016", 128, TRUE);
 	OutputLine(NULL, "寒くてしんどいのは承知で、窓をがらりと開けることもあるんよ。」",
-		   NULL, "You open the window, even knowing the freezing cold air will come in.\"", Line_Normal);
+		   NULL, "C'est pour ça que les gens ouvrent quand même les fenêtres de temps en temps, même si c'est pénible de refaire du feu pour tout chauffer ensuite.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskdown", 1, 0, 300 );
@@ -326,26 +326,26 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2020", 128, TRUE);
 	OutputLine(NULL, "「……外から人を迎えることが、村の換気になる？」",
-		   NULL, "\"...Letting outsiders move here is like ventilating the village?\"", Line_Normal);
+		   NULL, "— ... Et donc faire venir des gens d'ailleurs, c'est changer l'air ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2017", 128, TRUE);
 	OutputLine(NULL, "「あぁ、なるん。",
-		   NULL, "\"Sure.", Line_WaitForInput);
+		   NULL, "— Exactement.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2018", 128, TRUE);
 	OutputLine(NULL, "そして綺麗な空気を入れて、私らみたいな悪い空気はとっとと追い出されるべきなんよ。」",
-		   NULL, " It lets fresh air in and gets rid of bad air like us.\"", Line_Normal);
+		   NULL, " Ça donne de l'air frais, et l'appel d'air que ça crée chasse l'air vicié qui est resté trop longtemps à l'intérieur.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　北条家のことを一言でも出せば、婆っちゃは烈火のように怒り出してしまうから言えないが。",
-		   NULL, "If I bring up the Houjou family, I know Granny will explode, so I won't.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je savais que si je remettais maintenant l'histoire des Hôjô sur le tapis, elle se fâcherait tout rouge et me gueulerait dessus comme un putois.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……多分、婆っちゃは北条家に対する、いつまでも消えない村八分の気風とか、そういうのを全部総括して言ってると思う。",
-		   NULL, "But... I think what Granny is trying to say includes things like their ongoing isolation.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais si ça se trouvait, elle voulait en finir avec ça, et elle attendait l'arrivée de nouvelles personnes pour remettre les règles du village à plat.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -353,19 +353,19 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　北条家と大喧嘩をした説明会の時のことを思い出すと、今でも腸が煮えくりかえるが、",
-		   NULL, "Even now, when she remembers about what happened at that explanatory meeting, she gets really upset.", Line_WaitForInput);
+		   NULL, "Je sais que ça l'énerve encore quand elle repense à la réunion d'information d'il y a quelques années,", Line_WaitForInput);
 	OutputLine(NULL, "……それでも、そろそろ鞘に収めた方がいいと思っているのだろう。",
-		   NULL, " But I guess even she feels that needs to come to an end.", Line_Normal);
+		   NULL, " mais je sais aussi qu'elle se rend bien compte qu'il serait temps d'en finir avec ces conneries.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もっとも、安易に許すとは言えない難しいお年頃だ。",
-		   NULL, "But, of course, she can't just say she'll forgive them, not when she's at this stubborn age.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "En même temps, elle est vieille, c'est pas un âge où l'on sait pardonner facilement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　対外的にはもう勘弁してやるとは言えない。",
-		   NULL, "She can't lose face by openly saying they need to be forgiven.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle ne peut pas se permettre d'admettre en public qu'elle ne leur en veut plus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -373,24 +373,24 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………本当は嫌いじゃないくせに、面と向うと邪険にしてしまう、小学生女子なみの感情表現のような気がする。",
-		   NULL, "......Honestly, I think she's behaving like a little schoolgirl who actually likes a person but treats them rudely when they're around.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... ... Elle me rappelle ces filles qui ne diraient pas non, mais qui n'osent pas dire oui en public.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…人って、歳を取ると、どうやら一周回ってきて、子供に戻るんじゃないだろうか。",
-		   NULL, "...Maybe people really do go back to being children when they get old enough.", Line_Normal);
+		   NULL, "En fait, si ça se trouve, plus on devient vieux, plus on retombe en enfance...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは婆っちゃだけじゃない。",
-		   NULL, "I'm not just talking about Granny.", Line_WaitForInput);
+		   NULL, "Et pas seulement mon aïeule.", Line_WaitForInput);
 	OutputLine(NULL, "村のお年寄りたち全体。",
-		   NULL, " The same can be said about all of the old people in the village.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Tous les anciens du village sont pareils.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……いや、村に染み付いた悪弊と言うべきか。",
-		   NULL, "...No, maybe I should say the evil around here.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'irais même jusqu'à dire que tous les gens qui vivent trop longtemps chez nous sont pareils.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -398,17 +398,17 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは多分、婆っちゃの例えた、澱んだ悪い空気とそっくりなものだ。",
-		   NULL, "That must be what she meant by bad air.", Line_Normal);
+		   NULL, "Ça rejoignait ce qu'elle avait dit à propos de l'air vicié dans le village.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　締め切った室内でいくらばたばたと扇いだって、何の意味もない。",
-		   NULL, "There's no use circulating the air in a closed room.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Dans une pièce fermée hermétiquement, ça ne sert à rien d'avoir un éventail.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　窓を開けて、新鮮な空気をたっぷり入れなきゃ、室内の空気は澄まないのだから。",
-		   NULL, "Unless you open the windows and let fresh air in, the air in the room won't be purified.", Line_Normal);
+		   NULL, "Il faut ouvrir grand la fenêtre, sinon, l'air ne devient pas respirable.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/sora5", 400 );
@@ -416,183 +416,183 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2021", 128, TRUE);
 	OutputLine(NULL, "「実際に引っ越してくる人があるかはわからないけど。",
-		   NULL, "\"We don't know if there's actually going to be people moving here,", Line_WaitForInput);
+		   NULL, "— Je ne sais pas si on aura encore des gens qui emménageront.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2022", 128, TRUE);
 	OutputLine(NULL, "その人にそこまでを期待しちゃうのは気の毒じゃない？",
-		   NULL, " but don't you think you're expecting too much from whoever does?", Line_WaitForInput);
+		   NULL, " Mais j'ai un peu de peine pour eux, tu comptes beaucoup sur eux, je trouve !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2023", 128, TRUE);
 	OutputLine(NULL, "　くっくっく！」",
-		   NULL, " Heh heh heh!\"", Line_Normal);
+		   NULL, " Ahahahah !", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2019", 128, TRUE);
 	OutputLine(NULL, "「レナちゃんが１人転校してきても魅音は変わるんね。",
-		   NULL, "\"Just Rena-chan moving here changed you, Mion.", Line_WaitForInput);
+		   NULL, "— Bah, même s'il n'y a que Rena, ça te fera du changement, Mion.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2020", 128, TRUE);
 	OutputLine(NULL, "誰が引っ越してきても、きっと村は変わる。",
-		   NULL, " Whoever moves here will change this village.", Line_WaitForInput);
+		   NULL, " Et si d'autres gens viennent, le village changera.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2021", 128, TRUE);
 	OutputLine(NULL, "……願わくば、それが元気な若者で、わしら年寄り連中が安心して村を任せられるくらい、大暴れしてくれよると嬉しいんだが。",
-		   NULL, " If possible, I hope some young and energetic people who have the charisma to lead will appear. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " J'aimerais bien voir venir un bon petit jeune bien énervé, histoire que nous autres vieux puissions partir tranquilles. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2022", 128, TRUE);
 	OutputLine(NULL, "それこそ年寄り連中が、もうやっとられんね、あの世に退散するわー言うくらいにな。」",
-		   NULL, "They need to be the ones to put us old people away into Heaven.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si possible, il devrait ramener tellement d'agitation que nous serions prêts à partir dans l'autre monde rien que pour ne plus entendre sa grande schnabel !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2024", 128, TRUE);
 	OutputLine(NULL, "「くっくっく…、何それ。",
-		   NULL, "\"Heh heh heh,", Line_WaitForInput);
+		   NULL, "— Ahahahaha,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2025", 128, TRUE);
 	OutputLine(NULL, "死んだおじいちゃんの話？」",
-		   NULL, " are you thinking about Gramps?\"", Line_Normal);
+		   NULL, " c'est quoi ton délire ? Comme Pépé ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2023", 128, TRUE);
 	OutputLine(NULL, "「あほんたれ、誰が爺さまの話をしたんよ…！！",
-		   NULL, "\"Damn you, nobody's thinking about him!", Line_WaitForInput);
+		   NULL, "— Non mais dis donc, espèce de questsche, du respect pour les morts, hein !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2024", 128, TRUE);
 	OutputLine(NULL, "　ほれ、お手伝いさん言って、縁側のお茶を片付けさせてくれな。」",
-		   NULL, " Here, have the housekeeper put away the tea set on the veranda.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Appelle donc quelqu'un pour ranger le thé qui est sur la véranda.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2026", 128, TRUE);
 	OutputLine(NULL, "「へいへい。",
-		   NULL, "\"Okay, okay.", Line_WaitForInput);
+		   NULL, "— Ouais, ouais,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2027", 128, TRUE);
 	OutputLine(NULL, "了解了解。」",
-		   NULL, " I will!\"", Line_Normal);
+		   NULL, " c'est bon, j'y vais.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "white", 400 );
 	DrawScene( "background/rouka1", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2025", 128, TRUE);
 	OutputLine(NULL, "「……………魅音。」",
-		   NULL, "\"......Mion.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— ... ... Mion.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2028", 128, TRUE);
 	OutputLine(NULL, "「ん？」",
-		   NULL, "\"Hmm?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Hmm ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2026", 128, TRUE);
 	OutputLine(NULL, "「…………北条悟史が消えた日。",
-		   NULL, "\"...The day Houjou Satoshi disappeared, ", Line_WaitForInput);
+		   NULL, "— ... Quand le Satoshi Hôjô a disparu, ", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2027", 128, TRUE);
 	OutputLine(NULL, "…お前、私に詰め寄ったろが。」",
-		   NULL, "you came to me, huh?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "tu m'as presque étranglée, tu te souviens ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2029", 128, TRUE);
 	OutputLine(NULL, "「…あぁ、そんなこともしたね。",
-		   NULL, "\"Ah, yeah, I guess I did...", Line_WaitForInput);
+		   NULL, "— Ouais, c'est vrai, oui. T'as de la mémoire.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2030", 128, TRUE);
 	OutputLine(NULL, "…あはは。」",
-		   NULL, " Aha ha ha.\"", Line_Normal);
+		   NULL, " Ahahah.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2028", 128, TRUE);
 	OutputLine(NULL, "「私ゃな。",
-		   NULL, "\"That is...", Line_WaitForInput);
+		   NULL, "— Tu sais...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2029", 128, TRUE);
 	OutputLine(NULL, "…あれで目が覚めたんよ。",
-		   NULL, " what woke me up.", Line_WaitForInput);
+		   NULL, " ça m'a ouvert les yeux.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2030", 128, TRUE);
 	OutputLine(NULL, "……北条家がどうのこうの言う問題は、年寄り連中が死ねば時間が解決してくれるなんてんじゃあかんね。",
-		   NULL, " This problem with the Houjou family, we can't just let time take care of it.", Line_WaitForInput);
+		   NULL, " Je croyais que le problème des Hôjô pouvait se régler plus tard, tout naturellement, quand les anciens du village seraient morts, mais en fait, non.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2031", 128, TRUE);
 	OutputLine(NULL, "……そんなの待たず、早ぅ解決せんとなあかん。」",
-		   NULL, " We have to take care of it ourselves as soon as possible.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Non, non, non, il faut régler c't'histoire le plus tôt possible.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2031", 128, TRUE);
 	OutputLine(NULL, "「でも、自分にはそれができないから。",
-		   NULL, "\"But you can't do it yourself, ", Line_WaitForInput);
+		   NULL, "— Mais tu peux pas le faire toi-même, ", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2032", 128, TRUE);
 	OutputLine(NULL, "…余所者にそれを託す？」",
-		   NULL, "so you're going to have an outsider take care of it?\"", Line_Normal);
+		   NULL, "alors tu places tes espoirs sur les gens qui emménageront ici ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2032", 128, TRUE);
 	OutputLine(NULL, "「………それが、私にできる精一杯だんね。」",
-		   NULL, "\"...That's the best I can do.\"", Line_Normal);
+		   NULL, "— ... ... Je peux pas faire plus si je veux pas perdre la face.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2032a", 128, TRUE);
 	OutputLine(NULL, "「どんな悪い手札だって、次のドローで良い札が入れば、流れが変わるきっかけになることもある。",
-		   NULL, "\"No matter how bad your hand is, the next card can change the flow of the game.", Line_WaitForInput);
+		   NULL, "— Quand on a de mauvaises cartes à la bataille, il y a toujours une chance de tirer une bonne carte dans la pioche.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2032b", 128, TRUE);
 	OutputLine(NULL, "………それに期待して山から札を引くのも、ありかもしれない。」",
-		   NULL, " So maybe it's a good idea to draw cards from the stack.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " C'est peut-être pas si bête que ça que d'espérer que la prochaine carte sera une bonne.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2035", 128, TRUE);
 	OutputLine(NULL, "「新しい風は、魅音、お前らの世代になる。……外の風を迎え入れたれな。",
-		   NULL, "\"Your generation will be a new wind. Let that new wind come from the outside.", Line_WaitForInput);
+		   NULL, "— Le vent nouveau qui soufflera sur le village, Mion, c'est celui de ta génération. Alors fais en sorte d'aérer.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2036", 128, TRUE);
 	OutputLine(NULL, "…そして、お前は内からの風となって、交じり合いながら村の澱みを吹き飛ばしてくれ。」",
-		   NULL, " And you'll be the wind from the inside. When both winds create a gale, the gust will blow away the stale air from the village.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Parle avec des gens d'ailleurs, qu'il y ait de la circulation, histoire d'avoir de l'air frais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2033", 128, TRUE);
 	OutputLine(NULL, "「他力本願の極みだね。",
-		   NULL, "\"That's the epitome of leaving your problems to others.", Line_WaitForInput);
+		   NULL, "— C'est quand même un peu faux-jeton de ta part, Mémé.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2034", 128, TRUE);
 	OutputLine(NULL, "自分が火種を作ったくせに、孫にその尻拭いをさせるとは。」",
-		   NULL, " You're the one who started the fire, and you're trying to have your grandchild take care of it?\"", Line_Normal);
+		   NULL, " C'est quand même toi qu'as fait toute la merde, mais ce sera à moi de nettoyer...", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2037", 128, TRUE);
 	OutputLine(NULL, "「……そう言うなや。",
-		   NULL, "\"...Oh, don't say that.", Line_WaitForInput);
+		   NULL, "— Oh, eh, dis pas ça, hein.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2038", 128, TRUE);
 	OutputLine(NULL, "新しい風を、",
-		   NULL, " As the new leader of the Sonozaki family,", Line_Continue);
+		   NULL, " Tu seras la nouvelle chef de clan.", Line_Continue);
 	OutputLine(NULL, "…新しい園崎家の頭首として、村に招き入れたれ。」",
-		   NULL, " bring the new wind into the village.\"", Line_Normal);
+		   NULL, " Ce sera ton devoir d'accueillir de nouvelles personnes par chez nous.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2035", 128, TRUE);
 	OutputLine(NULL, "「…それが、次期頭首の仕事だってんなら。」",
-		   NULL, "\"...If you're say that's my job as your successor...\"", Line_Normal);
+		   NULL, "— ... T'es sûre que c'est le boulot de l'héritière ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2039", 128, TRUE);
 	OutputLine(NULL, "「………頼むわ。",
-		   NULL, "\"Please,", Line_WaitForInput);
+		   NULL, "— ... Oui.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2040", 128, TRUE);
 	OutputLine(NULL, "魅音。",
-		   NULL, " Mion.", Line_WaitForInput);
+		   NULL, " Alors Mion, s'il te plaît.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2041", 128, TRUE);
 	OutputLine(NULL, "私ゃあ老いたんね。",
-		   NULL, " I'm too old.", Line_WaitForInput);
+		   NULL, " Je suis vieille, moi.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2042", 128, TRUE);
 	OutputLine(NULL, "もう憎まれ役しかでけん。」",
-		   NULL, " The only thing I can do now is to be despised by people.\"", Line_Normal);
+		   NULL, " C'est à moi d'avoir le mauvais rôle.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　風鈴がチリンと、弱々しく鳴った。",
-		   NULL, "The wind chime sounded quietly.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La cloche qui indiquait le vent eut un très faible tintement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -600,7 +600,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは涼風がこれから吹くことを知らせる先触れだったに違いない…。",
-		   NULL, "Maybe that's a sign to let us know a cool breeze is on the way...", Line_Normal);
+		   NULL, "Elle avait raison. Bientôt, une brise d'un vent nouveau soufflerait sur le village...", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eye" );

@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	DrawScene( "black", 400 );
 
@@ -9,19 +9,19 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……………これで、集められる駒は全て昭和５８年に並んだのかしら。",
-		   NULL, "With this, do I have all the pieces lined up for 1983?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... ... Et avec ceci, je pense que nous avons rassemblé toutes les pièces que nous avions pour les placer en 1983.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５８年６月に駒を並べるだけでも、…私たちには長い旅で、本当に疲れることね。",
-		   NULL, "It sure is a hard and exhausting job just lining up the pieces for the month of June.", Line_Normal);
+		   NULL, "Nous n'avons fait qu'arriver jusqu'en juin 1983, mais le voyage fut déjà long et fatiguant.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、これでようやくスタートライン。",
-		   NULL, "But finally I'm at the starting line.", Line_WaitForInput);
+		   NULL, "Et pourtant, ce c'était que la ligne de départ.", Line_WaitForInput);
 	OutputLine(NULL, "ここからようやくゼロが始まる。",
-		   NULL, " Beginning from zero, at last.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Nous pouvions enfin commencer à notre point zéro.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -29,12 +29,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……しかし、…こうして色々なカケラを見てみると。",
-		   NULL, "...Yet... seeing all these colorful Fragments together,", GetGlobalFlag(GLinemodeSp));
+		   NULL, "N'empêche, heureusement que nous avons vu tous ces fragments.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５８年６月に、どれほどの思いがたくさん集まっていたのかがわかる。",
-		   NULL, "I realized just how many sentiments were intertwined around June 1983.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Cela nous permet de nous rendre compte à quel point les idées, les rêves et les projets diffèrent chez les uns et les autres parmi les protagonistes de notre mois de juin 1983.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -42,50 +42,50 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　かつての私は、自分に関係のない人間の思いなど何の役にも立たないと言っていたけど。",
-		   NULL, "I used to think that thoughts of people with no relation to me were useless.", Line_WaitForInput);
+		   NULL, "Autrefois, j'avais toujours pensé que le passé et les motivations des gens qui n'avaient pas un lien direct avec moi étaient complètement inutiles,", Line_WaitForInput);
 	OutputLine(NULL, "…それはとんでもないこと。",
-		   NULL, " But I was wrong.", Line_Normal);
+		   NULL, " mais en fait, j'avais faux sur toute la ligne.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古手梨花は、……昭和５８年６月の運命を乗り越えるために、自分にできる全ての努力をする。",
-		   NULL, "Rika Furude did her best to overcome the fate of June 1983.", Line_Normal);
+		   NULL, "Rika Furude devait maintenant faire tout ce qui était en son pouvoir pour modifier le cours du destin de ce mois de juin 1983.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女がした努力は２つ。",
-		   NULL, "She did two things.", Line_Normal);
+		   NULL, "Pour l'instant, elle avait fait en particulier deux efforts distincts.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/sinryou_soto1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　１つは、自分の身に降りかかる災厄から一番身を守ってくれるに違いない入江機関への接触。",
-		   NULL, "One was to get in touch with the Irie Institute, because she knew she would be protected there.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le premier était de se rapprocher de l'Institut Irie, pour être protégée autant que possible des aléas du destin.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…皮肉にも、その入江機関の鷹野が私の命を狙うのだけど、",
-		   NULL, "Ironically, Takano from the Irie Institute was the one who wanted to kill her,", Line_ContinueAfterTyping);
+		   NULL, "L'ironie étant que c'était surtout Takano qui en avait après sa vie, mais avant, elle ne pouvait pas le savoir, et de toute façon, avant la date de juin 1983, elle ne risquait rien,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…この時点の梨花にとって、それは最善の行動。",
-		   NULL, " but it was the best move for her at the time.", Line_Normal);
+		   NULL, " c'était donc la meilleure chose à faire.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そしてもう１つは、…前原圭一の一家、前原家が雛見沢へ転校してくるようにしたこと。",
-		   NULL, "And the other was to ensure that the Maebara family moved to Hinamizawa.", Line_Normal);
+		   NULL, "Le deuxième effort était de faire en sorte de déclencher un événement précis : l'emménagement de Keiichi Maebara à Hinamizawa.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　実は、前原家が雛見沢へ転校してくるのは絶対じゃない。",
-		   NULL, "It actually wasn't certain that the Maebara family would move here.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Parce qu'à dire vrai, son arrivée n'était pas automatique.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "background/susuki", "maskc", 1, 0, 1300 );
@@ -94,29 +94,29 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……あの、分譲地の下見の日に、私たちと出会い、何かの感慨に浸って初めて引越しを決意するの。",
-		   NULL, "...They first decided to move here when the father felt something sentimental at the sight of us on the day he came to view the properties for sale.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'était une décision qui était prise uniquement par le père de Keiichi, le jour de la visite des terrains allotis, et uniquement parce qu'il nous voit jouer ensemble dans ce champ.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、あの野原で私たちが遊ぶのは必然で、前原家引越しのための重要な鍵。",
-		   NULL, "Therefore, it was necessary for us to play in that field. It was the trigger for the Maebara family's move.", Line_Normal);
+		   NULL, "C'est pourquoi notre danse dans ce champ de fleurs sauvages doit obligatoirement arriver si nous voulons avoir Keiichi dans notre camp, c'est elle qui est la clef de cet emménagement.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを見つけるのにどれだけ長い時間を掛けたことか。",
-		   NULL, "It took me so long to find that out, though.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je ne vous raconte même pas combien d'années et combien d'essais nous avons dû faire pour nous en rendre compte.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　様々な条件のオンとオフを繰り返し、あの野原で圭一の父に出会うことが鍵なんだと、ようやく突き止めた。",
-		   NULL, "After turning various conditions on and off repeatedly, I finally realized that meeting Keiichi's father at that field was the cause.", Line_Normal);
+		   NULL, "Il a fallu tenter de modifier toutes les conditions possibles et imaginables, faire une chose mais pas les autres, les tenter toutes une par une, pour finalement découvrir qu'il nous fallait être dans ce champ à cette date précise.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　前原圭一は、…私を縛る鎖のひとつ、ルールＺを打ち破る重要な鍵。",
-		   NULL, "Maebara Keiichi is a very important key for breaking Rule Z, one of the chains that was binding me.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Keiichi Maebara est la clef qui nous permet de briser l'une des chaînes du destin qui nous maintiennent dans cette boucle temporelle : cette chaîne, nous l'appellerons la loi Z.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -124,7 +124,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この村で何が起こっても、全て曲解して解釈してしまう古きしきたりや悪弊を打ち破る力を持つ、新しく清らかで力強い風。",
-		   NULL, "He is the fresh air that's powerful enough to break all the old and evil customs in this village.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il était le souffle du renouveau, d'un vent frais et pur qui avait le pouvoir de briser les mauvaises habitudes du village, et surtout celle de tout interpréter de travers.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -132,19 +132,19 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな彼が色々なきっかけを作り出し、……強固な運命に立ち向かうには、強固な意志と、信じる気持ちが大切なんだという、大切な鍵を私に託してくれる。",
-		   NULL, "He created many opportunities, but he also provided me with an important clue by letting me know that a strong conviction and the will to believe is what's important in standing up against a powerful fate.", Line_Normal);
+		   NULL, "C'est grâce à ses actions, à de nombreuses occasions, qu'il me permettra de comprendre que seule une volonté indéfectible pouvait s'élever contre le Destin. C'était une clef très importante.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…でも、そんな彼を欲したのは私だけじゃない。",
-		   NULL, "...But I wasn't the only one who wanted him here.", Line_Normal);
+		   NULL, "... Mais je n'étais pas la seule à avoir souhaité son arrivée.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "background/hi1", "maskup", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　村の悪弊を払拭したかった園崎家の人間たちも望んでいたこと。",
-		   NULL, "People in the Sonozaki family who wanted to wipe out the nastier traditions of the village also wished for him.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'était une chose que les Sonozaki aussi avaient espéré voir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -152,12 +152,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎魅音は、北条家や沙都子、悟史への理不尽な村八分に心を痛め、せめて自分だけは２人を守ってやろうと誓った。",
-		   NULL, "Mion Sonozaki vowed to herself to protect Satoko and Satoshi because she was very much bothered by how irrational the treatment of the Houjou family was.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mion s'était jurée d'essayer d'améliorer la situation de Satoshi et de Satoko, car elle était contre les chicaneries du village à leur encontre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、北条悟史が消えた夜、園崎お魎に怒りを爆発させ、その強い思いを伝えた。",
-		   NULL, "And on the night Satoshi Houjou disappeared, she exploded at Oryou Sonozaki and voiced her true feelings.", Line_Normal);
+		   NULL, "Et le soir où Satoshi Hôjô avait disparu, elle avait laissé exploser sa colère contre sa grand'mère, en lui faisant part de ses intentions.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
@@ -165,12 +165,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その思いは、…園崎お魎に伝わる。",
-		   NULL, "Oryou Sonozaki understood.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et les intentions de Mion résonnèrent en son aïeule.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お魎だって薄々とは村の悪弊に気付いていて、それを何とかしたいと願っていた。",
-		   NULL, "Oryou herself had come to understand the wicked customs of the village, and had been wanting to do something about it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Oryô Sonozaki s'était bien rendu compte que le village avait des habitudes peu glorieuses, et elle souhaitait un changement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -178,12 +178,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、自分にはその力がないことを悔やみ、",
-		   NULL, "But she didn't have the power to do so herself,", Line_ContinueAfterTyping);
+		   NULL, "Mais elle savait qu'elle ne pouvait rien faire.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……外からの新風に託したのだ。",
-		   NULL, " so she entrusted it to the fresh air that was blowing in from the outside.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Elle espérait trouver une aide extérieure.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -191,14 +191,14 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、前原家が引っ越して来れる土地が、売りに出される。",
-		   NULL, "That was why the lots went on sale, so the Maebara family could move in.", Line_Normal);
+		   NULL, "Et c'est pourquoi elle décida de vendre certains des terrains des Sonozaki, pour permettre l'arrivée de nouveaux habitants.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が野原で踊ろうとも、お魎が分譲地を売りに出さなかったら、圭一は来られないのだ。",
-		   NULL, "Even if I danced in that field, if Oryou hadn't put the lots on sale, Keiichi couldn't have come.", Line_Normal);
+		   NULL, "Il ne suffisait pas d'aller dans le champ et de danser. Si le terrain du champ n'était pas à vendre, Ichirô Maebara ne prenait même pas la peine de venir à Hinamizawa. Et donc Keiichi ne venait pas.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -207,9 +207,9 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、前原圭一に重要なきっかけをいくつも与える竜宮レナは、",
-		   NULL, "And Rena Ryuugu, who provided many important opportunities for Keiichi Maebara,", Line_WaitForInput);
+		   NULL, "Il fallait aussi considérer Rena Ryûgû, car sa présence était cruciale pour le développement de Keiichi.", Line_WaitForInput);
 	OutputLine(NULL, "両親の離婚で深く傷つき、末期発症を一度は迎えながらも、雛見沢に帰ってくることで救われる。",
-		   NULL, " was saved by returning to Hinamizawa, after the deep emotional trauma of her parents' divorce sent her into terminal condition.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Elle devait souffrir de la séparation de ses parents, elle devait faire une crise aiguë et y survivre, et elle devait revenir à Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -217,7 +217,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　引越し前の地でのことを、リセットして再びやり直したいという前原圭一の願いは、一年前に、竜宮レナも願っていたのだ。",
-		   NULL, "Keiichi Maebara's wish to restart his life was the same wish Rena Ryuugu had a year prior.", Line_Normal);
+		   NULL, "Elle devait avoir, à un an près, fait le même vœu que Keiichi, celui de recommencer sa vie à zéro, de prendre un nouveau départ.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -225,7 +225,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんなレナだから、…圭一のことを理解できたのではないかと思う。",
-		   NULL, "Maybe that's why Rena was able to understand Keiichi.", Line_Normal);
+		   NULL, "Parce que ce n'était qu'à ces conditions qu'elle avait la possibilité de le comprendre.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/fure1", 400 );
@@ -234,12 +234,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは、あるカケラにおいて、…別のカケラのことを認識させるという奇跡を生み出す。",
-		   NULL, "It's like the miracle where one can recognize moments in a certain Fragment from another Fragment.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'était cela qui déclencherait, dans l'un des fragments, cette réminiscence miraculeuse d'un autre fragment, et qui éviterait la catastrophe.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………別のカケラで学んだことを活かせるなら、人は間違いなど犯さない。",
-		   NULL, "......If they can use the lessons learned from one Fragment, then humans won't make those mistakes.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si l'être humain pouvait toujours profiter du savoir des erreurs commises dans d'autres univers parallèles, il ne ferait plus jamais aucune erreur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -247,7 +247,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　駒は最善の動きを見せ、昭和５８年６月というゲームに勝てる可能性を飛躍的に高めるだろう。",
-		   NULL, "The game pieces will make their best moves, and the chances of winning this game of June 1983 will rapidly increase.", Line_Normal);
+		   NULL, "Ce n'était qu'à ce prix que les pièces de ce jeu d'échecs pouvaient éviter les mouvements les moins pertinents, et augmenter ainsi exponentiellement nos chances de victoire.", Line_Normal);
 	ClearMessage();
 
 	StopFragment(400);
@@ -256,12 +256,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり竜宮レナは自覚せずして、このゲーム盤の駒の中で重要な働きをするのだ。",
-		   NULL, "In other words, Rena Ryuugu makes extremely important moves on this game board without realizing it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce qui signifiait que sans s'en rendre compte, Rena Ryûgû était l'une des pièces maîtresses de cet échiquier.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　北条兄妹を巡る強固なルールＺは、そんな彼らの活躍で、やがて痛快に破られるのだ。",
-		   NULL, "The mighty Rule Z that surrounded the Houjou siblings was eventually smashed by their actions.", Line_Normal);
+		   NULL, "C'était grâce à elle et à tous ces gens que Keiichi finirait par briser la loi Z et délivrer Satoko Hôjô de toute cette injuste souffrance.", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(0, 4, "sprite/sa1a_hannbeso_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
@@ -269,12 +269,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん、内側からの沙都子の克己も大きな力となる。",
-		   NULL, "Of course, Satoko overcoming herself was also a big help.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Bien sûr, le désir de Satoko de se surpasser était important, lui aussi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　双方が手を伸ばしあったからこそ、互いの手が届いたのだから。",
-		   NULL, "Their hands met only because they reached from both sides.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'était uniquement grâce à sa présence que Satoko avait pu saisir la main tendue des autres et obtenir de l'aide.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -288,26 +288,26 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そしてそれを教えてくれたのは圭一とレナ。",
-		   NULL, "Keiichi and Rena are the ones who taught me that.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et c'est Rena et Keiichi qui lui apprirent cette leçon.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…彼らが引っ越してこれるようにし、村に馴染めるようにした魅音。",
-		   NULL, "Mion is the one who made it possible for them to move here, and she also helped them to become familiar with the village.", Line_Normal);
+		   NULL, "Et c'est grâce à Mion que ceux-ci purent emménager à Hinamizawa.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "background/fure2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それだけじゃない。",
-		   NULL, "That's not all.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais ce n'était pas tout.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	ModDrawCharacter(0, 10, "sprite/iri2_def2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 
 	OutputLine(NULL, "入江だって大きな思いと働きのある重要な駒だ。",
-		   NULL, "Irie is also an important piece with significant functions of his own.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Kyôsuke Irie aussi était une pièce maîtresse de cet échiquier.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -315,24 +315,24 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子を同情する彼は、雛見沢症候群というこのゲーム盤の中でもっとも大きな影響力を持つ、ルールＸを打ち破ることができる最大の存在だ。",
-		   NULL, "Feeling empathy for Satoko, he is the most influential piece on the board we call \"Hinamizawa Syndrome\". His existence is capable of defeating Rule X.", Line_Normal);
+		   NULL, "Il avait beaucoup de compassion pour Satoko, et il était celui qui était le plus à même de briser la loi X qui régissait cet univers : la maladie du syndrome de Hinamizawa.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一やレナの決意や覚醒は、ルールＸに抗うことができることを教えただけで、打ち破ったわけではない。",
-		   NULL, "Keiichi and Rena's determination and subsequent awakening taught us that it was possible to fight against Rule X, but they didn't defeat it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les prises de décisions et les visions miraculeuses de Rena et de Keiichi laissaient entrevoir une possibilité de briser la loi X, mais il restait encore fort à faire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　真の意味で打ち破るには、雛見沢症候群の治療に強い決意を持つ入江の存在も欠かせないのだ。",
-		   NULL, "Defeating Rule X requires the existence of Irie, who has the strong will to discover a cure for the syndrome.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si l'on voulait réellement la briser, alors la présence et l'aide d'Irie devenaient cruciales, car il était fermement décidé à créer un médicament pour guérir la maladie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　入江にも、これほどの色々な思いがあるなんて、知らなかった。",
-		   NULL, "I didn't know Irie held this many thoughts within him.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je dois avouer que je ne savais pas qu'Irie était poussé par autant de motivations.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -340,24 +340,24 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どこかぼんやりした人間くらいにしか思わなかったが、",
-		   NULL, "I always thought he was rather absent-minded,", Line_ContinueAfterTyping);
+		   NULL, "Je trouvais qu'il était toujours un peu prompt à calmer le jeu, qu'il faisait de la figuration,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……これほどに重要な力を持っている駒だったのだ。",
-		   NULL, " but he is, in fact, an important and powerful piece.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " mais en fait, il avait de grandes prérogatives.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これらの力を結集したら、……鷹野の思いに勝てるだろうか。",
-		   NULL, "So if we gather all this power... can we win against Takano's will?", Line_Normal);
+		   NULL, "Mais est-ce que ses forces, même combinées aux nôtres, seraient suffisantes pour vaincre Takano ?", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/fure2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……鷹野の思いも見てきた。",
-		   NULL, "I've seen Takano's thoughts too.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Car j'ai aussi pu voir le chemin de Miyo Takano.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -365,12 +365,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは悲しいくらいに強固で、…打ち破るのは容易じゃない。",
-		   NULL, "Sadly, her will is strong, and can't be easily broken.", Line_Normal);
+		   NULL, "Elle était prête à tout, obstinée comme pas possible. C'était à en pleurer de rage. Il ne sera vraiment pas facile de la vaincre.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いくら戦おうとも、昭和５８年６月の運命が容易には揺るがないのは当り前。",
-		   NULL, "It's no wonder our fate in June 1983 has been so hard to shake no matter how hard we fought.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce n'était pas étonnant, finalement, que mes résolutions pour ce mois de juin 1983 n'eussent pas eu plus de répercussions que cela sur mon destin toutes les autres fois.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -378,12 +378,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が募らせてきた思いなど、足元にも及ばないほど、たくさんの思いを持っていたのだから。",
-		   NULL, "The sentiments I've been turning towards it pale in comparison to how many she's brought into it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Miyo Takano avait eu des centaines de choses qui la poussaient inexorablement de l'avant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……戦うことを諦め、惰性に生きてきた私と、常に人生を賭けて戦いを挑んできた彼女とでは、駒の重みが違う。",
-		   NULL, "The weight of our game pieces are different, because I've given up on fighting while she has been risking her life to fight on.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Là où moi, j'avais vécu dans la paresse, ayant abandonné toute idée de rébellion, Miyo avait sans cesse remis en question ses capacités, elle s'était battue bec et ongles tous les jours, jour après jour, toute sa vie. Sa pièce avait une importance autrement plus grande que la mienne.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -391,22 +391,22 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……不貞腐れて、ワインに酔い逃避する私の駒がいかに軽かったことか。",
-		   NULL, "...I've spent time sulking and drinking wine to escape from reality. I must be a very light piece indeed.", Line_Normal);
+		   NULL, "Tant que je boudais dans mon coin à me saouler la gueule au vin, je ne risquais pas de faire le poids contre elle.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………これだけでは、…まだ鷹野に勝てない。",
-		   NULL, "...I can't win against Takano with what I have so far.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Hmmm, même avec toutes ces pièces, je ne pense pas pouvoir me mesurer à elle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　勝つためには、まだまだ駒を集めなければならない。",
-		   NULL, "I need more pieces to be able to win.", Line_Normal);
+		   NULL, "Si je veux la vaincre, il me faut encore plus d'aide, plus de pièces.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　警察の大石が、心強い味方になってくれる可能性を示してくれたこともあった。",
-		   NULL, "The officer Ooishi once showed the possibility of becoming a strong ally.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "L'inspecteur de police Kuraudo Ôishi m'avait semblé avoir le potentiel pour devenir un allié de poids.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -414,21 +414,21 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…だが、大石には尊敬する友人の死が、園崎家によるものだという大きな誤解があって、それが解けない限り、味方とはなってくれないだろう。",
-		   NULL, "But he's under the misunderstanding that the Sonozaki family caused the death of his dear friend, so until that gets resolved, he won't be of any help.", Line_Normal);
+		   NULL, "Mais à cause du malentendu qui régnait quant à la responsabilité des Sonozaki dans la mort horrible de son ami et mentor, il ne pouvait pas m'aider.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…私にはどうやればその誤解を解けるのかわからないけれど、",
-		   NULL, "I don't know how I can resolve that misunderstanding...", Line_WaitForInput);
+		   NULL, "Il me fallait d'abord résoudre ce malentendu, mais je ne savais pas comment faire.", Line_WaitForInput);
 	OutputLine(NULL, "………必ず解けると信じて、サイコロを振り続けるしかない。",
-		   NULL, " ...but I just have to believe in it and keep throwing the die.", Line_Normal);
+		   NULL, " ... Je ne pouvais que lancer les dés et espérer un coup de chance.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、……圭一やレナたちが運命を変えるきっかけとなってくれたように、",
-		   NULL, "Just like Keiichi and Rena constitute a chance to change fate,", Line_WaitForInput);
+		   NULL, "Et enfin, je me demandais si Akasaka n'avait pas le même pouvoir que Rena et Keiichi,", Line_WaitForInput);
 	OutputLine(NULL, "…赤坂にもそんなきっかけを与える力があるのではないか。",
-		   NULL, " maybe Akasaka has the power to create a chance as well.", Line_Normal);
+		   NULL, " celui de déclencher une situation propice à briser les lois de mon destin.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
@@ -436,69 +436,69 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５８年の呪いは、雛見沢の呪いにも通じる。",
-		   NULL, "The curse of 1983 is tied to the curse of Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La malédiction du mois de juin 1983 a une influence directe sur la malédiction qui règne sur Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……呪いは、内なる力だけでは解けない。",
-		   NULL, "...A curse can't be broken by inner power alone.", Line_WaitForInput);
+		   NULL, "Et cette malédiction ne pouvait pas être déjouée simplement de l'intérieur.", Line_WaitForInput);
 	OutputLine(NULL, "外からの力も必要なのだ。",
-		   NULL, " It takes power from outside as well.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Il me fallait aussi de l'aide depuis l'extérieur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　双方が手を伸ばさないと手が届かない、沙都子の時のように。",
-		   NULL, "Both sides have to reach out, otherwise the hands won't meet, just like what happened with Satoko.", Line_Normal);
+		   NULL, "C'était un peu comme pour Satoko, sans une main tendue pour me venir en aide, tous mes efforts ne serviraient à rien.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、赤坂が私たちのことを思い出して駆けつけてくれたことはない。",
-		   NULL, "But Akasaka has never come to our aid.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais Akasaka n'était jamais venu à mon secours, en tout cas, il ne s'était jamais souvenu de nous.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……駆けつけてくれても、それはいつも手遅れになった後なのだ。",
-		   NULL, "Even if he did, it was always too late.", Line_WaitForInput);
+		   NULL, "Lorsqu'il lui était arrivé de venir, ç'avait toujours été trop tard.", Line_WaitForInput);
 	OutputLine(NULL, "…遅い。",
-		   NULL, " Too late.", Line_WaitForInput);
+		   NULL, " Trop tard.", Line_WaitForInput);
 	OutputLine(NULL, "あまりに遅い。",
-		   NULL, " Far too late.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Beaucoup trop tard.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それでも信じてサイコロを振り続けたなら、……いつか赤坂という駒も、味方としてゲーム盤の上に現れてくれるのか。",
-		   NULL, "But if I keep throwing the die, will Akasaka's game piece eventually appear?", Line_Normal);
+		   NULL, "Mais peut-être que si je continue à lancer les dés, un jour, un lancer me permettra de le compter, lui aussi, parmi mes pièces.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/fure1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最後のルールＹは、鷹野を駒とする悪しき黒幕たち。",
-		   NULL, "The final rule, Rule Y, involves the evil masterminds who are using Takano as their own game piece.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Quant à la dernière loi, la loi Y, elle représente les donneurs d'ordres qui se servent de Miyo Takano.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それを打ち破るには強い強い駒がいる。",
-		   NULL, "...To defeat them, I need a very strong opponent for her.", Line_WaitForInput);
+		   NULL, "Pour briser cette chaîne-là, il va me falloir une pièce extrêmement puissante.", Line_WaitForInput);
 	OutputLine(NULL, "…それだけの力を持つ駒は、",
-		   NULL, " And the only one I can think of", Line_ContinueAfterTyping);
+		   NULL, " Et honnêtement,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…多分、東京の警視庁に勤める赤坂にしかないはず。",
-		   NULL, " is none other than Akasaka from the police headquarters in Tokyo.", Line_Normal);
+		   NULL, " à part un Akasaka ayant acquis beaucoup de galons à la D.S.T., je ne voyais pas qui pouvait avoir autant de puissance.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……まだまだ力を借りるべき駒があるのだ。",
-		   NULL, "There are more pieces who would lend me their power.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il y a encore sûrement d'autres pièces dont je pourrais obtenir l'aide.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それらを全て集めなきゃ、……あの鷹野には、敵わない。",
-		   NULL, "I need to gather them all, otherwise I can't win against Takano.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il me les faut toutes si je veux pouvoir me mesurer à Takano.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -506,14 +506,14 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ゲーム盤の準備は整った。",
-		   NULL, "The preparation of the game board is complete.", Line_WaitForInput);
+		   NULL, "Désormais, l'échiquier était en place. Tout était préparé.", Line_WaitForInput);
 	OutputLine(NULL, "でも駒が足りない。",
-		   NULL, " But I need more pieces.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Il me manquait juste encore quelques pièces.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…まだまだ、これからなんだ。",
-		   NULL, "...It's only the beginning.", Line_Normal);
+		   NULL, "Rien n'était gagné. Tout était encore à faire...", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eye" );

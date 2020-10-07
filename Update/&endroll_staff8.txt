@@ -31,7 +31,7 @@ void main()
 	Wait( 20500 );
 
 	MoveSprite( 5, -320, -5350, 0, 0, 0, 0, 0,200000, FALSE );
-	MoveSprite( 6, -320, -1350, 0, 0, 0, 0, 0,200000, FALSE );
+	MoveSprite( 6, -320, -1690, 0, 0, 0, 0, 0,200000, FALSE );
 
 	Update(); //start the queued move without waiting for it
 	Wait(100000);

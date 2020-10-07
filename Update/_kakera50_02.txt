@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	DrawScene( "black", 400 );
 
@@ -11,50 +11,50 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……長かった。",
-		   NULL, "It was long.", Line_WaitForInput);
+		   NULL, "... Enfin… Ce fut long,", Line_WaitForInput);
 	OutputLine(NULL, "…本当に長かった。",
-		   NULL, " It really was long.", Line_Normal);
+		   NULL, " vraiment très long.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大丈夫…？",
-		   NULL, "Are you okay?", Line_WaitForInput);
+		   NULL, "Ça va, toi ?", Line_WaitForInput);
 	OutputLine(NULL, "　まだ、あなたの精神は生きている…？",
-		   NULL, " Is your spirit still alive?", Line_Normal);
+		   NULL, " Est-ce que tu es encore capable de penser ? L'ennui n'a pas eu raison de toi ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これで、私たちが欲しい駒は全てゲーム盤に並んだのかしら。",
-		   NULL, "Do we have all the pieces we want lined up on the game board?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je pense que nous avons enfin toutes les pièces que nous voulions.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５８年６月を巡る、運命のゲームで、鷹野たちに勝てるだけの駒が並んだのかしら。",
-		   NULL, "Is this everything we have that can go up against Takano and her minions in the game of fate in the June of 1983?", Line_Normal);
+		   NULL, "À mon avis, avec nos pièces, maintenant, je pense que nous devrions avoir une chance de prévaloir dans la bataille qui va nous opposer à Miyo Takano en juin 1983.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……私は、",
-		   NULL, "I think,", Line_WaitForInput);
+		   NULL, "Oui...", Line_WaitForInput);
 	OutputLine(NULL, "多分、",
-		   NULL, " maybe,", Line_ContinueAfterTyping);
+		   NULL, " Oui, je pense que...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "並んだと思ってる。",
-		   NULL, " we have everything.", Line_Normal);
+		   NULL, " nous devrions avoir tout ce qu'il faut.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あとは、羽入。",
-		   NULL, "And last but not least, Hanyuu,", Line_WaitForInput);
+		   NULL, "Il ne reste plus que toi,", Line_WaitForInput);
 	OutputLine(NULL, "…あなただけね。",
-		   NULL, " it's you.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Hanyû.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あなたが駒として登場できる時間は、もう相当に制限されている。",
-		   NULL, "The time you have left to be a piece is limited.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tu peux toi aussi venir participer à cet échiquier, même si bien sûr, je ne peux désormais t'offrir que cet unique fragment.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -62,17 +62,17 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、ゲームに登場できなくなったわけじゃない。",
-		   NULL, "But that doesn't mean you can't show up in the game.", Line_Normal);
+		   NULL, "Mais au moins, il te reste cette possibilité d'intervenir toi aussi, si tu devais le désirer.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………さぁ、始めましょう？",
-		   NULL, "...Shall we begin?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Alors, on commence ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この日のために、数百年もの時間を賭けたのだから。",
-		   NULL, "I've put in hundreds of years just for this moment.", Line_Normal);
+		   NULL, "Je ne veux pas te brusquer, mais j'ai attendu ce jour pendant des siècles et des siècles...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

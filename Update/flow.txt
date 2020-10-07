@@ -1,4 +1,4 @@
-
+﻿
 void main()
 {
 	SetValidityOfSaving( FALSE );
@@ -24,6 +24,10 @@ void BrandLogo()
 	Wait( 2000 );
 	DrawSceneWithMask( "07th-mod", "logomask", 0, 0, 1000 );
 	Wait( 2000 );
+	SetValidityOfInput( FALSE );
+	DrawSceneWithMask( "VF_R", "logomask", 0, 0, 1000 );
+	Wait( 9000 );
+	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "black", "logomask", 0, 0, 1000 );
 	ModCallScriptSection("&opening", "OpeningLaunch");
 }
@@ -189,7 +193,7 @@ void StartFragmentLoop()
 
 	CallSection("FragmentChapterDisplay");
 
-	SavePoint("カケラ紡ぎをする", "Connecting Fragments");
+	SavePoint("カケラ紡ぎをする", "Enchâsser les fragments");
 }
 
 void FragmentChapterDisplay()
@@ -198,7 +202,7 @@ void FragmentChapterDisplay()
 
 	SetValidityOfSaving( TRUE );
 
-	SavePoint("カケラ紡ぎをする", "Connecting Fragments");
+	SavePoint("カケラ紡ぎをする", "Enchâsser les fragments");
 
 	DisableWindow();
 
@@ -279,7 +283,7 @@ void Game()
 		GetAchievement("HIGURASHI_STORY_EP08_01");
 
 		StoreValueToLocalWork( ChapterNumber, 2 );
-		SavePoint("Ch.1 終わり", "End of Chapter 1");
+		SavePoint("Ch.1 終わり", "Fin du chapitre 1");
 
 		CallSection("ViewTips");
 
@@ -298,7 +302,7 @@ void Game()
 		GetAchievement("HIGURASHI_STORY_EP08_02");
 
 		StoreValueToLocalWork( ChapterNumber, 4 );
-		SavePoint("Ch.2 終わり", "End of Chapter 2");
+		SavePoint("Ch.2 終わり", "Fin du chapitre 2");
 
 		CallSection("ViewTips");
 		Wait( 3000 );
@@ -316,7 +320,7 @@ void Game()
 		GetAchievement("HIGURASHI_STORY_EP08_03");
 
 		StoreValueToLocalWork( ChapterNumber, 6 );
-		SavePoint("Ch.3 終わり", "End of Chapter 3");
+		SavePoint("Ch.3 終わり", "Fin du chapitre 3");
 
 		CallSection("ViewTips");
 		Wait( 3000 );
@@ -329,7 +333,7 @@ void Game()
 		GetAchievement("HIGURASHI_STORY_EP08_04");
 
 		StoreValueToLocalWork( ChapterNumber, 7 );
-		SavePoint("Ch.4 終わり", "End of Chapter 4");
+		SavePoint("Ch.4 終わり", "Fin du chapitre 4");
 
 		CallSection("ViewTips");
 		Wait( 3000 );
@@ -358,7 +362,7 @@ void Game()
 		GetAchievement("HIGURASHI_STORY_EP08_05");
 
 		StoreValueToLocalWork( ChapterNumber, 10 );
-		SavePoint("Ch.5 終わり", "End of Chapter 5");
+		SavePoint("Ch.5 終わり", "Fin du chapitre 5");
 
 		CallSection("ViewTips");
 		Wait( 3000 );
@@ -378,7 +382,7 @@ void Game()
 		GetAchievement("HIGURASHI_STORY_EP08_06");
 
 		StoreValueToLocalWork( ChapterNumber, 12 );
-		SavePoint("Ch.6 終わり", "End of Chapter 6");
+		SavePoint("Ch.6 終わり", "Fin du chapitre 6");
 
 		CallSection("ViewTips");
 		Wait( 3000 );
@@ -396,7 +400,7 @@ void Game()
 		GetAchievement("HIGURASHI_STORY_EP08_07");
 
 		StoreValueToLocalWork( ChapterNumber, 14 );
-		SavePoint("Ch.7 終わり", "End of Chapter 7");
+		SavePoint("Ch.7 終わり", "Fin du chapitre 7");
 
 		CallSection("ViewTips");
 		Wait( 3000 );
@@ -415,7 +419,7 @@ void Game()
 		GetAchievement("HIGURASHI_STORY_EP08_08");
 
 		StoreValueToLocalWork( ChapterNumber, 16 );
-		SavePoint("Ch.8 終わり", "End of Chapter 8");
+		SavePoint("Ch.8 終わり", "Fin du chapitre 8");
 
 		CallSection("ViewTips");
 		Wait( 3000 );
@@ -433,7 +437,7 @@ void Game()
 		GetAchievement("HIGURASHI_STORY_EP08_09");
 
 		StoreValueToLocalWork( ChapterNumber, 18 );
-		SavePoint("Ch.9 終わり", "End of Chapter 9");
+		SavePoint("Ch.9 終わり", "Fin du chapitre 9");
 
 		CallSection("ViewTips");
 		Wait( 3000 );

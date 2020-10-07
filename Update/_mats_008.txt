@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 	FadeOutBGM( 0, 0, FALSE );
@@ -14,27 +14,27 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ようこそ。",
-		   NULL, "Welcome!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Bienvenue à vous.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "『ひぐらしのなく頃に〜祭囃し編〜』の世界へ。",
-		   NULL, "Welcome to the world of Higurashi Ch.8 - Matsuribayashi.", Line_Normal);
+		   NULL, "Laissez-moi vous accueillir dans le monde de ce huitième tome de la saga du sanglot des cigales, “Les réjouissances”.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この世界では、あなたは羽入の視点から物語世界を再構築することができます。",
-		   NULL, "In this world, you will be able to recreate the story from Hanyuu's point of view.", Line_Normal);
+		   NULL, "Ici, vous allez avoir l'occasion de recréer le monde selon le point de vue de Hanyû.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最大の目的は、あなたにとっての理想である「昭和５８年６月」を作り上げることです。",
-		   NULL, "Your objective is to create the June 1983 ideal to you.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Votre objectif premier est de construire ce qui, pour vous, serait le plus beau mois de juin 1983.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その理想を実現するためには、様々なカケラを集めていく必要があります。",
-		   NULL, "You will need to collect many different Fragments to make that possible.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pour qu'il se réalise, vous devrez glâner, amasser et agencer de nombreux fragments.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -42,32 +42,32 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ただし、鷹野の理想もまた強固です。",
-		   NULL, "However, Takano's conviction is very strong.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais n'oubliez pas que Takano est déterminée à voir son futur providentiel se réaliser.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを覆すためには相当の苦労とカケラが必要となるでしょう。",
-		   NULL, "To overturn it, you will need a lot of effort and a lot of Fragments.", Line_Normal);
+		   NULL, "Pour la vaincre, vous allez avoir du pain sur la planche.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　予め警告しますが、この作業は非常に緩慢かつ苦痛です。",
-		   NULL, "I'll warn you right now... it'll be a slow and painful process.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je préfère vous prévenir tout de suite : cela va vous prendre beaucoup de temps et ce sera très fastidieux.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　羽入はこの作業を百年以上も行い、一度は挫けて運命に身を委ねてしまったのですから。",
-		   NULL, "Hanyuu went through it for over a hundred years, and she even had to stop and give in to fate.", Line_Normal);
+		   NULL, "Hanyû s'y est essayée pendant plus de cent ans, et pendant un moment, elle a même tout laissé en plan, laissant le hasard s'acquitter de cette tâche titanesque.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野の理想に打ち勝つのは容易なことではありません。",
-		   NULL, "Defeating Takano's conviction will not be easy. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il ne sera pas facile de vaincre Takano. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この世界の試練は、あなたに羽入のそれに準じた苦痛を与えるでしょう。",
-		   NULL, "The trial in this world will put you through as much pain as Hanyuu had to endure.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "L'épreuve qui vous attend sera probablement aussi difficile pour vous que pour Hanyû.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -75,14 +75,14 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あなたは無数のカケラによって何度も繰り返される世界に精神を磨り減らされ、かつて羽入が屈服したように、あなたも屈服することがありえます。",
-		   NULL, "You may surrender, just like Hanyuu did, after being emotionally worn down by the constant repetition of the worlds woven by countless Fragments.", Line_Normal);
+		   NULL, "Peut-être même finirez-vous par vous avouer vaincu, lorsque le nombre incalculable de possibilités vous aura fait tourner la tête.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あなたが屈服を認める場合。",
-		   NULL, "When you feel like surrendering, ", Line_WaitForInput);
+		   NULL, "Si jamais vous abandonnez, ", Line_WaitForInput);
 	OutputLine(NULL, "あなたはいつでもこのゲームを終了することができます。",
-		   NULL, "you can end this game at any time.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "vous pouvez quitter ce jeu à tout instant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -90,7 +90,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その場合、あなたとあなたの仲間たちの運命を巡る世界は「鬼隠し編」から「皆殺し編」までの世界で閉じられます。",
-		   NULL, "But if you do, the worlds revolving around your friends' fate will be limited to Onikakushi through Minagoroshi.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "En ce cas, le Destin de vos amis se retrouvera dans l'un des mondes que vous avez déjà connus, depuis “Enlevés par les démons” jusqu'à “La solution finale”.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -98,39 +98,39 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あなたはこの世界のことを忘れ、本作品をアンインストールすることによって、この世界での「死」を迎えることができます。",
-		   NULL, "By forgetting about this world and uninstalling this product, you will finally accept death.", Line_WaitForInput);
+		   NULL, "Vous oublierez ce tome, et lorsque vous désinstallerez le programme, vous pourrez lui donner une fin : la mort.", Line_WaitForInput);
 	OutputLine(NULL, "…やがて梨花がそうなるように。",
-		   NULL, " Just like Rika did.", Line_Normal);
+		   NULL, " La même mort que celle qui attend Rika à la fin de chaque tome.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あなたの理想の「昭和５８年６月」は、この世界に散らばる５０個ものカケラを結び合わせることで組み立てていきます。",
-		   NULL, "Your ideal June 1983 can be created by putting together fifty Fragments that are scattered all over this world.", Line_Normal);
+		   NULL, "Votre mois de juin 1983 sera composé des 50 fragments contenus dans cet endroit de l'espace-temps.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　カケラを結び合わせるには、それぞれのカケラに合ったカケラが必要です。",
-		   NULL, "To connect these Fragments together, you will need the right ones.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pour pouvoir agencer un fragment, il vous faudra d'abord avoir un fragment ayant une forme adaptée pour le recevoir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……それが５０個もあるのですから、あなたはその膨大な量にきっと眩暈すら覚えるでしょう。",
-		   NULL, "There are fifty of them, which may be dizzying.", Line_Normal);
+		   NULL, "Comme il y a 50 fragments, le nombre de possibilités a de quoi donner le tournis.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ですが、この世界はそこまで無慈悲ではありません。",
-		   NULL, "However, this world isn't that merciless.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais vous avez de la chance, ce monde n'est pas dénué de miséricorde.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あなたの苦痛をほんの少し和らげるため、ささやかな手助けが与えられます。",
-		   NULL, "To ease your pain, there'll be a little help for you.", Line_Normal);
+		   NULL, "Pour vous faciliter un tout petit peu la tâche, j'ai apporté un petit plus.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あなたが、まだ結び合わせることができないカケラを選んでしまった時。",
-		   NULL, "When you choose the wrong pieces...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si jamais vous deviez choisir un fragment que vous ne pouvez pas encore agencer dans le puzzle, alors elle placera une marque dessus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -138,7 +138,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あなたの唯一の味方である彼女は、そのカケラに、まだ結ぶことができないことを示す印を付けてくれます。",
-		   NULL, "Your only ally here will give you a sign that it's not yet time to put those Fragments together.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Cette marque signifiera que vous ne devez pas choisir ce morceau-là pour l'instant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -146,17 +146,17 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この印がある内は、そのカケラは結ぶことができないということです。",
-		   NULL, "As long as the sign remains, you won't be able to connect them.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et tant que cette marque sera là, vous ne pourrez pas saisir ce fragment.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　他のカケラを探しに行くのが良いでしょう。",
-		   NULL, "You might as well go look for different ones.", Line_Normal);
+		   NULL, "Il vous faudra alors en chercher un autre.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ですが、あなたが他のカケラを結び付けていく内に、さっきは結び合わせることができなかったカケラが、いつの間にか結び合わせることができるようになっていることがあります。",
-		   NULL, "After you put other Fragments together, you might be able to connect the ones you couldn't put together earlier.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais au fur et à mesure que vous agencerez des fragments, il se peut que vous en trouviez un qui vous permettrait de placer l'un des fragments marqués.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -164,21 +164,21 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな時、彼女は、それを知らせる印を付けてくれます。",
-		   NULL, "When that happens, she'll let you know.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Là aussi, elle vous le fera savoir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さっそくそのカケラを結び合わせてみましょう。",
-		   NULL, "Let's put those Fragments together.", Line_WaitForInput);
+		   NULL, "Placez alors immédiatement ce fragment dans le puzzle.", Line_WaitForInput);
 	OutputLine(NULL, "……そうすることで、また別のカケラが結べるようになるかも。",
-		   NULL, " Then you'll be able to join the other ones, too.", Line_Normal);
+		   NULL, " Et qui sait ? Cela pourrait vous débloquer d'autres fragments...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうして、５０個もの膨大な数のカケラ全てを結び合わせ、１つのカケラにした時、",
-		   NULL, "When you connect all fifty, they'll become one big Fragment.", Line_WaitForInput);
+		   NULL, "Et lorsque vous aurez réussi à agencer les 50 fragments en un seul énorme morceau,", Line_WaitForInput);
 	OutputLine(NULL, "…そこには理想の「昭和５８年６月」が生まれるでしょう。",
-		   NULL, " There you'll find your ideal June 1983.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " alors votre mois de juin 1983 sera prêt.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -186,12 +186,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時こそ、私たちがもっとも欲する「祭囃し編」が始まるのです。",
-		   NULL, "That's when the long awaited Matsuribayashi will begin.", Line_Normal);
+		   NULL, "Et alors, enfin, les réjouissances pourront commencer pour de bon.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一個一個のカケラを覗く前に、まずは５０個のカケラの様子をずらりと見てみた方がいいでしょう。",
-		   NULL, "Before you peek at each Fragment, why don't you line up all fifty of them first?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Avant de vous pencher en détail sur chaque fragment, je vous conseille de simplement jeter un rapide coup d'œil dessus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -199,64 +199,64 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ほとんどのカケラは、結び合わせるのに他のカケラを必要とするため、恐らく、あなたが満足に覗くことができるカケラは、ほんのいくつかです。",
-		   NULL, "Most of them require other Fragments, so there are only a few you can actually look at.", Line_Normal);
+		   NULL, "La plupart des fragments nécessitent d'autres fragments pour être agencés. Je pense qu'au départ, vous n'aurez que quelques fragments réellement à votre disposition.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まずはそのカケラを探してみましょう。",
-		   NULL, "Let's try to find those first.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Commencez donc par chercher ces précieux fragments.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そのカケラを結び合わせるための条件は、マウスポインタを合わせれば教えてもらえます。",
-		   NULL, "To see the conditions for connecting Fragments, just point the cursor at them.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si vous placez le curseur de votre souris sur la vignette d'un fragment, vous apprendrez quelles conditions sont nécessaires pour pouvoir agencer celui-ci.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ですので、まずは条件なしで覗くことができるカケラを探してみると良いでしょう。",
-		   NULL, "Before anything else, let's find the ones you can look at without any conditions.", Line_Normal);
+		   NULL, "C'est pourquoi vous devriez peut-être tout d'abord regarder les fragments n'ayant aucune condition particulière attachée à eux, non ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……これは非常に長く険しい試練になります。",
-		   NULL, "This will be an extremely long and difficult trial.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Cette épreuve sera très difficile à surmonter.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もう一度繰り返しますが、羽入は百年以上これに挑み、しかも一度は挫折しています。",
-		   NULL, "Let me tell you again, Hanyuu challenged this for over a hundred years and gave up on it.", Line_Normal);
+		   NULL, "Je sais que je me répète, mais Hanyû a essayé pendant plus de cent ans, et elle a même abandonné une fois.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　仲間たちが奇跡を信じるのと同じ気持ちを、もしもあなたも持っていてくれたなら。",
-		   NULL, "If you believe in miracles in the same way your friends do...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si vous aussi pouviez avoir foi en l'apparition d'un miracle...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　たとえ、羽入の住まう世界が違っても、彼らのことを信じることができたなら…。",
-		   NULL, "Even if you don't live in the world where they live, if you believe in them...", Line_Normal);
+		   NULL, "... Si jamais Hanyû aussi pouvait croire en ce miracle, malgré son appartenance à un autre monde... alors, peut-être que...", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/fure2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ようこそ。",
-		   NULL, "Welcome.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Bonjour et bienvenue à vous !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "『ひぐらしのなく頃に〜祭囃し編〜』の世界へ。",
-		   NULL, "Welcome to the world of Higurashi Ch.8 - Matsuribayashi.", Line_Normal);
+		   NULL, "Laissez-moi, moi aussi, vous accueillir dans le monde de ce huitième tome de la saga du sanglot des cigales, “Les réjouissances”.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この世界では、梨花たちの信じる世界をあなたも信じてくれているかどうかを試します。",
-		   NULL, "In this world, you'll be tested to see if you believe in the world that Rika and the others believed in.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Dans ce monde séparé de l'espace et du temps, je testerai votre capacité à croire en la possibilité de l'apparition d'un miracle dans le monde de Rika et de ses amis.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　奇跡は、全員の力が集まった時にのみ起こります。",
-		   NULL, "A miracle only happens when everyone combines their strength.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "N'oubliez pas que le miracle ne s'accomplira que si absolument tout le monde y croit.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -264,32 +264,32 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野の組み上げた昭和５８年６月はあまりに強固です。",
-		   NULL, "The June 1983 created by Takano is nearly indomitable.", Line_Normal);
+		   NULL, "C'est vous dire à quel point la résolution de Miyo Takano est ferme.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女は国家権力の中枢に入り込んで後ろ盾を得、一般人の常識を超えた様々な力を得ています。",
-		   NULL, "She's gathered many people whose powers are beyond the average person to her side, her backers being at the center of national authority.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle possède des alliés très puissants, capables de faire plier ou bouger les hautes sphères de l'État.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それに打ち勝てる勝算など百のサイコロが全て１を示してもありえません。",
-		   NULL, "Even if a hundred dice all rolled ones, there wouldn't even be a chance to defeat her.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Même si vous deviez réussir à placer une centaine de 1 à la suite dans vos jets de dés, cela n'y changerait rien.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり、奇跡を起こす以外に勝算は考えられないのです。",
-		   NULL, "In other words, a miracle is the only way forward.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il vous faudra réellement un miracle pour la vaincre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　全員の力が集まった時にのみ、奇跡は起こります。",
-		   NULL, "A miracle happens only when everyone combines their strength.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et ce miracle ne se produira que lorsque tout le monde aura placé ses forces et ses espoirs ensemble.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、その全員には、あなたも含まれているのです。",
-		   NULL, "And you are one of them.", Line_Normal);
+		   NULL, "Et vous aussi êtes inclus dans ce “tout le monde”.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -302,30 +302,30 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……覚悟は出来た？",
-		   NULL, "Are you ready?", Line_Normal);
+		   NULL, "... Alors, vous êtes prêt ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん、私は出来てるわ。",
-		   NULL, "I'm more than ready.", Line_WaitForInput);
+		   NULL, "Oui, je suis là, moi aussi, bien sûr.", Line_WaitForInput);
 	OutputLine(NULL, "永い旅のコツは根詰めすぎないことよ。",
-		   NULL, " The key to a long journey is not to pressure yourself too hard.", Line_WaitForInput);
+		   NULL, " Le truc pour voyager loin, c'est de ne pas s'arrêter trop longtemps en chemin.", Line_WaitForInput);
 	OutputLine(NULL, "まぁ、のんびり行きましょう。",
-		   NULL, " Well, let's take it at a light pace.", Line_WaitForInput);
+		   NULL, " Enfin, ne vous bilez pas, allons-y doucement et nous verrons bien comment ça se passe.", Line_WaitForInput);
 	OutputLine(NULL, "私はいつものワインを飲みながらやらせてもらうわ。",
-		   NULL, " I'll work while drinking my usual wine.", Line_Normal);
+		   NULL, " Ah, j'ai ramené du vin, mais il n'est que pour moi, je vous préviens. Et si, je le boirai, que vous le vouliez ou non.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/fure2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　では、始めましょう？",
-		   NULL, "Shall we begin?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Bon, alors, on peut commencer ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ここでの時間は無限にあるのだから。",
-		   NULL, "We have all the time in this world.", Line_Normal);
+		   NULL, "Enfin, je ne veux pas vous presser ; après tout, nous avons ici toute l'Éternité...", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eyeCamp" );

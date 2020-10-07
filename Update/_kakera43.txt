@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	DrawScene( "black", 400 );
 
@@ -11,12 +11,12 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このカケラだけはとても歪。",
-		   NULL, "This piece is the only one that's so distorted.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce fragment-ci était franchement difforme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だって、昭和５８年６月より、もっと前のものだから。",
-		   NULL, "That's because it's from long before June 1983.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "En même temps, il se passait bien avant le mois de juin 1983, c'était donc logique, en quelque sorte.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -24,27 +24,27 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だからこのカケラの有無は、私たちのゲーム盤の戦いに何の影響も及ぼさない。",
-		   NULL, "Therefore, the existence of this piece has no affect whatsoever in the game we're playing on this board.", Line_Normal);
+		   NULL, "C'est pourquoi à première vue, il ne nous apportait rien d'utile dans notre bataille à venir.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…でも、本当に何の影響も及ぼさない役立たずのカケラなんだろうか。",
-		   NULL, "But is this really a useless piece?", Line_Normal);
+		   NULL, "Mais était-il pour autant absolument inutile ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今やルールＹの正体は完全に暴かれている。",
-		   NULL, "The identity of Rule Y has been completely exposed by now.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nous savions désormais l'identité et les détails de la loi Y.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは、とても大きな組織の力で、個人たちのささやかな連帯など丸呑みにしてしまうほどの強大さを持っている。",
-		   NULL, "With the backing of a mighty organization, it is powerful enough to swallow up the small solidarity of individuals.", Line_Normal);
+		   NULL, "Nous savions qu'une entité gigantesque se tenait prête à nous engloutir tous, sans se soucier du détail de nos envies et de nos rêves.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その理不尽なほどの強さに、私はこのゲームを何度も諦めそうになる。",
-		   NULL, "I almost give up on this game because of its irrational power.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et à cause du rapport de forces démesuré qui jouait en notre défaveur, j'ai peu à peu commencé à contempler la possibilité d'abandonner la partie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -52,19 +52,19 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だからこそ、…思うのだ。",
-		   NULL, "That's why I'm thinking...", Line_WaitForInput);
+		   NULL, "Mais c'est aussi précisément à cause de ce désespoir latent…", Line_WaitForInput);
 	OutputLine(NULL, "……このカケラの中に、そんな強敵に立ち向かうことのできる、駒が潜んでいるのではないかと。",
-		   NULL, " that maybe there's a piece hidden somewhere that's strong enough to fight against such a formidable enemy.", Line_Normal);
+		   NULL, " que je veux espérer trouver une pièce particulièrement puissante, cachée dans ce fragment.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　赤坂衛は、東京の警視庁に勤めていて、…大きな陰謀に立ち向かえる力を持っている。",
-		   NULL, "Mamoru Akasaka works at the police headquarters in Tokyo, and might have the power to stand up to such a vast conspiracy.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mamoru Akasaka était un agent spécial de la D.S.T., un homme qui travaillait pour une organisation qui justement, tentait de vaincre le crime organisé.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その力はきっと、ルールＹが相手であっても、きっと及ぶ。",
-		   NULL, "Can his power withstand even Rule Y?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Avec un peu de chance, il aurait suffisamment de force pour contrer efficacement la loi Y.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -72,14 +72,14 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　前原圭一が、ルールＺを爽快に打ち破ったように、彼もルールＹを爽快に打ち破ってくれるのではないか。",
-		   NULL, "Just like Maebara Keiichi defeated Rule Z, will he be able to defeat Rule Y so easily?", Line_Normal);
+		   NULL, "Et qui sait, il saurait peut-être nous débarrasser de cette chaîne en la brisant aussi facilement que Keiichi avait brisé la loi Z.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……全ての力がいる。",
-		   NULL, "...We need everyone's strength.", Line_WaitForInput);
+		   NULL, "J'ai besoin de toutes les forces que je peux trouver.", Line_WaitForInput);
 	OutputLine(NULL, "赤坂の力も、必ずいる…。",
-		   NULL, " So Akasaka's strength is needed as well...", Line_Normal);
+		   NULL, " Et je suis certaine qu'il me faut aussi l'aide d'Akasaka...", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eyefragment" );
