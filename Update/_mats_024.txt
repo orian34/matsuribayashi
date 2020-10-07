@@ -286,7 +286,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　少女は歩み出て、言った。",
-		   NULL, "La jeune fille fit quelques pas elle aussi, puis répondit simplement :", Line_Normal);
+		   NULL, "La jeune fille fit quelques pas elle aussi, puis répondit simplement.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#3e5745>小此木</color>", NULL, "<color=#3e5745>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2110,10 +2110,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　………眠りながらでも、……沙都子の負担を和らげてやりたい、悟史の気持ちが、",
-		   NULL, "Je parie qu'il essaie encore d'aider sa sœur, même plongé dans ce sommeil artificiel perpétuel...", Line_WaitForInput);
-	OutputLine(NULL, "……沙都子の薬に何かを与えたに違いないのだ…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　………眠りながらでも、……沙都子の負担を和らげてやりたい、悟史の気持ちが、……沙都子の薬に何かを与えたに違いないのだ…。",
+		   NULL, "Je parie qu'il essaie encore d'aider sa sœur, même plongé dans ce sommeil artificiel perpétuel...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3634,7 +3632,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　足の裏がこんなに痛いのだって、初めてじゃない……。",
-		   NULL, "La dernière fois aussi, la sole de ses pieds lui avait fait mal comme ça.", Line_WaitForInput);
+		   NULL, "La dernière fois aussi, la plante de ses pieds lui avait fait mal comme ça.", Line_WaitForInput);
 	OutputLine(NULL, "こんなに涙が出るのだって、……初めてじゃない…。",
 		   NULL, " La dernière fois aussi, elle avait pleuré toutes les larmes de son corps...", Line_WaitForInput);
 	OutputLine(NULL, "……ううぅううぅ…。",
@@ -5409,10 +5407,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　どれだけ悲しい声で叫んでも、",
-		   NULL, "Nous savions qu'aucun cri, aucun pleur, aucun souhait ne pourrait empêcher la tragédie d'avoir lieu lorsque le Temps reprendrait son cours !", Line_WaitForInput);
-	OutputLine(NULL, "……次の瞬間の悲劇が回避できないのを、…ありえない記憶で知ってしまっているッ！！！",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　どれだけ悲しい声で叫んでも、……次の瞬間の悲劇が回避できないのを、…ありえない記憶で知ってしまっているッ！！！",
+		   NULL, "Nous savions qu'aucun cri, aucun pleur, aucun souhait ne pourrait empêcher la tragédie d'avoir lieu lorsque le Temps reprendrait son cours !", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "white", 400 );
@@ -5952,17 +5948,17 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…この距離で誰にも当たらなかったなんて、",
-		   NULL, "C'était un miracle si personne n'avait été touché par ce tir.", Line_ContinueAfterTyping);
+		   NULL, "C'était un miracle", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……それは、",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " si personne n'avait été touché", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……奇跡…。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " par ce tir.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
