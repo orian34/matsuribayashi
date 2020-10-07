@@ -195,10 +195,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　こんな、交通事故の痕跡もよくある光景。",
-		   NULL, "Les traces de l'accident étaient d'un banal qui ne retint l'attention de personne pendant bien longtemps.", Line_WaitForInput);
-	OutputLine(NULL, "大して珍しいものではなかった。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　こんな、交通事故の痕跡もよくある光景。大して珍しいものではなかった。",
+		   NULL, "Les traces de l'accident étaient d'un banal qui ne retint l'attention de personne pendant bien longtemps.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -351,7 +349,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どのくらい絶好調だったかと言えば、……まぁ全員、本部テントへ連れてかれて、村長さんにこってり油を絞られたくらい、と言えばわかるだろうか。",
-		   NULL, "Pour ceux qui voudraient savoir exactement jusqu'à quel point ils se surpassèrent, eh bien...Disons simplement qu'ils en firent suffisamment pour être tous emmenés de force dans la tente des organisateurs et recevoir de grosses remontrances de la part du maire.", Line_Normal);
+		   NULL, "Pour ceux qui voudraient savoir exactement jusqu'à quel point ils se surpassèrent, eh bien... Disons simplement qu'ils en firent suffisamment pour être tous emmenés de force dans la tente des organisateurs et recevoir de grosses remontrances de la part du maire.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -900,7 +898,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　戦う旅行写真家の通り名は依然健在で、精力的に村中を歩き回っては撮影ポイントを探しているらしい。",
-		   NULL, "Il obtint le surnom de photographe combattant, qui finit par lui coller à la peau. Il revenait parfois se resourcer en se promenant un peu partout dans le village, à la recherche d'un coin pour faire de belles photos.", Line_Normal);
+		   NULL, "Il obtint le surnom de photographe combattant, qui finit par lui coller à la peau. Il revenait parfois se ressourcer en se promenant un peu partout dans le village, à la recherche d'un coin pour faire de belles photos.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/sinryou_soto1", 1000 );
