@@ -1640,9 +1640,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私たちは、幸せになれるよ。",
-		   NULL, "Le bonheur nous viendra à la belle saison, lorsque nous entendrons", Line_WaitForInput);
+		   NULL, "Le bonheur nous viendra à la belle saison,", Line_WaitForInput);
 	OutputLine(NULL, "……ほら、",
-		   NULL, " Ce fragment n'est pas encore utilisable.", Line_Normal);
+		   NULL, " lorsque nous entendrons", Line_Normal);
 	ClearMessage();
 
 	SetValidityOfSkipping( FALSE );
