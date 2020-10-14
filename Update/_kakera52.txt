@@ -31,7 +31,7 @@
 		   NULL, "Tous les voisins avaient certainement entendu l'annonce joyeuse par la même occasion, mais il n'y avait personne pour s'en plaindre.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Miyoko's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Papa de Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_miyokof2001", 128, TRUE);
 	OutputLine(NULL, "「美代子。",
 		   NULL, "— Miyoko !", Line_WaitForInput);
