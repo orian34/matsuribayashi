@@ -1989,7 +1989,7 @@
 		   NULL, "Il était couché sur un lit d'hôpital, il avait très mal, mais il me parlait, il tentait de me dire quelque chose de très important.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Miyoko's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Papa de Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/550400016", 128, TRUE);
 	OutputLine(NULL, "「もしもな、",
 		   NULL, "— Si jamais...", Line_Continue);
@@ -2018,7 +2018,7 @@
 		   NULL, " Takano ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Miyoko's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Papa de Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/550400020", 128, TRUE);
 	OutputLine(NULL, "「そうだ。",
 		   NULL, "— C'est bien.", Line_WaitForInput);

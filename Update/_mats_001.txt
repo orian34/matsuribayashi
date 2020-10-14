@@ -131,7 +131,7 @@
 		   NULL, " il s'est souvenu des douleurs qu'il essayait d'oublier.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Miyoko's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Papa de Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/550400001", 128, TRUE);
 	OutputLine(NULL, "「………うぅうぅ………。",
 		   NULL, "— ... Aaah…", Line_Continue);
@@ -286,7 +286,7 @@
 		   NULL, " Papa !", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Miyoko's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Papa de Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/550400002", 128, TRUE);
 	OutputLine(NULL, "「………よ、よく聞きなさい。",
 		   NULL, "— ... Écoute-moi bien.", Line_WaitForInput);
@@ -371,7 +371,7 @@
 		   NULL, "Mais maitenant, sans ses mains, ça n'était plus possible...", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Miyoko's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Papa de Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/550400005", 128, TRUE);
 	OutputLine(NULL, "「よ……、",
 		   NULL, "— Écou-", Line_Continue);
@@ -417,7 +417,7 @@
 
 	DrawScene( "black", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Miyoko's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Papa de Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/550400008", 128, TRUE);
 	OutputLine(NULL, "「もしもな、",
 		   NULL, "— Si jamais…", Line_Continue);
@@ -451,7 +451,7 @@
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Miyoko's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Papa de Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/550400012", 128, TRUE);
 	OutputLine(NULL, "「そうだ。",
 		   NULL, "— C'est bien.", Line_Continue);
