@@ -488,7 +488,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900037", 128, TRUE);
 	OutputLine(NULL, "「…………私はようやく３を数えただけ。",
-		   NULL, "— … Je n'ai compté que jusqu’à 3.", Line_Continue);
+		   NULL, "— … Je n'ai compté que jusqu'à 3.", Line_Continue);
 	OutputLine(NULL, "まだ４にすら至っていない。",
 		   NULL, " Je n'ai pas encore atteint le 4.", Line_Continue);
 	OutputLine(NULL, "研究の道のりはまだまだ険しく長いけれど、…私は最後までやり抜くわ。",
