@@ -27,9 +27,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祖父によるならば、もしも女王感染者が死亡するようなことがあった場合、",
-		   NULL, "D'après ses conjectures, si jamais il devait arriver malheur à la Reine Mère,", Line_WaitForInput);
+		   NULL, "D'après ses conjectures, si jamais il devait arriver malheur à la Reine Mère,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "急性発症の平均的時間から見て、４８時間以内に一般感染者全員が末期発症するものと考えられていた。",
-		   NULL, " alors d'après le temps moyen que mettait une crise aiguë à survenir, en moins de 48h, tous les habitants de la région ou presque atteindraient le stade de la phase terminale.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "alors d'après le temps moyen que mettait une crise aiguë à survenir, en moins de 48h, tous les habitants de la région ou presque atteindraient le stade de la phase terminale.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -78,9 +79,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　風邪程度の症状でこれだけ顕著な結果が出るならば、",
-		   NULL, "Les habitants du village étaient très réceptifs aux baisses de forme de Rika.", Line_WaitForInput);
+		   NULL, "Les habitants du village étaient très réceptifs aux baisses de forme de Rika.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……もしも梨花の身に何かがあれば、４８時間以内に大変な事態になることが考えられたとしても、決して逸脱した話ではなかった。",
-		   NULL, " Si un simple coup de froid se répercutait en de telles proportions, alors il y avait fort à parier qu'ils mourraient tous dans ces fameuses 48h si jamais Rika devait perdre la vie pour une raison ou pour une autre.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si un simple coup de froid se répercutait en de telles proportions, alors il y avait fort à parier qu'ils mourraient tous dans ces fameuses 48h si jamais Rika devait perdre la vie pour une raison ou pour une autre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -182,7 +184,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　人間を眠るように殺してしまう、危険な殺人ガスの装備が備蓄され、緊急マニュアル発動時には、これらを使用して、陸自の特殊部隊が村を封殺するという手はずになっていた。",
 		   NULL, "Ils y stockèrent du gaz mortel, qui endormirait puis tuerait les villageois. Si jamais le manuel d'urgence devait être un jour suivi, alors des troupes spécialement entraînées par l'Armée viendraient faire le sale boulot.", Line_Normal);
 	ClearMessage();
@@ -236,7 +238,7 @@
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1002", 128, TRUE);
 	OutputLine(NULL, "雛見沢症候群に極めて類似するいくつかのケースでは、集団自殺を示すものが少なくありませんが、",
 		   NULL, " Dans des cas similaires, on constate assez souvent une tendance à organiser un suicide collectif. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1003", 128, TRUE);
 	OutputLine(NULL, "雛見沢症候群の場合、強い疑心暗鬼や過剰なまでの危機意識から、何かの過剰防衛を行なう可能性があり、被害は感染者二千人に留まらないものと推定されます。",
 		   NULL, "Mais dans le cas précis du syndrome de Hinamizawa, la paranoïa déclenchée chez les porteurs de la maladie risque fort de les pousser à tuer quiconque les approcherait. Cela pourrait porter le nombre de victimes à bien plus de 2000. ", GetGlobalFlag(GLinemodeSp));
@@ -287,22 +289,25 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1007", 128, TRUE);
 	OutputLine(NULL, "「常に最悪の事態に備えることは、国防にも通じますし、我々アルファベットプロジェクトの理念でもあります。",
-		   NULL, "— L'État a le devoir de se protéger de tous les cas de figure, et c'est aussi notre philosophie pour le projet alphabet.", Line_WaitForInput);
+		   NULL, "— L'État a le devoir de se protéger de tous les cas de figure, et c'est aussi notre philosophie pour le projet alphabet.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1008", 128, TRUE);
 	OutputLine(NULL, "そして、使うことが目的なのではなく、備えることそのものが肝要なのです。」",
-		   NULL, " De plus, le plus important n'est pas de le mettre en pratique, mais de l'avoir sous le coude en cas de besoin...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "De plus, le plus important n'est pas de le mettre en pratique, mais de l'avoir sous le coude en cas de besoin...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanryouc1002", 128, TRUE);
 	OutputLine(NULL, "「確かに。",
-		   NULL, "— Oui,", Line_WaitForInput);
+		   NULL, "— Oui,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanryouc1003", 128, TRUE);
 	OutputLine(NULL, "仰るとおりですな。",
-		   NULL, " vous avez raison, cher collègue.", Line_WaitForInput);
+		   NULL, "vous avez raison, cher collègue.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanryouc1004", 128, TRUE);
 	OutputLine(NULL, "運用規定については決裁区分の強化などまだ検討したいところはありますが、最悪の事態に対応する準備が必要だということは理解できました。」",
-		   NULL, " J'aimerais examiner un peu plus les prérogatives à accorder aux équipes qui s'en occuperont, mais sur le principe, je pense que nous sommes tous d'accord : il nous faut ces directives d'urgence.", Line_Normal);
+		   NULL, "J'aimerais examiner un peu plus les prérogatives à accorder aux équipes qui s'en occuperont, mais sur le principe, je pense que nous sommes tous d'accord : il nous faut ces directives d'urgence.", Line_Normal);
 	ClearMessage();
 
 
@@ -318,13 +323,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanryoua1004", 128, TRUE);
 	OutputLine(NULL, "「…こうしている間にも、女王感染者の少女が車にはねられて死んでしまう可能性だってあるのですから。",
-		   NULL, "— Qui sait ? Pendant que nous sommes ici à en discuter, la Reine Mère a pu se blesser mortellement dans une chute, ou dans un accident de voiture.", Line_WaitForInput);
+		   NULL, "— Qui sait ? Pendant que nous sommes ici à en discuter, la Reine Mère a pu se blesser mortellement dans une chute, ou dans un accident de voiture.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanryoua1005", 128, TRUE);
 	OutputLine(NULL, "鷹野三佐、ありがとう。",
-		   NULL, " Commandant Takano, merci pour votre rapport.", Line_WaitForInput);
+		   NULL, "Commandant Takano, merci pour votre rapport.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanryoua1006", 128, TRUE);
 	OutputLine(NULL, "また質問しますので、着席してくださって結構です。」",
-		   NULL, " Nous aurons encore des questions à vous poser, mais en attendant, vous pouvez vous asseoir.", Line_Normal);
+		   NULL, "Nous aurons encore des questions à vous poser, mais en attendant, vous pouvez vous asseoir.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

@@ -10,7 +10,7 @@
 	DrawScene( "background/ka1_01", 1000 );
 
 	ClearMessage();
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　スライドによる説明が終わり、会議室に灯りが着くと、監査スタッフたちは誰からともなく拍手を始め、入江機関の劇的快挙を讃えたのだった。",
 		   NULL, "Lorsque la dernière diapositive fut arrivée, les explications terminées, l'appareil éteint et les lumières rallumées, le silence fut rompu par les applaudissements des agents de contrôle envoyés par Tôkyô, qui saluèrent unanimement les progrès réalisés par l'Institut Irie.", Line_Normal);
 	ClearMessage();
@@ -62,16 +62,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1009", 128, TRUE);
 	OutputLine(NULL, "「ご謙遜を。",
-		   NULL, "— Allons, vous êtes trop modeste.", Line_WaitForInput);
+		   NULL, "— Allons, vous êtes trop modeste.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1010", 128, TRUE);
 	OutputLine(NULL, "くすくすくす。",
-		   NULL, " Hmpfhfhfhfh !", Line_WaitForInput);
+		   NULL, "Hmpfhfhfhfh !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1011", 128, TRUE);
 	OutputLine(NULL, "やはり脳に関しては入江所長は天才ですわ。",
-		   NULL, " Vous savez, vous êtes véritablement un génie dans le domaine du cerveau humain.", Line_WaitForInput);
+		   NULL, "Vous savez, vous êtes véritablement un génie dans le domaine du cerveau humain.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1012", 128, TRUE);
 	OutputLine(NULL, "何しろ、脳に関しては誰も及ばない実績をお持ちなのですから。」",
-		   NULL, " Vous avez une expérience pratique dans ce domaine dont peu de scientifiques peuvent se targuer !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Vous avez une expérience pratique dans ce domaine dont peu de scientifiques peuvent se targuer !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
@@ -273,16 +276,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1020", 128, TRUE);
 	OutputLine(NULL, "「でも、これでようやく研究の舞台に立てたというところね。",
-		   NULL, "— Mais tu sais, je n'ai fait qu'arriver enfin sur le terrain de la recherche.", Line_WaitForInput);
+		   NULL, "— Mais tu sais, je n'ai fait qu'arriver enfin sur le terrain de la recherche.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1021", 128, TRUE);
 	OutputLine(NULL, "私の挑むべき相手がようやく同じ土俵に上がってくれただけ。",
-		   NULL, " J'ai enfin rejoint feu le Professeur Takano, nous sommes enfin à égalité.", Line_WaitForInput);
+		   NULL, "J'ai enfin rejoint feu le Professeur Takano, nous sommes enfin à égalité.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1022", 128, TRUE);
 	OutputLine(NULL, "正念場はこれからよ。",
-		   NULL, " C'est maintenant que tout va se compliquer.", Line_WaitForInput);
+		   NULL, "C'est maintenant que tout va se compliquer.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1023", 128, TRUE);
 	OutputLine(NULL, "そして、ここからがもっとも楽しいところになりそうだけれど。」",
-		   NULL, " Mais c'est aussi à partir de maintenant que tout va devenir réellement intéressant.", Line_Normal);
+		   NULL, "Mais c'est aussi à partir de maintenant que tout va devenir réellement intéressant.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -291,13 +297,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1012", 128, TRUE);
 	OutputLine(NULL, "「あはははは。",
-		   NULL, "— Ahahahahaha !", Line_WaitForInput);
+		   NULL, "— Ahahahahaha !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1013", 128, TRUE);
 	OutputLine(NULL, "それでね、今回の件で中川本部長の方から、ぜひ東京で報告会をしてほしいと伝言を託ってるんだ。",
-		   NULL, " Je voulais aussi te dire, le directeur de notre département, M. Nakagawa, a demandé si tu ne pouvais pas venir leur présenter les résultats, au quartier général.", Line_WaitForInput);
+		   NULL, "Je voulais aussi te dire, le directeur de notre département, M. Nakagawa, a demandé si tu ne pouvais pas venir leur présenter les résultats, au quartier général.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1014", 128, TRUE);
 	OutputLine(NULL, "アルファベットの理事会も、ぜひ君と会合を設けたいって言ってたよ。",
-		   NULL, " Les têtes du projet alphabet ont l'air d'avoir hâte de faire ta connaissance. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les têtes du projet alphabet ont l'air d'avoir hâte de faire ta connaissance. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1015", 128, TRUE);
 	OutputLine(NULL, "みんな君に直接話を聞いてみたいようだねぇ。」",
@@ -443,13 +451,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_koizumi1008", 128, TRUE);
 	OutputLine(NULL, "「わっはっはっは。それは愉快だの〜！！",
-		   NULL, "— Ahahahahahahahaha ! Ah oui, ça, ça risque d'être rigolo à observer !", Line_WaitForInput);
+		   NULL, "— Ahahahahahahahaha ! Ah oui, ça, ça risque d'être rigolo à observer !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_koizumi1009", 128, TRUE);
 	OutputLine(NULL, "　偉そうに振舞っとる宗教家連中が、単なる寄生虫の親玉に過ぎんと立証されたら、それは本当に愉快だろうの〜！",
-		   NULL, " Tu imagines tous les grands prêtres et les autres imbus de leur personne, mis devant le fait accompli ? Si jamais tu peux prouver que tout cela est dû à un parasite, alors là, ils vont tirer la gueule, c'est sûr !", Line_WaitForInput);
+		   NULL, "Tu imagines tous les grands prêtres et les autres imbus de leur personne, mis devant le fait accompli ? Si jamais tu peux prouver que tout cela est dû à un parasite, alors là, ils vont tirer la gueule, c'est sûr !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_koizumi1010", 128, TRUE);
 	OutputLine(NULL, "　ぜひ、そんな愉快なのを見せてくれ。",
-		   NULL, " Oh, Miyo, il faut absolument que tu réussisses, je veux voir ça ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Oh, Miyo, il faut absolument que tu réussisses, je veux voir ça ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_koizumi1011", 128, TRUE);
 	OutputLine(NULL, "三四ちゃんがそれを見せてくれるまで、私ゃ天国のお迎えを断り続けてるからな。」",
@@ -469,25 +479,29 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1042", 128, TRUE);
 	OutputLine(NULL, "その時に初めて、世界中が祖父の偉業を知り、祖父が残した資料を奪い合って読み合うことになるでしょう。",
-		   NULL, "Alors enfin, le monde saura à quel point grand-père était un génie. Les scientifiques se battront pour accéder à ses archives.", Line_WaitForInput);
+		   NULL, "Alors enfin, le monde saura à quel point grand-père était un génie. Les scientifiques se battront pour accéder à ses archives.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1043", 128, TRUE);
 	OutputLine(NULL, "……そこまで至って、私はようやく祖父への恩返しを終えるのです。」",
-		   NULL, " Et quand ce jour sera venu, enfin, j'aurai pu rembourser une partie de la dette que j'ai envers lui...", Line_Normal);
+		   NULL, "Et quand ce jour sera venu, enfin, j'aurai pu rembourser une partie de la dette que j'ai envers lui...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_koizumi1012", 128, TRUE);
 	OutputLine(NULL, "「……高野くんが羨ましいの〜。",
-		   NULL, "— ... Ce sacré Takano avait de la chance, quand même.", Line_WaitForInput);
+		   NULL, "— ... Ce sacré Takano avait de la chance, quand même.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_koizumi1013", 128, TRUE);
 	OutputLine(NULL, "私ゃな、カネなんかこんなにいらんかった。",
-		   NULL, " Tu sais, je suis riche à crever,", Line_WaitForInput);
+		   NULL, "Tu sais, je suis riche à crever,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_koizumi1014", 128, TRUE);
 	OutputLine(NULL, "この半分は捨ててもいい。",
-		   NULL, " mais je ne peux rien en faire, de cet argent.", Line_WaitForInput);
+		   NULL, "mais je ne peux rien en faire, de cet argent.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_koizumi1015", 128, TRUE);
 	OutputLine(NULL, "あんたみたいな、自分の志を継いでくれる孫がひとりいてくれたらと思うよ。」",
-		   NULL, " J'aurais préféré avoir un petit-fils qui voudrait reprendre les rênes, un peu comme toi...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'aurais préféré avoir un petit-fils qui voudrait reprendre les rênes, un peu comme toi...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -741,7 +755,7 @@
 
 	DrawScene( "black", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あれだけの長い間、一度も祖父の前に現れず、その死後にだけ現れるハイエナのような連中に、……祖父の魂である研究を、例えメモ１枚とて許したくなかった。",
 		   NULL, "Quand je pense à ces hyènes qui étaient simplement venus encaisser l'héritage, après avoir ignoré cet homme pendant des dizaines d'années ! J'ai bien fait de leur reprendre toutes les pièces de ses recherches. Ils n'en méritaient pas la moindre feuille.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

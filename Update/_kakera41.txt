@@ -107,7 +107,7 @@
 		   NULL, "Je ne vous raconte même pas combien d'années et combien d'essais nous avons dû faire pour nous en rendre compte.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　様々な条件のオンとオフを繰り返し、あの野原で圭一の父に出会うことが鍵なんだと、ようやく突き止めた。",
 		   NULL, "Il a fallu tenter de modifier toutes les conditions possibles et imaginables, faire une chose mais pas les autres, les tenter toutes une par une, pour finalement découvrir qu'il nous fallait être dans ce champ à cette date précise.", Line_Normal);
 	ClearMessage();
@@ -207,9 +207,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、前原圭一に重要なきっかけをいくつも与える竜宮レナは、",
-		   NULL, "Il fallait aussi considérer Rena Ryûgû, car sa présence était cruciale pour le développement de Keiichi.", Line_WaitForInput);
+		   NULL, "Il fallait aussi considérer Rena Ryûgû, car sa présence était cruciale pour le développement de Keiichi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "両親の離婚で深く傷つき、末期発症を一度は迎えながらも、雛見沢に帰ってくることで救われる。",
-		   NULL, " Elle devait souffrir de la séparation de ses parents, elle devait faire une crise aiguë et y survivre, et elle devait revenir à Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle devait souffrir de la séparation de ses parents, elle devait faire une crise aiguë et y survivre, et elle devait revenir à Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -381,7 +382,7 @@
 		   NULL, "Miyo Takano avait eu des centaines de choses qui la poussaient inexorablement de l'avant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……戦うことを諦め、惰性に生きてきた私と、常に人生を賭けて戦いを挑んできた彼女とでは、駒の重みが違う。",
 		   NULL, "Là où moi, j'avais vécu dans la paresse, ayant abandonné toute idée de rébellion, Miyo avait sans cesse remis en question ses capacités, elle s'était battue bec et ongles tous les jours, jour après jour, toute sa vie. Sa pièce avait une importance autrement plus grande que la mienne.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

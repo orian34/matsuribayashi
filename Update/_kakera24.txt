@@ -131,10 +131,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Enquêteur médico-légal</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1006", 128, TRUE);
 	OutputLine(NULL, "「……かっかっかっか。",
-		   NULL, "— ... Hahahaha, aaah, quand même, putain.", Line_WaitForInput);
+		   NULL, "— ... Hahahaha, aaah, quand même, putain.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Enquêteur médico-légal</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1007", 128, TRUE);
 	OutputLine(NULL, "鹿骨界隈じゃ、チンピラも避けて通るお前さんを、ツモの切り方が悪いとゲンコツ食らわせられたのは、後にも先にもこいつだけだったろうの…。」",
-		   NULL, " Quand je pense que même les Yakuza te laissaient passer sans te chercher les noises. Lui n'a pas hésité à te mettre une droite parce que tu bougeais mal tes tuiles au mah jong. Je crois que c'est le seul à jamais t'avoir fait ça...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Quand je pense que même les Yakuza te laissaient passer sans te chercher les noises. Lui n'a pas hésité à te mettre une droite parce que tu bougeais mal tes tuiles au mah jong. Je crois que c'est le seul à jamais t'avoir fait ça...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -204,9 +205,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一気に押し寄せる人もいれば、いつまでもじわじわと苛まれる人もいる。",
-		   NULL, "Mais bon, avoir de la peine, ça ne se traduit pas de la même façon chez tout le monde.", Line_WaitForInput);
+		   NULL, "Mais bon, avoir de la peine, ça ne se traduit pas de la même façon chez tout le monde.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…多分、私は後者だった。",
-		   NULL, " Certaines personnes sont submergées d'un seul coup, et puis d'autres se font bouffer de l'intérieur, petit à petit. Je suis de ceux-là, je pense.", Line_Normal);
+		   NULL, "Certaines personnes sont submergées d'un seul coup, et puis d'autres se font bouffer de l'intérieur, petit à petit. Je suis de ceux-là, je pense.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -275,13 +277,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1049", 128, TRUE);
 	OutputLine(NULL, "「……当時、私ゃ闇米の取り締まりばかりやらされてましてね。",
-		   NULL, "— ... À l'époque, j'étais jeune, on m'avait affecté à la section de la contrebande.", Line_WaitForInput);
+		   NULL, "— ... À l'époque, j'étais jeune, on m'avait affecté à la section de la contrebande.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1050", 128, TRUE);
 	OutputLine(NULL, "鉄道主要駅で、旅客を抜き打ち検査するんですよ。",
-		   NULL, " Nous faisions des contrôles dans les gares principales, pour vérifier la provenance du riz.", Line_WaitForInput);
+		   NULL, "Nous faisions des contrôles dans les gares principales, pour vérifier la provenance du riz.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1051", 128, TRUE);
 	OutputLine(NULL, "そりゃあもうぞろぞろ引っ掛かりましたっけ。",
-		   NULL, " Qu'est-ce qu'on a pu en choper, des gens qui revenaient du marché noir... ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Qu'est-ce qu'on a pu en choper, des gens qui revenaient du marché noir... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1052", 128, TRUE);
 	OutputLine(NULL, "穀倉の辺りはこの辺じゃかなりでかい闇市が立ちましたからね。大阪界隈からはるばる買いに来てる連中も大勢いましたよ。」",
@@ -363,9 +367,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　生きるために必死な庶民ばかりを次々に検挙する国に嫌気がさし、",
-		   NULL, "Ce mec avait pris ses supérieurs en grippe à force de juger des cas de gens démunis arrêtés pour avoir voulu acheter à manger.", Line_WaitForInput);
+		   NULL, "Ce mec avait pris ses supérieurs en grippe à force de juger des cas de gens démunis arrêtés pour avoir voulu acheter à manger.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ある判事が、自分は今後一切、闇米を口にしないと宣言。",
-		   NULL, " Alors il avait déclaré publiquement, dans tous les journaux, qu'il refuserait de manger le moindre grain de riz provenant du marché noir.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Alors il avait déclaré publiquement, dans tous les journaux, qu'il refuserait de manger le moindre grain de riz provenant du marché noir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -405,10 +410,11 @@
 		   NULL, " On aurait dit des tribunaux de guerre, je te jure. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "次々ポンポンと没収してひっ捕らえていく感じです。",
-		   NULL, "Un coup de marteau pour la sentence, un coup de tampon sur le procès, et deux personnes pour reprendre le riz et jeter le coupable en prison.", Line_WaitForInput);
+		   NULL, "Un coup de marteau pour la sentence, un coup de tampon sur le procès, et deux personnes pour reprendre le riz et jeter le coupable en prison.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1059", 128, TRUE);
 	OutputLine(NULL, "……ご婦人方はみんな泣かれるんですよ。",
-		   NULL, " ... Toutes les femmes finissaient par pleurer.", Line_WaitForInput);
+		   NULL, "... Toutes les femmes finissaient par pleurer.", Line_WaitForInput);
 	OutputLine(NULL, "その米を買うために、彼らは家財を売り払ってるんです。",
 		   NULL, " Elles avaient vendu les meubles, parfois même leur corps.", Line_WaitForInput);
 	OutputLine(NULL, "それを没収されたら何も残らないと。",
@@ -471,7 +477,7 @@
 		   NULL, "Bien sûr, il ne risquait pas de me semer, il portait un sac de riz lourd comme tout.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから彼らは、米を抱いたまま捕まるか、家財を売り払ってようやく得た大切な米を捨てて逃げ延びるかを選ぶしかできなかった。",
 		   NULL, "Les fuyards n'avaient que deux choix, soit ils se faisaient attraper avec le riz, soit ils lâchaient le riz et prenaient la fuite. Le problème étant que ce riz, ils en avaient besoin pour vivre, ils avaient donné tout ce qu'ils avaient pour en avoir...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -571,16 +577,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1071", 128, TRUE);
 	OutputLine(NULL, "「…いやぁ、たっぷり説教をもらいましたよ。",
-		   NULL, "— Ahahaha, tu n'imagines pas,", Line_WaitForInput);
+		   NULL, "— Ahahaha, tu n'imagines pas,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1072", 128, TRUE);
 	OutputLine(NULL, "大通りの真ん中でぶちのめされた挙句に。",
-		   NULL, " il m'a fait la leçon devant tout le monde, en pleine rue, après m'avoir bien défoncé la gueule.", Line_WaitForInput);
+		   NULL, "il m'a fait la leçon devant tout le monde, en pleine rue, après m'avoir bien défoncé la gueule.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1073", 128, TRUE);
 	OutputLine(NULL, "なっはっは、普通に考えたら、そんなのに耳なんか傾けないですよねぇ？",
-		   NULL, " En temps normal, ça ne donne pas envie d'écouter ce que les gens ont à dire,", Line_WaitForInput);
+		   NULL, "En temps normal, ça ne donne pas envie d'écouter ce que les gens ont à dire,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1074", 128, TRUE);
 	OutputLine(NULL, "　でもあの時の私ゃどうかしてたんです。",
-		   NULL, " mais là, c'était différent. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "mais là, c'était différent. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1075", 128, TRUE);
 	OutputLine(NULL, "どうしてもおやっさんが親父に見えちゃって。",

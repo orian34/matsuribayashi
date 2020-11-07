@@ -253,13 +253,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1091", 128, TRUE);
 	OutputLine(NULL, "「えぇ。",
-		   NULL, "— Hélas, j'en ai bien peur.", Line_WaitForInput);
+		   NULL, "— Hélas, j'en ai bien peur.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1092", 128, TRUE);
 	OutputLine(NULL, "簡易検査の結果、Ｌ３以上と思われる高い発症レベルの可能性が指摘されました。",
-		   NULL, " De simples tests ont révélé un stade avancé de la maladie, elle est probablement déjà au niveau 3.", Line_WaitForInput);
+		   NULL, "De simples tests ont révélé un stade avancé de la maladie, elle est probablement déjà au niveau 3.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1093", 128, TRUE);
 	OutputLine(NULL, "彼女をさらに入院させ、より精度の高い検査を行う必要があります。",
-		   NULL, " Il nous faut absolument faire des tests plus poussés pour déterminer l'avancement précis de la maladie.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il nous faut absolument faire des tests plus poussés pour déterminer l'avancement précis de la maladie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -291,7 +293,7 @@
 
 	DrawScene( "black", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　実際、去年の、……バラバラ殺人犯を検体とした非人道的解剖の結果、私たちの研究は飛躍的進歩を遂げていた。",
 		   NULL, "Il fallait aussi malheureusement avouer que les expériences inhumaines et inavouables que nous avions menées sur le meurtrier de l'année dernière nous avaient appris des tas de choses sur la maladie, nous permettant ainsi de faire des progrès extraordinaires.", Line_Normal);
 	ClearMessage();
@@ -331,7 +333,7 @@
 		   NULL, "En une seule année, nous fîmes des découvertes qui dépassèrent de très loin tout ce que le feu professeur Takano avait pu imaginer après des dizaines et des dizaines d'années d'observation.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今では、病原体の性質や及ぼす影響、症状、治療薬や予防薬等、様々な研究に展開していた。",
 		   NULL, "Nous avions séparé notre équipe en plusieurs groupes, qui étudiaient des tas de choses différentes, la nature de l'agent pathogène, ses effets sur le système immunitaire, les symptômes apparents et secondaires, et même des pistes pour contrer ces effets.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -522,9 +524,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この麻薬のように虜にしてしまう興奮の味を、味わったことのない人間にどう説明すればいいというのか。",
-		   NULL, "C'était presque comme l'euphorie que l'on ressent lorsqu'on prend certaines drogues, mais les gens qui n'ont jamais touché à ces choses ne peuvent pas comprendre.", Line_WaitForInput);
+		   NULL, "C'était presque comme l'euphorie que l'on ressent lorsqu'on prend certaines drogues, mais les gens qui n'ont jamais touché à ces choses ne peuvent pas comprendre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "説明できる言葉などない。",
-		   NULL, " Et c'était l'une de ces choses qui ne s'expliquent pas avec les mots.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et c'était l'une de ces choses qui ne s'expliquent pas avec les mots.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -649,9 +652,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな、私にとっては当り前だったはずのことを、私は今さらのように思い出し、",
-		   NULL, "Ce devrait être une évidence pour moi, quelque chose d'assimilé, et pourtant...", Line_WaitForInput);
+		   NULL, "Ce devrait être une évidence pour moi, quelque chose d'assimilé, et pourtant...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…本当に今さらのように、自分がいかに罪深き研究に身を投じているのかを知るのだった。",
-		   NULL, " Pourtant, d'un seul coup, je réalisai à quel point les recherches dans lesquelles je m'étais jeté à corps perdu étaient abjectes...", Line_Normal);
+		   NULL, "Pourtant, d'un seul coup, je réalisai à quel point les recherches dans lesquelles je m'étais jeté à corps perdu étaient abjectes...", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "background/sinryou_sinsatu1", "maskup", 1, 0, 300 );
@@ -686,7 +690,7 @@
 		   NULL, "Le cas de l'année précédente était celui d'un homme ayant complètement perdu la raison.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんの観察記録によると、全身のリンパ腺に激しい痒みを訴え、故高野氏が指摘するよう、喉を掻き毟りたがったという。",
 		   NULL, "D'après les notes d'observation de Mme Takano, il se plaignait de démangeaisons, qu'elle a pu situer au niveau des ganglions lymphatiques. Apparemment, il n'était plus très loin de se donner la mort en se grattant la carotide jusqu'au sang, un acte que feu le Professeur Takano avait décrit dans ses notes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -881,7 +885,7 @@
 		   NULL, " a pu être maintenu artificiellement en vie pendant plusieurs mois.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　頭蓋を外された状態で、数ヶ月間も死を許されず、残酷な実験のためだけに延命されたのだ。",
 		   NULL, "Nous avons pu lui dénier le droit de mourir pendant plusieurs mois, alors que son crâne était ouvert et que son cerveau était plus ou moins à l'air libre. Et nous lui avons fait subir des tas et des tas d'expériences horribles.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

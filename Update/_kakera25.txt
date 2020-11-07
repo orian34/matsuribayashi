@@ -98,9 +98,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祖父が存命中、研究に協力できなかったことへの罪滅ぼしだったにせよ、私にとっては掛け替えのない人で、",
-		   NULL, "Je savais que tout ce qu'il faisait pour moi, il le faisait dans l'espoir de s'excuser pour tout ce qu'il n'avait pas fait du vivant de grand-père. Mais pour moi, il était irremplaçable.", Line_WaitForInput);
+		   NULL, "Je savais que tout ce qu'il faisait pour moi, il le faisait dans l'espoir de s'excuser pour tout ce qu'il n'avait pas fait du vivant de grand-père. Mais pour moi, il était irremplaçable.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…………大切な人だった。",
-		   NULL, " ... Il avait beaucoup compté dans ma vie.", Line_WaitForInput);
+		   NULL, "... Il avait beaucoup compté dans ma vie.", Line_WaitForInput);
 	OutputLine(NULL, "…単に後ろ盾という意味でなく。",
 		   NULL, " Pas seulement parce qu'il protégeait mes arrières.", Line_Normal);
 	ClearMessage();
@@ -132,7 +133,7 @@
 
 	DrawSceneWithMask( "background/sora5", "maskleft", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は本葬に駆けつけ、焼香する時に、…………祖父が死んだ時以来、流し方も忘れていた涙を、…再び零すのだった………。",
 		   NULL, "J'ai roulé des heures durant pour arriver à temps à sa crémation. J'ai brûlé de l'encens pour lui. Et là, pour la première fois depuis la mort de grand-père, j'ai pleuré. J'aurais pourtant pu jurer avoir oublié comment faire…", Line_Normal);
 	ClearMessage();
@@ -247,13 +248,13 @@
 	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacterWithFiltering(2, 8, "sprite/tomi1_def_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800049", 128, TRUE);
 	OutputLine(NULL, "「…うん。",
 		   NULL, "— Eh bien,", Line_Continue);
 	OutputLine(NULL, "小泉先生が入江機関設立の立役者だったのは、鷹野さんも知ってるよね。……関係機関でなかなか承認の取れなかったのを、小泉先生が強力に押さえ込んで無理やり通させたって話なんだよ。",
 		   NULL, " vous savez aussi bien que moi que c'est Maître Koizumi qui a lancé la création de l'Institut Irie... Les partenaires n'étaient pas très chauds, ils avaient de nombreuses critiques, mais Maître Koizumi les a priés de se taire et a fait passer le projet en force. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800050", 128, TRUE);
 	OutputLine(NULL, "……何しろ、医薬品業界で絶大な功績を挙げられた戦後日本復興の重鎮だからね。",
 		   NULL, "Il faut dire aussi qu'il avait dirigé pendant longtemps l'industrie pharmaceutique, et que c'était grâce à elle si le Japon avait pu sortir si vite de la crise après la guerre.", Line_Continue);
@@ -285,18 +286,18 @@
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800052", 128, TRUE);
 	OutputLine(NULL, "「いや、入江機関を見直すというのは聞いたことないけど…。ただ、小泉先生の死後、長老たちの派閥や勢力、後継者争いがややこしくなっているってもっぱらの噂なんだ。",
 		   NULL, "— Non, en tout cas, je n'ai rien entendu sur l'Institut. Mais disons que depuis sa mort, tout le monde essaie de se prendre une part du gâteau, et les factions sont en train de s'expliquer entre elles, si la rumeur dit vrai. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800053", 128, TRUE);
 	OutputLine(NULL, "すでにクライアントの人事にかなりの影響を与え始めてるらしいんだ。",
-		   NULL, "Et d'ailleurs, on commence à ressentir des sphères d'influences nouvelles chez nos clients.", Line_WaitForInput);
+		   NULL, "Et d'ailleurs, on commence à ressentir des sphères d'influences nouvelles chez nos clients.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800054", 128, TRUE);
 	OutputLine(NULL, "それで、小泉派が主導していたプロジェクトや聖域予算に対し、締め付けが行なわれるんじゃないかって、憶測が飛び交ってるらしいんだよ…。",
-		   NULL, " C'est pourquoi certains ont peur que d'ici peu, tous les projets qui faisaient partie de la chasse gardée de Maître Koizumi et qui étaient financés sans poser de question soient revus à la baisse. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pourquoi certains ont peur que d'ici peu, tous les projets qui faisaient partie de la chasse gardée de Maître Koizumi et qui étaient financés sans poser de question soient revus à la baisse. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800055", 128, TRUE);
 	OutputLine(NULL, "もちろん、それらは全て僕にとって、雲の上の話だからね。",
@@ -356,10 +357,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44000", 128, TRUE);
 	OutputLine(NULL, "「ご存知のとおり、アルファベットプロジェクトは戦後日本の国際的地位向上を抑止兵器の観点から探るものです。",
-		   NULL, "— Comme vous le savez, le projet alphabet cherche à améliorer la place du Japon dans la hiérarchie des pays du monde en le dotant d'armes de destruction massive.", Line_WaitForInput);
+		   NULL, "— Comme vous le savez, le projet alphabet cherche à améliorer la place du Japon dans la hiérarchie des pays du monde en le dotant d'armes de destruction massive.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44001", 128, TRUE);
 	OutputLine(NULL, "ですが、すでに昭和も５０年代に至り、西暦は２１世紀を間近にしております。",
-		   NULL, " Mais notre Empereur est désormais au pouvoir depuis plus de cinquante ans, et nous approchons très vite du XXIème siècle grégorien.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais notre Empereur est désormais au pouvoir depuis plus de cinquante ans, et nous approchons très vite du XXIème siècle grégorien.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "今や時代は、戦後を脱却し２１世紀を迎えようとしているのであります。」",
 		   NULL, "Tout doucement, mais sûrement, nous essayons de nous défaire des vestiges de la guerre.", GetGlobalFlag(GLinemodeSp));
@@ -382,12 +384,11 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44002", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「戦後４０年間、我が国は世界への平和的貢献を模索し、アメリカの最大の同盟国として充分な国際的地位を確立するに至りました。",
 		   NULL, "— Depuis la fin de guerre, notre nation a œuvré pendant près de quarante ans pour la paix, et grâce à notre alliance avec les États-Unis d'Amérique, nous avons obtenu un siège au conseil de sécurité de l'ONU.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44003", 128, TRUE);
 	OutputLine(NULL, "日本は世界に先駆けて核と軍隊を放棄した平和国家として成熟し、来世紀にはますますにその存在感を強めることでしょう。」",
 		   NULL, "Le Japon est devenu un exemple de pacifisme, en étant l'un des premier pays au monde à refuser de se doter et de l'arme nucléaire, et d'une armée -- nous n'avons que des forces de défense du territoire. Et cette tendance est appelée à se poursuivre.", Line_Normal);
@@ -429,8 +430,7 @@
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44004", 128, TRUE);
 	OutputLine(NULL, "「よって、現在、時代に即した形になるよう、アルファベットプロジェクトの見直しを進めています。新生アルファベットプロジェクトは、国際的にも世論的にも理解の得られない軍事的見地からではなく、",
 		   NULL, "— C'est pourquoi nous entreprenons en ce moment une réévaluation totale des activités du projet alphabet. La nouvelle administration ne veut plus se placer dans une optique militaire, car ni le public, ni les partenaires internationaux du Japon n'apprécient cette attitude. ", GetGlobalFlag(GLinemodeSp));
@@ -489,7 +489,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　アルファベットプロジェクトは、一部の人間により私物化された諮問機関との指摘が当初からあり、省庁の予算を不正に吸い出しているとの批判が尽きなかった。",
 		   NULL, "De toute manière, depuis le début, certains avaient fait remarquer que le projet alphabet servait à certains de ses membres à se servir dans les caisses de l'État, en prenant part à de nombreux projets en tant que consultants.", Line_Normal);
 	ClearMessage();
@@ -511,10 +511,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44006", 128, TRUE);
 	OutputLine(NULL, "「よって、アルファベットに関わる全てのプロジェクトで今後、大幅な予算の見直しが図られていくことになります。",
-		   NULL, "— C'est pourquoi les budgets de tous les projets que nous sponsorisons seront réévalués.", Line_WaitForInput);
+		   NULL, "— C'est pourquoi les budgets de tous les projets que nous sponsorisons seront réévalués.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44007", 128, TRUE);
 	OutputLine(NULL, "これはもちろん、入江機関も例外ではありません。",
-		   NULL, " Et l'Institut Irie ne fera pas exception à la règle.", Line_Continue);
+		   NULL, "Et l'Institut Irie ne fera pas exception à la règle.", Line_Continue);
 	OutputLine(NULL, "どうかご了解をいただけますよう、よろしくお願いいたします。」",
 		   NULL, " J'espère que cela est bien clair entre nous, et que vous comprenez pourquoi nous faisons cela.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -620,7 +621,7 @@
 		   NULL, "Nos gros poissons se mirent à lire le contenu lentement, avec intérêt, mais je les dévorai le plus vite possible, essayant de comprendre et d'anticiper quelles âneries et quelles inepties l'on allait vouloir nous faire croire.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44009", 128, TRUE);
 	OutputLine(NULL, "「入江機関はこれまで、先進的な研究において数々の目覚しい成果を挙げられ、未知の奇病であった雛見沢症候群の全貌解明、そして治療薬の開発を成し遂げました。",
 		   NULL, "— Depuis sa création et sa mise en place, l'Institut Irie a obtenu d'immenses résultats, en découvrant tous les mécanismes de cette maladie inconnue qu'était le syndrome de Hinamiazwa, et en développant un médicament pour en contrer les effets. ", GetGlobalFlag(GLinemodeSp));
@@ -654,9 +655,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　良い話だったら、先に悪い話をして後の話の良さを引き立てる。",
-		   NULL, "Lorsque l'on voulait introduire quelque chose de positif, le simple fait de commencer par le négatif permettait de surligner la note positive en fin de discours.", Line_WaitForInput);
+		   NULL, "Lorsque l'on voulait introduire quelque chose de positif, le simple fait de commencer par le négatif permettait de surligner la note positive en fin de discours.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…悪い話でも同じだ。",
-		   NULL, " Et l'on faisait le contraire lorsqu'on avait quelque chose de déplaisant à dire...", Line_Normal);
+		   NULL, "Et l'on faisait le contraire lorsqu'on avait quelque chose de déplaisant à dire...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
@@ -670,10 +672,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44012", 128, TRUE);
 	OutputLine(NULL, "新生理事会はこの後者の、軍事的運用の模索については即時の中止を決定しました。",
-		   NULL, "Notre nouvelle administration a demandé l'arrêt immédiat des recherches sur les possibles applications militaires.", Line_WaitForInput);
+		   NULL, "Notre nouvelle administration a demandé l'arrêt immédiat des recherches sur les possibles applications militaires.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44013", 128, TRUE);
 	OutputLine(NULL, "生物兵器の研究開発が日本国内で行なわれていた事実と痕跡は、今後の日本にとってむしろアキレス腱になりかねません。",
-		   NULL, " Si jamais il devait rester des preuves que le Japon avait cherché à se doter d'une arme bactériologique, cela pourrait devenir notre talon d'Achille. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si jamais il devait rester des preuves que le Japon avait cherché à se doter d'une arme bactériologique, cela pourrait devenir notre talon d'Achille. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44014", 128, TRUE);
 	OutputLine(NULL, "入江機関は直ちに、これに関わる全ての研究を中止し、一切を破棄してください。」",
@@ -750,8 +753,7 @@
 		   NULL, "Il est vrai que nous faisons des progrès, mais je serais bien incapable de vous promettre la mise au point d'un médicament radicalement efficace à court terme !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44016", 128, TRUE);
 	OutputLine(NULL, "「理事会では、入江機関はすでに治療薬について充分な研究を完成させているという認識です。すでに入江機関は治療薬C117を完成させ、その臨床データを多数、」",
 		   NULL, "— Le conseil d'administration considère que vous avez obtenu des résultats amplement satisfaisants en ce qui concerne les possibles traitements de la maladie. D'ailleurs, vous avez déjà terminé la création du C117, et avez montré des résul--", Line_Normal);
@@ -798,12 +800,12 @@
 	OutputLine(NULL, "「そうです。",
 		   NULL, "— Oui, en effet.", Line_Continue);
 	OutputLine(NULL, "もちろん村人全員の治療と雛見沢症候群の撲滅は将来的には不可能なことではありませんし、私もそれを最大の目標としています。",
-		   NULL, " L'éradication du virus est quelque chose qui sera très certainement possible plus tard -- c'est l'objectif que je me suis placé en ligne de mire.", Line_WaitForInput);
+		   NULL, " L'éradication du virus est quelque chose qui sera très certainement possible plus tard -- c'est l'objectif que je me suis placé en ligne de mire.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000066", 128, TRUE);
 	OutputLine(NULL, "ただ、それには充分な時間が必要で、そのためには無論、予算も必要です。",
-		   NULL, " Mais pour atteindre cet objectif, il nous faudra du temps, et donc mathématiquement, de l'argent. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+		   NULL, "Mais pour atteindre cet objectif, il nous faudra du temps, et donc mathématiquement, de l'argent. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", "<size=-4>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000067", 128, TRUE);
 	OutputLine(NULL, "私たちは調べ、実践し、確立する仕事をしています。設計図に従って物を作り、期間があれば必ず決まった成果が出せる仕事とは事情が違います。どうかそこを誤解なさらないようにしていただきたいです。」",
 		   NULL, "Nous devons chercher des solutions, puis tenter de les mettre en pratique et vérifier si nous avions vu juste ou pas, pour éventuellement devoir repartir à zéro. Nous ne sommes pas une usine qui suit simplement les plans des architectes et qui obtient automatiquement les résultats attendus sur le papier. J'espère que vous pourrez comprendre notre situation.", Line_Normal);
@@ -843,14 +845,15 @@
 	OutputLine(NULL, "　………それでは駄目だ。",
 		   NULL, "La simple éradication de la maladie ne suffisait pas.", Line_WaitForInput);
 	OutputLine(NULL, "神秘を解き明かせない。",
-		   NULL, " On pouvait faire cela sans réellement lever le mystère sur certains mécanismes profonds.", Line_WaitForInput);
+		   NULL, " On pouvait faire cela sans réellement lever le mystère sur certains mécanismes profonds.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "雛見沢症候群の発見が、祖父の偉業にならない…！",
-		   NULL, " Et sans cela, la découverte et les recherches de grand-père ne seraient pas appréciées à leur juste valeur !", Line_Normal);
+		   NULL, "Et sans cela, la découverte et les recherches de grand-père ne seraient pas appréciées à leur juste valeur !", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "background/ka1_01", "maskup", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44018", 128, TRUE);
 	OutputLine(NULL, "「なるほど、入江所長の仰ることもごもっともと思います。",
 		   NULL, "— Je comprends ce que vous voulez dire, Monsieur le Directeur.", Line_Continue);
@@ -860,7 +863,7 @@
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44019", 128, TRUE);
 	OutputLine(NULL, "よって、雛見沢症候群という奇病が研究されていた痕跡と、そもそも存在していた事実についても隠蔽すべきであると考えます。",
 		   NULL, "Nous pensons que le mieux serait de cacher à tout jamais l'existence de cette maladie. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44020", 128, TRUE);
 	OutputLine(NULL, "最終的に、雛見沢症候群が世間に知られることなく、撲滅されるならば、そのための期間と予算は必要不可欠なものでしょう。",
 		   NULL, "Et s'il nous faut dépenser de l'argent plutôt généreusement pour avoir l'assurance que la maladie sera éradiquée et que personne n'en apprendra jamais l'existence-même, eh bien, soit.", Line_Continue);
@@ -879,7 +882,7 @@
 		   NULL, " je n'y vois rien à redire.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44021", 128, TRUE);
 	OutputLine(NULL, "「では入江機関は、できるだけ早急に、雛見沢症候群撲滅を秘密裏に行なえるプランと予算案を作成、提出してください。",
 		   NULL, "— Alors je vous demanderai de nous fournir un rapport pour nous indiquer comment et dans quels délais vous pensez pouvoir nous débarrasser de cette maladie.", Line_Continue);
@@ -895,7 +898,7 @@
 		   NULL, " Nous allons nous atteler à la rédaction de ce rapport, dès aujourd'hui.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Officiel du gouvernement</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44022", 128, TRUE);
 	OutputLine(NULL, "「誤解ないようにしていただきたいのは、私どもはあくまでも研究を直ちに中断させようというのではなく、円満な形で研究を終了させようということです。",
 		   NULL, "— Que les choses soient bien claires entre nous, mesdames et messieurs. Nous ne souhaitons pas l'arrêt total et immédiat des recherches, nous voulons qu'elles arrivent à leur terme le plus vite possible.", Line_Continue);
@@ -937,7 +940,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　書類の擦れる音と議事の進行の声だけが聞こえる会議室内で、…私は時計が秒を刻む音だけを耳に入れながら、手の平に滲む汗を、ただぐっと握り締めていた……。",
 		   NULL, "Un silence impressionnant se mit à régner dans la salle -- nous n'entendions que le bruit des stylos glissant sur les documents pour les signer. Quant à moi, je fis tout mon possible pour me concentrer sur le bruit de l'aiguille des secondes et serrai nerveusement les poings, tentant d'effacer la sueur des paumes de mes mains...", Line_Normal);
 	ClearMessage();

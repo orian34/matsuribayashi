@@ -138,7 +138,7 @@
 		   NULL, "Je considérais Satoko comme ma meilleure amie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　面倒臭いと思っていたお買い物も、沙都子と一緒になれただけで、楽しい夕方のお散歩に早変りするのだった。",
 		   NULL, "Avec elle, même les tâches rébarbatives me semblaient tout à fait supportables, si ce n'est même amusantes. Je détestais quand ma mère m'envoyait faire les courses, mais avec Satoko, cela devenait une simple promenade de fin d'après-midi dans laquelle, par un pur hasard, nous faisions quelques courses.", Line_Normal);
 	ClearMessage();
@@ -202,7 +202,7 @@
 		   NULL, " Ah, comme vous êtes une grande fille maintenant, en récompense, je vais vous donner ceci.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　軒先に吊るしてあるお釣り用の小銭入れのザルの中には、時折喘息を患う主人のために飴がいくつか入れてあった。",
 		   NULL, "Dans un petit panier pendu près de la caisse, dans lequel étaient entreposés les rouleaux de pièces pour rendre la monnaie, il y avait quelques bonbons, laissés là pour le mari de la caissière, qui avait parfois des quintes de toux.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -379,9 +379,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　平和だった頃は、互助の精神でそれを大目に見て、いつかまとめて払ってくれればいいと寛容だったのだが、",
-		   NULL, "En temps de paix, bien sûr, cela ne posait aucun problème, le conseil d'administration leur avait d'ailleurs dit de simplement payer lorsqu'ils le pourraient, sans fixer aucune date.", Line_WaitForInput);
+		   NULL, "En temps de paix, bien sûr, cela ne posait aucun problème, le conseil d'administration leur avait d'ailleurs dit de simplement payer lorsqu'ils le pourraient, sans fixer aucune date.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ここに来て一気に風向きが変わり、滞納分の町会費を一括ですぐに払えと北条家に迫ったのだ。",
-		   NULL, " Mais depuis l'incident, il leur avait été dit de payer intégralement la somme due dans les plus brefs délais.", Line_Normal);
+		   NULL, "Mais depuis l'incident, il leur avait été dit de payer intégralement la somme due dans les plus brefs délais.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -501,9 +502,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……大人たちは、そういう泥臭い暗闘を子どもたちには話さなかったから、沙都子が学校で苛めに遭うということだけはなかったが。",
-		   NULL, "... Comme les adultes n'avaient pas expliqué la situation à leurs enfants, Satoko n'avait pas à en pâtir à l'école, heureusement,", Line_WaitForInput);
+		   NULL, "... Comme les adultes n'avaient pas expliqué la situation à leurs enfants, Satoko n'avait pas à en pâtir à l'école, heureusement,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…窒息しそうなぐらいの緊張感を毎日強いられていただろうことは想像に難しくない…。",
-		   NULL, " mais elle vivait quand même avec la peur au ventre, tous les jours, dans une atmosphère franchement suffocante...", Line_Normal);
+		   NULL, "mais elle vivait quand même avec la peur au ventre, tous les jours, dans une atmosphère franchement suffocante...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -551,7 +553,7 @@
 		   NULL, " Personne ne voulait lui parler et personne ne s'en cachait.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ごった返す主婦たちの合間を縫って、ずっと魚屋の主人にほしいものを言っていたはずなのに、最後の最後まで後回しにされた沙都子。",
 		   NULL, "Là par exemple, elle avait su bien se placer chez le poissonier et avait donné déjà de nombreuses fois sa commande au commerçant, mais celui-ci l'ignora avec insistance, jusqu'à ce qu'il n'y eût plus aucune autre cliente.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

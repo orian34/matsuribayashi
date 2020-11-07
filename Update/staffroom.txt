@@ -60,10 +60,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ですのでつまり、私が今回「祭囃し編」でお届けした物語より、より素晴らしい解（世界）を描けたとお感じになられた方は、",
-		   NULL, "Avec ce tome, j'apporte une solution personnelle, que vous pouvez comparer avec la vôtre, si vous le voulez, un peu comme un duel.", Line_WaitForInput);
+		   NULL, "Avec ce tome, j'apporte une solution personnelle, que vous pouvez comparer avec la vôtre, si vous le voulez, un peu comme un duel.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 	OutputLine(NULL, "竜騎士07との一騎打ちに勝った、と思っていただいてよろしいかと思います。",
-		   NULL, " Et si vous pensez que votre solution est meilleure que la mienne -- si le monde que vous avez imaginé est plus passionnant que celui du tome 8 -- alors je m'avoue volontiers vaincu. Libre à vous de considérer que vous m'avez battu en combat singulier.", Line_Normal);
+		   NULL, "Et si vous pensez que votre solution est meilleure que la mienne -- si le monde que vous avez imaginé est plus passionnant que celui du tome 8 -- alors je m'avoue volontiers vaincu. Libre à vous de considérer que vous m'avez battu en combat singulier.", Line_Normal);
 	ClearMessage();
 
 
@@ -289,7 +291,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それに則って理想の結末を考えれば、最初に思いつくのは、登場人物全てが結束して鷹野と戦いこれを打ち破るという、爽快なエンドだと思います。",
 		   NULL, "Si l'on suit cet aspect et que l'on cherche à aboutir à la meilleure fin possible, alors la première chose qui vient à l'esprit est de créer une alliance entre tous les personnages de cet univers et de les liguer contre Miyo Takano.", Line_Normal);
 	ClearMessage();
@@ -304,9 +306,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ですが、同時に、鷹野という人物については非常に孤独に描き、",
-		   NULL, "Mais en même temps, l'histoire décrit Miyo Takano comme un être extrêmement seul,", Line_WaitForInput);
+		   NULL, "Mais en même temps, l'histoire décrit Miyo Takano comme un être extrêmement seul,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "爽快感とは逆行する演出をすることで、その解に対する疑問も提起しています。",
-		   NULL, " et en écrivant certaines scènes qui prennent le plaisir du lecteur à la voir perdre à contre-pied, une nouvelle énigme est posée par ce dernier tome.", Line_Normal);
+		   NULL, "et en écrivant certaines scènes qui prennent le plaisir du lecteur à la voir perdre à contre-pied, une nouvelle énigme est posée par ce dernier tome.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -324,14 +327,15 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　宇宙からエイリアンが攻めてきたため、世界各国は争いをやめて仲良く連携し、これを撃退。",
-		   NULL, "À cause d'une attaque extra-terrestre, les pays de la planète arrêtent de se faire la guerre et se mettent ensemble pour repousser l'envahisseur.", Line_WaitForInput);
+		   NULL, "À cause d'une attaque extra-terrestre, les pays de la planète arrêtent de se faire la guerre et se mettent ensemble pour repousser l'envahisseur.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "人類万歳、同じ人間同士仲良くがいいね。",
-		   NULL, " Bravo au genre humain, félicitations, ah là là on est trop forts, la paix c'est formidable.", Line_WaitForInput);
+		   NULL, "Bravo au genre humain, félicitations, ah là là on est trop forts, la paix c'est formidable.", Line_WaitForInput);
 	OutputLine(NULL, "という構図は古今東西に溢れているはずです。",
 		   NULL, " C'est un schéma que l'on retrouve un peu partout, en Orient comme en Occident.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　エイリアンや悪魔、モンスターという、明白な悪役を生贄に捧げることで人類愛をテーマとした作品は枚挙に暇がありません。",
 		   NULL, "Je n'aurais pas assez d'une vie entière pour recenser toutes les histoires dans lesquels un grand méchant très facilement identifiable -- extra-terrestre, monstre ou démon -- se fait massacrer pour pouvoir renforcer l'idée d'une fraternité inhérente au genre humain.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -339,7 +343,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　物語の途中までいがみ合っていた陣営が、第３の敵に対し、争いをやめて手を結び合って撃退するエピソードは確かに熱いものがあるのですが…。",
 		   NULL, "En plein milieu d'une guerre, un troisième ennemi arrive, alors les deux premiers surmontent leurs différences et repoussent le nouveau venu. Certes, c'est une histoire qui peut vous prendre aux tripes, voire par les sentiments…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -347,7 +351,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この、生贄を投じることで手を結ぶ禊ぎには、友好的関係を作りだすため、常に第３の敵（生贄）を求め続けなくてはならないという不毛（鬼）をも生み出すと考えています。",
 		   NULL, "Mais je pense que cette façon de procéder engendrera -- et nécessitera -- toujours “un troisième homme” (un sacrifice) pour pouvoir espérer créer de nouveaux liens entre deux peuples. Et ça, c'est un procédé injuste et contre-productif, voire carrément stérile. C'est un “démon”.", Line_Normal);
 	ClearMessage();
@@ -408,9 +412,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこまで世界観を説明した上で「祭囃し編」を見ると、",
-		   NULL, "Et maintenant que je vous ai parlé en long, en large et en travers de la conception du monde dans le sanglot des cigales, réfléchissons.", Line_WaitForInput);
+		   NULL, "Et maintenant que je vous ai parlé en long, en large et en travers de la conception du monde dans le sanglot des cigales, réfléchissons.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……鷹野という存在を叩きのめすのが果たして理想的な解なのか、少々の疑問が生じるのではないでしょうか。",
-		   NULL, " Êtes-vous sûr que la fin du dernier tome est bien conforme à cette philosophie ? Est-ce que c'est vraiment une fin heureuse pour tout le monde, si Takano est attaquée de toutes parts et éliminée ?", Line_Normal);
+		   NULL, "Êtes-vous sûr que la fin du dernier tome est bien conforme à cette philosophie ? Est-ce que c'est vraiment une fin heureuse pour tout le monde, si Takano est attaquée de toutes parts et éliminée ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -444,7 +449,7 @@
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この話を延々と続けていくと、最後には宗教的な次元にまで達してしまうような気がしますので、これ以上の議論は控えましょう。",
 		   NULL, "Enfin bon, je pense que si nous continuons comme ça à pousser la réflexion, nous n'allons pas tarder à rentrer dans des concepts philosophiques et religieux, et ce n'est jamais facile de mener une telle discussion à bien, aussi je préfère m'en arrêter là.", Line_Normal);
 	ClearMessage();

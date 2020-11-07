@@ -89,7 +89,7 @@
 		   NULL, "— Ah, euh, oui Madame !", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　学年無視のバトルロワイヤル状態で、生徒は全員同じ教室というのは、…事前には聞かされていたが、本当の本当らしい。",
 		   NULL, "On m'avait prévenu que tous les élèves de toutes les classes étaient dans la même salle, mais je n'y avais pas cru. Sauf qu'une fois arrivé sur place, eh ben en fait, ils s'étaient pas foutus de ma gueule, c'était vraiment ça !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -110,13 +110,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2003", 128, TRUE);
 	OutputLine(NULL, "「前原くんが転校してきたら、男子の中では最年長になると思います。",
-		   NULL, "— Lorsque tu nous rejoindras ici, tu seras le plus âgé des garçons.", Line_WaitForInput);
+		   NULL, "— Lorsque tu nous rejoindras ici, tu seras le plus âgé des garçons.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2004", 128, TRUE);
 	OutputLine(NULL, "ですので、自分の勉強だけでなく、下級生たちの模範になるよう示さなければなりません。",
-		   NULL, " Il te faudra être assidû dans tes leçons, mais aussi montrer l'exemple aux plus jeunes.", Line_WaitForInput);
+		   NULL, "Il te faudra être assidû dans tes leçons, mais aussi montrer l'exemple aux plus jeunes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2005", 128, TRUE);
 	OutputLine(NULL, "下級生は、上級生の悪いクセをすぐに真似ます。",
-		   NULL, " Si tu leur montres des bêtises ou si tu te comportes mal, tu peux être sûr qu'ils feront comme toi. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si tu leur montres des bêtises ou si tu te comportes mal, tu peux être sûr qu'ils feront comme toi. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2006", 128, TRUE);
 	OutputLine(NULL, "先生もそこは厳しく注意していますから、前原くんも下級生に悪い影響を与えないよう、常に襟を正していてくださいね。」",
@@ -612,22 +614,27 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2032", 128, TRUE);
 	OutputLine(NULL, "「くすくす。",
-		   NULL, "— Hmpf,", Line_WaitForInput);
+		   NULL, "— Hmpf,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2033", 128, TRUE);
 	OutputLine(NULL, "だから面白いのだけれど。",
-		   NULL, " allons, c'est bien pour ça qu'il est intéressant.", Line_WaitForInput);
+		   NULL, "allons, c'est bien pour ça qu'il est intéressant.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2034", 128, TRUE);
 	OutputLine(NULL, "たまにはそんな運命も打ち破ってみて？",
-		   NULL, " Tu pourrais aussi briser les chaînes de ce destin-là de temps en temps, histoire de varier les plaisirs.", Line_WaitForInput);
+		   NULL, "Tu pourrais aussi briser les chaînes de ce destin-là de temps en temps, histoire de varier les plaisirs.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2035", 128, TRUE);
 	OutputLine(NULL, "　くすくすくす。",
-		   NULL, " Héhé.", Line_WaitForInput);
+		   NULL, "Héhé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2036", 128, TRUE);
 	OutputLine(NULL, "あなたがそれを教えてくれるのよ？",
-		   NULL, " Tu nous apprendras.", Line_WaitForInput);
+		   NULL, "Tu nous apprendras.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2037", 128, TRUE);
 	OutputLine(NULL, "　数多の世界のひとつで、ね。」",
-		   NULL, " C'est pas comme si tu savais pas le faire, hein ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pas comme si tu savais pas le faire, hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -644,7 +651,7 @@
 
 	PlayBGM( 1, "semi", 120, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女たちの謎めいた予言は、月曜日に、明らかに敬語の使い方の間違った八重歯の小娘によって、とても大切な忠告であったことを思い出させられるのであった。",
 		   NULL, "Ce ne serait que le lundi d'après, à cause d'une petite peste avec des quenottes bizarres et une verve truculente mais délicieusement erronée, que je comprendrais qu'elles venaient toutes les deux de tenter de sauver mon honneur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

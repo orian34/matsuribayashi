@@ -11,7 +11,7 @@
 		   NULL, "Être dans le coaltar, c'est un peu comme ne pas faire preuve du moindre intérêt pour quoi que ce soit, même pas pour un téléphone qui vous sonne juste dans les oreilles.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私はしばらくのまどろみの後、ようやくそれが電話の音で、このような時間に連絡を取りたがっている緊急性の高いものであることを理解した。",
 		   NULL, "Après plusieurs secondes passées avec le cerveau embrumé, je remarquai enfin que le bruit strident qui m'avait réveillé provenait du combiné situé à quelques centimètres de ma tête, et que si quelqu'un m'appelait aussi tard la nuit, c'est que la situation était particulièrement urgente.", Line_Normal);
 	ClearMessage();
@@ -219,7 +219,7 @@
 		   NULL, "... Bien sûr, je n'allais pas croire à ces sornettes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…でも、この男が末期患者であることは疑いようがなく、雛見沢症候群の研究を進める上で渇望して止まない、生きた検体でもあった……。",
 		   NULL, "Mais il ne faisait aucun doute que cet homme était atteint par le syndrome de Hinamizawa et qu'il était en phase terminale. C'était donc un potentiel sujet vivant d'expérimentations, et c'était la seule chose au monde qui pouvait nous permettre de progresser dans l'étude de la maladie...", Line_Normal);
 	ClearMessage();
@@ -353,9 +353,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だがその翌朝、ダム工事の現場監督のバラバラ殺人事件が発覚し、",
-		   NULL, "Bien sûr, le lendemain matin, les gens découvriraient le meurtre du chef de chantier du barrage de Hinamizawa, et aussi le détail du bras droit du corps que l'on n'aurait pas encore retrouvé.", Line_WaitForInput);
+		   NULL, "Bien sûr, le lendemain matin, les gens découvriraient le meurtre du chef de chantier du barrage de Hinamizawa, et aussi le détail du bras droit du corps que l'on n'aurait pas encore retrouvé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その右腕が見付からないという情報が入り、この右腕の持ち主を知ることになるのだった…。",
-		   NULL, " Avec cette information, le propriétaire de ce bras ne nous fut plus inconnu.", Line_Normal);
+		   NULL, "Avec cette information, le propriétaire de ce bras ne nous fut plus inconnu.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -364,13 +365,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1235", 128, TRUE);
 	OutputLine(NULL, "「この男、前科者だそうで、しかもその上、執行猶予期間中だとか。",
-		   NULL, "— D'après ce que j'ai compris, cet homme est un ancien détenu, et il a encore pris une sentence avec sursis.", Line_WaitForInput);
+		   NULL, "— D'après ce que j'ai compris, cet homme est un ancien détenu, et il a encore pris une sentence avec sursis.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1236", 128, TRUE);
 	OutputLine(NULL, "…にもかかわらず、また罪を犯してしまうなんて。",
-		   NULL, " Et ce soir, il a donc tué quelqu'un... Il y a des gens qui ne comprennent jamais.", Line_WaitForInput);
+		   NULL, "Et ce soir, il a donc tué quelqu'un... Il y a des gens qui ne comprennent jamais.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1237", 128, TRUE);
 	OutputLine(NULL, "それで殺人の発覚を恐れて遺体を隠そうと思ったのでしょうね。」",
-		   NULL, " Bref, il avait peur de se faire attraper à cause de ce meurtre, et c'est pourquoi il tentait de cacher le corps.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Bref, il avait peur de se faire attraper à cause de ce meurtre, et c'est pourquoi il tentait de cacher le corps.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -394,10 +397,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1289a", 128, TRUE);
 	OutputLine(NULL, "「………社会の屑がさらに犯罪を重ね、さらにその上、雛見沢症候群で凶暴化したのか。",
-		   NULL, "— ... Il peut être, comme vous le dites, un rebut de la société, une pourriture qui aurait déclaré la maladie au cours de ses méfaits,", Line_WaitForInput);
+		   NULL, "— ... Il peut être, comme vous le dites, un rebut de la société, une pourriture qui aurait déclaré la maladie au cours de ses méfaits,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1289b", 128, TRUE);
 	OutputLine(NULL, "それとも、前科を悔いる善良な小市民が雛見沢症候群で凶暴化して罪を犯したのか、どちらかはわかりません。",
-		   NULL, " mais il peut aussi être un homme du petit peuple qui sortirait de prison et qui aurait commis ce crime à cause du syndrome de Hinamizawa. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "mais il peut aussi être un homme du petit peuple qui sortirait de prison et qui aurait commis ce crime à cause du syndrome de Hinamizawa. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1290", 128, TRUE);
 	OutputLine(NULL, "…前者ならともかく、…後者ならば彼には何の罪もありませんよ。」",
@@ -458,7 +462,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　中世の時代には、脳に障害を持つ患者たちが、患者と理解されず、悪魔憑き呼ばわりされて、幽閉されたり処刑されたりした時代があった。",
 		   NULL, "À l'époque du Moyen-Âge, les patients atteints de troubles mentaux ou souffrant de lésions au cerveau n'étaient pas considérés comme des patients, mais comme des gens possédés par des esprits maléfiques. On les enfermait, parfois même ils étaient condamnés à mort.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -643,10 +647,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1244", 128, TRUE);
 	OutputLine(NULL, "「解剖計画書を提出し、東京に応援を要請した方がよいかと思います。",
-		   NULL, "— Je disais donc, je pense qu'il vaudrait mieux demander de l'aide à Tôkyô, en leur expliquant bien notre plan de dissection vivante.", Line_WaitForInput);
+		   NULL, "— Je disais donc, je pense qu'il vaudrait mieux demander de l'aide à Tôkyô, en leur expliquant bien notre plan de dissection vivante.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1245", 128, TRUE);
 	OutputLine(NULL, "何しろ、単に生きてるだけでなく、末期症状を起こしている大変貴重な検体ですもの。",
-		   NULL, " Après tout, nous tenons là un sujet d'observation très précieux, en phase terminale tout en étant encore vivant. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Après tout, nous tenons là un sujet d'observation très précieux, en phase terminale tout en étant encore vivant. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1246", 128, TRUE);
 	OutputLine(NULL, "慎重な解剖が求められますわね。」",

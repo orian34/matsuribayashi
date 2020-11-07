@@ -10,7 +10,7 @@
 		   NULL, "En secret, je m'étais préparé au pire pour ce soir. Je m'étais dit que peut-être, il se passerait quelque chose.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　１年目には作業員たちをそそのかして、おやっさんをバラバラにして殺し、２年目には何らかの方法によって、北条夫妻を事故に装って殺した。",
 		   NULL, "La première année, ils avaient dû payer des ouvriers pour tuer et découper le vieux, et la deuxième année, je ne sais pas comment ils avaient fait, mais ils s'étaient débarrassés des époux Hôjô en faisant croire à un accident.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -18,7 +18,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ダム戦争の時、村に仇敵として嫌われた人物ばかりが、雛見沢にとってもっとも意味のある、綿流しの祭りの日に死ぬ。",
 		   NULL, "Les gens qui avaient été élevés au rang d'ennemis du village lors de la guerre du barrage étaient curieusement retrouvés morts le lendemain de la fête de la purification du coton -- une célébration religieuse qui n'avait d'importance qu'aux yeux des habitants de Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -294,7 +294,6 @@
 	DrawScene( "background/kuruma5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　車で後を追おうとしたが、祭りの終わり際で、模擬店の撤収などで車がかなり出入りしており、臨時駐車場をなかなか抜け出せなかった。",
 		   NULL, "Je pensais les rejoindre en voiture sans trop de difficulté, mais en fait, les gens étaient justement en train de démonter les stands et de tout transporter. J'ai eu beaucoup de mal à sortir du parking temporaire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -367,7 +366,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　診療所の人間が言うには、神主が死んだ直後には間違いなく側に居たのだが、ふと気付いたら姿が見えなくなっていたというのだ。",
 		   NULL, "Les gens de la clinique ont pu m'assurer qu'effectivement, elle avait été là au moment où son mari était mort, mais qu'ils n'avaient pas trop fait attention à elle par la suite et que d'un seul coup, ils ne l'avaient plus vue.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -387,7 +386,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……神主は、ダム戦争の当時、大騒ぎしなくてもいずれダム工事はなくなると日和見的な発言をしてひんしゅくを買ったことがあったからだ。",
 		   NULL, "Le prêtre avait été vertement critiqué pour avoir été un pacifiste, un attentiste pendant la guerre du barrage ; il calmait souvent le jeu en disant que de toute façon, ce projet serait probablement abandonné et qu'il ne fallait pas se mettre dans tous ses états pour si peu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -421,7 +420,7 @@
 		   NULL, "... Et nous retrouvâmes ses sandales, placées bien proprement près de son mot d'adieu, au bord du marais.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　遺書には、夫の死はオヤシロさまの祟りであり、自分の身をもってオヤシロさまの怒りをお鎮めする…",
 		   NULL, "Dans sa dernière lettre, elle écrivait qu'elle se donnait en sacrifice à la déesse pour calmer sa colère -- et que la mort du prêtre, donc, était due à la colère de la déesse Yashiro. Tout semblait indiquer un suicide par la noyade. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -467,7 +466,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、奥さんがそれを祟りだと思い、神様に詫びるために入水自殺を決意したというのが二十分間の出来事というのはどう考えても不自然を極める。",
 		   NULL, "Mais l'on ne me fera jamais croire que sa femme s'est donnée en sacrifice à la déesse Yashiro. Et puis en plus, elle aurait pris cette décision en moins de vingt minutes, et serait immédiatement passée à l'acte ? Non, ça ne tenait pas debout.", Line_Normal);
 	ClearMessage();
@@ -516,7 +515,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……この事件は数えたらキリがないほどの不審点を山積みにしていたが、",
 		   NULL, "Tous ces incidents avaient des tas d'éléments louches et perturbants. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "村の何者かが上層部に圧力を掛けたらしく、過去の事件と同様、この事件も個別の事件として、無理やり忘れさせられていくのだった……。",
 		   NULL, "Et pourtant, il devait y avoir quelqu'un du village qui faisait pression sur ma hiérarchie, car nous reçûmes très vite l'ordre de considérer cette affaire comme séparée des autres. Et elle fut d'ailleurs vite classée sans suite, comme pour se faire oublier...", Line_Normal);
 	ClearMessage();
@@ -568,8 +567,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この事件について園崎お魎が、神主はオヤシロさまに祟られて当然だった旨の発言をし、雛見沢村連続怪死事件、通称オヤシロさまの祟りに神主の事件を組み込むことを決定するのだった。",
 		   NULL, "... Oryô Sonozaki déclara à propos de ces deux morts tragiques que le prêtre avait été maudit par la déesse à bien juste raison. Depuis ce jour-là, les meurtres en série de Hinamizawa comptent officiellement trois “malédictions”.", Line_Normal);
 	ClearMessage();

@@ -55,9 +55,10 @@
 	OutputLine(NULL, "　そして、どうやったら陰湿な職員に仕返しができるのか、という話になり、",
 		   NULL, "On discutait aussi des moyens de se venger en douce.", Line_WaitForInput);
 	OutputLine(NULL, "…皆、妄想の中でだけ、職員に対し陰湿な復讐をする。",
-		   NULL, " Alors, toutes, en rêve, on s'imaginait les pires atrocités qu'on ferait aux surveillants.", Line_WaitForInput);
+		   NULL, " Alors, toutes, en rêve, on s'imaginait les pires atrocités qu'on ferait aux surveillants.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……それを口にしながら泣き出してしまう子がいるくらいに、感情的に。",
-		   NULL, " C'était une thérapie, quelque part -- certaines étaient si emportées par leurs émotions qu'elles décrivaient les scènes en pleurant.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'était une thérapie, quelque part -- certaines étaient si emportées par leurs émotions qu'elles décrivaient les scènes en pleurant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -379,7 +380,8 @@
 	OutputLine(NULL, "　だが、そのリスクを負って逃げ延びた子たちは、",
 		   NULL, "Mais les autres élèves qui avaient pris le risque et qui s'étaient enfui avaient tous obtenu la miséricorde --", Line_WaitForInput);
 	OutputLine(NULL, "その名の通り、慈愛に満ちた「慈愛の家」で、ごくごく普通の、",
-		   NULL, " après tout, c'était le nom de l'autre orphelinat et il devait bien y avoir une raison à cela. ", Line_ContinueAfterTyping);
+		   NULL, " après tout, c'était le nom de l'autre orphelinat et il devait bien y avoir une raison à cela. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -477,9 +479,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…もしチャンスがあったら、捕まったら恐ろしい目に遭わされる恐怖を乗り越えて脱走に踏み切れる度胸があるか？",
-		   NULL, "— Si l'occasion se présente, vous la saisiriez, sachant ce qui nous attends si on rate notre coup ?", Line_WaitForInput);
+		   NULL, "— Si l'occasion se présente, vous la saisiriez, sachant ce qui nous attends si on rate notre coup ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　と聞いているのだ。",
-		   NULL, " Eriko nous demandait si nous nous sentions le courage de surmonter la peur des châtiments qui nous attendraient si jamais nous devions tenter de nous enfuir et rater notre coup.", Line_Normal);
+		   NULL, "Eriko nous demandait si nous nous sentions le courage de surmonter la peur des châtiments qui nous attendraient si jamais nous devions tenter de nous enfuir et rater notre coup.", Line_Normal);
 	ClearMessage();
 
 	DrawBustshot(5, "waku_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
@@ -792,7 +795,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　１人では逃げ切れないだろうが、…もし、職員が別の仲間を追ってくれれば、自分が逃げ延びることができる確率は高まるのだ。",
 		   NULL, "Seul contre tous, un évadé n'aurait aucune chance, mais si les surveillants se séparaient pour essayer d'attraper tout le monde, ou bien carrément, s'ils poursuivent seulement un autre, alors les chances de succès devenaient sérieuses.", Line_Normal);
 	ClearMessage();
@@ -858,9 +861,10 @@
 	OutputLine(NULL, "「昨日とまったく同じことをしているのに、明日はそれを怒られるかもしれない…。",
 		   NULL, "— Moi, ce que je ne supporte plus, c'est de ne jamais savoir sur quel pied danser. Un truc qui t'a sauvé la peau la veille peut être mal vu le lendemain.", Line_WaitForInput);
 	OutputLine(NULL, "もう耐えられないよ私…。",
-		   NULL, " C'est pas possible.", Line_WaitForInput);
+		   NULL, " C'est pas possible.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>菊子</color>", NULL, "<color=#f5e6d3>Kikuko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "何をすれば、あるいはしなければ怒られないのかわからない生活なんて、一秒だって耐えられない…！」",
-		   NULL, " C'est pas possible de continuer à vivre dans de telles conditions !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pas possible de continuer à vivre dans de telles conditions !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -915,9 +919,10 @@
 	OutputLine(NULL, "　鶏小屋の鍵を使った脱走が起これば、裏口の鍵は必ず別のに変えられちゃう。",
 		   NULL, "Quand j'aurais utilisé cette clef pour partir, ils vont sûrement changer tous les cadenas !", Line_WaitForInput);
 	OutputLine(NULL, "つまり、この方法は一度しか試せないということ。",
-		   NULL, " Ce qui veut dire que cette méthode ne marchera qu'une et une seule fois.", Line_WaitForInput);
+		   NULL, " Ce qui veut dire que cette méthode ne marchera qu'une et une seule fois.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>恵理子</color>", NULL, "<color=#f5e6d3>Eriko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……後から、やっぱり賛同すればよかったなんて思っても、もう手遅れっていうことよ…？！」",
-		   NULL, " Alors ne venez pas après vous plaindre que vous auriez dû partir avec moi !", Line_Normal);
+		   NULL, "Alors ne venez pas après vous plaindre que vous auriez dû partir avec moi !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>智美</color>", NULL, "<color=#f5e6d3>Tomomi</color>", NULL, Line_ContinueAfterTyping); }
@@ -991,9 +996,10 @@
 	OutputLine(NULL, "でも、一度しかないチャンスなの。",
 		   NULL, " Mais cette chance ne se présentera pas deux fois.", Line_WaitForInput);
 	OutputLine(NULL, "一度だけの勇気でいい！",
-		   NULL, " Il suffit d'avoir du courage juste une seule fois !", Line_WaitForInput);
+		   NULL, " Il suffit d'avoir du courage juste une seule fois !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>恵理子</color>", NULL, "<color=#f5e6d3>Eriko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　美代子はどう？",
-		   NULL, " Et toi, Miyoko, qu'est-ce que t'en penses ?", Line_WaitForInput);
+		   NULL, "Et toi, Miyoko, qu'est-ce que t'en penses ?", Line_WaitForInput);
 	OutputLine(NULL, "　私と行く？」",
 		   NULL, " Tu viens avec moi ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1086,9 +1092,10 @@
 	OutputLine(NULL, "「何も、明日すぐに実行するわけじゃない。",
 		   NULL, "— Non mais, ne vous en faites pas, je n'ai pas dit que nous partions demain.", Line_WaitForInput);
 	OutputLine(NULL, "鶏小屋の当番は１週間続く。",
-		   NULL, " Nous aurons la clef du poulailler chaque jour pendant toute une semaine.", Line_WaitForInput);
+		   NULL, " Nous aurons la clef du poulailler chaque jour pendant toute une semaine.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>恵理子</color>", NULL, "<color=#f5e6d3>Eriko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その間に、チャンスをうかがえばいいし、もし危険だと判断したら次の当番の週まで待てばいい。",
-		   NULL, " Nous n'aurons qu'à regarder comment les choses évoluent, et si vraiment c'est trop dangereux, nous pourrons remettre nos plans au lendemain, ou même au pire à notre prochaine semaine de corvée. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nous n'aurons qu'à regarder comment les choses évoluent, et si vraiment c'est trop dangereux, nous pourrons remettre nos plans au lendemain, ou même au pire à notre prochaine semaine de corvée. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>恵理子</color>", NULL, "<color=#f5e6d3>Eriko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……慎重にやれば大丈夫。」",
 		   NULL, "Nous pouvons nous permettre d'être prudentes.", GetGlobalFlag(GLinemodeSp));
@@ -1410,9 +1417,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　振り返った私の顔に覆いかかる分厚い手の平。",
-		   NULL, "Lorsque ma tête fut retournée, pour pouvoir donc voir ce qu'il y avait derrière moi, mon regard ne vit qu'une main immense.", Line_WaitForInput);
+		   NULL, "Lorsque ma tête fut retournée, pour pouvoir donc voir ce qu'il y avait derrière moi, mon regard ne vit qu'une main immense.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "荒い息をするために開かれた私の口に、その手の小指が紛れ込むのがわかった。",
-		   NULL, " Elle se saisit très vite de ma tête, très brusquement -- tellement que son petit doigt s'invita dans ma bouche, qui elle, était ouverte à cause de ma respiration erratique.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle se saisit très vite de ma tête, très brusquement -- tellement que son petit doigt s'invita dans ma bouche, qui elle, était ouverte à cause de ma respiration erratique.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	FadeOutBGM( 1, 300, FALSE );
@@ -1446,14 +1454,16 @@
 	OutputLine(NULL, "　それは、…何て憎悪の表情ッ！！",
 		   NULL, "Je n'avais jamais vu une haine aussi ostentatoire !", Line_WaitForInput);
 	OutputLine(NULL, "　そうさ直感する。",
-		   NULL, " Alors, je sus immédiatement ce qu'il allait m'arriver.", Line_WaitForInput);
+		   NULL, " Alors, je sus immédiatement ce qu'il allait m'arriver.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "見せしめにするために私を生かして捕らえたいだけなのだ。",
-		   NULL, " Il allait me ramener de force à l'orphelinat, vivante, mais uniquement parce qu'il y était obligé, et uniquement pour me détruire après. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il allait me ramener de force à l'orphelinat, vivante, mais uniquement parce qu'il y était obligé, et uniquement pour me détruire après. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして、見せしめにした後のことを考えるならば、今この場で殺してしまったとしても、何の問題もないではないか。",
-		   NULL, "Et je pus lire dans son regard que d'ailleurs, avec tout ce que j'allais prendre ensuite, il pouvait tout à fait me tuer maintenant, ça ne changerait pas grand-chose, sauf que ça lui ferait très, très plaisir.", Line_WaitForInput);
+		   NULL, "Et je pus lire dans son regard que d'ailleurs, avec tout ce que j'allais prendre ensuite, il pouvait tout à fait me tuer maintenant, ça ne changerait pas grand-chose, sauf que ça lui ferait très, très plaisir.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…そうさ、今この場で息の根を止めてしまおうとするこの世のものとは思えない憎悪を私は見る…！",
-		   NULL, " Oui, tel est le niveau inimaginable de haine que je pus lire dans ces deux yeux furieux qui me dévisageaient.", Line_Normal);
+		   NULL, "Oui, tel est le niveau inimaginable de haine que je pus lire dans ces deux yeux furieux qui me dévisageaient.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1467,9 +1477,10 @@
 	OutputLine(NULL, "　あぁ、思った！！",
 		   NULL, " Je n'eus qu'une pensée :", Line_WaitForInput);
 	OutputLine(NULL, "　この味は、私が殺される味だッ！！",
-		   NULL, " ce goût, c'était celui de la mort.", Line_WaitForInput);
+		   NULL, " ce goût, c'était celui de la mort.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この無骨な指をそのまま私の気管にまで捻じ込んで、私をこの場で窒息させて殺してしまおうという、殺しの指なのだッ！",
-		   NULL, " J'étais persuadée que ce doigt allait venir obstruer mes voies respiratoires et me faire suffoquer. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'étais persuadée que ce doigt allait venir obstruer mes voies respiratoires et me faire suffoquer. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、私は生きるために戦った！！",
 		   NULL, "Ainsi persuadée que ce doigt tentait de m'assassiner, je fis la seule chose qui me traversa l'esprit pour survivre !", Line_Normal);
@@ -1605,9 +1616,10 @@
 	OutputLine(NULL, "　幼い少女が、全身を生傷や擦り傷だらけにし、血を真っ赤にこびり付かせながら、ただただ自由を求めて、走る。",
 		   NULL, "Pourtant, malgré le sang et les blessures, la petite fille que j'étais courait, encore et encore, en quête de liberté.", Line_WaitForInput);
 	OutputLine(NULL, "捕まれば殺される。",
-		   NULL, " Si jamais l'homme qui me poursuivait m'attrapait, j'étais morte.", Line_WaitForInput);
+		   NULL, " Si jamais l'homme qui me poursuivait m'attrapait, j'étais morte.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "追っ手に理性があれば、恐ろしい刑罰で虐め殺されるだろう。",
-		   NULL, " S'il avait encore un peu de bon sens, il me tuerait à force de punitions, ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "S'il avait encore un peu de bon sens, il me tuerait à force de punitions, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "理性がなければ、今この場で殺されるだろう。",
 		   NULL, "s'il avait perdu la tête, il me tuerait sur place.", Line_WaitForInput);
@@ -1621,9 +1633,10 @@
 	OutputLine(NULL, "恐怖と酸欠で頭は真っ白だった。",
 		   NULL, " Ma tête était vide, le manque d'oxygène et la peur m'avaient rendue blafarde.", Line_WaitForInput);
 	OutputLine(NULL, "意識が途切れそうだった。",
-		   NULL, " J'étais au bord de l'évanouissement.", Line_WaitForInput);
+		   NULL, " J'étais au bord de l'évanouissement.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そうさ、いっそ途切ってしまいたかった。",
-		   NULL, " Limite, j'aurais préféré perdre conscience.", Line_WaitForInput);
+		   NULL, "Limite, j'aurais préféré perdre conscience.", Line_WaitForInput);
 	OutputLine(NULL, "……後から執拗に追ってくる職員の声さえ聞こえなくなっていたならば！！",
 		   NULL, " Tout pour ne plus entendre les râles de l'homme qui se rapprochait dans mon dos !", Line_Normal);
 	ClearMessage();

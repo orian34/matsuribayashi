@@ -29,9 +29,10 @@
 	OutputLine(NULL, "　このカケラでは気付きにくいことだけど。",
 		   NULL, "C'est extrêmement difficile de le voir ici, mais en fait,", Line_WaitForInput);
 	OutputLine(NULL, "…ルールＸに囚われた園崎詩音が、ルールＹに勘違いして翻弄されながら、",
-		   NULL, " ça parle de Shion Sonozaki, soumise à la loi X, qui se fait des idées sur la loi Y et se plante complètement.", Line_WaitForInput);
+		   NULL, " ça parle de Shion Sonozaki, soumise à la loi X, qui se fait des idées sur la loi Y et se plante complètement.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ルールＺの存在に気付いていくややこしいカケラ。",
-		   NULL, " Mais eh, au moins, elle nous aide à découvrir la loi Z.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais eh, au moins, elle nous aide à découvrir la loi Z.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -53,15 +54,16 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　始めは北条沙都子を毛嫌いしていた彼女も、…このカケラともうひとつのカケラを経て大切な何かを学び取り、",
-		   NULL, "Et grâce à ce fragment, et à un autre aussi, elle apprit quelque chose de très important.", Line_WaitForInput);
+		   NULL, "Et grâce à ce fragment, et à un autre aussi, elle apprit quelque chose de très important.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ルールＸに抗え、ルールＺと戦うための強力な駒に成長する。",
-		   NULL, " C'est grâce à cela qu'elle est passée du statut de chieuse décidée à se friter avec Satoko à celui d'une pièce très puissante pour briser la loi Z.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est grâce à cela qu'elle est passée du statut de chieuse décidée à se friter avec Satoko à celui d'une pièce très puissante pour briser la loi Z.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このカケラがとにかく滑稽なのは、……それがとても狡猾に隠されていて、ぱっと見ただけでは、まるでそう見えないことなのだけれど。",
 		   NULL, "Mais la raison pour laquelle ce fragment est si amusant, c'est qu'il donne toutes les clefs de compréhension sur un plateau d'argent, sauf qu'à la première lecture, les gens ne sont pas foutus de deviner quoi que ce soit...", Line_Normal);
 	ClearMessage();

@@ -110,12 +110,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もし、……私たちの駒がこれ以上なく充分に揃っているならば、",
-		   NULL, "Si tu penses que nos pièces sont prêtes et que nous ne pourrons plus en avoir d'autres, ou de meilleures,", Line_ContinueAfterTyping);
+		   NULL, "Si tu penses que nos pièces sont prêtes et que nous ne pourrons plus en avoir d'autres, ou de meilleures,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…私たちは覚悟を決めて、このカケラを覗いてみよう。",
-		   NULL, " alors j'imagine qu'il est temps de prendre notre courage à deux mains et de regarder ce que le futur nous réserve.", Line_Normal);
+		   NULL, "alors j'imagine qu'il est temps de prendre notre courage à deux mains et de regarder ce que le futur nous réserve.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

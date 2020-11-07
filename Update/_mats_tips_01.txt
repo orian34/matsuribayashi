@@ -19,7 +19,7 @@
 		   NULL, "Il y a fort longtemps,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この地が、人と鬼の混在した「混沌の世」であった時、混沌の根源であった鬼神を討ち倒したと伝えられる宝刀である。",
 		   NULL, "à l'époque des dieux, lorsque la terre était encore considérée comme “un monde chaotique” de par la cohabitation forcée entre humains et démons, il y a fallu employer cette épée magique pour terrasser la divinité maléfique qui était la source de tous ces désordres.", Line_Normal);
 	ClearMessage();
@@ -45,9 +45,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、その存在はいずれも固く封印された古手神社の禁書にしかなく、",
-		   NULL, "De plus, l'existence-même de cette épée n'est consignée que dans certains parchemins religieux tous mis au secret.", Line_WaitForInput);
+		   NULL, "De plus, l'existence-même de cette épée n'est consignée que dans certains parchemins religieux tous mis au secret.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その存在を知る者は、歴代古手家頭首以外にはこの千年間、数えるほども存在しない。",
-		   NULL, " Autant dire qu'hormis le chef de clan ayant fondé la lignée des Furude, quasiment personne n'a été au courant de son existence, depuis maintenant plus de mille ans.", Line_Normal);
+		   NULL, "Autant dire qu'hormis le chef de clan ayant fondé la lignée des Furude, quasiment personne n'a été au courant de son existence, depuis maintenant plus de mille ans.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -60,9 +61,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その形状を想像した数人の古手家頭首が墨絵を残しているが、",
-		   NULL, "Quelques prêtres et prêtresses de la lignée des Furude ont laissé des illustrations à l'encre d'après leur imagination,", Line_WaitForInput);
+		   NULL, "Quelques prêtres et prêtresses de la lignée des Furude ont laissé des illustrations à l'encre d'après leur imagination,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "どの形も一致せず、想像の域を出ていないことを物語っている。",
-		   NULL, " mais elles sont toutes bien différentes les unes des autres -- ce qui tend à prouver qu'elles sont toutes fantasmées et que personne n'a vu le modèle réel.", Line_Normal);
+		   NULL, "mais elles sont toutes bien différentes les unes des autres -- ce qui tend à prouver qu'elles sont toutes fantasmées et que personne n'a vu le modèle réel.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -90,9 +92,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（※雛見沢の先祖が半人半鬼の血を引くとの記述は枚挙に暇がないが、",
-		   NULL, "(*Des sources innombrables disent que les anciens habitants de Hinamizawa étaient mi-hommes, mi-démons,", Line_WaitForInput);
+		   NULL, "(*Des sources innombrables disent que les anciens habitants de Hinamizawa étaient mi-hommes, mi-démons,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "両者の血を引くと記された最古で最初の人物がこの古手桜花（？？？年〜？？？年）と考えられ、この記述はそれを伝えるものだと考えられている）",
-		   NULL, " mais historiquement, la première personne que l'on pense être née d'un humain et d'un démon est justement Ôka Furude -- qui aurait vécu plus de mille ans auparavant, aucune date précise n'est avancée. D'ailleurs, le texte de cette légende est le seul indice qui laisse entrevoir cette caractéristique.)", Line_Normal);
+		   NULL, "mais historiquement, la première personne que l'on pense être née d'un humain et d'un démon est justement Ôka Furude -- qui aurait vécu plus de mille ans auparavant, aucune date précise n'est avancée. D'ailleurs, le texte de cette légende est le seul indice qui laisse entrevoir cette caractéristique.)", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -123,9 +126,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（※討ち倒した、の記述が禁書ごとに非常に曖昧である。",
-		   NULL, "(*Selon la source, les écrits diffèrent énormément sur ce point.", Line_WaitForInput);
+		   NULL, "(*Selon la source, les écrits diffèrent énormément sur ce point.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "成敗したとも、退散させたとも、屈服させたとも伝えられ、鬼神のその後については不明な点が多い。",
-		   NULL, " L'un parle de “punir”, l'autre de “chasser”, un autre dit simplement “rabrouer”. On ne sait presque rien de ce qu'il advient de la divinité maléfique par la suite. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "L'un parle de “punir”, l'autre de “chasser”, un autre dit simplement “rabrouer”. On ne sait presque rien de ce qu'il advient de la divinité maléfique par la suite. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "最古の書物には、宝刀にて鬼神の角を激しく打ちつけた、という記述があるが、別の書物にそれはない）",
 		   NULL, "La source la plus ancienne dit que “le sabre lui trancha les cornes”, mais cette description est absente de tous les autres parchemins.)", Line_Normal);
@@ -147,7 +151,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（※鬼神であれど、神の身と人の身を結んだ刀は、すでにこの世のものではなく、地上に存在すべきものでなかったため、人の世から遠ざけた、という説もある。",
 		   NULL, "(*Certains pensent que puisque cette arme était un lien tangible entre les humains et les dieux, elle était trop importante pour rester en ce monde et devait être éloignée des hommes, qui auraient été trop tentés par son immense pouvoir. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -204,7 +208,7 @@
 		   NULL, "Mais à notre époque, la plupart des écrits concernant les premiers temps du culte de la déesse Yashiro sont considérés comme confidentiels -- et en particulier tous les parchemins laissés par le fondateur du sanctuaire.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　慈愛の存在として神格化された後世のオヤシロさま像と、",
 		   NULL, "L'image contemporaine d'une personne pleine de compassion et de miséricorde qui aurait été élevée au rang de déesse ne correspondait pas à l'image qu'en donnaient les premiers parchemins -- celle de la mère de tous les maux. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -246,7 +250,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古手家開祖（注１）は、混沌の元凶を全て背負いて我が子に討たせ、この地を混沌より解き放った。",
 		   NULL, "C'est pourquoi le fondateur du sanctuaire Furude prit sur ses épaules toute la responsabilité du chaos et du désordre qui régnait en ce bas-monde, et ordonna à sa propre progéniture de lui ôter la vie, pour ainsi purifier le mal partout présent.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -256,9 +260,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（注１：古手家開祖とは一般に古手桜花のことを指すが、稀に桜花の討った親を指す場合が見受けられる。",
-		   NULL, "1 : La plupart des sources désignent Ôka Furude comme étant la prêtresse ayant fondé le sanctuaire, mais les sources les plus anciennes, elles, indiquent que c'est sa mère.", Line_WaitForInput);
+		   NULL, "1 : La plupart des sources désignent Ôka Furude comme étant la prêtresse ayant fondé le sanctuaire, mais les sources les plus anciennes, elles, indiquent que c'est sa mère.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "古手家開祖＝鬼神、との考えは古手家の最大の禁忌のはずであり、",
-		   NULL, " Le fondateur de la lignée et la divinité maléfique serait donc une seule et même personne, ce qui, pour les Furude, devait être une souillure terrible à vivre. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le fondateur de la lignée et la divinité maléfique serait donc une seule et même personne, ce qui, pour les Furude, devait être une souillure terrible à vivre. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それでもなお、そう捉えていた頭首が存在していたことは意義深い）",
 		   NULL, "Il est très intéressant de constater que malgré cela, il ait existé un chef de clan pour reconnaître cet état de fait.", Line_Normal);
