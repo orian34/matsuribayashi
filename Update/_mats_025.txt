@@ -222,9 +222,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　花火業者たちは不思議がったが、",
-		   NULL, "Les membres responsables du feu d'artifice s'étaient posés la question toute la journée,", Line_WaitForInput);
+		   NULL, "Les membres responsables du feu d'artifice s'étaient posés la question toute la journée,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "梨花が、花火が面白そうだったのでオヤシロさまも鳴らしたくなったのだろうと言ったら、それで村人は納得してしまった。",
-		   NULL, " mais lorsque Rika proposa que peut-être, la déesse Yashiro avait elle aussi voulu faire la fête, tout le monde tomba d'accord pour dire que c'était probablement ça.", Line_Normal);
+		   NULL, "mais lorsque Rika proposa que peut-être, la déesse Yashiro avait elle aussi voulu faire la fête, tout le monde tomba d'accord pour dire que c'était probablement ça.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "white", 1000 );
@@ -347,7 +348,7 @@
 
 	SetSpeedOfMessage( FALSE, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どのくらい絶好調だったかと言えば、……まぁ全員、本部テントへ連れてかれて、村長さんにこってり油を絞られたくらい、と言えばわかるだろうか。",
 		   NULL, "Pour ceux qui voudraient savoir exactement jusqu'à quel point ils se surpassèrent, eh bien... Disons simplement qu'ils en firent suffisamment pour être tous emmenés de force dans la tente des organisateurs et recevoir de grosses remontrances de la part du maire.", Line_Normal);
 	ClearMessage();
@@ -362,9 +363,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ひとつ決定的に違うことがあり、",
-		   NULL, "Il n'y eut qu'une seule différence cruciale.", Line_WaitForInput);
+		   NULL, "Il n'y eut qu'une seule différence cruciale.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "………それを勝ち取るために、少女たちが気が遠くなるほどの時間、数多の世界で戦ってきたことを知ることができる人間は、いない。",
-		   NULL, " Et pour faire cette différence, deux petites filles avaient dû se battre dans de nombreux mondes, à travers les siècles, mais il n'y avait personne pour se rendre compte de leurs efforts.", Line_Normal);
+		   NULL, "Et pour faire cette différence, deux petites filles avaient dû se battre dans de nombreux mondes, à travers les siècles, mais il n'y avait personne pour se rendre compte de leurs efforts.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -397,9 +399,10 @@
 	OutputLine(NULL, "キャンプに行きたいとか、",
 		   NULL, " aller faire du camping,", Line_WaitForInput);
 	OutputLine(NULL, "今年こそひまわりの観察に成功しようとか、",
-		   NULL, " qu'elle espérait pouvoir enfin regarder les tournesols éclore,", Line_WaitForInput);
+		   NULL, " qu'elle espérait pouvoir enfin regarder les tournesols éclore,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "夏休み中は学校で肝試し大会をやろうとか。",
-		   NULL, " qu'elle voulait jouer à “T'es pas cap' !” dans l'enceinte de l'école pendant les vacances d'été.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "qu'elle voulait jouer à “T'es pas cap' !” dans l'enceinte de l'école pendant les vacances d'été.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -683,18 +686,20 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…聞くところでは、現場検証の番犬隊員にその高度な技術を驚かれ、",
-		   NULL, "J'ai entendu dire qu'un soldat des chiens de garde, qui menait l'enquête sur les événements du 19 juin, aurait été si impressionné par son talent", Line_WaitForInput);
+		   NULL, "J'ai entendu dire qu'un soldat des chiens de garde, qui menait l'enquête sur les événements du 19 juin, aurait été si impressionné par son talent", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ぜひ指導を、なんて求められたとか求められないとか。",
-		   NULL, " qu'il lui aurait demandé de venir en placer dans leurs camps d'entraînement.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "qu'il lui aurait demandé de venir en placer dans leurs camps d'entraînement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富士山の近くの樹海に自衛隊の演習場があるらしく、そこをトラップだらけにしてほしいと言われたらしい。",
 		   NULL, "Celui-ci était situé dans les forêts près des flancs du volcan Fuji.", Line_WaitForInput);
 	OutputLine(NULL, "……それはいくらなんでもヤバ過ぎだ。",
-		   NULL, " Mais pour être honnête, l'idée d'une forêt emplie de pièges près d'un lieu touristique aussi connu était peu rassurante.", Line_WaitForInput);
+		   NULL, " Mais pour être honnête, l'idée d'une forêt emplie de pièges près d'un lieu touristique aussi connu était peu rassurante.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "マジで樹海が帰らずの森になってしまう…。",
-		   NULL, " Elle risquait de devenir une forêt sans retour...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle risquait de devenir une forêt sans retour...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -796,9 +801,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…最近は男物以外の服も買うようになったが、……どうして診療所へ自分のサイズでないメイド服を持って意気揚々と出掛けていくのやら。",
-		   NULL, "D'ailleurs, récemment, elle avait commencé à acheter aussi des vêtements de femme.", Line_WaitForInput);
+		   NULL, "D'ailleurs, récemment, elle avait commencé à acheter aussi des vêtements de femme.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…真相は闇の中だ。",
-		   NULL, " Mais pourquoi emmener à la clinique des vêtements beaucoup trop grands pour elle ? Et surtout, pourquoi avait-elle toujours ce sourire resplendissant quand elle se rendait avec à la clinique ? J'ai bien peur que personne ne sache jamais vraiment de quoi il retournait.", Line_Normal);
+		   NULL, "Mais pourquoi emmener à la clinique des vêtements beaucoup trop grands pour elle ? Et surtout, pourquoi avait-elle toujours ce sourire resplendissant quand elle se rendait avec à la clinique ? J'ai bien peur que personne ne sache jamais vraiment de quoi il retournait.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
@@ -1538,11 +1544,13 @@
 	OutputLine(NULL, "　私は素足を清流に浸しながら、",
 		   NULL, "J'entrai dans la rivière, pieds nus,", Line_WaitForInput);
 	OutputLine(NULL, "…いつまでもいつまでも、",
-		   NULL, " et restai là, à regarder tous ces morceaux de coton dériver.", Line_WaitForInput);
+		   NULL, " et restai là, à regarder tous ces morceaux de coton dériver.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…人々が流す綿が流れる幻想的な沢の中にいて、",
-		   NULL, " Tout me semblait surréel, depuis la majestueuse cascade, jusqu'à la procession blanche qui disparaissait dans la nuit, par-delà les ténèbres.", Line_WaitForInput);
+		   NULL, "Tout me semblait surréel, depuis la majestueuse cascade, jusqu'à la procession blanche qui disparaissait dans la nuit, par-delà les ténèbres.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……夜の闇の向こうに去って行く綿たちを見送り続けるのだった…。",
-		   NULL, " Je restai longtemps à observer ce spectacle, fascinée, pendant un très long moment...", Line_Normal);
+		   NULL, "Je restai longtemps à observer ce spectacle, fascinée, pendant un très long moment...", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 3000, FALSE );

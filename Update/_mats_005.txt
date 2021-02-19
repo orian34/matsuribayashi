@@ -136,7 +136,7 @@
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000006", 128, TRUE);
 	OutputLine(NULL, "「………非常に驚くことばかりでした。",
 		   NULL, " Je suis allé de surprise en surprise, pour être franc. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000007", 128, TRUE);
 	OutputLine(NULL, "…確かに今日の医学の暗部に踏み込みかねない内容ではありますが、未だ世界で誰も解明していない神秘という点で、知的興奮を抑え切れません。」",
 		   NULL, "Le sujet a beau être un nid de guêpes qui pourrait nous faire déraper dans un domaine plus sombre de la médecine moderne, je dois avouer que le fait de me retrouver avec l'un des derniers grands mystères de la science me fait trembler d'excitation. J'ai vraiment eu envie d'en savoir plus !", Line_Normal);
@@ -180,10 +180,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500095", 128, TRUE);
 	OutputLine(NULL, "「私こそ驚いております。",
-		   NULL, "— Vous savez, je dois vous dire que moi aussi, je suis très surprise.", Line_WaitForInput);
+		   NULL, "— Vous savez, je dois vous dire que moi aussi, je suis très surprise.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500096", 128, TRUE);
 	OutputLine(NULL, "入江先生ほどの博識かつ経験豊富な方が、責任ある地位も仕事も与えられず、医局の片隅で飼い殺されているなど。",
-		   NULL, " Vous avez une grande connaissance de votre domaine, et beaucoup d'expérience. Et pourtant, vous n'avez qu'un petit poste dans une pharmacie, alors que vous pourriez faire de grandes choses à un poste ayant plus de responsabilités. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Vous avez une grande connaissance de votre domaine, et beaucoup d'expérience. Et pourtant, vous n'avez qu'un petit poste dans une pharmacie, alors que vous pourriez faire de grandes choses à un poste ayant plus de responsabilités. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500097", 128, TRUE);
 	OutputLine(NULL, "これは医学界の重大な損失と言わざるを得ませんわ。」",
@@ -207,9 +208,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本人は知られていないつもりだろうが、私は彼について詳細な資料を得ていたので、",
-		   NULL, "Il s'imaginait peut-être avoir gardé le secret sur son passé, mais j'avais en ma possession tous les documents nécessaires pour me faire mon idée sur le personnage.", Line_WaitForInput);
+		   NULL, "Il s'imaginait peut-être avoir gardé le secret sur son passé, mais j'avais en ma possession tous les documents nécessaires pour me faire mon idée sur le personnage.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "彼がどうして稀な才能と実績を持ちながら、表舞台から放逐されているかを知っていた。",
-		   NULL, " Je savais pourquoi il avait été relégué dans l'arrière-boutique malgré ses compétences hors du commun.", Line_Normal);
+		   NULL, "Je savais pourquoi il avait été relégué dans l'arrière-boutique malgré ses compétences hors du commun.", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 0, "B_Dive", 120, 0 );
@@ -250,7 +252,8 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼らは、生まれた時は正常であったが、その成長の過程で心因性や外因性等の何らかの理由により、",
-		   NULL, "Chaque homme naissait “normal”, mais des raisons physiologiques ou psychiques pouvaient intervenir pendant la croissance pour déclencher certaines maladies dans leur cerveau et les rendre mauvais. ", Line_WaitForInput);
+		   NULL, "Chaque homme naissait “normal”, mais des raisons physiologiques ou psychiques pouvaient intervenir pendant la croissance pour déclencher certaines maladies dans leur cerveau et les rendre mauvais. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "脳に疾患が起こり、それによって人は悪人になる、というのである。",
 		   NULL, "Il pensait que les criminels avaient besoin non pas d'une peine de prison, mais d'un traitement. Et si leur maladie pouvait être guérie, alors ils pourraient à nouveau redevenir d'honnêtes gens.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -309,7 +312,7 @@
 		   NULL, "C'est un domaine qui a disparu de la médecine de l'ère Heisei, mais il était encore très en vogue et acclamé jusqu'au milieu des années Shôwa, vers 1955.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　特に、従来は一切の治療方法がなかった重度の精神病患者に対して絶大な効果を上げたと言われ、その発案者にはノーベル医学賞さえ送られている。",
 		   NULL, "On disait que les opérations de psychochirurgie avaient montré des résultats inimaginables sur des patients que l'on pensait condamnés, tous atteints de très lourds troubles psychiques et mentaux. D'ailleurs, le premier chirurgien à avoir opéré un patient avec cette méthode obtint le prix Nobel de Médecine.", Line_WaitForInput);
 	OutputLine(NULL, "それくらいに画期的なものだった。",
@@ -333,9 +336,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その考えたり、悩んだりする部分が病むと、社会行動を逸脱するようになる。",
-		   NULL, "Et lorsque la partie du cerveau dédiée à l'acte même de penser tombe malade, alors cela peut engager un processus qui vous entraînera à l'encontre des conventions sociales.", Line_WaitForInput);
+		   NULL, "Et lorsque la partie du cerveau dédiée à l'acte même de penser tombe malade, alors cela peut engager un processus qui vous entraînera à l'encontre des conventions sociales.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その部分を「前頭葉」という。",
-		   NULL, " Et cette partie du cerveau qui vous fait penser s'appelle le “lobe frontal”.", Line_Normal);
+		   NULL, "Et cette partie du cerveau qui vous fait penser s'appelle le “lobe frontal”.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -365,7 +369,7 @@
 
 	DrawScene( "background/mati12", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ほぼ治療が不可能だった数々の精神病患者に奇跡的な成果を示し、戦前に発見されたこの手法は瞬く間に世界に広がった。",
 		   NULL, "Ces opérations eurent parfois des résultats absolument miraculeux sur des patients atteints de graves maladies mentales. Cette méthode d'opération, découverte encore avant la guerre, fit le tour du monde en un rien de temps.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -645,13 +649,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000011", 128, TRUE);
 	OutputLine(NULL, "「し、しかし、私などが所長などでいいのでしょうか…。",
-		   NULL, "— Juste une chose, vous croyez vraiment qu'il est bien raisonnable de me placer à la tête de cet institut ?", Line_WaitForInput);
+		   NULL, "— Juste une chose, vous croyez vraiment qu'il est bien raisonnable de me placer à la tête de cet institut ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000012", 128, TRUE);
 	OutputLine(NULL, "それは鷹野さんがやられた方がよろしいでしょう。",
-		   NULL, " Je pense que c'est un honneur qui vous revient de droit,", Line_WaitForInput);
+		   NULL, "Je pense que c'est un honneur qui vous revient de droit,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000013", 128, TRUE);
 	OutputLine(NULL, "私は単なる医者に過ぎません。",
-		   NULL, " je ne suis qu'un simple médecin, après tout.", Line_Continue);
+		   NULL, "je ne suis qu'un simple médecin, après tout.", Line_Continue);
 	OutputLine(NULL, "人の上に立ったことなど…。」",
 		   NULL, " Et puis, je n'ai pas l'expérience pour diriger une équipe...", Line_Normal);
 	ClearMessage();
@@ -659,21 +665,25 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500101", 128, TRUE);
 	OutputLine(NULL, "「ご安心ください。",
-		   NULL, "— Oh, rassurez-vous,", Line_WaitForInput);
+		   NULL, "— Oh, rassurez-vous,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500102", 128, TRUE);
 	OutputLine(NULL, "それにつきましては私も全面的にサポートいたします。",
-		   NULL, " je serai là pour vous épauler dans vos fonctions.", Line_WaitForInput);
+		   NULL, "je serai là pour vous épauler dans vos fonctions.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500103", 128, TRUE);
 	OutputLine(NULL, "トップは制服ではなく背広からというのが上の希望でもあります。",
-		   NULL, " Nos supérieurs désiraient de toute façon avoir une personne ayant la carrure de l'emploi, pas forcément les galons.", Line_WaitForInput);
+		   NULL, "Nos supérieurs désiraient de toute façon avoir une personne ayant la carrure de l'emploi, pas forcément les galons.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500104", 128, TRUE);
 	OutputLine(NULL, "お気に召しませんか？",
-		   NULL, " Pourquoi, ça ne vous plairait pas de vous faire appeler", Line_WaitForInput);
+		   NULL, "Pourquoi, ça ne vous plairait pas de vous faire appeler", Line_WaitForInput);
 	OutputLine(NULL, "　入江所長という呼び名は。",
-		   NULL, " “Monsieur le Directeur” ?", Line_WaitForInput);
+		   NULL, " “Monsieur le Directeur” ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500105", 128, TRUE);
 	OutputLine(NULL, "くすくす。」",
-		   NULL, " Hmphfhfhfhf !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Hmphfhfhfhf !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -696,13 +706,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500106", 128, TRUE);
 	OutputLine(NULL, "「現在、雛見沢に研究施設を建設中です。",
-		   NULL, "— Les laboratoires de recherche sont actuellement en construction à Hinamizawa.", Line_WaitForInput);
+		   NULL, "— Les laboratoires de recherche sont actuellement en construction à Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500107", 128, TRUE);
 	OutputLine(NULL, "表向きは診療所ということになっています。",
-		   NULL, " Officiellement, ce sera une clinique.", Line_WaitForInput);
+		   NULL, "Officiellement, ce sera une clinique.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500108", 128, TRUE);
 	OutputLine(NULL, "入江先生にご快諾をいただけましたので、入江診療所という名前にいたしましょう。」",
-		   NULL, " Puisque vous êtes prêt à relever le défi avec nous dans cette aventure, ce sera donc la clinique Irie.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Puisque vous êtes prêt à relever le défi avec nous dans cette aventure, ce sera donc la clinique Irie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -720,13 +732,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500109", 128, TRUE);
 	OutputLine(NULL, "「あと、身分を陸自で預かることになりますので、先生の籍は陸自の医官という扱いになります。",
-		   NULL, "— Ah, pour faciliter la paperasserie, vous ferez partie de l'Armée de Terre, vous serez donc médecin militaire.", Line_WaitForInput);
+		   NULL, "— Ah, pour faciliter la paperasserie, vous ferez partie de l'Armée de Terre, vous serez donc médecin militaire.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500110", 128, TRUE);
 	OutputLine(NULL, "私の上司ですので、二佐の階級になりますわね。",
-		   NULL, " Et comme vous serez mon supérieur, je pense que vous aurez le grade de lieutenant-colonel.", Line_WaitForInput);
+		   NULL, "Et comme vous serez mon supérieur, je pense que vous aurez le grade de lieutenant-colonel.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500111", 128, TRUE);
 	OutputLine(NULL, "入江二佐という呼び名はいかがでしょう？」",
-		   NULL, " Lieutenant-Colonel Irie. Comment vous trouvez ça ? Est-ce plaisant à entendre ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Lieutenant-Colonel Irie. Comment vous trouvez ça ? Est-ce plaisant à entendre ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -735,19 +749,23 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000018", 128, TRUE);
 	OutputLine(NULL, "「あ、あはははは！",
-		   NULL, "— Ahahahahaha !", Line_WaitForInput);
+		   NULL, "— Ahahahahaha !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000019", 128, TRUE);
 	OutputLine(NULL, "　私は軍人じゃありません。",
-		   NULL, " Non, vous savez, je n'ai jamais été porté sur les petits soldats.", Line_WaitForInput);
+		   NULL, "Non, vous savez, je n'ai jamais été porté sur les petits soldats.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000020", 128, TRUE);
 	OutputLine(NULL, "二佐という呼び名はご遠慮させていただきたいものです…。",
-		   NULL, " Quitte à choisir, je préfère encore “Monsieur le Directeur”,", Line_WaitForInput);
+		   NULL, "Quitte à choisir, je préfère encore “Monsieur le Directeur”,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000021", 128, TRUE);
 	OutputLine(NULL, "所長だって恐れ多いくらいです。",
-		   NULL, " même si honnêtement je ne m'en sens pas vraiment digne.", Line_WaitForInput);
+		   NULL, "même si honnêtement je ne m'en sens pas vraiment digne.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000022", 128, TRUE);
 	OutputLine(NULL, "いやいや……あははは…。」",
-		   NULL, " Ahahaha, non, rien que d'y penser...", Line_Normal);
+		   NULL, "Ahahaha, non, rien que d'y penser...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -989,13 +1007,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/551300022", 128, TRUE);
 	OutputLine(NULL, "「まぁまぁ先生！",
-		   NULL, "— Allons, allons, Messieurs Dames !", Line_WaitForInput);
+		   NULL, "— Allons, allons, Messieurs Dames !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/551300023", 128, TRUE);
 	OutputLine(NULL, "　今日はそういう堅苦しい話は抜きにしましょう！",
-		   NULL, " Cessons un peu avec les affaires sérieuses !", Line_WaitForInput);
+		   NULL, "Cessons un peu avec les affaires sérieuses !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/551300024", 128, TRUE);
 	OutputLine(NULL, "　今日は鷹野さんのこれからと入江機関の設立を祝って、乾杯と参りましょう！」",
-		   NULL, " Nous sommes ici réunis pour fêter la naissance de l'Institut Irie et pour souhaiter bonne chance au Commandant Takano dans ses futurs travaux ! Portons un toast !", Line_Normal);
+		   NULL, "Nous sommes ici réunis pour fêter la naissance de l'Institut Irie et pour souhaiter bonne chance au Commandant Takano dans ses futurs travaux ! Portons un toast !", Line_Normal);
 	ClearMessage();
 
 
@@ -1014,13 +1034,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200039", 128, TRUE);
 	OutputLine(NULL, "「あぁ、鷹野さん、彼をバシバシこき使ってやってください！",
-		   NULL, "— Ah, Madame Takano, n'hésitez pas à lui donner des ordres et à le tuer à la tâche, il est là pour ça !", Line_WaitForInput);
+		   NULL, "— Ah, Madame Takano, n'hésitez pas à lui donner des ordres et à le tuer à la tâche, il est là pour ça !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200040", 128, TRUE);
 	OutputLine(NULL, "　彼のところの研究所は入江機関のバックアップをしてくれます。",
-		   NULL, " Ce sont ses laboratoires qui donneront un coup de main à l'Institut Irie pour tout ce qui concerne le côté technique et technologique.", Line_WaitForInput);
+		   NULL, "Ce sont ses laboratoires qui donneront un coup de main à l'Institut Irie pour tout ce qui concerne le côté technique et technologique.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200041", 128, TRUE);
 	OutputLine(NULL, "技術的に困ったことがあったらいつでも頼ってやってください。」",
-		   NULL, " Si vous avez un problème, appelez-le !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si vous avez un problème, appelez-le !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1252,13 +1274,15 @@
 	OutputLine(NULL, "「さぁさぁさぁ！",
 		   NULL, "— Bien, bien !", Line_Continue);
 	OutputLine(NULL, "　挨拶はこれくらいにして早く乾杯に移りましょう！",
-		   NULL, " Allez, nous avons assez fait les présentations, il est temps de trinquer !", Line_WaitForInput);
+		   NULL, " Allez, nous avons assez fait les présentations, il est temps de trinquer !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200043", 128, TRUE);
 	OutputLine(NULL, "　ささ、富竹くんも足を崩して！",
-		   NULL, " Allons, M. Tomitake, ne soyez pas assis aussi formellement !", Line_WaitForInput);
+		   NULL, "Allons, M. Tomitake, ne soyez pas assis aussi formellement !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200044", 128, TRUE);
 	OutputLine(NULL, "　今日は入江機関の前途を祝して無礼講に参りましょう！！」",
-		   NULL, " C'est une petite fête privée en l'honneur de l'Institut Irie ! Nous sommes entre nous !", Line_Normal);
+		   NULL, "C'est une petite fête privée en l'honneur de l'Institut Irie ! Nous sommes entre nous !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1286,9 +1310,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日の宴席は、入江機関設立に尽力してくださったお偉方への感謝の席のつもりだったが、",
-		   NULL, "J'avais pensé pouvoir réunir ici toutes les personnes sans qui ce projet n'aurait pas abouti pour faire une fête en leur honneur,", Line_WaitForInput);
+		   NULL, "J'avais pensé pouvoir réunir ici toutes les personnes sans qui ce projet n'aurait pas abouti pour faire une fête en leur honneur,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いつの間にか、一番の功労者である鷹野を労う会になっていた。",
-		   NULL, " mais je me rendis bien vite compte que mes invités avaient retourné les tables -- ils pensaient que j'étais celle qui avait le plus donné, et voulaient tous trinquer en mon honneur.", Line_Normal);
+		   NULL, "mais je me rendis bien vite compte que mes invités avaient retourné les tables -- ils pensaient que j'étais celle qui avait le plus donné, et voulaient tous trinquer en mon honneur.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1301,9 +1326,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　新しい関係者は自分の機嫌を取ろうとうやうやしい態度を取り、",
-		   NULL, "Plusieurs nouveaux associés essayaient de rentrer dans mes bonnes grâces, avec des manières peu discrètes.", Line_WaitForInput);
+		   NULL, "Plusieurs nouveaux associés essayaient de rentrer dans mes bonnes grâces, avec des manières peu discrètes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "普段は最敬礼のお偉方は、今日は無礼講だと気さくに接してくれ、これまでの地道な積み重ねを讃えてくれた。",
-		   NULL, " Quant aux habituels cadres supérieurs et gros bonnets du gouvernement, eux qui se tenaient si distants et courtois d'habitude me portaient aux nues en en faisant des tonnes et des tonnes.", Line_Normal);
+		   NULL, "Quant aux habituels cadres supérieurs et gros bonnets du gouvernement, eux qui se tenaient si distants et courtois d'habitude me portaient aux nues en en faisant des tonnes et des tonnes.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

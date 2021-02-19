@@ -27,16 +27,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk2_rena2002", 128, TRUE);
 	OutputLine(NULL, "「あ、どうも。",
-		   NULL, "— Bonjour, Madame !", Line_WaitForInput);
+		   NULL, "— Bonjour, Madame !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk2_rena2003", 128, TRUE);
 	OutputLine(NULL, "私、お隣に引っ越してきました竜宮と申します。",
-		   NULL, " Nous venons d'emménager à côté de chez vous, mon père et moi. Nous sommes les Ryûgû.", Line_WaitForInput);
+		   NULL, "Nous venons d'emménager à côté de chez vous, mon père et moi. Nous sommes les Ryûgû.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk2_rena2004", 128, TRUE);
 	OutputLine(NULL, "引越しのご挨拶にお伺いしました。",
-		   NULL, " Je suis juste venue vous prévenir, nous ne sommes pas des voleurs, nous habitons ici, désormais !", Line_WaitForInput);
+		   NULL, "Je suis juste venue vous prévenir, nous ne sommes pas des voleurs, nous habitons ici, désormais !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk2_rena2005", 128, TRUE);
 	OutputLine(NULL, "どうかよろしくお願いします。」",
-		   NULL, " J'espère que ça se passera bien entre nous !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'espère que ça se passera bien entre nous !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Femme au foyer</color>", NULL, Line_ContinueAfterTyping); }
@@ -108,28 +111,33 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老婆</color>", NULL, "<color=#f5e6d3>Vieille femme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_roubaa2006", 128, TRUE);
 	OutputLine(NULL, "「知ってるもなぁんと！",
-		   NULL, "— Mais bien sûr, voyons !", Line_WaitForInput);
+		   NULL, "— Mais bien sûr, voyons !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老婆</color>", NULL, "<color=#f5e6d3>Vieille femme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_roubaa2007", 128, TRUE);
 	OutputLine(NULL, "　あー、お前興宮に住んどったから知らんかぁ。",
-		   NULL, " Ah, oui, tu vivais à Okinomiya, toi, c'est vrai, tu peux pas savoir.", Line_WaitForInput);
+		   NULL, "Ah, oui, tu vivais à Okinomiya, toi, c'est vrai, tu peux pas savoir.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老婆</color>", NULL, "<color=#f5e6d3>Vieille femme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_roubaa2008", 128, TRUE);
 	OutputLine(NULL, "ずいぶん前に住んでたお隣さんね。",
-		   NULL, " Ils vivaient ici, à côté, il y a bien longtemps.", Line_WaitForInput);
+		   NULL, "Ils vivaient ici, à côté, il y a bien longtemps.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老婆</color>", NULL, "<color=#f5e6d3>Vieille femme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_roubaa2009", 128, TRUE);
 	OutputLine(NULL, "…そうかいそうかい、戻ってきたかい！",
-		   NULL, " Je vois, je vois, alors vous êtes revenus ?", Line_WaitForInput);
+		   NULL, "Je vois, je vois, alors vous êtes revenus ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老婆</color>", NULL, "<color=#f5e6d3>Vieille femme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_roubaa2010", 128, TRUE);
 	OutputLine(NULL, "　やっぱり都会よか村の方が落ち着くんねぇなぁ。」",
-		   NULL, " J'parie que c'est plus calme ici qu'en ville, hein ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'parie que c'est plus calme ici qu'en ville, hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk2_rena2009", 128, TRUE);
 	OutputLine(NULL, "「住んでたのは小さい頃なんて、あんまりよくは覚えていないんですけど、",
-		   NULL, "— J'étais toute petite à l'époque, je ne me souviens pas trop.", Line_WaitForInput);
+		   NULL, "— J'étais toute petite à l'époque, je ne me souviens pas trop.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk2_rena2010", 128, TRUE);
 	OutputLine(NULL, "……でも、ここが私の帰ってくるところだったんだなって。とても懐かしくなります。」",
-		   NULL, " Mais parfois, je vois des paysages et je me dis, “j'ai l'impression d'être déjà passée par ici”. Je ne sais pas trop, mais je sens bien que je devais revenir.", Line_Normal);
+		   NULL, "Mais parfois, je vois des paysages et je me dis, “j'ai l'impression d'être déjà passée par ici”. Je ne sais pas trop, mais je sens bien que je devais revenir.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Femme au foyer</color>", NULL, Line_ContinueAfterTyping); }
@@ -399,16 +407,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナ父</color>", NULL, "<color=#f5e6d3>Papa de Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_renaf2004", 128, TRUE);
 	OutputLine(NULL, "「あはははは、そりゃそうだ。",
-		   NULL, "— Ahahahaha, il faut bien !", Line_WaitForInput);
+		   NULL, "— Ahahahaha, il faut bien !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナ父</color>", NULL, "<color=#f5e6d3>Papa de Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_renaf2005", 128, TRUE);
 	OutputLine(NULL, "人間は罪深い生き物だからね。",
-		   NULL, " L'homme est un animal corrompu.", Line_WaitForInput);
+		   NULL, "L'homme est un animal corrompu.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナ父</color>", NULL, "<color=#f5e6d3>Papa de Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_renaf2006", 128, TRUE);
 	OutputLine(NULL, "生きてるだけで日々、穢れが我が身に降り積もっていくものなんだそうだ。",
-		   NULL, " Il accumule les crimes pour assurer sa propre survie, tous les jours.", Line_WaitForInput);
+		   NULL, "Il accumule les crimes pour assurer sa propre survie, tous les jours.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナ父</color>", NULL, "<color=#f5e6d3>Papa de Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_renaf2007", 128, TRUE);
 	OutputLine(NULL, "それを、年に一回、体をお掃除するように、綿に吸い取ってもらって捨ててしまうということらしいよ。」",
-		   NULL, " Alors ici, une fois par an, on fait un peu de ménage, on prend du coton pour aspirer toute cette saleté spirituelle qui nous colle à la peau, et on la jette.", Line_Normal);
+		   NULL, "Alors ici, une fois par an, on fait un peu de ménage, on prend du coton pour aspirer toute cette saleté spirituelle qui nous colle à la peau, et on la jette.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -444,9 +455,10 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "この世を去り、別の世で神さまに払ってもらうしかない。",
-		   NULL, " de lui pardonner ou non ses crimes.", Line_WaitForInput);
+		   NULL, " de lui pardonner ou non ses crimes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…そんなことを考えてきた。",
-		   NULL, " Et j'avais jusqu'à présent pensé quelque chose qui s'en approchait.", Line_Normal);
+		   NULL, "Et j'avais jusqu'à présent pensé quelque chose qui s'en approchait.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

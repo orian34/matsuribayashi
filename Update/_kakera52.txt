@@ -42,7 +42,7 @@
 
 	DrawScene( "black", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その声は、原っぱに新しい秘密基地を作り、早くみんなとそこで遊びたいと胸をいっぱいにする少女には、届いていない。",
 		   NULL, "La jeune fille courait déjà, toute à sa joie de retrouver ses amis et de s'amuser dans la nouvelle base secrète qu'ils avaient construite dans les hautes herbes des champs. La voix de son père était le dernier de ses soucis.", Line_Normal);
 	ClearMessage();
@@ -56,7 +56,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…そして、少女にお子様ランチの旗を集める趣味があって、あと１本で２０本が揃うらしい、ということも。",
 		   NULL, "Il savait aussi que sa fille adorait aller au restaurant du grand magasin pour manger un menu enfant, et qu'elle collectionnait les petits drapeaux qui étaient plantés dans la portion de riz. Il savait aussi qu'il ne lui en manquait plus qu'un pour avoir la collection complète des vingt drapeaux.", Line_Normal);
 	ClearMessage();
@@ -114,9 +114,10 @@
 	OutputLine(NULL, "　寸秒を争うダイヤの遅れを取り戻そうと、",
 		   NULL, "Les passages sur les aiguillages étant réglés dans des fenêtres d'à peine quelques secondes,", Line_WaitForInput);
 	OutputLine(NULL, "運転手が、いつもブレーキをかける場所では少し遅く、",
-		   NULL, " les conducteurs de train qui avaient le malheur d'être en retard devaient freiner plus tard dans les virages,", Line_WaitForInput);
+		   NULL, " les conducteurs de train qui avaient le malheur d'être en retard devaient freiner plus tard dans les virages,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いつも加速する場所より少し早く、",
-		   NULL, " et réaccélérer plus tôt, si possible.", Line_ContinueAfterTyping);
+		   NULL, "et réaccélérer plus tôt, si possible.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
@@ -163,9 +164,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、知らない人がいたなら、…それは新しい郵便屋さんか、",
-		   NULL, "Et donc, lorsque l'on voyait une tête inconnue, cela ne pouvait être qu'un jeune facteur qui débutait,", Line_WaitForInput);
+		   NULL, "Et donc, lorsque l'on voyait une tête inconnue, cela ne pouvait être qu'un jeune facteur qui débutait,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…さもなければ近道ができると勘違いして迷い込んだ余所者かのどっちかだった。",
-		   NULL, " ou bien alors un écervelé qui se croyait plus malin que les autres et qui s'était trompé de rue en croyant trouver un nouveau raccourci.", Line_Normal);
+		   NULL, "ou bien alors un écervelé qui se croyait plus malin que les autres et qui s'était trompé de rue en croyant trouver un nouveau raccourci.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -827,9 +829,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一を色々な女の子にくっつけて遊んでみるのも面白そう。",
-		   NULL, "Et puis, ça peut être rigolo de voir comment Keiichi s'y prendrait s'il tombait amoureux de chacune des filles.", Line_WaitForInput);
+		   NULL, "Et puis, ça peut être rigolo de voir comment Keiichi s'y prendrait s'il tombait amoureux de chacune des filles.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "私、修羅場、大好きだもの。",
-		   NULL, " J'adore le voir galérer, j'imagine déjà les scène où il doit dissiper un malentendu avec sa dulcinée !", Line_WaitForInput);
+		   NULL, "J'adore le voir galérer, j'imagine déjà les scène où il doit dissiper un malentendu avec sa dulcinée !", Line_WaitForInput);
 	OutputLine(NULL, "くす！",
 		   NULL, " Hmpfhfhfhfhf !", Line_Normal);
 	ClearMessage();

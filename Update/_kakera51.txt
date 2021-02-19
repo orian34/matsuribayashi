@@ -222,7 +222,7 @@
 		   NULL, " J'ai pas envie de déclencher une crise diplomatique !", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>新見</color>", NULL, "<color=#f5e6d3>Nîmi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>新見</color>", NULL, "<color=#f5e6d3>Nîmi</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_niimi2003", 128, TRUE);
 	OutputLine(NULL, "「外交官特権で地元暴力団と癒着している外道どもだ。",
 		   NULL, "— C'est un petit enfant de salaud qui fricotte avec les gangs armés du coin, et il a l'immunité diplomatique.", Line_WaitForInput);
@@ -659,7 +659,7 @@
 		   NULL, "Il se passait la même chose près de la porte arrière du bâtiment.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　地上の護衛がすぐに異常事態に気付き拳銃を抜いたが、すぐ近くに一般人のふりをして隠れていた捜査官が背後より襲い掛かり、瞬きする間に制圧してしまう。",
 		   NULL, "Les gardes dans la rue remarquèrent bien sûr tout de suite qu'il y avait un problème. Ils sortirent immédiatement leurs pistolets, mais des “passants innocents” les attaquèrent par derrière pour les désarmer. Tout fut terminé en une seconde.", Line_Normal);
 	ClearMessage();
@@ -737,7 +737,9 @@
 	OutputLine(NULL, "　赤坂は自分と彼らの立ち位置を理解していた。",
 		   NULL, "Akasaka savait exactement où les deux gardes extérieurs se trouvaient.", Line_WaitForInput);
 	OutputLine(NULL, "だから彼らを目で確認する必要がまったくなかった。…だから、にもかかわらず！",
-		   NULL, " Il n'avait pas besoin de les voir pour savoir où frapper !", Line_WaitForInput);
+		   NULL, " Il n'avait pas besoin de les voir pour savoir où frapper !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
@@ -751,7 +753,7 @@
 	StartShakingOfAllObjects( 241, 40, 0, 0, 5*2, TRUE );
 
 	OutputLine(NULL, "　左右の護衛の延髄にミリ単位のズレもなく正確に拳を叩き込んだ。",
-		   NULL, " Il leur plaça un coup de poing formidable sur la base du bulbe rachidien, au millimètre près. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il leur plaça un coup de poing formidable sur la base du bulbe rachidien, au millimètre près. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その拳は鍛え上げられ、悪に対して一片の容赦もない、まさに徹甲弾並の破壊力を備えていたのだ…！！",
 		   NULL, "Il était surentraîné, et n'avait pas la moindre pitié pour les malfrats. Ses collègues surnommaient ses poings “les balles anti-chars” !", Line_Normal);
@@ -785,12 +787,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　二人の護衛が歪な姿勢で宙に浮き上がり、目の前に今、立っていたはずの男が瞬時に姿勢を低くしていて……、",
-		   NULL, "Il comprit que ses deux compagnons étaient en train de tomber, et chercha Akasaka des yeux, ne le trouvant nulle part -- puis il baissa les yeux et le vit ramassé sur lui même, prêt à frapper.", Line_ContinueAfterTyping);
+		   NULL, "Il comprit que ses deux compagnons étaient en train de tomber, et chercha Akasaka des yeux, ne le trouvant nulle part -- puis il baissa les yeux et le vit ramassé sur lui même, prêt à frapper.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "そこで停止した時間は砕けた！！",
-		   NULL, " C'est alors que le Temps reprit son cours normal !", Line_Normal);
+		   NULL, "C'est alors que le Temps reprit son cours normal !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -890,7 +893,7 @@
 
 	SetSpeedOfMessage( TRUE, 128 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　テーブルの上へ飛び上がり、一本が月収より高い高級酒や万年氷から削りだしたロックの入ったグラスを蹴散らしながら！！",
 		   NULL, "Il bondit sur l'une des tables et fit valser du pied des bouteilles de vin qui coûtaient chacune plus que son salaire mensuel, ainsi que plusieurs verres à whisky contenant des glaçons prélevés dans quelque glacier éternel.", Line_Normal);
 	ClearMessage();
@@ -1219,7 +1222,7 @@
 
 	DrawScene( "black", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　間髪いれずに左拳が頭部左脇へ打ち込まれ、瞬きを２つも許さないわずかの瞬間に７発の連撃が頭部左右スレスレに叩き込まれ、亀裂すら浮かべる！！",
 		   NULL, "Sans attendre, il frappa de l'autre poing aussi dans le mur, toujours à quelques millimètres de sa cible. Il lança toute une suite de coups, sept en tout, en à peine une poignée de secondes, et laissa deux petites craquelures dans le mur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1261,8 +1264,7 @@
 		   NULL, "Alors, les hommes de la D.S.T. procédèrent à une fouille en règle du club. Ils découvrirent assez vite un couloir secret qui servait à prendre la fuite.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこにはソ連製の軍用機関銃もあり、赤坂が店内で制圧していなかったら、取り逃がしていた可能性、もしくは双方が死傷者を出す大規模な銃撃戦に発展していた可能性が高い。",
 		   NULL, "En le longeant, ils découvrirent plusieurs caisses de kalachnikovs. Si Akasaka n'avait pas agi comme il l'avait fait, la D.S.T. aurait pu ne pas les retrouver, mais surtout, les fuyard auraient pu s'en servir et tuer plusieurs personnes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1581,9 +1583,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　汗の粒が飛び散り、埃の浮かぶ空気がぶわっと跳ね上がり、その重みを暗に語る。",
-		   NULL, "Des gouttes de sueur tombèrent en pluie, et la poussière du sol se déplaça en volutes, attirée vers son bras, ce qui en disait long sur la puissance de sa frappe.", Line_WaitForInput);
+		   NULL, "Des gouttes de sueur tombèrent en pluie, et la poussière du sol se déplaça en volutes, attirée vers son bras, ce qui en disait long sur la puissance de sa frappe.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "一撃必殺を体現した見事な正拳だった。",
-		   NULL, " C'était un coup presque parfait, qui annihilerait n'importe quel adversaire.", Line_Normal);
+		   NULL, "C'était un coup presque parfait, qui annihilerait n'importe quel adversaire.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1591,7 +1594,7 @@
 		   NULL, "Et pourtant, Akasaka ne semblait pas satisfait.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　薄く目を瞑り、……力の込め方や呼吸の深さ浅さを整え、時にはセミの鳴き声を聞く間すら与えるように、",
 		   NULL, "Il ferma les yeux, se remit en position, et recommença à travailler sa respiration, ses mouvements, sa concentration. Alors que l'on distinguait à nouveau, dans le silence de la salle, le chant des cigales du dehors,", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( TRUE, 128 );
@@ -1877,7 +1880,7 @@
 		   NULL, " C'était la mort de Yukie.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん、あの誘拐事件の時、犯人との格闘で遅れを取ったことも充分動機だったのだが、それ以上に大きかったのが雪絵の死の痛みだった…。",
 		   NULL, "Bien sûr, il y avait aussi une raison professionnelle, puisque son inexpérience avait failli lui coûter la vie pendant son enquête sur l'enlèvement, mais c'était surtout la mort de sa femme qui avait motivé sa décision.", Line_Normal);
 	ClearMessage();
@@ -1972,12 +1975,13 @@
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…",
-		   NULL, "...", Line_ContinueAfterTyping);
+		   NULL, "...",  GetGlobalFlag(GLinemodeSp));
 	SetValidityOfInput( FALSE );
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "全てを知ったのだった。",
-		   NULL, " il avait appris la vérité, et il avait compris qu'elle avait réellement su.", Line_ContinueAfterTyping);
+		   NULL, "Il avait appris la vérité, et il avait compris qu'elle avait réellement su.", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
@@ -1998,8 +2002,7 @@
 		   NULL, "S'il avait daigné croire en ses prédictions et s'il avait agi en conséquence, Yukie ne serait pas tombée dans les escaliers de l'hôpital ce jour-là.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、正義の心を全うするために警官となった自分が、ひとりの少女の助けに気付くこともできず、少女を取り巻く陰謀を、５年もの猶予がありながら見過ごし、殺してしまったのだ。",
 		   NULL, "Au lieu de ça, il n'avait même pas su comprendre la détresse d'une petite fille, lui qui avait pourtant choisi d'être dans la Police pour sauver la veuve et l'orphelin. Il avait eu cinq ans pour se rendre compte de ce qu'il fallait faire, et il n'avait rien vu... Et la petite fille était morte.", Line_Normal);
 	ClearMessage();
@@ -2046,8 +2049,7 @@
 
 	DrawScene( "background/tk_dojo", 1000 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石氏から聞かされた、雛見沢村連続怪死事件は、雛見沢大災害によってうやむやにされてしまったが、…明らかに何か巨大な陰謀を感じさせる奇怪な事件だった。",
 		   NULL, "M. Ôishi lui avait raconté un peu les affaires des meurtres en série de Hinamizawa. Elles avaient été éclipsées par la catastrophe naturelle, mais elles présentaient des aspects qui rappelaient, sans aucun doute possible, une conspiration de grande envergure.", Line_Normal);
 	ClearMessage();
@@ -2087,9 +2089,10 @@
 	OutputLine(NULL, "　終わってしまったことはどうしようもない。",
 		   NULL, "“À quoi bon ressasser des événements auquels tu ne peux plus rien changer ?", Line_WaitForInput);
 	OutputLine(NULL, "…ならばせめて。",
-		   NULL, " La seule chose à faire,", Line_WaitForInput);
+		   NULL, " La seule chose à faire,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "まったく同じことがもう一度起こった時、次こそは必ず救ってやれるよう、自分を鍛え上げるのみだと。",
-		   NULL, " c'est de t'entraîner, encore et encore, pour être prêt la prochaine fois que tu rencontreras cette situation, et pour faire la différence, cette fois-là.”", Line_Normal);
+		   NULL, "c'est de t'entraîner, encore et encore, pour être prêt la prochaine fois que tu rencontreras cette situation, et pour faire la différence, cette fois-là.”", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2243,10 +2246,11 @@
 	OutputLine(NULL, "「私たちが奇跡を願い、",
 		   NULL, "— Nous avons cru en un miracle.", Line_Continue);
 	OutputLine(NULL, "……あなたも奇跡を願わなければ、奇跡は起こらない。",
-		   NULL, " Mais puisque tu ne joignais jamais tes espoirs aux nôtres, le miracle ne s'accomplissait jamais.", Line_WaitForInput);
+		   NULL, " Mais puisque tu ne joignais jamais tes espoirs aux nôtres, le miracle ne s'accomplissait jamais.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2024", 128, TRUE);
 	OutputLine(NULL, "……だって、奇跡は全員が願わなかったら、起こらない。",
-		   NULL, " Il faut que tout le monde croie en notre salut pour déclencher les miracles, absolument tout le monde. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il faut que tout le monde croie en notre salut pour déclencher les miracles, absolument tout le monde. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2025", 128, TRUE);
 	OutputLine(NULL, "双方が手を伸ばしあわなかったら、届かない。」",
@@ -2268,16 +2272,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2026", 128, TRUE);
 	OutputLine(NULL, "「……赤坂。",
-		   NULL, "— Akasaka.", Line_WaitForInput);
+		   NULL, "— Akasaka.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2027", 128, TRUE);
 	OutputLine(NULL, "もし、あなたも望んでくれるなら、…あなたに奇跡を。",
-		   NULL, " Si tel est ton désir, alors nous pouvons t'accorder ce miracle.", Line_WaitForInput);
+		   NULL, "Si tel est ton désir, alors nous pouvons t'accorder ce miracle.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2028", 128, TRUE);
 	OutputLine(NULL, "私たちに奇跡を。",
-		   NULL, " Tu peux nous accorder ce miracle.", Line_WaitForInput);
+		   NULL, "Tu peux nous accorder ce miracle.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2029", 128, TRUE);
 	OutputLine(NULL, "……それは欠けたカケラを結び合わせ、より大きな大きなカケラを生み出すきっかけになる。",
-		   NULL, " Nous pourrons assembler cet éclat perdu à un autre fragment, et ainsi créer un fragment d'une nature complètement différente. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nous pourrons assembler cet éclat perdu à un autre fragment, et ainsi créer un fragment d'une nature complètement différente. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2030", 128, TRUE);
 	OutputLine(NULL, "……あなたのたった一つの決意が、全員の思いや運命に大きな影響を及ぼすこともあるのだから。」",
@@ -2298,16 +2305,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2031", 128, TRUE);
 	OutputLine(NULL, "「うぅん。",
-		   NULL, "— Non, Akasaka,", Line_WaitForInput);
+		   NULL, "— Non, Akasaka,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2032", 128, TRUE);
 	OutputLine(NULL, "そんなこと、私にはできないのです。",
-		   NULL, " cela n'est pas en notre pouvoir.", Line_WaitForInput);
+		   NULL, "cela n'est pas en notre pouvoir.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2033", 128, TRUE);
 	OutputLine(NULL, "……私にできるのは、気付かせることだけ。",
-		   NULL, " Mais je peux faire en sorte que tu te rendes compte de tes erreurs à temps.", Line_WaitForInput);
+		   NULL, "Mais je peux faire en sorte que tu te rendes compte de tes erreurs à temps.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2034", 128, TRUE);
 	OutputLine(NULL, "……１つのカケラだけでは学べないことを、他のカケラで学んだことを、気付かせてあげるだけ。",
-		   NULL, " En apportant tes regrets et tes connaissances depuis ce fragment, tu pourras te les enseigner à toi-même dans un autre fragment. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "En apportant tes regrets et tes connaissances depuis ce fragment, tu pourras te les enseigner à toi-même dans un autre fragment. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2035", 128, TRUE);
 	OutputLine(NULL, "…だから、この欠けたカケラをあるべきところへ戻すだけ。",

@@ -72,7 +72,7 @@
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、現場検証に立ち会わせた際の挙動も、どこか落ち着きがなく、それでいて無関係な人間だったならあり得ないほど、妙なところで落ち着いていて。",
 		   NULL, "De plus, je l'avais vu sur les lieux du crime, pour lui parler. Il avait été à la fois extrêmement nerveux, et aussi parfaitement détaché. Même quelqu'un de parfaitement étranger aux faits aurait montré plus d'intérêt que ça. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -300,9 +300,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　おやっさんの仇はわかってる。",
-		   NULL, "Alors bien sûr, cela ne pouvait pas servir de preuve, mais en tout cas, je pouvais être sûr que tout en haut de la chaîne de commande, il y avait Oryô Sonozaki...", Line_WaitForInput);
+		   NULL, "Alors bien sûr, cela ne pouvait pas servir de preuve, mais en tout cas, je pouvais être sûr que tout en haut de la chaîne de commande, il y avait Oryô Sonozaki...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "なのに、尻尾がどうしても掴めない…！",
-		   NULL, " Je savais qui étaient les meurtriers du vieux, mais je n'avais aucune preuve !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je savais qui étaient les meurtriers du vieux, mais je n'avais aucune preuve !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

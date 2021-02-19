@@ -16,7 +16,7 @@
 	DrawScene( "background/ho1", 400 );
 
 	ClearMessage();
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このカケラは、沙都子を取り巻く理不尽なルールＺの存在と、ゲーム盤におけるもっとも強敵な法則であるルールＹがその姿を見せる。",
 		   NULL, "Dans ce fragment-ci, nous en apprenons plus sur les tenants et les aboutissants de la loi Z en découvrant les traitements injustes infligés à Satoko. De plus, c'est ici que la loi la plus puissante de l'échiquier, la loi Y, fait son apparition.", Line_Normal);
 	ClearMessage();

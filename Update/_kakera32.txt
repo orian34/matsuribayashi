@@ -193,9 +193,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子が泣きながら僕に何かを訴える時、",
-		   NULL, "Et depuis, à chaque fois que Satoko vient me voir en pleurant et cherche du réconfort,", Line_WaitForInput);
+		   NULL, "Et depuis, à chaque fois que Satoko vient me voir en pleurant et cherche du réconfort,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…沙都子を永遠に傷つけてしまいそうな恐ろしい言葉を次々と喉元に突き上げては、口から吐き出させようと企むのだ。",
-		   NULL, " je me tiens prêt à lui dire des choses pires que tout, des choses méchantes qui pourraient la blesser pour le restant de ses jours, mais je me tais, je m'étouffe avec ces mots acerbes.", Line_Normal);
+		   NULL, "je me tiens prêt à lui dire des choses pires que tout, des choses méchantes qui pourraient la blesser pour le restant de ses jours, mais je me tais, je m'étouffe avec ces mots acerbes.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -226,9 +227,10 @@
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…下腹に力を入れて、外に追い出した。",
-		   NULL, " Mais j'avais réussi à le chasser de mon corps, je crois.", Line_WaitForInput);
+		   NULL, " Mais j'avais réussi à le chasser de mon corps, je crois.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…追い出せた。",
-		   NULL, " Sauf que ça ne suffisait pas.", Line_Normal);
+		   NULL, "Sauf que ça ne suffisait pas.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -605,34 +607,41 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1011", 128, TRUE);
 	OutputLine(NULL, "「さっき、声を掛けたらすごく驚いたでしょ？",
-		   NULL, "— Tout à l'heure, tu as presque hurlé de surprise quand je t'ai touché l'épaule.", Line_WaitForInput);
+		   NULL, "— Tout à l'heure, tu as presque hurlé de surprise quand je t'ai touché l'épaule.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1012", 128, TRUE);
 	OutputLine(NULL, "　そんなにも考え事をしてるなら、…きっと辛い悩みなんだろうなって思って…。",
-		   NULL, " C'est que tu avais des soucis plutôt graves, pour être tellement absorbé dans tes pensées. Enfin, je sais pas, c'est ce que je me suis dit...", Line_WaitForInput);
+		   NULL, "C'est que tu avais des soucis plutôt graves, pour être tellement absorbé dans tes pensées. Enfin, je sais pas, c'est ce que je me suis dit...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1013", 128, TRUE);
 	OutputLine(NULL, "はぅ…。」",
-		   NULL, " Hauu…", Line_Normal);
+		   NULL, "Hauu…", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1050", 128, TRUE);
 	OutputLine(NULL, "「それは、………あははは。",
-		   NULL, "— ... Ben en fait...", Line_WaitForInput);
+		   NULL, "— ... Ben en fait...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1051", 128, TRUE);
 	OutputLine(NULL, "なぜか最近、…誰かにずっと後を付けられているような錯覚がしてね。",
-		   NULL, " Je sais pas, c'est un peu con, mais depuis quelques semaines, j'ai l'impression qu'il y a quelqu'un qui me suit tout le temps.", Line_WaitForInput);
+		   NULL, "Je sais pas, c'est un peu con, mais depuis quelques semaines, j'ai l'impression qu'il y a quelqu'un qui me suit tout le temps.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1052", 128, TRUE);
 	OutputLine(NULL, "……ひたひた、ぺたぺた。",
-		   NULL, " J'entends le bruit de ses pas dans mon dos, tout le temps.", Line_WaitForInput);
+		   NULL, "J'entends le bruit de ses pas dans mon dos, tout le temps.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1053", 128, TRUE);
 	OutputLine(NULL, "…だからそれかと思って……。",
-		   NULL, " Alors j'ai cru que c'était ça, tout à l'heure.", Line_WaitForInput);
+		   NULL, "Alors j'ai cru que c'était ça, tout à l'heure.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1054", 128, TRUE);
 	OutputLine(NULL, "…って、あははははは、ごめん。",
-		   NULL, " Ahahahaha ! J'ai un peu flippé, désolé.", Line_WaitForInput);
+		   NULL, "Ahahahaha ! J'ai un peu flippé, désolé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1055", 128, TRUE);
 	OutputLine(NULL, "僕は一体何を言っているんだか。」",
-		   NULL, " Je... Je sais, c'est un peu bizarre, ce que je raconte, cherche pas.", Line_Normal);
+		   NULL, "Je... Je sais, c'est un peu bizarre, ce que je raconte, cherche pas.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

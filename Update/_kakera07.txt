@@ -35,9 +35,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　父親は母親と違い感情的な対応はしなかったが、梨花に対する今後の研究計画を明らかにし、",
-		   NULL, "Lorsqu'il revint vers nous pour nous communiquer sa décision sur la participation de Rika dans nos recherches, il ne fut pas aussi émotif que sa femme, mais nous posa une condition tout aussi insensée.", Line_WaitForInput);
+		   NULL, "Lorsqu'il revint vers nous pour nous communiquer sa décision sur la participation de Rika dans nos recherches, il ne fut pas aussi émotif que sa femme, mais nous posa une condition tout aussi insensée.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "長くとも３ヶ月以内にその研究を終えること、という非常識極まりない条件を突きつけてきた。",
-		   NULL, " Il voulait en finir avec tous ces tests dans les trois mois à compter de ce jour.", Line_Normal);
+		   NULL, "Il voulait en finir avec tous ces tests dans les trois mois à compter de ce jour.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/aka2", 400 );
@@ -322,7 +323,7 @@
 		   NULL, " mais sans forcer sur mes paupières.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………私にとってどうしようもない問題でも、…他の立場の人間に相談したら、あんまりにもあっさり解決してしまったということが少なくなかった。",
 		   NULL, "... Si effectivement je ne sais plus quoi faire à propos d'un problème, il me faut demander conseil à quelqu'un n'ayant absolument pas la même perspective que moi. Les gens qui ne sont pas concernés ont souvent un avis très pragmatique.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -503,9 +504,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、山狗は本来、私たちの研究を守り、研究とは違う形でサポートするためにいる。",
-		   NULL, "Mais à bien y réfléchir, les chiens de montagne étaient là pour nous protéger nous, physiquement, et ainsi contribuer au bon déroulement des recherches, sous une forme différente.", Line_WaitForInput);
+		   NULL, "Mais à bien y réfléchir, les chiens de montagne étaient là pour nous protéger nous, physiquement, et ainsi contribuer au bon déroulement des recherches, sous une forme différente.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…それを使わない手はなかった。",
-		   NULL, " Je ne pouvais pas ne pas utiliser leur présence à mon avantage.", Line_Normal);
+		   NULL, "Je ne pouvais pas ne pas utiliser leur présence à mon avantage.", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
@@ -535,13 +537,14 @@
 		   NULL, "Apparemment, c'était une technique de base pour se fondre dans la population et se créer une couverture.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1197", 128, TRUE);
 	OutputLine(NULL, "「このままだと、女王感染者の協力が受けられなくなるばかりか、騒ぎ立てる母親によって研究所の存在が暴かれる危険性もある。",
-		   NULL, "— Si nous ne faisons rien, non seulement la Reine Mère ne pourra plus coopérer avec nous et nous aider dans les recherches, mais en plus, l'existence des laboratoires risquerait d'éclater au grand jour si Madame Furude en parlait dans les commérages.", Line_WaitForInput);
+		   NULL, "— Si nous ne faisons rien, non seulement la Reine Mère ne pourra plus coopérer avec nous et nous aider dans les recherches, mais en plus, l'existence des laboratoires risquerait d'éclater au grand jour si Madame Furude en parlait dans les commérages.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1198", 128, TRUE);
 	OutputLine(NULL, "………山狗で何か手は打てる？」",
-		   NULL, " ... Vous pensez que les chiens de montagne pourraient faire quelque chose ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Vous pensez que les chiens de montagne pourraient faire quelque chose ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -616,10 +619,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#3e5745>小此木</color>", NULL, "<color=#3e5745>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s20/14/vtk1_okonogi1007", 128, TRUE);
 	OutputLine(NULL, "「入江機関の機密保持に当たっては、最悪の場合、それも辞さんっちゅう話のはずですが？　",
-		   NULL, "— C'est un cas de figure qu'est pourtant prévu, y m'semble ? Pour protéger le secret défense, dans le pire des cas, ça peut être une solution.", Line_WaitForInput);
+		   NULL, "— C'est un cas de figure qu'est pourtant prévu, y m'semble ? Pour protéger le secret défense, dans le pire des cas, ça peut être une solution.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#3e5745>小此木</color>", NULL, "<color=#3e5745>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s20/14/vtk1_okonogi1008", 128, TRUE);
 	OutputLine(NULL, "もちろん、ご命令があって初めて実行するこってすが。」",
-		   NULL, " Mais bon, eh, on ne le fera que si vous nous en donnez expressément l'ordre, hein ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais bon, eh, on ne le fera que si vous nous en donnez expressément l'ordre, hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -706,13 +710,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#3e5745>小此木</color>", NULL, "<color=#3e5745>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s20/14/vtk1_okonogi1011", 128, TRUE);
 	OutputLine(NULL, "「ただ殺すだけなら今夜にでも。",
-		   NULL, "— Si c'est juste pour la tuer, on peut faire ça ce soir, oui.", Line_WaitForInput);
+		   NULL, "— Si c'est juste pour la tuer, on peut faire ça ce soir, oui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#3e5745>小此木</color>", NULL, "<color=#3e5745>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s20/14/vtk1_okonogi1012", 128, TRUE);
 	OutputLine(NULL, "ただ、それでは騒ぎが大きくなりますんね、周到に監視してから、綺麗に蒸発してもらうようお膳立てします。",
-		   NULL, " Mais bon, ça se saurait très vite et ça ferait un peu tache, non ? Il vaut mieux d'abord bien observer ses habitudes, et la faire disparaître bien proprement, sans laisser ni traces, ni piste.", Line_WaitForInput);
+		   NULL, "Mais bon, ça se saurait très vite et ça ferait un peu tache, non ? Il vaut mieux d'abord bien observer ses habitudes, et la faire disparaître bien proprement, sans laisser ni traces, ni piste.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#3e5745>小此木</color>", NULL, "<color=#3e5745>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s20/14/vtk1_okonogi1013", 128, TRUE);
 	OutputLine(NULL, "そのための時間さえもらえれば。」",
-		   NULL, " Mais pour ça ma p'tite dame, il va falloir un peu de patience !", Line_Normal);
+		   NULL, "Mais pour ça ma p'tite dame, il va falloir un peu de patience !", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );

@@ -17,7 +17,7 @@
 		   NULL, "Ce médicament devait endiguer la sécrétion de certaines hormones pour empêcher le syndrome de Hinamizawa de communiquer des ordres au cerveau de Satoko et de déclencher en elle des troubles mentaux.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢症候群のメカニズムは、前頭葉を支配する病原体が、疑心暗鬼に対し特に過敏になる状態に誘導し、",
 		   NULL, "En effet, l'agent pathogène de la maladie, niché dans le lobe frontal, déclenche un état mental très réceptif à la paranoïa chez son hôte, ce qui pousse le patient à se défendre “de lui-même” de manière disproportionnée -- en tuant un adversaire, de peur de se faire tuer, par exemple. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -122,7 +122,7 @@
 		   NULL, "C'était un vieil inspecteur de police affecté au commissariat d'Okinomiya appelé Kuraudo Ôishi.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼は、ダム戦争から昨年の現場監督バラバラ殺人事件までを、村の御三家が暗躍する組織犯罪と捉えており、",
 		   NULL, "Il pensait que le meurtre du chef de chantier avait été perpétré ou tout du moins ordonné par les Sonozaki, tout comme les actes de violences de la guerre du barrage avaient été organisés par eux et par les autres clans fondateurs du village. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -155,13 +155,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1001", 128, TRUE);
 	OutputLine(NULL, "「いやいや、本当にちょっとだけお話が聞ければいいんです。",
-		   NULL, "— Si, bien sûr, mais j'ai juste quelques mots à lui dire, c'est tout.", Line_WaitForInput);
+		   NULL, "— Si, bien sûr, mais j'ai juste quelques mots à lui dire, c'est tout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1002", 128, TRUE);
 	OutputLine(NULL, "そうお時間を取らせるつもりはないんですがねぇ。",
-		   NULL, " Ça ne durera pas bien longtemps, croyez-moi.", Line_WaitForInput);
+		   NULL, "Ça ne durera pas bien longtemps, croyez-moi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1003", 128, TRUE);
 	OutputLine(NULL, "……令状が必要だってんなら申請しないことはありませんが、そうなるとかなり本格的なことになってしまいますよ？",
-		   NULL, " Et puis vous savez, je peux aussi aller demander un mandat, si vraiment vous n'êtes pas coopératif, mais j'aimerais ne pas avoir à en arriver à ces extrémités. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et puis vous savez, je peux aussi aller demander un mandat, si vraiment vous n'êtes pas coopératif, mais j'aimerais ne pas avoir à en arriver à ces extrémités. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1004", 128, TRUE);
 	OutputLine(NULL, "　私も北条さんの容態を気遣ってるからこそ、令状を取るなんて無粋を避けてるんじゃあありませんか。」",
@@ -189,10 +191,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1120", 128, TRUE);
 	OutputLine(NULL, "「北条夫妻がダム戦争以来、村中から嫌われているという話は知っています。",
-		   NULL, "— Je sais que les époux Hôjô étaient détestés par tout le monde au village depuis cette histoire de barrage.", Line_WaitForInput);
+		   NULL, "— Je sais que les époux Hôjô étaient détestés par tout le monde au village depuis cette histoire de barrage.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1121", 128, TRUE);
 	OutputLine(NULL, "ですが、わざわざ旅行先まで追いかけて突き落とすというのは、少々、突飛過ぎはしませんか？」",
-		   NULL, " Mais je ne pense pas que les habitants aillent jusqu'à les poursuivre sur le lieu de leurs vacances pour les jeter dans le ravin. Ça ne vous paraît pas un peu gros ?", Line_Normal);
+		   NULL, "Mais je ne pense pas que les habitants aillent jusqu'à les poursuivre sur le lieu de leurs vacances pour les jeter dans le ravin. Ça ne vous paraît pas un peu gros ?", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -201,19 +204,23 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1007", 128, TRUE);
 	OutputLine(NULL, "「ん〜〜〜。",
-		   NULL, "— Hmmm...", Line_WaitForInput);
+		   NULL, "— Hmmm...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1008", 128, TRUE);
 	OutputLine(NULL, "まぁ、事故でもいいんですがね？",
-		   NULL, " Bah, disons qu'après tout, ça peut aussi être un accident, hein,", Line_WaitForInput);
+		   NULL, "Bah, disons qu'après tout, ça peut aussi être un accident, hein,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1009", 128, TRUE);
 	OutputLine(NULL, "　ならば、どうしてもよくわからない嘘があるんです。",
-		   NULL, " mais il y a un mensonge que je ne m'explique pas.", Line_WaitForInput);
+		   NULL, "mais il y a un mensonge que je ne m'explique pas.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1010", 128, TRUE);
 	OutputLine(NULL, "どうして嘘が必要なのか、って考えるとですね。",
-		   NULL, " Je ne comprends pas pourquoi il a fallu mentir sur un certain détail, voyez-vous.", Line_WaitForInput);
+		   NULL, "Je ne comprends pas pourquoi il a fallu mentir sur un certain détail, voyez-vous.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1011", 128, TRUE);
 	OutputLine(NULL, "こりゃあ事故ってことはありえないんじゃないかなぁって思うんです。」",
-		   NULL, " Et en y réfléchissant, j'ai fini par comprendre que la raison de ce mensonge, c'est que cette chute, ce n'était pas un accident, tout simplement.", Line_Normal);
+		   NULL, "Et en y réfléchissant, j'ai fini par comprendre que la raison de ce mensonge, c'est que cette chute, ce n'était pas un accident, tout simplement.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -320,13 +327,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1018", 128, TRUE);
 	OutputLine(NULL, "「それなんですよ。",
-		   NULL, "— Ah, mais c'est justement là toute la question, voyez-vous ?", Line_WaitForInput);
+		   NULL, "— Ah, mais c'est justement là toute la question, voyez-vous ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1019", 128, TRUE);
 	OutputLine(NULL, "なぜ北条沙都子さんは嘘をつかなければならないのか。",
-		   NULL, " Pourquoi est-ce que Satoko Hôjô s'est sentie obligée de mentir sur sa présence à ce belvédère ?", Line_WaitForInput);
+		   NULL, "Pourquoi est-ce que Satoko Hôjô s'est sentie obligée de mentir sur sa présence à ce belvédère ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1020", 128, TRUE);
 	OutputLine(NULL, "それの本当のところを教えていただけないと、",
-		   NULL, " Tant qu'elle ne nous aura pas expliqué pourquoi,", Line_Continue);
+		   NULL, "Tant qu'elle ne nous aura pas expliqué pourquoi,", Line_Continue);
 	OutputLine(NULL, "…こいつぁただの転落事故ってことでは済ませられないんです。」",
 		   NULL, " nous ne pourrons pas classer l'affaire dans les accidents.", Line_Normal);
 	ClearMessage();
@@ -361,20 +370,23 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1023", 128, TRUE);
 	OutputLine(NULL, "「北条沙都子さんの主張によるならば、",
-		   NULL, "— Satoko Hôjô a déclaré que", Line_WaitForInput);
+		   NULL, "— Satoko Hôjô a déclaré que", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1024", 128, TRUE);
 	OutputLine(NULL, "彼女は両親に展望台へ行こうと誘われたが、眠かったのでそれを断り車を降りなかったという。",
-		   NULL, " ses parents l'avaient invitée à aller regarder le paysage depuis un point panoramique, mais qu'elle avait préféré rester dans la voiture pour dormir, car elle se sentait très fatiguée.", Line_WaitForInput);
+		   NULL, "ses parents l'avaient invitée à aller regarder le paysage depuis un point panoramique, mais qu'elle avait préféré rester dans la voiture pour dormir, car elle se sentait très fatiguée.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1025", 128, TRUE);
 	OutputLine(NULL, "そして彼女はそのまま熟睡してしまい、相当の時間が経ってから目を覚ました。",
-		   NULL, " Puis elle a dormi un long moment et s'est réveillée. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Puis elle a dormi un long moment et s'est réveillée. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1026", 128, TRUE);
 	OutputLine(NULL, "そして、いつまでも戻ってこない両親に不安感を募らせ、泣き出した。",
-		   NULL, "Puis, ne les voyant toujours pas revenir après plusieurs heures, prise de désespoir, elle s'est mise à pleurer.", Line_WaitForInput);
+		   NULL, "Puis, ne les voyant toujours pas revenir après plusieurs heures, prise de désespoir, elle s'est mise à pleurer.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1027", 128, TRUE);
 	OutputLine(NULL, "その声を聞いて巡回中の公園作業員が話し掛けて事故が発覚したことになっています。",
-		   NULL, " Lorsque le gardien a fait sa ronde, il l'a entendue pleurer, et c'est finalement lui qui a découvert l'accident.", Line_Normal);
+		   NULL, "Lorsque le gardien a fait sa ronde, il l'a entendue pleurer, et c'est finalement lui qui a découvert l'accident.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -387,19 +399,21 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1030", 128, TRUE);
 	OutputLine(NULL, "ところがこの時、北条夫妻が停めた車の位置からは問題の事故現場ははっきりと見えたわけじゃないはずなんです。",
-		   NULL, "Le problème, c'est que depuis l'endroit où leur voiture était garée, il était strictement impossible de voir le lieu de l'accident.", Line_WaitForInput);
+		   NULL, "Le problème, c'est que depuis l'endroit où leur voiture était garée, il était strictement impossible de voir le lieu de l'accident.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1031", 128, TRUE);
 	OutputLine(NULL, "いや、注意深く見れば柵が破損していたのを気付けたかもしれない。",
-		   NULL, " Oh, quoique, si l'on sait où regarder, j'imagine qu'on aurait pu voir les bouts arrachés de la barrière en bois.", Line_Normal);
+		   NULL, "Oh, quoique, si l'on sait où regarder, j'imagine qu'on aurait pu voir les bouts arrachés de la barrière en bois.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1032", 128, TRUE);
 	OutputLine(NULL, "　でもですよ？",
-		   NULL, "Mais moi, surtout, ce qui me paraît vraiment louche,", Line_WaitForInput);
+		   NULL, "Mais moi, surtout, ce qui me paraît vraiment louche,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1033", 128, TRUE);
 	OutputLine(NULL, "　目が覚めたら両親がいないのを知って、真っ先に崖下へ転落したと言うのは尋常ではないと思うんです。",
-		   NULL, " c'est qu'en voyant que ses parents n'étaient pas dans la voiture lorsqu'elle s'est réveillée, la première chose qu'elle a pensé, c'est que ses parents étaient morts en tombant dans le ravin. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "c'est qu'en voyant que ses parents n'étaient pas dans la voiture lorsqu'elle s'est réveillée, la première chose qu'elle a pensé, c'est que ses parents étaient morts en tombant dans le ravin. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1034", 128, TRUE);
 	OutputLine(NULL, "普通は、両親は自分を置いてどこかへ散歩に行ってしまい戻ってこないと言うはずなんです。",
@@ -527,7 +541,7 @@
 		   NULL, "En discutant plus tard avec Satoshi, je pus même reconstituer comment tout cela avait dû se mettre en place.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なぜなら、沙都子ちゃんは心を開こうとしなかったが、義父の方は、沙都子ちゃんとのコミュニケーションを取ろうと、不器用ながら努力をしていたと聞けたからだ。",
 		   NULL, "En effet, j'appris au travers de nos conversations que si Satoko n'essayait même pas de rester en bons termes avec son nouveau père, celui-ci continuait d'essayer, de manière maladroite certes, mais en y mettant toute sa bonne volonté.", Line_Normal);
 	ClearMessage();
@@ -595,12 +609,13 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……白川自然公園の展望台からの美しい景色を家族で楽しみ、",
-		   NULL, " c'est que lorsqu'il lui a proposé de venir admirer le magnifique paysage du parc naturel de Shirakawa,", Line_ContinueAfterTyping);
+		   NULL, " c'est que lorsqu'il lui a proposé de venir admirer le magnifique paysage du parc naturel de Shirakawa,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "その喜びを共有したいという慎ましやかな、",
-		   NULL, " elle n'a même pas compris qu'il voulait lui faire partager un beau moment familial, simple,", Line_ContinueAfterTyping);
+		   NULL, "elle n'a même pas compris qu'il voulait lui faire partager un beau moment familial, simple,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -726,10 +741,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1129", 128, TRUE);
 	OutputLine(NULL, "「白川自然公園の、沙都子ちゃんの両親の転落事故ですが。",
-		   NULL, "— Madame Takano, j'aimerais vous demander quelque chose à propos de la chute mortelle ayant entraîné la mort des parents de Satoko, vous savez, à Shirakawa.", Line_WaitForInput);
+		   NULL, "— Madame Takano, j'aimerais vous demander quelque chose à propos de la chute mortelle ayant entraîné la mort des parents de Satoko, vous savez, à Shirakawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1130", 128, TRUE);
 	OutputLine(NULL, "……この件、事故で決着するように、山狗の小此木さんにお願いしてもらうことはできますか？」",
-		   NULL, " Est-ce que vous pensez que nous pourrions demander à M. Okonogi et aux chiens de montagne de faire quelque chose ? Si la Police pouvait conclure à un accident, ça nous arrangerait beaucoup.", Line_Normal);
+		   NULL, "Est-ce que vous pensez que nous pourrions demander à M. Okonogi et aux chiens de montagne de faire quelque chose ? Si la Police pouvait conclure à un accident, ça nous arrangerait beaucoup.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -751,16 +767,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1131", 128, TRUE);
 	OutputLine(NULL, "「……そういうことです。",
-		   NULL, "— ... Je vois que nous sommes d'accord.", Line_WaitForInput);
+		   NULL, "— ... Je vois que nous sommes d'accord.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1132", 128, TRUE);
 	OutputLine(NULL, "特に、大石さんがこの件から早く引き上げるよう、よろしくお願いします。",
-		   NULL, " Demandez bien à ce que l'inspecteur Ôishi ne soit plus sur ce dossier, si cela est possible.", Line_WaitForInput);
+		   NULL, "Demandez bien à ce que l'inspecteur Ôishi ne soit plus sur ce dossier, si cela est possible.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1133", 128, TRUE);
 	OutputLine(NULL, "……試薬投与実験のデリケートな時期です。",
-		   NULL, " L'inoculation d'un nouveau médicament, c'est une période très délicate.", Line_WaitForInput);
+		   NULL, "L'inoculation d'un nouveau médicament, c'est une période très délicate.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1134", 128, TRUE);
 	OutputLine(NULL, "不要な心労をかけるのは適当ではありませんので。」",
-		   NULL, " J'aimerais bien limiter la fatigue nerveuse du patient au strict minimum.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'aimerais bien limiter la fatigue nerveuse du patient au strict minimum.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }

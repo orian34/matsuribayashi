@@ -24,7 +24,7 @@
 		   NULL, "C'était la tante de Satoko qui avait été tuée.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　村人たちは、ヒステリックに近所とトラブルを起こしてばかりいた叔母への祟りに、不謹慎ながらある種の満足感を感じていたようだった。",
 		   NULL, "Et comme elle avait été une hystérique notoire et qu'elle avait toujours posé des problèmes dans le quartier, les habitants du village, bien que choqués, étaient plutôt contents de voir que la malédiction l'avait punie elle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -714,10 +714,11 @@
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…似てる…。",
-		   NULL, " Elle lui ressemble !", Line_WaitForInput);
+		   NULL, " Elle lui ressemble !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1125", 128, TRUE);
 	OutputLine(NULL, "いや、",
-		   NULL, " Non, c'est pire...", Line_Continue);
+		   NULL, "Non, c'est pire...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -732,10 +733,11 @@
 	Wait( 600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "まだ……。",
-		   NULL, " Elle est encore en vie...", Line_WaitForInput);
+		   NULL, " Elle est encore en vie...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1126", 128, TRUE);
 	OutputLine(NULL, "……あんなに殺したのに、",
-		   NULL, " Quand je pense à tout ce que je lui ai mis sur la gueule...", Line_Continue);
+		   NULL, "Quand je pense à tout ce que je lui ai mis sur la gueule...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -886,32 +888,37 @@
 	OutputLine(NULL, "「…………沙都子、",
 		   NULL, "— ... Satoko…", Line_Continue);
 	OutputLine(NULL, "……ごめん。",
-		   NULL, " je suis désolé.", Line_WaitForInput);
+		   NULL, " je suis désolé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1130", 128, TRUE);
 	OutputLine(NULL, "……ぬいぐるみを買う直前まで、",
-		   NULL, " Juste avant de l'acheter, cette peluche,", Line_Continue);
+		   NULL, "Juste avant de l'acheter, cette peluche,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……僕はそのお金でどこか遠くに逃げてしまおうって思ってたんだ……。",
-		   NULL, " je me suis dit qu'avec tout cet argent, je pourrais m'en aller très loin d'ici...", Line_WaitForInput);
+		   NULL, " je me suis dit qu'avec tout cet argent, je pourrais m'en aller très loin d'ici...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1131", 128, TRUE);
 	OutputLine(NULL, "…だから、",
-		   NULL, " Et ça...", Line_WaitForInput);
+		   NULL, "Et ça...", GetGlobalFlag(GLinemodeSp));
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1131", 128, TRUE);
 	OutputLine(NULL, "…そんな僕をオヤシロさまは許さなかったんだ……。",
-		   NULL, " la déesse ne me le pardonnera pas.", Line_WaitForInput);
+		   NULL, "la déesse ne me le pardonnera pas.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1132", 128, TRUE);
 	OutputLine(NULL, "…僕は兄、",
-		   NULL, " Je ne suis pas digne", Line_Continue);
+		   NULL, "Je ne suis pas digne", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 300 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "失格なんだ……。",
-		   NULL, " d'être son grand frère.", Line_WaitForInput);
+		   NULL, " d'être son grand frère.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1133", 128, TRUE);
 	OutputLine(NULL, "……僕は………、",
-		   NULL, " Je suis...", Line_Continue);
+		   NULL, "Je suis...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -1186,13 +1193,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1368", 128, TRUE);
 	OutputLine(NULL, "「………悟史くんが、急性発症したようです。",
-		   NULL, "— ... Satoshi a fait une crise aiguë.", Line_WaitForInput);
+		   NULL, "— ... Satoshi a fait une crise aiguë.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1369", 128, TRUE);
 	OutputLine(NULL, "……彼の日頃のストレスを考えれば、いつ発症してもおかしくなかったでしょう。",
-		   NULL, " J'aurais dû prévoir cette situation, je savais très bien qu'il était confronté à beaucoup de stress, tous les jours.", Line_WaitForInput);
+		   NULL, "J'aurais dû prévoir cette situation, je savais très bien qu'il était confronté à beaucoup de stress, tous les jours.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1370", 128, TRUE);
 	OutputLine(NULL, "…いや、………ぬいぐるみを買うまで、自制心でそれをずっと抑え続けてきたに違いありません…。」",
-		   NULL, " Je parie que la seule chose qui le faisait tenir, c'était l'idée lancinante d'acheter cette peluche pour l'anniversaire de sa sœur...", Line_Normal);
+		   NULL, "Je parie que la seule chose qui le faisait tenir, c'était l'idée lancinante d'acheter cette peluche pour l'anniversaire de sa sœur...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1201,13 +1210,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1260", 128, TRUE);
 	OutputLine(NULL, "「何だか毎年、綿流しになると生きた検体が手に入りますわね。",
-		   NULL, "— C'est quand même un hasard formidable, vous ne trouvez pas ? Chaque année, pour la purification du coton, nous obtenons un nouveau sujet pour nos expériences.", Line_WaitForInput);
+		   NULL, "— C'est quand même un hasard formidable, vous ne trouvez pas ? Chaque année, pour la purification du coton, nous obtenons un nouveau sujet pour nos expériences.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1261", 128, TRUE);
 	OutputLine(NULL, "これもオヤシロさまの祟りのお陰なのかしら。",
-		   NULL, " Je me demande si ce n'est pas grâce à cette malédiction dont tout le monde parle.", Line_WaitForInput);
+		   NULL, "Je me demande si ce n'est pas grâce à cette malédiction dont tout le monde parle.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1262", 128, TRUE);
 	OutputLine(NULL, "くすくす。」",
-		   NULL, " Hmpfhfhfhfhf...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Hmpfhfhfhfhf...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

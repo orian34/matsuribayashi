@@ -65,13 +65,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1008", 128, TRUE);
 	OutputLine(NULL, "「あぁ、別に君のために時間を割いたわけじゃない。",
-		   NULL, "— Oh, je ne suis pas venu spécialement pour vous.", Line_WaitForInput);
+		   NULL, "— Oh, je ne suis pas venu spécialement pour vous.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1009", 128, TRUE);
 	OutputLine(NULL, "うまい生ウニが食わせてもらえるって話でねぇ！",
-		   NULL, " On m'a dit qu'il y avait des oursins crus au menu, alors j'ai pas pu résister, ahahahaha !", Line_WaitForInput);
+		   NULL, "On m'a dit qu'il y avait des oursins crus au menu, alors j'ai pas pu résister, ahahahaha !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1010", 128, TRUE);
 	OutputLine(NULL, "　ウニはいいんだよ君、ビタミンＡが豊富でね、お肌に特にいいんだとか。",
-		   NULL, " Ah, mais vous ne savez pas ? Les oursins, c'est bon ! C'est bourré de vitamine A, c'est bon pour la peau. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ah, mais vous ne savez pas ? Les oursins, c'est bon ! C'est bourré de vitamine A, c'est bon pour la peau. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1011", 128, TRUE);
 	OutputLine(NULL, "女性は大好きでしょ、ウニ！",
@@ -164,7 +166,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日の私の最大の目的は、雛見沢症候群がどれだけ優れた研究対象であることかを説明し、研究の無期延長を求めるためだ。",
 		   NULL, "Mon objectif principal était de bien faire comprendre à quel point les recherches sur le syndrome de Hinamizawa avaient d'importance pour le genre humain, pour pouvoir leur demander de prolonger indéfiniment les recherches.", Line_Normal);
 	ClearMessage();
@@ -325,13 +327,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Nakagawa</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1008", 128, TRUE);
 	OutputLine(NULL, "「理事会の決定で、軍事転用研究が中止に。",
-		   NULL, "— Le conseil d'administration a ordonné l'arrêt des recherches militaires.", Line_WaitForInput);
+		   NULL, "— Le conseil d'administration a ordonné l'arrêt des recherches militaires.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Nakagawa</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1009", 128, TRUE);
 	OutputLine(NULL, "あと、研究そのものも三年以内に段階的終了に決定しています。",
-		   NULL, " Quant aux recherches en elles-mêmes, on leur a demandé de tout arrêter d'ici trois ans.", Line_WaitForInput);
+		   NULL, "Quant aux recherches en elles-mêmes, on leur a demandé de tout arrêter d'ici trois ans.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Nakagawa</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1010", 128, TRUE);
 	OutputLine(NULL, "…あ、いえ、これは継続協議中でした。",
-		   NULL, " Enfin, ce dernier point est encore à entériner, mais c'est la direction générale. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Enfin, ce dernier point est encore à entériner, mais c'est la direction générale. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Nakagawa</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1011", 128, TRUE);
 	OutputLine(NULL, "まぁその、いずれにしましても、数年以内に閉鎖になる予定です。」",
@@ -608,10 +612,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1012", 128, TRUE);
 	OutputLine(NULL, "「ですな。",
-		   NULL, "— De toute façon,", Line_WaitForInput);
+		   NULL, "— De toute façon,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1013", 128, TRUE);
 	OutputLine(NULL, "病気が残れば、やがては関心を持つものが現れ、せっかく埋めた穴をわざわざ掘り返す輩が現れないとも限りません。",
-		   NULL, " si la maladie persiste, il y aura forcément un jour quelqu'un qui viendra pour l'étudier. Et il creusera un peu et découvrira tout ce que nous avons voulu maintenir caché, et nous serons là comme des cons. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "si la maladie persiste, il y aura forcément un jour quelqu'un qui viendra pour l'étudier. Et il creusera un peu et découvrira tout ce que nous avons voulu maintenir caché, et nous serons là comme des cons. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1014", 128, TRUE);
 	OutputLine(NULL, "理事会の決定通り、入江機関は病気を撲滅させ次第、研究の痕跡を全て消した上で解散させるのが良いでしょう。」",
@@ -621,13 +626,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1031", 128, TRUE);
 	OutputLine(NULL, "「ふむ。",
-		   NULL, "— Je vois.", Line_WaitForInput);
+		   NULL, "— Je vois.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1032", 128, TRUE);
 	OutputLine(NULL, "やはりそういう結論に行き着きますな。",
-		   NULL, " Oui, finalement, on aura beau retourner le problème, on arrive à la même solution.", Line_WaitForInput);
+		   NULL, "Oui, finalement, on aura beau retourner le problème, on arrive à la même solution.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1033", 128, TRUE);
 	OutputLine(NULL, "ノーベル賞が取れるかどうかが問題ではなく、戦後日本にとって無用な研究だということです。」",
-		   NULL, " Le problème n'est pas d'obtenir un prix Nobel, c'est de ne pas nous encombrer avec des recherches qui pourraient ne pas plaire aux autres pays.", Line_Normal);
+		   NULL, "Le problème n'est pas d'obtenir un prix Nobel, c'est de ne pas nous encombrer avec des recherches qui pourraient ne pas plaire aux autres pays.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
@@ -653,13 +660,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1017", 128, TRUE);
 	OutputLine(NULL, "「私も資料を読みながら、ユニークな発想をする人だなぁと思っておりました。",
-		   NULL, "— Oui, quand j'ai lu les documents d'époque, je me suis dit qu'il avait l'air unique en son genre.", Line_WaitForInput);
+		   NULL, "— Oui, quand j'ai lu les documents d'époque, je me suis dit qu'il avait l'air unique en son genre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1018", 128, TRUE);
 	OutputLine(NULL, "第一、寄生虫で人の思想が染まるなんて、聞いたことがない。",
-		   NULL, " Un parasite dans la tête, d'accord, mais qu'il puisse avoir une influence directe sur le processus de pensée de l'être humain ?", Line_WaitForInput);
+		   NULL, "Un parasite dans la tête, d'accord, mais qu'il puisse avoir une influence directe sur le processus de pensée de l'être humain ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1019", 128, TRUE);
 	OutputLine(NULL, "そりゃいくらなんでも、酷すぎる。」",
-		   NULL, " Y a un moment, faut arrêter, hein...", Line_Normal);
+		   NULL, "Y a un moment, faut arrêter, hein...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
@@ -802,22 +811,25 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1036", 128, TRUE);
 	OutputLine(NULL, "「あの三佐もちょいとおかしいし、",
-		   NULL, "— Le commandant ne m'avait pas l'air bien dans sa tête,", Line_WaitForInput);
+		   NULL, "— Le commandant ne m'avait pas l'air bien dans sa tête,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1037", 128, TRUE);
 	OutputLine(NULL, "こんな世迷言を信じた小泉先生もおかしいが、…",
-		   NULL, " et Maitre Koizumi devait être un peu gâteux pour prendre ces histoires au sérieux, mais celui qu'était vraiment atteint, c'était ce Takano, là !", Line_WaitForInput);
+		   NULL, "et Maitre Koizumi devait être un peu gâteux pour prendre ces histoires au sérieux, mais celui qu'était vraiment atteint, c'était ce Takano, là !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1038", 128, TRUE);
 	OutputLine(NULL, "やはりこの第一発見者の論文が一番おかしいですな。」",
-		   NULL, " Sa thèse, c'était du grand n'importe quoi.", Line_Normal);
+		   NULL, "Sa thèse, c'était du grand n'importe quoi.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1020", 128, TRUE);
 	OutputLine(NULL, "「期待と妄想が入り混じっていて、これは論文というより創作の次元ですな。",
-		   NULL, "— On sent bien qu'il mélange un peu ce qu'il trouve et ce qu'il aimerait trouver, ça ressemble plus à de la fiction qu'autre chose, son truc.", Line_WaitForInput);
+		   NULL, "— On sent bien qu'il mélange un peu ce qu'il trouve et ce qu'il aimerait trouver, ça ressemble plus à de la fiction qu'autre chose, son truc.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1021", 128, TRUE);
 	OutputLine(NULL, "というか、これはこのままどこかの出版社に持ち込んで本にした方が受けると思いますよ。」",
-		   NULL, " D'ailleurs, je me demande pourquoi il n'est pas allé voir un libraire avec son manuscrit, il aurait eu ses chances !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "D'ailleurs, je me demande pourquoi il n'est pas allé voir un libraire avec son manuscrit, il aurait eu ses chances !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
@@ -845,31 +857,35 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1020", 128, TRUE);
 	OutputLine(NULL, "…特に酷いのは、ハザード時に村をガス殺するための装備を用意した、という点です。",
-		   NULL, "Le plus terrible dans toute cette affaire, c'est le plan B, regardez donc le manuel des consignes d'urgence. Ils ont préparé de quoi assassiner tous les villageois en cas de pépin !", Line_WaitForInput);
+		   NULL, "Le plus terrible dans toute cette affaire, c'est le plan B, regardez donc le manuel des consignes d'urgence. Ils ont préparé de quoi assassiner tous les villageois en cas de pépin !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1021", 128, TRUE);
 	OutputLine(NULL, "これは絶対に国民に知られてはならないことです。」",
-		   NULL, " Il nous faut absolument cacher cela de l'opinion publique et des services secrets des autres pays.", Line_Normal);
+		   NULL, "Il nous faut absolument cacher cela de l'opinion publique et des services secrets des autres pays.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1043", 128, TRUE);
 	OutputLine(NULL, "「計画が存在しただけでも恐ろしいのに、実際に実行可能な装備が準備されているというのは国外は愚か、国内世論も敵に回すことになるだろうねぇ！",
-		   NULL, "— La simple existence de ces directives est déjà une raison en soi d'avoir peur, mais pensez donc que ce plan peut être déclenché à tout moment -- si cela devait se savoir, nous aurions de gros problèmes, même avec l'opinion publique.", Line_WaitForInput);
+		   NULL, "— La simple existence de ces directives est déjà une raison en soi d'avoir peur, mais pensez donc que ce plan peut être déclenché à tout moment -- si cela devait se savoir, nous aurions de gros problèmes, même avec l'opinion publique.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1044", 128, TRUE);
 	OutputLine(NULL, "　しかも、そのガス殺のための装備の維持費がすごいことになってるじゃないか…！」",
-		   NULL, " Et regardez ce que ça nous coûte de nous tenir prêts à mettre ce plan à exécution !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et regardez ce que ça nous coûte de nous tenir prêts à mettre ce plan à exécution !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1022", 128, TRUE);
 	OutputLine(NULL, "「そんなの、本当に維持費にしてるわけないじゃないですか。",
-		   NULL, "— Mais non, c'est de la connerie, tout ça.", Line_WaitForInput);
+		   NULL, "— Mais non, c'est de la connerie, tout ça.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1023", 128, TRUE);
 	OutputLine(NULL, "そういう名目にしてトンネルしてる架空プロジェクトでしょ、どうせ。",
-		   NULL, " C'est juste le nom de la ligne dans le rapport, ils utilisent ces sommes-là pour autre chose, c'est un projet fantôme, ça arrive souvent dans les affaires de corruption.", Line_WaitForInput);
+		   NULL, "C'est juste le nom de la ligne dans le rapport, ils utilisent ces sommes-là pour autre chose, c'est un projet fantôme, ça arrive souvent dans les affaires de corruption.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1022", 128, TRUE);
 	OutputLine(NULL, "大体、何でしたっけ？",
-		   NULL, " Et puis franchement, laissez-moi rire. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et puis franchement, laissez-moi rire. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Membre du Conseil</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1023", 128, TRUE);
 	OutputLine(NULL, "　少女が１人死ぬだけで村人が一斉に発狂する病気なんてあなた、どこの漫画の話ですか。」",

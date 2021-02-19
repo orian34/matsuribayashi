@@ -32,7 +32,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　かつて古手梨花に、もっともどうしようない運命と嘆かせたルールＺは、全てを学んだ前原圭一たちにとって、もはや敵ですらなかったということだ。",
 		   NULL, "En apprenant de leurs erreurs dans les autres fragments, Keiichi et ses amis purent vaincre une loi que Rika Furude avait toujours considérée comme étant absolue. N'oublions pas qu'avant ce fragment, elle abandonnait systématiquement dès le retour de Teppei.", Line_Normal);
 	ClearMessage();
@@ -146,9 +146,10 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "何度も挑む。",
-		   NULL, " et tenter de gagner, encore et encore.", Line_WaitForInput);
+		   NULL, " et tenter de gagner, encore et encore.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……鷹野の意思に負けないくらいの強い意志で。",
-		   NULL, " En gardant dans le cœur une volonté aussi forte que celle de notre adversaire.", Line_ContinueAfterTyping);
+		   NULL, "En gardant dans le cœur une volonté aussi forte que celle de notre adversaire.", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();

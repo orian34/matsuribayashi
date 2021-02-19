@@ -38,12 +38,13 @@
 	SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "そ〜",
-		   NULL, " “Eh Mion, c'est moi, viens !” ", Line_ContinueAfterTyping);
+		   NULL, " “Eh Mion, c'est moi, viens !” ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 400 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ぼー！",
-		   NULL, " “Oh ! Mioonnnn !” ", Line_ContinueAfterTyping);
+		   NULL, "“Oh ! Mioonnnn !” ", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 400 );
 	SetValidityOfInput( TRUE );
@@ -464,7 +465,7 @@
 		   NULL, " Ces deux-là n'étaient pas normaux dans leur tête et créaient beaucoup de problèmes de voisinage.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ゴミ出しのルールを守らなかったり、持ち回りの当番を忘れてたり、隣近所の洗濯物に気を遣わずに庭木の消毒をしたり。",
 		   NULL, "Ils ne respectaient pas les règles pour les poubelles, “oubliaient” quand ils étaient de corvée, et empestaient avec leurs produits de traitement du bois ou des nuisibles sans se soucier du linge des voisins qui pendait dehors.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -560,9 +561,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………もうダム戦争は終わりましたから仲良くしましょう、なんて誰かがひとり言ったところで、焼け石に水にもなりゃしないのだ。",
-		   NULL, "... Même si quelqu'un proposait d'arrêter avec tout ça sous prétexte que l'histoire du barrage est terminée, je ne pense pas que les choses changeront.", Line_WaitForInput);
+		   NULL, "... Même si quelqu'un proposait d'arrêter avec tout ça sous prétexte que l'histoire du barrage est terminée, je ne pense pas que les choses changeront.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…それどころか後ろ指をさされかねないのだから。",
-		   NULL, " Il y a même fort à parier que cette personne morflera elle aussi...", Line_Normal);
+		   NULL, "Il y a même fort à parier que cette personne morflera elle aussi...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -744,16 +746,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2067", 128, TRUE);
 	OutputLine(NULL, "「……………悲しいけど、…そういうこともあるかもしれない。",
-		   NULL, "— ... ... Oui, c'est malheureux à dire, mais il y a un peu de ça.", Line_WaitForInput);
+		   NULL, "— ... ... Oui, c'est malheureux à dire, mais il y a un peu de ça.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2068", 128, TRUE);
 	OutputLine(NULL, "…もし、沙都子を救う人が現れてくれるとしたら。",
-		   NULL, " Si quelqu'un veut sauver Satoko, il faudra que cette personne ne soit pas du village, ", Line_WaitForInput);
+		   NULL, "Si quelqu'un veut sauver Satoko, il faudra que cette personne ne soit pas du village, ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2069", 128, TRUE);
 	OutputLine(NULL, "…それは村のしがらみに囚われない、そういう人なんだろうね。",
-		   NULL, "pour ne pas être empêtré dans nos lois et nos alliances de familles.", Line_WaitForInput);
+		   NULL, "pour ne pas être empêtré dans nos lois et nos alliances de familles.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2070", 128, TRUE);
 	OutputLine(NULL, "…でも、そんな人、村にはいない。」",
-		   NULL, " Sauf que pour l'instant, il n'y a personne qui réponde à cette description.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sauf que pour l'instant, il n'y a personne qui réponde à cette description.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -848,16 +853,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2061", 128, TRUE);
 	OutputLine(NULL, "「……来ます。",
-		   NULL, "— Ne t'inquiète pas, il viendra.", Line_WaitForInput);
+		   NULL, "— Ne t'inquiète pas, il viendra.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2062", 128, TRUE);
 	OutputLine(NULL, "きっと。",
-		   NULL, " Je peux te l'assurer.", Line_WaitForInput);
+		   NULL, "Je peux te l'assurer.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2063", 128, TRUE);
 	OutputLine(NULL, "そして、彼と力を合わせて、私たちは村の悪弊を打ち破るのです。",
-		   NULL, " Nous unirons nos forces avec lui et nous mettrons un terme à toute cette injustice.", Line_WaitForInput);
+		   NULL, "Nous unirons nos forces avec lui et nous mettrons un terme à toute cette injustice.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2064", 128, TRUE);
 	OutputLine(NULL, "……それが、私たちの未来を閉ざす３つの錠前に対する、最初の鍵。」",
-		   NULL, " Car il est la première des trois clefs nécessaires pour briser les chaînes de notre Destin.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Car il est la première des trois clefs nécessaires pour briser les chaînes de notre Destin.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }

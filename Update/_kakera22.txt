@@ -32,7 +32,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女はまめに図書館や郷土資料館に足を運んでは、様々な文献を読み漁り、特に雛見沢に関しては、相当博識な郷土史家になっているようだった。",
 		   NULL, "Elle allait très souvent dans les bibliothèques municipales de la région pour y consulter les anciennes traces écrites encore conservées. Elle recherchait tous les livres qui parlaient de la région à travers les époques, et était devenue une spécialiste sur Hinamizawa en particulier.", Line_Normal);
 	ClearMessage();
@@ -41,8 +41,7 @@
 	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 9, "sprite/ta1_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女は機嫌がいい時、僕を捕まえては雛見沢がかつて鬼ヶ淵村と呼ばれていて、オヤシロさま信仰に基づく残酷な儀式をいくつも執り行っていた話を聞かせてくれた。",
 		   NULL, "Les jours où elle était de bonne humeur, dès qu'elle me tombait dessus, elle commençait à me raconter des histoires horribles et sordides à propos des cérémonies du culte de la déesse Yashiro, lorsque Hinamizawa était encore appelé “le village des abysses des démons”.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -114,7 +113,7 @@
 		   NULL, "— Et puis vous savez, ça me sert beaucoup dans l'étude de la maladie !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900019", 128, TRUE);
 	OutputLine(NULL, "　何も顕微鏡を覗くことだけが調べることになるとは限らない。この寄生虫と、長い時間を過ごしてきたこの村の伝承の方が、よっぽど重要な何かを教えてくれることもあるんだから。」",
 		   NULL, "Faire des recherches, ce n'est pas simplement se battre en duel avec son microscope. Les gens d'ici ont vécu pendant des siècles en cohabitation avec le virus. Les us et coutumes du village ont forcément un rapport avec cette maladie.", GetGlobalFlag(GLinemodeSp));
@@ -264,22 +263,24 @@
 		   NULL, " D'habitude, Jirô, vous mettez du temps à comprendre certaines évidences, je suis agréablement surprise.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800031", 128, TRUE);
 	OutputLine(NULL, "「いや、鷹野さんが、その高野先生をとても尊敬しているのは知ってたし、",
 		   NULL, "— Non, je veux dire, je savais que vous aviez beaucoup de respect pour le Professeur Takano.", Line_Continue);
 	OutputLine(NULL, "まるで自分が実の娘か孫で、研究の正当な後継者だというような感じで言っていることがあったからね。",
-		   NULL, " Et puis, quand vous parlez, parfois, vous donnez l'impression de le connaître comme s'il avait été votre père, vous parlez aussi beaucoup d'héritage et de succession.", Line_WaitForInput);
+		   NULL, " Et puis, quand vous parlez, parfois, vous donnez l'impression de le connaître comme s'il avait été votre père, vous parlez aussi beaucoup d'héritage et de succession.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800032", 128, TRUE);
 	OutputLine(NULL, "何となくそんな気がしただけなんだよ。",
-		   NULL, " C'est pourquoi j'ai fait l'association d'idées, c'est tout. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pourquoi j'ai fait l'association d'idées, c'est tout. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800033", 128, TRUE);
 	OutputLine(NULL, "……作家のペンネームだって、ほら、江戸川乱歩みたいに、尊敬する作家のオマージュで名前を付けることもあるし。",
-		   NULL, "Les écrivains font la même chose, regardez Ranpô Edogawa, si vous mettez son nom à l'envers, “Edogawa Ranpô” c'est en fait “Edgard Allan Poe”.", Line_WaitForInput);
+		   NULL, "Les écrivains font la même chose, regardez Ranpô Edogawa, si vous mettez son nom à l'envers, “Edogawa Ranpô” c'est en fait “Edgard Allan Poe”.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800034", 128, TRUE);
 	OutputLine(NULL, "なら、鷹野三四って名前もペンネームみたいなものなのかなぁって思って。」",
-		   NULL, " C'est pourquoi je me suis dit que les idéogrammes de votre nom, vous les aviez peut-être choisis pour lui rendre hommage.", Line_Normal);
+		   NULL, "C'est pourquoi je me suis dit que les idéogrammes de votre nom, vous les aviez peut-être choisis pour lui rendre hommage.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -292,7 +293,7 @@
 		   NULL, " Mais c'est vrai que normalement, l'idéogramme de mon nom est celui de la hauteur, pas celui du faucon.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800035", 128, TRUE);
 	OutputLine(NULL, "「え？",
 		   NULL, "— Quoi ?", Line_Continue);
@@ -347,7 +348,7 @@
 	DisableWindow();
 	ModDrawCharacter(2, 9, "sprite/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900029", 128, TRUE);
 	OutputLine(NULL, "「祖父の研究を引き継ぐために予算を、",
 		   NULL, "— Disons que quelqu'un m'a conseillé de changer de nom, parce que ça fait un peu mauvais genre de monter un dossier pour mendier de l'argent et continuer les projets d'un membre de sa propre famille.", Line_Continue);
@@ -388,9 +389,8 @@
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900031", 128, TRUE);
 	OutputLine(NULL, "「祖父も、医学的見地からだけでなく、古文書などの文献からも雛見沢症候群を探っていたの。",
 		   NULL, "— Grand-père aussi essayait d'en apprendre plus sur la maladie en revisitant les textes anciens. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900032", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "……雛見沢症候群と何百年にもわたって共にあった村の文献を調べることは、何百倍もの倍率を持つ顕微鏡を覗くより価値がありえるというのは、祖父が私に教えてくれたことなの。」",
 		   NULL, "Il m'a dit un jour qu'il était bien plus efficace de chercher des indices dans l'histoire de la région que de regarder dans un microscope. Après tout, ces gens ont dû s'accomoder de la maladie pendant des centaines d'années...", Line_Normal);
 	ClearMessage();
@@ -440,7 +440,7 @@
 		   NULL, "— Grand-père était un deux trois,", Line_Continue);
 	OutputLine(NULL, "私は三四で３４。",
 		   NULL, " et je suis trois quatre. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-5>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900035", 128, TRUE);
 	OutputLine(NULL, "……私は祖父を継ぎ、ようやく３を共に数えたに過ぎない。",
 		   NULL, "J'ai pris sa succession, mais pour l'instant, nous n'en sommes toujours qu'au stade du trois.", Line_Continue);
@@ -566,7 +566,7 @@
 		   NULL, " Je vous le promets.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900041", 128, TRUE);
 	OutputLine(NULL, "「孫だからいけないということはないけれど。",
 		   NULL, "— Je sais bien que ce n'est pas un crime d'être la petite-fille du Professeur Takano,", Line_Continue);
@@ -596,8 +596,7 @@
 		   NULL, " Ces recherches, Jirô, c'est toute ma vie.", Line_Continue);
 	OutputLine(NULL, "祖父の研究を完成させることだけが私の使命。",
 		   NULL, " Mon seul but dans la vie est de les mener à bien. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-4>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-5>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900044", 128, TRUE);
 	OutputLine(NULL, "踏みにじられた研究が、世界を驚かす偉大なものであったことを証明し、土の下で朽ちる祖父を讃えさせ、…神に昇華させること。それだけが私の生きる理由であり目的なの。…………ジロウさん。",
 		   NULL, "Les gens de l'Académie des Sciences se sont moqués de lui, Jirô, ils ont marché sur sa thèse et lui ont dit de se faire publier dans la rubrique science-fiction. Je veux prouver qu'il avait raison et que ses recherches étaient d'une importance capitale pour l'humanité toute entière. Ces académiciens devront se prosterner devant lui. Et grand-père deviendra comme un dieu. C'est la seule chose qui me motive. ", GetGlobalFlag(GLinemodeSp));
@@ -677,12 +676,13 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……それはあまりに深く、",
-		   NULL, "Une raison qui la dévorait de l'intérieur. Un peu comme une blessure terriblement profonde, dont elle ne s'était jamais remise.", Line_ContinueAfterTyping);
+		   NULL, "Une raison qui la dévorait de l'intérieur. Un peu comme une blessure terriblement profonde, dont elle ne s'était jamais remise.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…僕如きが触れない方がいい、心の傷口の谷間にあるように感じられるのだった。",
-		   NULL, " Et il valait mieux pour moi ne pas trop m'y intéresser, car cela ne pourrait rien amener de bon entre nous.", Line_Normal);
+		   NULL, "Et il valait mieux pour moi ne pas trop m'y intéresser, car cela ne pourrait rien amener de bon entre nous.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

@@ -126,7 +126,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕のこの微熱は、恋心でなく風邪か何かだと思い込んでおいた方がいいだろう。",
 		   NULL, "Je crois bien que cette douce fièvre qui m'a saisi ne doit surtout pas s'installer en moi et m'obnubiler par la suite. Ce n'est pas à cause de mes sentiments, non, j'ai réellement pris froid, je dois me soigner. Oui, on va dire ça, ce sera plus facile pour oublier...", Line_Normal);
 	ClearMessage();
@@ -176,7 +176,7 @@
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900003", 128, TRUE);
 	OutputLine(NULL, "「ジロウさんも不思議な人ね。",
 		   NULL, "— Vous êtes assez difficile à cerner, vous savez.", Line_Continue);
@@ -184,7 +184,7 @@
 		   NULL, " Je ne vous comprends pas, je suis certaine que les femmes vous sollicitent beaucoup à Tôkyô, et pourtant, vous semblez vouloir passer du temps avec une femme étrange comme moi, perdue au fin fond de la campagne...", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800004", 128, TRUE);
 	OutputLine(NULL, "「お、おかしななんてことはないよ…。",
 		   NULL, "— Allons bon, vous n'êtes pas étrange !", Line_Continue);
@@ -199,10 +199,11 @@
 	OutputLine(NULL, "「確かに私は、とても大切な研究のために生涯を捧げたつもりだけど。",
 		   NULL, "— J'admets volontiers que j'ai décidé de passer toute ma vie à faire de la recherche,", Line_Continue);
 	OutputLine(NULL, "それだけじゃ人生は潤いがないもの。",
-		   NULL, " mais l'être humain ne peut pas vivre que de travail et d'eau fraîche.", Line_WaitForInput);
+		   NULL, " mais l'être humain ne peut pas vivre que de travail et d'eau fraîche.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900005", 128, TRUE);
 	OutputLine(NULL, "たまには、頭を切り替えて遊ぶことも大事だし。",
-		   NULL, " Il faut se changer les idées de temps en temps.", Line_Continue);
+		   NULL, "Il faut se changer les idées de temps en temps.", Line_Continue);
 	OutputLine(NULL, "……それに、異性とのコミュニケーションは脳の活性にもとてもいいんだから。",
 		   NULL, " Et puis, il paraît que la communication avec le sexe opposé améliore grandement l'activité cérébrale.", Line_Continue);
 	OutputLine(NULL, "くすくす。」",
@@ -234,7 +235,7 @@
 		   NULL, "Je devais absolument parler ou bouger, sinon, je serais tellement cramoisi qu'elle saurait immédiatement...", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-4>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800006", 128, TRUE);
 	OutputLine(NULL, "「そんなことないよ…！",
 		   NULL, "— Mai-mais enfin, il ne faut pas dire ça !", Line_Continue);
@@ -250,7 +251,7 @@
 		   NULL, " je vous ramènerai mon ancien objectif, il me dépanne encore bien souvent… Ahahah…", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900007", 128, TRUE);
 	OutputLine(NULL, "「ありがとう。",
 		   NULL, "— Merci, c'est très gentil à vous.", Line_Continue);
@@ -262,7 +263,7 @@
 		   NULL, " Je peux compter sur vous alors, je n'ai vraiment pas besoin de m'acheter un appareil ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800008", 128, TRUE);
 	OutputLine(NULL, "「あ、あ、うん！",
 		   NULL, "— Ah, euh, oui, oui, bien sûr !", Line_Continue);
@@ -374,10 +375,11 @@
 	OutputLine(NULL, "「あは、あはははは…。",
 		   NULL, "— Ahaha, eh bien...", Line_Continue);
 	OutputLine(NULL, "昔ちょっとだけ教官の真似事をしてたけどね。",
-		   NULL, " Avant, j'étais instructeur, enfin, j'essayais.", Line_WaitForInput);
+		   NULL, " Avant, j'étais instructeur, enfin, j'essayais.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-4>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800012", 128, TRUE);
 	OutputLine(NULL, "怪我をした時に目をやっちゃってね。",
-		   NULL, " Un jour, pendant un entraînement, je me suis blessé au visage, un œil était touché.", Line_Continue);
+		   NULL, "Un jour, pendant un entraînement, je me suis blessé au visage, un œil était touché.", Line_Continue);
 	OutputLine(NULL, "普段の生活には支障はないんだけど、大事に受け取られちゃって、それ以来は事務屋の仕事ばかりやらされてるんだよ。",
 		   NULL, " Je n'ai gardé aucune séquelle grave, ma vision ne me gêne en rien dans la vie de tous les jours, mais mes supérieurs semblent persuadés du contraire. Alors depuis, je suis relégué aux tâches administratives…", Line_Continue);
 	OutputLine(NULL, "あははは…。」",
@@ -394,7 +396,7 @@
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800013", 128, TRUE);
 	OutputLine(NULL, "「それでね、隊内の広報誌を作る仕事を手伝った時に、イベントの写真撮影で初めてカメラの魅力を知ったんだよ！",
 		   NULL, "— Enfin bref, un jour, on m'a demandé d'aider à l'élaboration d'un journal de la base, j'étais chargé de prendre des photos commémoratives, et c'est là que j'ai découvert à quel point la photo était passionnante. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800014", 128, TRUE);
 	OutputLine(NULL, "　カメラには人を幸せにする力があるのさ。",
 		   NULL, "Vous savez, l'appareil photo peut rendre les gens heureux.", Line_Continue);
@@ -410,17 +412,18 @@
 		   NULL, "— ... Et comment est-ce que ça marche ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800015", 128, TRUE);
 	OutputLine(NULL, "「うん。",
 		   NULL, "— Eh bien,", Line_Continue);
 	OutputLine(NULL, "カメラというのは、日々の生活を切り取って写真にして残すものなんだ。",
 		   NULL, " l'appareil photo sert un peu à garder une trace de nos activités, de cette journée en particulier.", Line_Continue);
 	OutputLine(NULL, "残すくらいなんだから、幸せなものを写したいというのは当然だろう？",
-		   NULL, " Quitte à en garder une trace pour toujours, autant photographier une grande occasion ou un événement spécial, non ?", Line_WaitForInput);
+		   NULL, " Quitte à en garder une trace pour toujours, autant photographier une grande occasion ou un événement spécial, non ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800016", 128, TRUE);
 	OutputLine(NULL, "　じゃあ、幸せなものはどこにあるんだろうと、ファインダー越しに自分の周りの世界を覗いてみると。",
-		   NULL, " Alors on regarde à travers l'objectif et on se met à chercher où se cache le bonheur fugace autour de nous. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Alors on regarde à travers l'objectif et on se met à chercher où se cache le bonheur fugace autour de nous. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800017", 128, TRUE);
 	OutputLine(NULL, "…そこには、今まで当り前だと思っていたものが、実はとても幸せなものだったんだと気付くことでいっぱいなんだ。",
@@ -430,10 +433,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800018", 128, TRUE);
 	OutputLine(NULL, "　…例えば、路肩のアスファルトの隙間から健気に生えている一輪のタンポポだって、忙しく通り過ぎる時にはただの雑草に過ぎないけれど、",
-		   NULL, "Par exemple, vous marchez sur le trottoir et dans une craquelure du béton, vous voyez une fleur qui pousse, toute seule au milieu de la ville. Les passants pressés pensent à une mauvaise herbe et ne s'en soucient pas plus,", Line_WaitForInput);
+		   NULL, "Par exemple, vous marchez sur le trottoir et dans une craquelure du béton, vous voyez une fleur qui pousse, toute seule au milieu de la ville. Les passants pressés pensent à une mauvaise herbe et ne s'en soucient pas plus,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800019", 128, TRUE);
 	OutputLine(NULL, "ファインダー越しに覗いた時、それは春の訪れを教えてくれる、季節からの素敵な贈り物であったことに気付けるんだよ。",
-		   NULL, " mais si vous prenez le temps de regarder cette fleur à travers l'objectif, alors vous vous rendez compte que c'est un exploit, et que cette fleur peut vous annoncer la saison qui approche. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "mais si vous prenez le temps de regarder cette fleur à travers l'objectif, alors vous vous rendez compte que c'est un exploit, et que cette fleur peut vous annoncer la saison qui approche. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800020", 128, TRUE);
 	OutputLine(NULL, "それを写真に収め、アルバムに残す。",
@@ -454,7 +458,7 @@
 		   NULL, "— Oui.", Line_Continue);
 	OutputLine(NULL, "その写真が芸術的かどうかとか、賞を取れるような劇的瞬間かどうかなんていう野心的なことは、僕にとってあまり重要じゃないんだよ。",
 		   NULL, " Je ne m'intéresse pas trop au côté artistique de l'œuvre, je ne recherche pas à gagner un concours. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800022", 128, TRUE);
 	OutputLine(NULL, "僕たちが気付かない、",
 		   NULL, "Je veux juste faire de belles photos avec des petits riens que les gens ne remarquent pas ou plus.", Line_Continue);
@@ -517,7 +521,7 @@
 		   NULL, "— ... Je ne sais pas si j'y arriverai.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800024", 128, TRUE);
 	OutputLine(NULL, "「簡単だよ！",
 		   NULL, "— Mais bien sûr, c'est très facile !", Line_Continue);

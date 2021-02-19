@@ -180,7 +180,7 @@
 	DisableWindow();
 	ModDrawCharacter(2, 4, "sprite/sa2b_yareyare_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk1_satoko1005", 128, TRUE);
 	OutputLine(NULL, "「この先は危険だから入ってはいけないって、営林署の看板がちゃんとあったはずでございましてよ？",
 		   NULL, "— Pourtant, il me semble bien que les hommes des Eaux et Forêts ont placardé un peu partout que l'endroit était dangereux et que les promeneurs devaient faire demi-tour ? Vous ne sauriez donc point lire, très cher frère ?", GetGlobalFlag(GLinemodeSp));
@@ -417,13 +417,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1153", 128, TRUE);
 	OutputLine(NULL, "「お父さんがそれを言おうとすると、沙都子が逃げちゃうからだよ…。",
-		   NULL, "— Ben oui, mais si tu arrêtais de t'enfuir à chaque fois qu'il veut t'adresser la parole ?", Line_WaitForInput);
+		   NULL, "— Ben oui, mais si tu arrêtais de t'enfuir à chaque fois qu'il veut t'adresser la parole ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1154", 128, TRUE);
 	OutputLine(NULL, "お父さんももっと沙都子と話をしたがってる。",
-		   NULL, " Tu saurais peut-être ce qu'il en pense et ce qu'il a à te dire.", Line_WaitForInput);
+		   NULL, "Tu saurais peut-être ce qu'il en pense et ce qu'il a à te dire.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1155", 128, TRUE);
 	OutputLine(NULL, "………もうカボチャを無理やり食べさせたりはしないって言ってたよ？」",
-		   NULL, " ... Il a même dit qu'il ne t'obligerait plus à manger du potiron.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Il a même dit qu'il ne t'obligerait plus à manger du potiron.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -449,16 +451,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1156", 128, TRUE);
 	OutputLine(NULL, "「沙都子。",
-		   NULL, "— Satoko, je...", Line_WaitForInput);
+		   NULL, "— Satoko, je...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1157", 128, TRUE);
 	OutputLine(NULL, "とにかく、にーにーと一緒に家に帰ろう？",
-		   NULL, " Écoute, rentrons à la maison, d'accord ?", Line_WaitForInput);
+		   NULL, "Écoute, rentrons à la maison, d'accord ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1158", 128, TRUE);
 	OutputLine(NULL, "　せっかくお母さんが福引で当てたお食事券が無駄になっちゃうよ。",
-		   NULL, " Pour une fois que maman gagne un repas au restaurant, il ne faudrait pas gâcher cette chance.", Line_WaitForInput);
+		   NULL, "Pour une fois que maman gagne un repas au restaurant, il ne faudrait pas gâcher cette chance.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1159", 128, TRUE);
 	OutputLine(NULL, "予約制だから、今日行かないと無効になっちゃう。」",
-		   NULL, " Elle a réservé la table il y a une semaine déjà, si nous n'y allons pas aujourd'hui, tout aura été en vain.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle a réservé la table il y a une semaine déjà, si nous n'y allons pas aujourd'hui, tout aura été en vain.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -503,13 +508,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1160", 128, TRUE);
 	OutputLine(NULL, "「とにかく沙都子、帰ろ？",
-		   NULL, "— Quoi qu'il en soit, rentrons ensemble, tu veux bien ?", Line_WaitForInput);
+		   NULL, "— Quoi qu'il en soit, rentrons ensemble, tu veux bien ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1161", 128, TRUE);
 	OutputLine(NULL, "　食事に一緒に来るかどうかは、帰ってから決めてもいいんじゃないかな。",
-		   NULL, " Nous pouvons tout aussi bien décider de la marche à suivre une fois arrivés à la maison.", Line_WaitForInput);
+		   NULL, "Nous pouvons tout aussi bien décider de la marche à suivre une fois arrivés à la maison.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1162", 128, TRUE);
 	OutputLine(NULL, "……………それに、",
-		   NULL, " ... Et puis franchement dit...", Line_Continue);
+		   NULL, "... Et puis franchement dit...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );

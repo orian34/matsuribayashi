@@ -869,7 +869,7 @@
 		   NULL, "Et puis aussi, avec les pleurs et les cris, il y avait toujours des bruits métalliques, comme un tuyau frappant la tôle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…何かしらの仕置きを受けているに違いないが、それがどんなものなのか想像もつかず、私たちは震えながら俯いて、聞こえないふりをしながら漢字ドリルを続けるしかない。",
 		   NULL, "Cela devait sûrement avoir un rapport avec un quelconque châtiment corporel, mais je n'arrivais pas vraiment à m'imaginer ce que ça pouvait être. Ne sachant pas de quoi il retournait, nous ne pouvions que faire semblant de ne rien entendre et continuer nos exercices d'écriture d'idéogrammes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

@@ -174,7 +174,7 @@
 		   NULL, " À première vue, on pourrait croire que la situation est désespérée, mais en fait, normalement, ç'aurait dû être pire...", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800059", 128, TRUE);
 	OutputLine(NULL, "「それで勝ち取った期間が、…せいぜい３年なんだ。",
 		   NULL, "— Oui, et ils ont gagné à peine trois petites années.", Line_Continue);
@@ -216,7 +216,7 @@
 		   NULL, " En tant qu'homme, c'était plutôt vexant.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800060", 128, TRUE);
 	OutputLine(NULL, "「僕にできることは、…せめて研究が畳まれるまでの数年間を、心残りがないよう研究できるだけの予算を付けられるよう根回ししてあげることだけだ…。",
 		   NULL, "— La seule chose que je peux faire, c'est m'assurer que vous ayez de quoi mener vos recherches sans vous sentir trop limités, pendant le peu de temps qu'il vous reste ici.", Line_Continue);

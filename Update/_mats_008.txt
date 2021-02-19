@@ -311,9 +311,10 @@
 	OutputLine(NULL, "永い旅のコツは根詰めすぎないことよ。",
 		   NULL, " Le truc pour voyager loin, c'est de ne pas s'arrêter trop longtemps en chemin.", Line_WaitForInput);
 	OutputLine(NULL, "まぁ、のんびり行きましょう。",
-		   NULL, " Enfin, ne vous bilez pas, allons-y doucement et nous verrons bien comment ça se passe.", Line_WaitForInput);
+		   NULL, " Enfin, ne vous bilez pas, allons-y doucement et nous verrons bien comment ça se passe.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "私はいつものワインを飲みながらやらせてもらうわ。",
-		   NULL, " Ah, j'ai ramené du vin, mais il n'est que pour moi, je vous préviens. Et si, je le boirai, que vous le vouliez ou non.", Line_Normal);
+		   NULL, "Ah, j'ai ramené du vin, mais il n'est que pour moi, je vous préviens. Et si, je le boirai, que vous le vouliez ou non.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/fure2", 1000 );

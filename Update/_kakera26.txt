@@ -100,12 +100,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢ダム基本計画地元説明会。",
-		   NULL, "Le panneau devant la salle indiquait qu'ici avait lieu une réunion d'information sur le plan de barrage de Hinamizawa.", Line_WaitForInput);
+		   NULL, "Le panneau devant la salle indiquait qu'ici avait lieu une réunion d'information sur le plan de barrage de Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…表に出ている立て看板にはそう書かれていた。",
-		   NULL, " À chaque fois qu'une personne du Conseil Régional essayait de parler et d'expliquer quelque chose, les habitants lui criaient dessus, invariablement, jusqu'à couvrir sa voix.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "À chaque fois qu'une personne du Conseil Régional essayait de parler et d'expliquer quelque chose, les habitants lui criaient dessus, invariablement, jusqu'à couvrir sa voix.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　壇上で、役人の男が何かを言おうとする度に、満場の住民たちは一斉に怒号を浴びせ掛け、それを塗りつぶす。",
 		   NULL, "Comme cela empêchait le bon déroulement de la réunion, les fonctionnaires avaient fini par simplement ignorer toutes les protestations et avaient suivi leur feuille de route, point par point, tentant d'expliquer à force de schémas et de petits tableaux tous les avantages du projet.", Line_Normal);
 	ClearMessage();
@@ -119,7 +120,7 @@
 
 	DrawSceneWithMask( "background/ka4", "maskright", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　壇上と住民の席の間には空白地帯が設けられ、警官隊がスクラムを組み制止線を作っていた。",
 		   NULL, "Il y avait un espace laissé vide entre l'estrade et les places réservées aux habitants des villages concernés. Et dans ce no man's land, justement, plusieurs troupes de policiers faisaient un mur compact pour empêcher tout incident.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -159,12 +160,13 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ある目的のために芽生えた怒りの感情が、目的そのものに取って代わり、",
-		   NULL, " Puis cette colère justifiée fut remplacée par un autre type de colère, une colère plus aveugle, une colère qui était une fin en soi.", Line_ContinueAfterTyping);
+		   NULL, " Puis cette colère justifiée fut remplacée par un autre type de colère, une colère plus aveugle, une colère qui était une fin en soi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "怒るために怒るという悪循環を生み出そうとしている…。",
-		   NULL, " Alors ce fut un cercle vicieux ; plus les gens exprimaient leur colère, plus ils devenaient colériques et voulaient le faire savoir...", Line_Normal);
+		   NULL, "Alors ce fut un cercle vicieux ; plus les gens exprimaient leur colère, plus ils devenaient colériques et voulaient le faire savoir...", Line_Normal);
 	ClearMessage();
 
 	DrawFilm( 2, 0xff, 0x88, 0x88, 128, 0, 1000, TRUE );
@@ -425,30 +427,35 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Papa de Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1007", 128, TRUE);
 	OutputLine(NULL, "　わしゃあの、国の補償金で充分満足しとったん、町の公営住宅も手配してくれちょうゆぅし、なぁんも不足はなかったん！！",
-		   NULL, "Moi, la somme que l'État m'a proposée me suffisait largement ! En plus j'aurais eu un logement social presque à l'œil, ça m'allait tout à fait, à moi !", Line_WaitForInput);
+		   NULL, "Moi, la somme que l'État m'a proposée me suffisait largement ! En plus j'aurais eu un logement social presque à l'œil, ça m'allait tout à fait, à moi !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Papa de Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1008", 128, TRUE);
 	OutputLine(NULL, "　それをおんどれが全部ちゃぶ台引っくり返しよったん、台無しにしよったんじゃボケぇッ！！！",
-		   NULL, " Mais évidemment, il a fallu que tu viennes ouvrir ta grande gueule, hein, connasse ?", Line_WaitForInput);
+		   NULL, "Mais évidemment, il a fallu que tu viennes ouvrir ta grande gueule, hein, connasse ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Papa de Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1009", 128, TRUE);
 	OutputLine(NULL, "　おどれら地主の都合で人まで巻き込むなや！",
-		   NULL, " J'en ai rien à branler de tes histoires de riches, alors viens pas nous impliquer là-dedans ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'en ai rien à branler de tes histoires de riches, alors viens pas nous impliquer là-dedans ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Papa de Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1010", 128, TRUE);
 	OutputLine(NULL, "　そんなに国と喧嘩せぇんかったらおどれがひとりでやれ！！",
-		   NULL, "Si t'as tellement envie de te faire les griffes contre le gouvernement, t'as qu'à y aller, mais t'y vas toute seule et tu viens pas nous casser les couilles à tous !", Line_WaitForInput);
+		   NULL, "Si t'as tellement envie de te faire les griffes contre le gouvernement, t'as qu'à y aller, mais t'y vas toute seule et tu viens pas nous casser les couilles à tous !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Papa de Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1011", 128, TRUE);
 	OutputLine(NULL, "　したらん、ゼニが誰が払うんね、おどれかいな！！",
-		   NULL, " Qui va nous payer nos terres maintenant, toi peut-être ?", Line_WaitForInput);
+		   NULL, "Qui va nous payer nos terres maintenant, toi peut-être ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Papa de Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1012", 128, TRUE);
 	OutputLine(NULL, "　うちはな、貧乏だし育ち盛りが二人もおるん。",
-		   NULL, " Nous, on a deux gosses à la maison, ils sont en pleine croissance ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nous, on a deux gosses à la maison, ils sont en pleine croissance ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Papa de Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1013", 128, TRUE);
 	OutputLine(NULL, "おとなしゅう、国からゼニをもろぅて職を斡旋してもろぅて、人生再設計ちゅうとこなんや。",
-		   NULL, "Moi je voulais pas faire de vague, l'État m'aurait filé des sous, un appartement et même un job, y a pas de mal à vouloir refaire sa vie, quand même, merde ?", Line_WaitForInput);
+		   NULL, "Moi je voulais pas faire de vague, l'État m'aurait filé des sous, un appartement et même un job, y a pas de mal à vouloir refaire sa vie, quand même, merde ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Papa de Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1014", 128, TRUE);
 	OutputLine(NULL, "それをおどれは何じゃ、いつからお前はわしの代表になったんじゃ！！",
-		   NULL, " Et puis d'abord, depuis quand tu te permets de parler en notre nom à tous, hein ? ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et puis d'abord, depuis quand tu te permets de parler en notre nom à tous, hein ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Papa de Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1015", 128, TRUE);
 	OutputLine(NULL, "　お前、そんなに偉いんか、おああああッ？！」",
@@ -587,19 +594,23 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1019", 128, TRUE);
 	OutputLine(NULL, "「よーーう抜かした。",
-		   NULL, "— Ooooh, là, mon grand, c'est pas tombé dans l'oreille d'une sourde.", Line_WaitForInput);
+		   NULL, "— Ooooh, là, mon grand, c'est pas tombé dans l'oreille d'une sourde.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1020", 128, TRUE);
 	OutputLine(NULL, "…よーぅ抜かしたわ北条の。",
-		   NULL, " Hôjô, tu peux êt' fier de tes conneries,", Line_WaitForInput);
+		   NULL, "Hôjô, tu peux êt' fier de tes conneries,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1021", 128, TRUE);
 	OutputLine(NULL, "……この園崎お魎、ひっさびさに頭に血ぃ登って来よったんわ。",
-		   NULL, " passque là, ça f'sait un moment qu'j'avais pas été comme ça !", Line_WaitForInput);
+		   NULL, "passque là, ça f'sait un moment qu'j'avais pas été comme ça !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1022", 128, TRUE);
 	OutputLine(NULL, "きっちりケジメ取らせてもらうかんの。",
-		   NULL, " Tu me le paieras, jeune con, et la facture sera salée !", Line_WaitForInput);
+		   NULL, "Tu me le paieras, jeune con, et la facture sera salée !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1023", 128, TRUE);
 	OutputLine(NULL, "あんじょう、楽しみに待っとれやッ…！！！」",
-		   NULL, " Attends un peu, tu vas voir...", Line_Normal);
+		   NULL, "Attends un peu, tu vas voir...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villageois</color>", NULL, Line_ContinueAfterTyping); }

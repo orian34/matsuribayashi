@@ -362,7 +362,7 @@
 
 	DrawScene( "background/jt1", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何と言えばいいのか窮していたら、レナが続きを遊ぼうと彼女らを誘い、再び鳥居の方へ戻っていった。",
 		   NULL, "Alors que j'étais encore en train de chercher quoi dire, Rena prit Hanyû par la main et l'entraîna près des portiques sacrés à l'entrée du sanctuaire, lui promettant d'autres jeux tous plus passionnants les uns que les autres.", Line_Normal);
 	ClearMessage();
@@ -662,8 +662,7 @@
 	DrawBustshot(2, "waku_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/flashback/sora", "maskup", 1, 0, 1300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なるほど、それがこの世界の抗えぬ掟であり、あなた方を悩ませる掟でもあるならば、私は共存の引き換えに、人が罪を押し付けあわぬ世界を授けましょう。",
 		   NULL, "Je comprends. Est-ce donc ainsi que va le monde des humains ? Si d'aventure cette loi vous semble trop contraignante, que diriez-vous de nous laisser semer le terreau d'un monde dans lequel vous n'auriez plus à sacrifier l'un des vôtres pour vous laver de vos péchés ? Le prix en sera, bien sûr, de nous laisser nous installer vivre ici.", Line_Normal);
 	ClearMessage();
@@ -698,9 +697,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　全ての罪は人に在らず。",
-		   NULL, "Ainsi donc, tous les péchés du monde ne seront plus imputés aux humains.", Line_WaitForInput);
+		   NULL, "Ainsi donc, tous les péchés du monde ne seront plus imputés aux humains.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "我が身に負わせれば、人同士が罪を押し付けあうことはありません。",
-		   NULL, " Et puisque j'aurais été désignée comme étant responsable, les êtres humains n'auront plus besoin de se trahir les uns les autres pour se dérober au sacrifice.", Line_Normal);
+		   NULL, "Et puisque j'aurais été désignée comme étant responsable, les êtres humains n'auront plus besoin de se trahir les uns les autres pour se dérober au sacrifice.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>神主</color>", NULL, "<color=#f5e6d3>Priest</color>", NULL, Line_ContinueAfterTyping); }
@@ -745,7 +745,7 @@
 
 	PlaySE( 0, "s_page", 128, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古手神社神主は、人心を惑わす諸悪の根源は、沼より現れし鬼神（オニガミ）にありと説き、村の若者たちを引き連れて、沼を目指した。",
 		   NULL, "Le prêtre du sanctuaire Furude convainquit les villageois que les dieux-démons sortis des abysses du marais étaient la source de toute cette colère et ce désordre ; il emmena plusieurs jeunes hommes, et ensemble, ils marchèrent jusqu'aux berges des eaux croupies.", Line_Normal);
 	ClearMessage();
@@ -754,9 +754,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沼の畔には、人心の乱れを嘲笑う鬼神の姿があり、",
-		   NULL, "Sur ces berges, ils virent plusieurs dieux-démons, grandement amusés par les tourments des humains.", Line_WaitForInput);
+		   NULL, "Sur ces berges, ils virent plusieurs dieux-démons, grandement amusés par les tourments des humains.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "若者たちは勇敢に戦いを挑み、傷つきながらもこれを打ち据え、召し捕らえて古手神社に引き立てた。",
-		   NULL, " Ils engagèrent le combat et obtinrent âprement victoire. Blessés, mais vivants, ils firent prisonniers les dieux-démons, et les ramenèrent au sanctuaire.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ils engagèrent le combat et obtinrent âprement victoire. Blessés, mais vivants, ils firent prisonniers les dieux-démons, et les ramenèrent au sanctuaire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -928,9 +929,10 @@
 	OutputLine(NULL, "　…………鬼が、全ての罪を、自らが綿となって吸い取り、",
 		   NULL, "... ... Ce qui veut dire que ce serait en fait le démon que tout le monde stigmatise qui s'était sacrifié pour devenir le coton purificateur,", Line_WaitForInput);
 	OutputLine(NULL, "……退治されて沢に流され、村は許される。",
-		   NULL, " pour être détruit et jeté à l'eau.", Line_WaitForInput);
+		   NULL, " pour être détruit et jeté à l'eau.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "人自身が生み出した罪から。",
-		   NULL, " Pour absoudre les êtres humains de leurs péchés.", Line_Normal);
+		   NULL, "Pour absoudre les êtres humains de leurs péchés.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -967,9 +969,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこは極寒の山小屋だ。",
-		   NULL, "Elle me parla de quatre jeunes randonneurs, bloqués en haute montagne par le blizzard, ayant trouvé refuge dans un petit chalet. Vous voyez où je veux en venir ? C'est une histoire assez connue.", Line_WaitForInput);
+		   NULL, "Elle me parla de quatre jeunes randonneurs, bloqués en haute montagne par le blizzard, ayant trouvé refuge dans un petit chalet. Vous voyez où je veux en venir ? C'est une histoire assez connue.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "彼らはそのままでは眠ってしまう。",
-		   NULL, " Ils ont froid et sont épuisés. Ils risquent de s'endormir.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ils ont froid et sont épuisés. Ils risquent de s'endormir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1051,7 +1054,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…彼らは実は５人のパーティで、１人がすでに凍死していて、彼の霊がこのゲームに加わってくれたから、",
 		   NULL, "La fin de l'histoire diffère, parfois la question est laissée en suspens (“Qui donc était le cinquième, puisqu'ils n'étaient que quatre ?”), parfois l'on invoque l'esprit d'un randonneur déjà mort de froid dans ce chalet un an avant, parfois c'est la faute à l'homme des neiges,", Line_WaitForInput);
 	OutputLine(NULL, "彼らは朝まで伝言ゲームを続けられたのだ、というオチになることが多い。",
@@ -1101,7 +1104,7 @@
 		   NULL, "Peut-être est-elle gênée par ses cornes car cela lui rappelle l'époque où elle a vécu, lorsque sa nature non-humaine l'a forcée à être dépecée de manière rituelle pour purifier le village.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　角の生えた存在は迫害すべき存在だという無意識が、未だ彼女をちくちくと苛むのか。",
 		   NULL, "Après tout, à travers les époques, les Japonais ont toujours cru que les cornes étaient des signes d'appartenance à la race des démons, et donc ils ont probablement toujours persécuté les gens avec des difformités à la tête.", Line_Normal);
 	ClearMessage();
@@ -1269,7 +1272,7 @@
 		   NULL, "Tout ce qu'elle et son peuple voulaient, c'était vivre avec les humains.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なのに、そのために人柱となり、羽入ひとりだけが、穢れと共に腹を裂かれ沢に流され、沼にて沈（鎮）められた。",
 		   NULL, "Mais pour cela, et uniquement pour cela, elle a dû être sacrifiée, éviscérée, jetée dans le marais comme une carcasse d'animal, et les humains lui ont fait porter le poids de tous leurs crimes à eux pour s'en dédouanner par la même occasion.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1294,7 +1297,7 @@
 		   NULL, " Ils leur ont dit d'attendre, de continuer à attendre sa résurrection.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だって、…古手家という名は、伝承が伝えるなら、占い手の「占」の一字に、鬼の角を加えたから「古」という文字になったと言うじゃないか。",
 		   NULL, "La seule preuve tangible que j'en ai, c'est que le nom de mon clan, celui des Furude, vient en fait de l'idéogramme du devin ( 占 ), auquel mes ancêtres ont rajouté un trait supplémentaire, pour symboliser les cornes du démon -- les cornes de Hanyû.", Line_Normal);
 	ClearMessage();
@@ -1342,17 +1345,19 @@
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "忌み、",
-		   NULL, " ce clan ignoble qui avait assassiné sa propre mère et fondatrice,", Line_ContinueAfterTyping);
+		   NULL, " ce clan ignoble qui avait assassiné sa propre mère et fondatrice,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "葬った一族の呪いが、",
-		   NULL, " pourraient seulement être levées après un temps de repentance dépassant largement l'espérance de vie humaine : huit générations d'héritières femelles.", Line_ContinueAfterTyping);
+		   NULL, "pourraient seulement être levées après un temps de repentance dépassant largement l'espérance de vie humaine : huit générations d'héritières femelles.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…八代かけて贖われ、無限とも思えた時間にかけられた呪いを解く。",
-		   NULL, " Ce laps de temps avait dû sembler représenter une éternité aux gens d'alors.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce laps de temps avait dû sembler représenter une éternité aux gens d'alors.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -1376,12 +1381,13 @@
 	OutputLine(NULL, "　私の運命を閉ざす障害を打ち破る試練は、",
 		   NULL, "Par contre, je n'arrive pas à comprendre à quoi il rime.", Line_WaitForInput);
 	OutputLine(NULL, "……羽入と古手家の、千年以上にも及ぶかもしれない呪いに、",
-		   NULL, " Pourquoi m'imposer de revivre mon destin encore et encore ?", Line_ContinueAfterTyping);
+		   NULL, " Pourquoi m'imposer de revivre mon destin encore et encore ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……どんな意味を持つのか。",
-		   NULL, " Et quel est le rapport avec la malédiction de près de mille ans qui pèse sur Hanyû et sur le clan des Furude ?", Line_Normal);
+		   NULL, "Et quel est le rapport avec la malédiction de près de mille ans qui pèse sur Hanyû et sur le clan des Furude ?", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
@@ -1409,9 +1415,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、再び、ダム戦争をきっかけに歩み始めた閉鎖と誤解への風向きの中、",
-		   NULL, "Et les lois érigées pour permettre aux peuples différents de vivre ensemble devinrent des barrières qui ostracisaient le village et le reste du monde, jusqu'à la révolution de l'ère Meiji.", Line_WaitForInput);
+		   NULL, "Et les lois érigées pour permettre aux peuples différents de vivre ensemble devinrent des barrières qui ostracisaient le village et le reste du monde, jusqu'à la révolution de l'ère Meiji.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……羽入と私が出会い、この数奇な運命に閉ざしたことにはどんな意味があるのか。",
-		   NULL, " Et un siècle après l'ère Meiji, alors que la guerre du barrage nous poussait encore plus au repli sur nous-mêmes, Hanyû et moi nous rencontrâmes, et le destin nous enferma ensemble. Mais POURQUOI ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et un siècle après l'ère Meiji, alors que la guerre du barrage nous poussait encore plus au repli sur nous-mêmes, Hanyû et moi nous rencontrâmes, et le destin nous enferma ensemble. Mais POURQUOI ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2277,12 +2284,13 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…カケラの記憶の継承に、",
-		   NULL, " et alors qu'elle devait se préparer à livrer sa toute dernière bataille,", Line_ContinueAfterTyping);
+		   NULL, " et alors qu'elle devait se préparer à livrer sa toute dernière bataille,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "失敗した。",
-		   NULL, " Rika Furude n'avait pas réussi à se transmettre à soi-même la somme de ses connaissances...", Line_Normal);
+		   NULL, "Rika Furude n'avait pas réussi à se transmettre à soi-même la somme de ses connaissances...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

@@ -205,9 +205,10 @@
 	OutputLine(NULL, "　…だからつい監督を挑発するようなことを言ってしまった。",
 		   NULL, "C'est pourquoi sans vraiment le vouloir, ils avaient fait exprès d'énerver le chef de chantier.", Line_WaitForInput);
 	OutputLine(NULL, "表に出やがれ、と。",
-		   NULL, " Amène-toi, sale con, qu'ils lui ont dit.", Line_WaitForInput);
+		   NULL, " Amène-toi, sale con, qu'ils lui ont dit.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "他の人間も、やれやれと囃し立てた。",
-		   NULL, " D'ailleurs, les autres étaient plutôt joueurs et les ont un peu poussés l'un contre l'autre.", Line_Normal);
+		   NULL, "D'ailleurs, les autres étaient plutôt joueurs et les ont un peu poussés l'un contre l'autre.", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 3, "kaze", 120, 0 );
@@ -385,9 +386,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この頃には誰もが理屈抜きで直感していた。…監督は普通じゃない。",
-		   NULL, "Les ouvriers comprirent alors instinctivement que leur chef de chantier n'était clairement pas normal.", Line_WaitForInput);
+		   NULL, "Les ouvriers comprirent alors instinctivement que leur chef de chantier n'était clairement pas normal.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "今の監督には何の手加減もなく、…もしこちらが防いだり避けたりしないなら、容赦なく脳天を割ってくる…！",
-		   NULL, " Il ne ferait aucun cadeau cette fois-ci ; il n'hésiterait pas à leur briser le crâne s'ils ne faisaient rien pour se protéger !", Line_Normal);
+		   NULL, "Il ne ferait aucun cadeau cette fois-ci ; il n'hésiterait pas à leur briser le crâne s'ils ne faisaient rien pour se protéger !", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/aka2", 400 );
@@ -612,16 +614,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1021", 128, TRUE);
 	OutputLine(NULL, "「甘ったれたこと言ってんじゃねぇ！！",
-		   NULL, "— Mais vous êtes complètement à la ramasse, les gars !", Line_WaitForInput);
+		   NULL, "— Mais vous êtes complètement à la ramasse, les gars !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1022", 128, TRUE);
 	OutputLine(NULL, "　これだけズタボロに殺しちまってンだぞ！！",
-		   NULL, " Vous avez vu dans quel état on l'a mis, bordel de merde ?", Line_WaitForInput);
+		   NULL, "Vous avez vu dans quel état on l'a mis, bordel de merde ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1023", 128, TRUE);
 	OutputLine(NULL, "　過剰防衛で済むかよ？！",
-		   NULL, " Vous croyez vraiment qu'on va s'en sortir avec la légitime défense ?", Line_WaitForInput);
+		   NULL, "Vous croyez vraiment qu'on va s'en sortir avec la légitime défense ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1024", 128, TRUE);
 	OutputLine(NULL, "　親が見たって見分けがつかねぇくれえに殺っちまってんだぞ馬鹿野郎ッ！！！」",
-		   NULL, " Même ses parents le reconnaîtraient pas, couillons de la lune !", Line_Normal);
+		   NULL, "Même ses parents le reconnaîtraient pas, couillons de la lune !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
@@ -653,22 +658,27 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1026", 128, TRUE);
 	OutputLine(NULL, "「いいかボケども？！",
-		   NULL, "— Écoutez-moi bien, bande de moules !", Line_WaitForInput);
+		   NULL, "— Écoutez-moi bien, bande de moules !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1027", 128, TRUE);
 	OutputLine(NULL, "　俺たちゃな、殺人犯なんだ殺人犯！！",
-		   NULL, " On sera accusés de meurtre, vous m'entendez, de meurtre !", Line_WaitForInput);
+		   NULL, "On sera accusés de meurtre, vous m'entendez, de meurtre !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1028", 128, TRUE);
 	OutputLine(NULL, "　グズグズ言ってりゃ、５年６年食らい込まれちまうんだよッ！！",
-		   NULL, " Ouvrez votre clapet et vous en prendrez facile pour 5 ou 6 ans !", Line_WaitForInput);
+		   NULL, "Ouvrez votre clapet et vous en prendrez facile pour 5 ou 6 ans !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1029", 128, TRUE);
 	OutputLine(NULL, "　俺らン中にひとり裏切り者がおってみろ！！",
-		   NULL, " Si jamais un seul d'entre nous ouvre sa schneuss,", Line_WaitForInput);
+		   NULL, "Si jamais un seul d'entre nous ouvre sa schneuss,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1030", 128, TRUE);
 	OutputLine(NULL, "　全員が捕まっちまうんだよッ！！",
-		   NULL, " on est bon pour aller tous au turbin !", Line_WaitForInput);
+		   NULL, "on est bon pour aller tous au turbin !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1031", 128, TRUE);
 	OutputLine(NULL, "　懲役を舐めんな？",
-		   NULL, " Et croyez pas que la prison, c'est de la rigolade, hein ? ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et croyez pas que la prison, c'est de la rigolade, hein ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1032", 128, TRUE);
 	OutputLine(NULL, "　どうせ捕まる覚悟だっちゅうんなら、死ぬ気で逃げまくってやるんだ！！",
@@ -753,19 +763,23 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1034", 128, TRUE);
 	OutputLine(NULL, "「…そうだ。",
-		   NULL, "— Ah, j'ai une idée.", Line_WaitForInput);
+		   NULL, "— Ah, j'ai une idée.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1035", 128, TRUE);
 	OutputLine(NULL, "…………裏切り者を出さんためにな。",
-		   NULL, " ... Oui, je crois que j'ai trouvé un moyen", Line_WaitForInput);
+		   NULL, "... Oui, je crois que j'ai trouvé un moyen", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1036", 128, TRUE);
 	OutputLine(NULL, "いいこと思いついたわ。",
-		   NULL, " pour être sûr qu'il n'y ait pas de traître parmi nous.", Line_WaitForInput);
+		   NULL, "pour être sûr qu'il n'y ait pas de traître parmi nous.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1037", 128, TRUE);
 	OutputLine(NULL, "…へっへっへ。",
-		   NULL, " Ahahahaha...", Line_WaitForInput);
+		   NULL, "Ahahahaha...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1038", 128, TRUE);
 	OutputLine(NULL, "死体も隠しやすくなって一石二鳥だぞ…。」",
-		   NULL, " Et en plus, on cachera le corps plus facilement, comme ça, ça fait d'une pierre deux coups...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et en plus, on cachera le corps plus facilement, comme ça, ça fait d'une pierre deux coups...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
@@ -813,22 +827,27 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「全員でバラすんだ。",
-		   NULL, "— On va le couper en morceaux, ce corps.", Line_WaitForInput);
+		   NULL, "— On va le couper en morceaux, ce corps.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1043", 128, TRUE);
 	OutputLine(NULL, "この野郎が日頃言ってンだろ。",
-		   NULL, " Il nous le répétait assez souvent, non ?", Line_WaitForInput);
+		   NULL, "Il nous le répétait assez souvent, non ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1044", 128, TRUE);
 	OutputLine(NULL, "共同作業だよ。",
-		   NULL, " “C'est un travail d'équipe”.", Line_WaitForInput);
+		   NULL, "“C'est un travail d'équipe”.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1045", 128, TRUE);
 	OutputLine(NULL, "全員、共犯だ。",
-		   NULL, " Eh ben maintenant, on est tous dans la même équipe de tueurs.", Line_WaitForInput);
+		   NULL, "Eh ben maintenant, on est tous dans la même équipe de tueurs.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1046", 128, TRUE);
 	OutputLine(NULL, "それで、バラした部品は各自が責任を持って隠すんだ。",
-		   NULL, " Alors chacun va découper un morceau et aura la responsabilité de le cacher,", Line_WaitForInput);
+		   NULL, "Alors chacun va découper un morceau et aura la responsabilité de le cacher,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1047", 128, TRUE);
 	OutputLine(NULL, "………な？",
-		   NULL, " et bien, hein ? ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "et bien, hein ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1048", 128, TRUE);
 	OutputLine(NULL, "　これなら全員仲良く主犯だろ？",
@@ -852,9 +871,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　５人は、もうその鬼気迫る形相に完全に飲み込まれ、",
-		   NULL, "Les cinq hommes restèrent interdits, regardant leur meneur les menacer de son arme.", Line_WaitForInput);
+		   NULL, "Les cinq hommes restèrent interdits, regardant leur meneur les menacer de son arme.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……鬼ヶ淵村を支配する鬼の真の恐怖が背中を這い上がってくるのを、ぞわぞわと感じているのだった………。",
-		   NULL, " Enfin, ils sentirent la peur, une peur indicible et séculaire, qui émanait des démons qui vivaient par ici et qui leur remontait lentement, très lentement, la colonne vertébrale...", Line_Normal);
+		   NULL, "Enfin, ils sentirent la peur, une peur indicible et séculaire, qui émanait des démons qui vivaient par ici et qui leur remontait lentement, très lentement, la colonne vertébrale...", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eye" );

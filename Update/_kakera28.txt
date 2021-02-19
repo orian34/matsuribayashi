@@ -177,9 +177,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな妹を元気付けようと、連日見舞いに来てくれていたのだが、",
-		   NULL, "Il était venu tous les jours pour lui remonter le moral, mais elle avait soudain montré des signes très alarmants, en particulier des émotions changeant du tout au tout.", Line_WaitForInput);
+		   NULL, "Il était venu tous les jours pour lui remonter le moral, mais elle avait soudain montré des signes très alarmants, en particulier des émotions changeant du tout au tout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……沙都子ちゃんの情緒が最近、不安定になり、かなり危険な兆候を見せたため、その見舞いを謝絶していたのだ。",
-		   NULL, " C'est pourquoi nous avions dû nous résoudre à lui demander d'arrêter de venir voir sa sœur pendant quelque temps.", Line_Normal);
+		   NULL, "C'est pourquoi nous avions dû nous résoudre à lui demander d'arrêter de venir voir sa sœur pendant quelque temps.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
@@ -219,9 +220,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、治療方法は依然確立しておらず、…もし沙都子ちゃんが回復不可能な状態に陥った場合、",
-		   NULL, "Mais nous n'avions encore mis au point aucun traitement médical.", Line_WaitForInput);
+		   NULL, "Mais nous n'avions encore mis au point aucun traitement médical.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…去年の男同様、解剖されてしまうことだってある…。",
-		   NULL, " Et si jamais Satoko devait arriver à un stade dans lequel nous n'avions plus aucune chance de la sauver, il fallait s'attendre à recevoir de nos supérieurs l'ordre de la disséquer elle aussi.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et si jamais Satoko devait arriver à un stade dans lequel nous n'avions plus aucune chance de la sauver, il fallait s'attendre à recevoir de nos supérieurs l'ordre de la disséquer elle aussi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -472,16 +474,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1089", 128, TRUE);
 	OutputLine(NULL, "「わかりました。",
-		   NULL, "— Je comprends.", Line_WaitForInput);
+		   NULL, "— Je comprends.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1090", 128, TRUE);
 	OutputLine(NULL, "……そんな状況で沙都子ちゃんを退院させたら、また心の症状がぶり返してしまうかもしれませんね。",
-		   NULL, " ... Si nous laissons Satoko sortir de l'hôpital maintenant, elle fera une rechute quasiment immédiatement, c'est certain.", Line_WaitForInput);
+		   NULL, "... Si nous laissons Satoko sortir de l'hôpital maintenant, elle fera une rechute quasiment immédiatement, c'est certain.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1091", 128, TRUE);
 	OutputLine(NULL, "…入院費のことは気にしないでください。",
-		   NULL, " Ne t'inquiète pas pour les frais d'hospitalisation, Satoshi.", Line_WaitForInput);
+		   NULL, "Ne t'inquiète pas pour les frais d'hospitalisation, Satoshi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1092", 128, TRUE);
 	OutputLine(NULL, "沙都子ちゃんが本当の意味で回復するまで、私が責任を持ってお預かりします。」",
-		   NULL, " Je garderai Satoko en observation à la clinique jusqu'à ce qu'elle soit totalement remise, j'en prends l'entière responsabilité.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je garderai Satoko en observation à la clinique jusqu'à ce qu'elle soit totalement remise, j'en prends l'entière responsabilité.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

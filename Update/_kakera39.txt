@@ -167,9 +167,10 @@
 	OutputLine(NULL, "　でも、本当のお父さんのわけなんかありません。",
 		   NULL, "Mais c'est là que le bât blesse : il ne peut pas être mon vrai père.", Line_WaitForInput);
 	OutputLine(NULL, "第一、私は本当のお父さんの顔だってよく知らないのですから。",
-		   NULL, " De toute manière, je n'ai aucun souvenir de mon vrai père, pas même son visage.", Line_WaitForInput);
+		   NULL, " De toute manière, je n'ai aucun souvenir de mon vrai père, pas même son visage.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そんな人にお父さんだと呼んでほしいなんて言われたって、言えません。",
-		   NULL, " Il m'est impossible de considérer un imposteur comme mon vrai père.", Line_WaitForInput);
+		   NULL, "Il m'est impossible de considérer un imposteur comme mon vrai père.", Line_WaitForInput);
 	OutputLine(NULL, "気持ち悪いだけです。",
 		   NULL, " Le simple concept de la chose me met fort mal à l'aise.", Line_Normal);
 	ClearMessage();
@@ -358,9 +359,10 @@
 	OutputLine(NULL, "　もし私が崖下を覗き込むようなことでもあったなら。",
 		   NULL, "Si jamais un jour, ils me demandent de venir voir à quel point un précipice est profond...", Line_WaitForInput);
 	OutputLine(NULL, "そしてそれを誰も見ていなかったなら。",
-		   NULL, " et si jamais ils devaient faire cela lorsqu'il n'y aurait aucun témoin oculaire...", Line_WaitForInput);
+		   NULL, " et si jamais ils devaient faire cela lorsqu'il n'y aurait aucun témoin oculaire...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "お母さんとお父さんは、私の背中をどんと突き落とすに違いありません。",
-		   NULL, " alors je peux être sûre qu'ils en profiteront pour me pousser dans le gouffre et me faire disparaître.", Line_Normal);
+		   NULL, "alors je peux être sûre qu'ils en profiteront pour me pousser dans le gouffre et me faire disparaître.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -435,9 +437,10 @@
 	OutputLine(NULL, "　絶対に生き延びます。",
 		   NULL, "Je souhaite vivre, et ferai tout pour survivre.", Line_WaitForInput);
 	OutputLine(NULL, "逆に返り討ちにしてやっつけるつもりです。",
-		   NULL, " Si mes parents tentent quoi que ce soit contre moi, je m'arrangerai pour les attaquer la première.", Line_WaitForInput);
+		   NULL, " Si mes parents tentent quoi que ce soit contre moi, je m'arrangerai pour les attaquer la première.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "殺される前に殺し返してやります。",
-		   NULL, " Quitte à les tuer de mes propres mains avant qu'eux ne réussissent à m'ôter la vie.", Line_Normal);
+		   NULL, "Quitte à les tuer de mes propres mains avant qu'eux ne réussissent à m'ôter la vie.", Line_Normal);
 	ClearMessage();
 
 	SetColorOfMessage( TRUE, 0xff, 0x33, 0x33 );

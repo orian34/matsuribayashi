@@ -62,8 +62,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、借りた一冊を一日で斜め読みし、翌日に両親がそれを「以前に借りた本と重複してしまったので、本を変更したい」なんて言って、タダで二冊目を借りて来てもらったりしたっけ。",
 		   NULL, "Ils me le donnaient à lire en diagonale pour un jour, puis retournaient le lendemain en disant que j'avais été déçu parce que je l'avais déjà lu avant. La bibliothèque leur laissait donc souvent changer de livre sans frais supplémentaire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -529,9 +528,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……意識はすぐに戻ったらしく、本人もぴんぴんしていたため、それだけのことで片付けられてしまったが、",
-		   NULL, "Il avait perdu connaissance pendant à peine quelques secondes, et semblait ne pas en avoir souffert outre mesure, aussi personne ne s'en était inquiété.", Line_WaitForInput);
+		   NULL, "Il avait perdu connaissance pendant à peine quelques secondes, et semblait ne pas en avoir souffert outre mesure, aussi personne ne s'en était inquiété.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…その事故以後から、父の頭痛や異常が徐々に始まっていくというのだ。",
-		   NULL, " Mais ce n'est qu'après cet accident que les changements et les maux de tête sont arrivés.", Line_Normal);
+		   NULL, "Mais ce n'est qu'après cet accident que les changements et les maux de tête sont arrivés.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -544,13 +544,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>教授</color>", NULL, "<color=#f5e6d3>Professeur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_prof1001", 128, TRUE);
 	OutputLine(NULL, "「…ふむ。",
-		   NULL, "— ... Hmmmm.", Line_WaitForInput);
+		   NULL, "— ... Hmmmm.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>教授</color>", NULL, "<color=#f5e6d3>Professeur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_prof1002", 128, TRUE);
 	OutputLine(NULL, "断言はできませんが、その様子から、入江君のお父さんに何らかの精神障害が起こっていた可能性は否めません。",
-		   NULL, " Je ne peux pas te l'affirmer catégoriquement, Irie, mais d'après les symptômes que tu décris, je dirais que ton père avait un trouble mental.", Line_WaitForInput);
+		   NULL, "Je ne peux pas te l'affirmer catégoriquement, Irie, mais d'après les symptômes que tu décris, je dirais que ton père avait un trouble mental.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>教授</color>", NULL, "<color=#f5e6d3>Professeur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_prof1003", 128, TRUE);
 	OutputLine(NULL, "その頭部打撲事故の際に脳に障害が起こり、脳器質性精神障害を起こしたのかもしれませんね。",
-		   NULL, " Son cerveau a dû être blessé lors de cet accident. C'est peut-être une psychose idiophrénique. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Son cerveau a dû être blessé lors de cet accident. C'est peut-être une psychose idiophrénique. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>教授</color>", NULL, "<color=#f5e6d3>Professeur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_prof1004", 128, TRUE);
 	OutputLine(NULL, "お父さんの晩年の状況は、そんな患者さんに多い、意識変容や譫妄（せんもう）に酷似していると思います。」",
@@ -606,7 +608,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………私は、父の名誉を回復するため、親類たちにそれを説明したが、ほとんどの人たちは納得してくれなかった。",
 		   NULL, "... J'ai contacté tous les membres de notre famille pour leur faire part de cette découverte et leur expliquer la situation, mais la plupart d'entre eux ne furent pas convaincus. Je ne réussis pas à restaurer l'honneur de mon père dans leur estime.", Line_Normal);
 	ClearMessage();
@@ -631,9 +633,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それに、あれらは父の人間性に起因するもので、脳ではなく心の問題に違いないと、",
-		   NULL, "De plus, ils restèrent persuadés que cela ne pouvait venir que d'un problème avec ses émotions.", Line_WaitForInput);
+		   NULL, "De plus, ils restèrent persuadés que cela ne pouvait venir que d'un problème avec ses émotions.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "心という都合のいい言葉で無理やり片付けられてしまった。",
-		   NULL, " Il ne fut plus question de son cerveau, mais de son âme, un mot vague et passe-partout qui leur évitait de devoir trop se pencher sur la question.", Line_Normal);
+		   NULL, "Il ne fut plus question de son cerveau, mais de son âme, un mot vague et passe-partout qui leur évitait de devoir trop se pencher sur la question.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -782,9 +785,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もし私が、もっともっと脳のことを勉強していたなら、母にもっと詳しく説明して、…父への誤解を解き、",
-		   NULL, "Si j'avais étudié le cerveau un peu mieux, j'aurais pu expliquer le problème en détail à ma mère, et elle aurait compris.", Line_WaitForInput);
+		   NULL, "Si j'avais étudié le cerveau un peu mieux, j'aurais pu expliquer le problème en détail à ma mère, et elle aurait compris.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……せめてあの世では元通りのおしどり夫婦に戻れたのではないか。",
-		   NULL, " Je suis sûr qu'elle lui aurait pardonné ses gestes et qu'ils auraient été réunis dans l'autre monde.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je suis sûr qu'elle lui aurait pardonné ses gestes et qu'ils auraient été réunis dans l'autre monde.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

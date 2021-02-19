@@ -88,9 +88,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ご先祖様から受け継いだ土地を余所者に切り売りしていいのかという批判も、一応、親族会議では出たが、婆っちゃが、しゃあらしいわぁ！",
-		   NULL, "Ils avaient fait une grande réunion du clan, et évidemment, quelqu'un n'avait pas manqué de poser la question : pouvait-on se permettre de vendre les terres héritées de nos ancêtres à de parfaits inconnus ?", Line_WaitForInput);
+		   NULL, "Ils avaient fait une grande réunion du clan, et évidemment, quelqu'un n'avait pas manqué de poser la question : pouvait-on se permettre de vendre les terres héritées de nos ancêtres à de parfaits inconnus ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　と一喝してそれにて決着。",
-		   NULL, " Mais l'argumentaire raisonné du chef de clan Oryô Sonozaki -- “Raaah, ferme donc ta schneuss !” -- avait fait instantanément entériner la décision, à l'unanimité.", Line_Normal);
+		   NULL, "Mais l'argumentaire raisonné du chef de clan Oryô Sonozaki -- “Raaah, ferme donc ta schneuss !” -- avait fait instantanément entériner la décision, à l'unanimité.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -428,13 +429,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2019", 128, TRUE);
 	OutputLine(NULL, "「レナちゃんが１人転校してきても魅音は変わるんね。",
-		   NULL, "— Bah, même s'il n'y a que Rena, ça te fera du changement, Mion.", Line_WaitForInput);
+		   NULL, "— Bah, même s'il n'y a que Rena, ça te fera du changement, Mion.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2020", 128, TRUE);
 	OutputLine(NULL, "誰が引っ越してきても、きっと村は変わる。",
-		   NULL, " Et si d'autres gens viennent, le village changera.", Line_WaitForInput);
+		   NULL, "Et si d'autres gens viennent, le village changera.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2021", 128, TRUE);
 	OutputLine(NULL, "……願わくば、それが元気な若者で、わしら年寄り連中が安心して村を任せられるくらい、大暴れしてくれよると嬉しいんだが。",
-		   NULL, " J'aimerais bien voir venir un bon petit jeune bien énervé, histoire que nous autres vieux puissions partir tranquilles. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'aimerais bien voir venir un bon petit jeune bien énervé, histoire que nous autres vieux puissions partir tranquilles. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2022", 128, TRUE);
 	OutputLine(NULL, "それこそ年寄り連中が、もうやっとられんね、あの世に退散するわー言うくらいにな。」",
@@ -504,16 +507,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2028", 128, TRUE);
 	OutputLine(NULL, "「私ゃな。",
-		   NULL, "— Tu sais...", Line_WaitForInput);
+		   NULL, "— Tu sais...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2029", 128, TRUE);
 	OutputLine(NULL, "…あれで目が覚めたんよ。",
-		   NULL, " ça m'a ouvert les yeux.", Line_WaitForInput);
+		   NULL, "ça m'a ouvert les yeux.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2030", 128, TRUE);
 	OutputLine(NULL, "……北条家がどうのこうの言う問題は、年寄り連中が死ねば時間が解決してくれるなんてんじゃあかんね。",
-		   NULL, " Je croyais que le problème des Hôjô pouvait se régler plus tard, tout naturellement, quand les anciens du village seraient morts, mais en fait, non.", Line_WaitForInput);
+		   NULL, "Je croyais que le problème des Hôjô pouvait se régler plus tard, tout naturellement, quand les anciens du village seraient morts, mais en fait, non.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2031", 128, TRUE);
 	OutputLine(NULL, "……そんなの待たず、早ぅ解決せんとなあかん。」",
-		   NULL, " Non, non, non, il faut régler c't'histoire le plus tôt possible.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Non, non, non, il faut régler c't'histoire le plus tôt possible.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }

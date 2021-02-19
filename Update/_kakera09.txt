@@ -141,13 +141,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1252", 128, TRUE);
 	OutputLine(NULL, "「えぇ、それはもう…！",
-		   NULL, "— Oh, oui, ne m'en parlez pas...", Line_WaitForInput);
+		   NULL, "— Oh, oui, ne m'en parlez pas...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1253", 128, TRUE);
 	OutputLine(NULL, "　村中、大変な騒ぎですよ。",
-		   NULL, " La révolte gronde dans les chaumières, c'est moi qui vous le dis !", Line_WaitForInput);
+		   NULL, "La révolte gronde dans les chaumières, c'est moi qui vous le dis !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1254", 128, TRUE);
 	OutputLine(NULL, "私も、役員として自治体の地元説明会に参加してきたのですが、…怒声と罵声のそれはもう賑やかな説明会となりました。」",
-		   NULL, " En tant que Directeur de l'Institut, j'avais été convié par le Conseil Régional à la réunion d'information pour ce barrage, mais croyez-moi, il en fallait, de la patience, pour supporter tous ces cris et toutes ces insultes...", Line_Normal);
+		   NULL, "En tant que Directeur de l'Institut, j'avais été convié par le Conseil Régional à la réunion d'information pour ce barrage, mais croyez-moi, il en fallait, de la patience, pour supporter tous ces cris et toutes ces insultes...", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 0, 400, FALSE );
@@ -192,9 +194,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　地縁による結束が歴史的に強いこの雛見沢の地では、そういう態度に対し逆に団結を招く結果となり、",
-		   NULL, "Hinamizawa avait une longue histoire, un lourd “passif” qui poussait les gens de la région à se serrer les coudes.", Line_WaitForInput);
+		   NULL, "Hinamizawa avait une longue histoire, un lourd “passif” qui poussait les gens de la région à se serrer les coudes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "政府も村も、互いに一歩も引けぬ泥沼の様相を示していたのである。",
-		   NULL, " Désormais, le gouvernement et le village formaient deux blocs compacts, et aucun des deux ne laisserait le moindre centimètre de corde à l'autre.", Line_Normal);
+		   NULL, "Désormais, le gouvernement et le village formaient deux blocs compacts, et aucun des deux ne laisserait le moindre centimètre de corde à l'autre.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "background/ka1_01", "maskup", 1, 0, 300 );
@@ -320,19 +323,21 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1266", 128, TRUE);
 	OutputLine(NULL, "「私は、東京の皆さんがうまく圧力を掛けてくれて、いずれはダム計画を撤回してくれるものとわかっているからいいですが。",
-		   NULL, "— Vous oubliez une chose : moi, je sais que des gens travaillent dans l'ombre pour faire retirer ce plan de barrage, et je sais que ce n'est plus qu'une question de temps.", Line_WaitForInput);
+		   NULL, "— Vous oubliez une chose : moi, je sais que des gens travaillent dans l'ombre pour faire retirer ce plan de barrage, et je sais que ce n'est plus qu'une question de temps.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1267", 128, TRUE);
 	OutputLine(NULL, "村人にとっては、先祖代々から住んできた土地を追い出されかねないと、本当にすごい騒ぎです。」",
-		   NULL, " Mais les habitants, eux, s'imaginent qu'ils vont être chassés comme des malpropres des terres de leurs ancêtres ! Ils sont vraiment remontés, et je les pense prêts à absolument tout et n'importe quoi.", Line_Normal);
+		   NULL, "Mais les habitants, eux, s'imaginent qu'ils vont être chassés comme des malpropres des terres de leurs ancêtres ! Ils sont vraiment remontés, et je les pense prêts à absolument tout et n'importe quoi.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1216a", 128, TRUE);
 	OutputLine(NULL, "「立ち退けと言われても、引っ越せるほどのお金もなく若さもなく。",
-		   NULL, "— Céder les terrains, c'est bien, mais ils n'ont ni l'âge ni les ressources pour déménager ailleurs.", Line_WaitForInput);
+		   NULL, "— Céder les terrains, c'est bien, mais ils n'ont ni l'âge ni les ressources pour déménager ailleurs.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1216b", 128, TRUE);
 	OutputLine(NULL, "立ち退き補償金の額の吊り上げが狙いだったのかもしれないけど、…急にお役所の態度が変わっちゃって全面衝突。",
-		   NULL, " J'imagine bien que certains voulaient faire grimper les primes, mais comme l'administration a changé de tactique, les gens ont opté pour l'attaque de front. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'imagine bien que certains voulaient faire grimper les primes, mais comme l'administration a changé de tactique, les gens ont opté pour l'attaque de front. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1217", 128, TRUE);
 	OutputLine(NULL, "……こうなってしまったら、穏便に決着というのは無理かも知れませんわね。」",
@@ -373,10 +378,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1274", 128, TRUE);
 	OutputLine(NULL, "「……そういう意味では、思惑は多少違うかもしれませんが、そんな皆さんのためにも、このダム計画は早く撤回になるよう交渉を進めてほしいものです。",
-		   NULL, "— ... Disons que même si nos motivations ne sont pas les mêmes que les leurs, il serait bon de faire pression un peu plus sur le gouvernement pour obtenir l'assurance que le projet sera retiré.", Line_WaitForInput);
+		   NULL, "— ... Disons que même si nos motivations ne sont pas les mêmes que les leurs, il serait bon de faire pression un peu plus sur le gouvernement pour obtenir l'assurance que le projet sera retiré.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1275", 128, TRUE);
 	OutputLine(NULL, "撤回されれば、この村もすぐに落ち着きのある元の村に戻るのでしょうから。」",
-		   NULL, " Dès l'annonce de l'abandon du projet, les gens pourront retrouver un peu leur calme.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Dès l'annonce de l'abandon du projet, les gens pourront retrouver un peu leur calme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }

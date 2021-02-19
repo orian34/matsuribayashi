@@ -56,9 +56,10 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……その。",
-		   NULL, " jusqu'ici.", Line_WaitForInput);
+		   NULL, " jusqu'ici.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…ここはどこだろう。",
-		   NULL, " “Ici” n'étant pas un endroit que je reconnaissais.", Line_ContinueAfterTyping);
+		   NULL, "“Ici” n'étant pas un endroit que je reconnaissais.", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
@@ -160,12 +161,13 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…私がそれまでに見てきたどんな絵画よりも美しく、",
-		   NULL, " Elles étaient bien plus belles que n'importe quel des modèles que j'avais jamais vus en peinture,", Line_ContinueAfterTyping);
+		   NULL, " Elles étaient bien plus belles que n'importe quel des modèles que j'avais jamais vus en peinture,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…こう言ってはオーバーかもしれないが、どんな宗教画よりも神々しく見えた。",
-		   NULL, " et même si cela peut paraître exagéré, je trouvais à leur beauté un côté surréel qui confinait au divin.", Line_Normal);
+		   NULL, "et même si cela peut paraître exagéré, je trouvais à leur beauté un côté surréel qui confinait au divin.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -363,7 +365,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　行為そのものが何かではなく、その行為を起こすことで、コミュニケーションを得たいという、子供のもっとも原始的なアピールだと言うのだ。",
 		   NULL, "J'en avais même lu un qui expliquait que ce n'était pas la nature de l'acte qui était important, mais que le fait d'être passé à l'acte et d'avoir fait quelque chose de mal était pour l'enfant un moyen primitif de signaler qu'il avait quelque chose à nous dire.", Line_Normal);
 	ClearMessage();
@@ -628,13 +630,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2012", 128, TRUE);
 	OutputLine(NULL, "「……ボクたちも新しい人を迎えたい。",
-		   NULL, "— Nous aussi, nous voulons accueillir des gens.", Line_WaitForInput);
+		   NULL, "— Nous aussi, nous voulons accueillir des gens.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2013", 128, TRUE);
 	OutputLine(NULL, "それは例えるなら水の流れ出ぬ沼の堰を破るようなもの。",
-		   NULL, " C'est un peu comme un étang croupi par chez nous, nous voulons briser la digue et permettre à la rivière de couler.", Line_WaitForInput);
+		   NULL, "C'est un peu comme un étang croupi par chez nous, nous voulons briser la digue et permettre à la rivière de couler.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2014", 128, TRUE);
 	OutputLine(NULL, "水は出入りがあるからこそ清水となる。流れを得ぬ湖は沼に過ぎない。」",
-		   NULL, " Et comme ça, l'eau deviendra plus propre, et d'autres poissons pourront venir. Parce qu'un étang qui croupit trop longtemps tout seul se transforme en marais.", Line_Normal);
+		   NULL, "Et comme ça, l'eau deviendra plus propre, et d'autres poissons pourront venir. Parce qu'un étang qui croupit trop longtemps tout seul se transforme en marais.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -643,13 +647,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2008", 128, TRUE);
 	OutputLine(NULL, "「確かにこの村は、明治のついこの間まで沼の名前がついた村でしたのです。",
-		   NULL, "— Notre village, avant l'ère Meiji, il avait le nom du marais qui se trouve plus haut, là-bas.", Line_WaitForInput);
+		   NULL, "— Notre village, avant l'ère Meiji, il avait le nom du marais qui se trouve plus haut, là-bas.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2009", 128, TRUE);
 	OutputLine(NULL, "……でも、それが変わり、雛見沢という地名に変わりましたのです。",
-		   NULL, " Mais ils ont changé, ils ont choisi “Hinamizawa”, ça fait mieux, tout de suite !", Line_WaitForInput);
+		   NULL, "Mais ils ont changé, ils ont choisi “Hinamizawa”, ça fait mieux, tout de suite !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2010", 128, TRUE);
 	OutputLine(NULL, "……沼の水は流れず澱む。",
-		   NULL, " Avec le nom du marais, on donnait l'impression d'être sales, stagnant, d'étouffer les gens. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Avec le nom du marais, on donnait l'impression d'être sales, stagnant, d'étouffer les gens. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2011", 128, TRUE);
 	OutputLine(NULL, "でも、沢の水は澱まない。」",

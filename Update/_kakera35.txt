@@ -69,7 +69,8 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本当に初期の初期、男子がふざけて沙都子にちょっかいを出そうとしたことがあったが、",
-		   NULL, "Tout au début, quand le village commençait à leur faire payer leur insolence, quelques-un des garçons avaient essayé d'embêter Satoko, ", Line_WaitForInput);
+		   NULL, "Tout au début, quand le village commençait à leur faire payer leur insolence, quelques-un des garçons avaient essayé d'embêter Satoko, ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "容赦なく制裁してやったので、それ以来、そういうことは一切なくなった。",
 		   NULL, "mais vu la tannée que je leur avais mise ce jour-là, plus personne n'avait tenté sa chance.", Line_Normal);
 	ClearMessage();
@@ -520,13 +521,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1071", 128, TRUE);
 	OutputLine(NULL, "「むぅ、そういう意味じゃないよ。",
-		   NULL, "— Mhhm, c'est pas ce que je voulais dire.", Line_WaitForInput);
+		   NULL, "— Mhhm, c'est pas ce que je voulais dire.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1072", 128, TRUE);
 	OutputLine(NULL, "…………その空気というのが、沙都子から笑顔を奪っているのなら。",
-		   NULL, " ... Si c'est à cause de l'ambiance au village que Satoko n'arrive plus à sourire,", Line_WaitForInput);
+		   NULL, "... Si c'est à cause de l'ambiance au village que Satoko n'arrive plus à sourire,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1073", 128, TRUE);
 	OutputLine(NULL, "…そんな空気なんか全然気にしない人じゃなきゃ、沙都子に笑顔は戻せないって思ってるから。」",
-		   NULL, " alors il n'y a que des gens qui ne font jamais attention à l'ambiance du moment qui pourront lui redonner le sourire, tu comprends ?", Line_Normal);
+		   NULL, "alors il n'y a que des gens qui ne font jamais attention à l'ambiance du moment qui pourront lui redonner le sourire, tu comprends ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -777,16 +780,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk1_mion1033", 128, TRUE);
 	OutputLine(NULL, "「くっくっく！",
-		   NULL, "— Héhhéhhé !", Line_WaitForInput);
+		   NULL, "— Héhhéhhé !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk1_mion1034", 128, TRUE);
 	OutputLine(NULL, "　インドアで暴れずに、だけれども熱く遊ぶことは可能なんだよ。",
-		   NULL, " Mais t'inquiète pas, il y a un moyen de rester à l'intérieur et de s'amuser comme des fous et de ne pas foutre un boxon monstre !", Line_WaitForInput);
+		   NULL, "Mais t'inquiète pas, il y a un moyen de rester à l'intérieur et de s'amuser comme des fous et de ne pas foutre un boxon monstre !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk1_mion1035", 128, TRUE);
 	OutputLine(NULL, "おじさん、こう見えてもゲームが大好きでね！",
-		   NULL, " On dirait pas, mais j'adore les jeux de société !", Line_WaitForInput);
+		   NULL, "On dirait pas, mais j'adore les jeux de société !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk1_mion1036", 128, TRUE);
 	OutputLine(NULL, "　海外物の貴重なものとか、結構集めてたりするのさ。",
-		   NULL, " J'en ai plein, des rares mêmes, qui viennent de l'étranger parfois ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'en ai plein, des rares mêmes, qui viennent de l'étranger parfois ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk1_mion1037", 128, TRUE);
 	OutputLine(NULL, "マニュアルが英語だったり難しかったりで、対戦してくれる相手がいなくって死蔵しちゃってるのが多いんだけどね。」",

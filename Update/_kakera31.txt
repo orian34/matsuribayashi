@@ -73,9 +73,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最近、その絡みで児童相談所の人が指導に来たらしく、その時だけは叔母もわずかに大人しくなったが、",
-		   NULL, "D'ailleurs, les services de l'enfance avaient été voir de quoi il retournait. Lorsqu'ils étaient en visite, la tante était à peu près correcte,", Line_WaitForInput);
+		   NULL, "D'ailleurs, les services de l'enfance avaient été voir de quoi il retournait. Lorsqu'ils étaient en visite, la tante était à peu près correcte,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……すぐにより陰湿な形での苛めに切り替わったという。",
-		   NULL, " mais après cela, elle se mit à faire des coups très bas à sa nièce.", Line_Normal);
+		   NULL, "mais après cela, elle se mit à faire des coups très bas à sa nièce.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -278,9 +279,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本当は、心が参っている時期に、さらに負担を増やすようなことは避けさせたいのだが、",
-		   NULL, "Même si franchement dit, ce n'était pas le moment d'avoir encore plus de souci que ce qu'il avait déjà.", Line_WaitForInput);
+		   NULL, "Même si franchement dit, ce n'était pas le moment d'avoir encore plus de souci que ce qu'il avait déjà.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "沙都子ちゃんの誕生日が近いと言われれば、妹思いの悟史くんにそれを思い止まらせるのは難しい。",
-		   NULL, " Mais c'était vrai que l'anniversaire de sa sœur arrivait bientôt. Il semblait bien difficile de trouver des arguments pour le dissuader de le faire.", Line_Normal);
+		   NULL, "Mais c'était vrai que l'anniversaire de sa sœur arrivait bientôt. Il semblait bien difficile de trouver des arguments pour le dissuader de le faire.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -407,16 +409,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1314", 128, TRUE);
 	OutputLine(NULL, "「それはいいですねぇ！",
-		   NULL, "— Ah, oui, bien sûr, c'est une très bonne idée !", Line_WaitForInput);
+		   NULL, "— Ah, oui, bien sûr, c'est une très bonne idée !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1315", 128, TRUE);
 	OutputLine(NULL, "　そういうことならぜひ持って行ってください。",
-		   NULL, " Tu peux y aller, prends ta batte.", Line_WaitForInput);
+		   NULL, "Tu peux y aller, prends ta batte.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1316", 128, TRUE);
 	OutputLine(NULL, "素振りをする時は、充分周りを確認して危険がないよう注意してからやってくださいね。",
-		   NULL, " Mais quand tu t'entraînes, fais bien attention à laisser de l'espace, ne casse rien.", Line_WaitForInput);
+		   NULL, "Mais quand tu t'entraînes, fais bien attention à laisser de l'espace, ne casse rien.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1317", 128, TRUE);
 	OutputLine(NULL, "ご近所迷惑でなければ、タイヤを吊るしてそれを打つのも良い練習になるでしょう。」",
-		   NULL, " Si possible, et si tes voisins ne se plaignent pas trop, fais pendre un vieux pneu à une branche d'arbre et essaie de le frapper.", Line_Normal);
+		   NULL, "Si possible, et si tes voisins ne se plaignent pas trop, fais pendre un vieux pneu à une branche d'arbre et essaie de le frapper.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

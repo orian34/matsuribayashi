@@ -125,7 +125,7 @@
 		   NULL, "Mais bien sûr, c'était beaucoup plus facile à dire qu'à faire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…彼を取り巻く村や家庭の環境は複雑に絡み合い、薬を飲ませて三日も安静にすればすっきり治る、などという状況では決してない。",
 		   NULL, "Nous n'étions pas dans une situation simple dans laquelle un cacheton et quelques jours de repos forcé allaient le remettre sur pieds. Et puis, sa position un peu au milieu des affrontements entre ses parents et les villageois était impossible à régler d'un coup de baguette magique.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -429,22 +429,27 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1099", 128, TRUE);
 	OutputLine(NULL, "「やっと薬でぐっすり眠れたところです。",
-		   NULL, "— Je viens à peine de réussir à la faire dormir.", Line_WaitForInput);
+		   NULL, "— Je viens à peine de réussir à la faire dormir.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1100", 128, TRUE);
 	OutputLine(NULL, "できれば起こさないであげたいところです。",
-		   NULL, " Je préfèrerais être sûr de la voir prendre du repos.", Line_WaitForInput);
+		   NULL, "Je préfèrerais être sûr de la voir prendre du repos.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1101", 128, TRUE);
 	OutputLine(NULL, "しばらくゆっくり休ませてあげましょう。",
-		   NULL, " Il vaudrait mieux la laisser tranquille.", Line_WaitForInput);
+		   NULL, "Il vaudrait mieux la laisser tranquille.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1102", 128, TRUE);
 	OutputLine(NULL, "様子を見て、数日入院させてあげるのもいいかもしれません。",
-		   NULL, " D'ailleurs, le mieux serait peut-être même de la garder à l'hôpital pendant encore quelques jours, en observation.", Line_WaitForInput);
+		   NULL, "D'ailleurs, le mieux serait peut-être même de la garder à l'hôpital pendant encore quelques jours, en observation.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1103", 128, TRUE);
 	OutputLine(NULL, "…大丈夫。",
-		   NULL, " ... N'aie pas peur.", Line_WaitForInput);
+		   NULL, "... N'aie pas peur.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1104", 128, TRUE);
 	OutputLine(NULL, "私に任せてください。」",
-		   NULL, " Laisse-moi faire.", Line_Normal);
+		   NULL, "Laisse-moi faire.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -492,7 +497,7 @@
 		   NULL, "Elle n'avait pas su tisser de liens avec son nouveau père, elle n'était pas aussi adulte que son frère.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、母はともかく、最大のストレス源である父がいなくなったのは、沙都子ちゃんの環境に、大きな変化をもたらすに違いなかったのだ。",
 		   NULL, "C'était pourquoi j'étais persuadé que la mort de son nouveau père, qui devait forcément être sa plus grande source de stress et d'angoisse, lui ferait le plus grand bien, même si évidemment, la mort de sa mère allait forcément contrebalancer une partie de cet effet bénéfique.", Line_Normal);
 	ClearMessage();
