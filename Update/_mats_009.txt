@@ -1624,6 +1624,7 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s13/02/ds41020048", 128, TRUE);
 	OutputLine(NULL, "「はぅ〜！",
 		   NULL, "— Hauuu !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s13/02/ds41020049", 128, TRUE);

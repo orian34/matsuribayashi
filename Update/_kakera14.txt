@@ -273,13 +273,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1123", 128, TRUE);
 	OutputLine(NULL, "「それのどこに嘘があるというんです？",
-		   NULL, "— Et en quoi cela vous paraît-il suspect ?", Line_WaitForInput);
+		   NULL, "— Et en quoi cela vous paraît-il suspect ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1124", 128, TRUE);
-	OutputLine(NULL, "　まさか沙都子ちゃんが、実は眠っていなくて、両親と一緒に展望台へ行ったと、",
-		   NULL, " Vous pensez qu'en fait, elle n'a pas dormi dans la voiture et qu'elle les a accompagnés jusqu'au point de vision panoramique ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1083", 128, TRUE);
-	OutputLine(NULL, "そういう意味ですか？」",
-		   NULL, " C'est ça ?", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　まさか沙都子ちゃんが、実は眠っていなくて、両親と一緒に展望台へ行ったと、そういう意味ですか？」",
+		   NULL, "Vous pensez qu'en fait, elle n'a pas dormi dans la voiture et qu'elle les a accompagnés jusqu'au point de vision panoramique ?  C'est ça ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
