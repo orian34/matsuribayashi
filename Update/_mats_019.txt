@@ -53,7 +53,7 @@
 		   NULL, "Pendant les heures où les chaînes de télé ne passaient plus rien sur les ondes, les gardes jouaient aux cartes, traditionnelles ou non.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	PlayBGM( 1, "M_Denwa8k", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -67,6 +67,7 @@
 	ClearMessage();
 
 	DrawScene( "black", 400 );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>山狗</color>", NULL, "<color=#f5e6d3>Chien de montagne</color>", NULL, Line_ContinueAfterTyping); }
@@ -84,7 +85,8 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	PlayBGM( 0, "G_Tactics", 120, 0 );
+	ModPlayBGM( 0, "G_Tactics", 120, 0, 0 );
+	ModPlayBGM( 0, "primal-beat-of-horrow_T", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　男の形相が変わって姿勢が伸びる。",
@@ -1224,7 +1226,7 @@
 		   NULL, " Il leur fallait s'approcher sans le moindre bruit, en retenant leur souffle ; ils ouvrirent lentement la porte...", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	DrawSceneWithMask( "background/hoteru", "maskc", 1, 0, 300 );
 	PlayBGM( 1, "kaze", 120, 0 );
 
@@ -1243,6 +1245,7 @@
 		   NULL, "Une chambre qui servait juste à dormir -- le strict minimum, mais en même temps le strict nécessaire.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1251,7 +1254,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawScene( "black", 200 );
-	PlayBGM( 0, "G_Tactics", 120, 0 );
+	ModPlayBGM( 0, "G_Tactics", 120, 0, 0 );
+	ModPlayBGM( 0, "primal-beat-of-horrow_T", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…………いない。",
@@ -1879,6 +1883,7 @@
 		   NULL, "Okonogi riait et essayait de dédramatiser la situation, alors que dans ce même temps, on pouvait distinguer vaguement les hurlements hystériques et incompréhensibles de Miyo Takano.", Line_Normal);
 	ClearMessage();
 
+	ModPlayBGM( 1, "semi", 120, 0, 1 );
 	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1901,7 +1906,7 @@
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 	DrawSceneWithMask( "background/ke1", "maskup", 1, 0, 300 );
-	PlayBGM( 1, "semi", 120, 0 );
+	ModPlayBGM( 1, "semi", 120, 0, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -4101,8 +4106,8 @@
 		   NULL, " T'aurais remplacé “la princesse démoniaque” par “une honnête citoyenne”, et c'était parfait !", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "semi", 120, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModPlayBGM( 1, "semi", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_ootaka1102", 128, TRUE);
@@ -4205,6 +4210,8 @@
 
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
+
+	ModPlayBGM( 1, "semi", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Représentant des Sonozaki</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/sonop11014", 128, TRUE);
@@ -4311,6 +4318,7 @@
 	ClearMessage();
 
 	CallScript( "&eye" );
+	ModFadeOutBGM( 0, 1000, FALSE, 1 );
 	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "black", 1000 );
 

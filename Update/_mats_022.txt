@@ -257,7 +257,8 @@
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "background/ke5", "maskup", 1, 0, 300 );
-	PlayBGM( 0, "Feel", 120, 0 );
+	ModPlayBGM( 0, "Feel", 120, 0, 0 );
+	ModPlayBGM( 0, "tsutaetaikoto", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富竹の閉じ込められている部屋は４人も入ったらいっぱいの小会議室だった。",
@@ -1284,7 +1285,8 @@
 	DisableWindow();
 	FadeOutBGM( 0, 200, FALSE );
 	ModDrawCharacter(1, 14, "sprite/oko_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
-	PlayBGM( 0, "G_Tactics", 120, 0 );
+	ModPlayBGM( 0, "G_Tactics", 120, 0, 0 );
+	ModPlayBGM( 0, "primal-beat-of-horrow_T", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#3e5745>小此木</color>", NULL, "<color=#3e5745>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s13/14/ds41130246", 128, TRUE);
@@ -1463,7 +1465,7 @@
 		   NULL, "Ils avaient l'intention de coincer les fuyards dans un périmètre très limité et de leur tomber dessus à bras raccourcis.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 400, FALSE );
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
 	DrawScene( "background/torakku2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鳳４</color>", NULL, "<color=#f5e6d3>Phénix 4</color>", NULL, Line_ContinueAfterTyping); }
@@ -1481,6 +1483,7 @@
 		   NULL, " Mon Commandant, je vous en prie, ils sont à vous.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 400, FALSE, 1 );
 	DisableWindow();
 	ModSetLayerFilter(2, 256, "night");
 	ModDrawCharacter(2, 9, "sprite/ta3_human_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
@@ -1859,6 +1862,7 @@
 	ClearMessage();
 
 	DrawScene( "background/mo3", 400 );
+	ModPlayBGM( 1, "semi", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雲雀１</color>", NULL, "<color=#f5e6d3>Alouette des chants 1</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/hiba0111017", 128, TRUE);
@@ -1902,10 +1906,11 @@
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 3, "sprite/me2_akuwarai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawScene( "background/koya1", 400 );
-	PlayBGM( 1, "semi", 120, 0 );
+	ModPlayBGM( 1, "semi", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030422", 128, TRUE);
@@ -2015,6 +2020,7 @@
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_Down", 128, 64 );
+	ModPlayBGM( 1, "semi", 120, 0, 1 );
 	DrawSceneWithMask( "background/mo3", "maskup", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雲雀４</color>", NULL, "<color=#f5e6d3>Alouette des chants 4</color>", NULL, Line_ContinueAfterTyping); }
@@ -2479,9 +2485,9 @@
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	Negative( 300 , TRUE );
-	PlayBGM( 2, "semi_r", 120, 0 );
+	ModPlayBGM( 2, "semi_r", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　全員から嫌な汗がどっと噴き出る…。",
@@ -2508,9 +2514,9 @@
 	ClearMessage();
 
 	DrawScene( "black" , 400 );
-	FadeOutBGM( 2, 400, FALSE );
+	ModFadeOutBGM( 2, 400, FALSE, 0 );
 	FadeFilm( 400, TRUE );
-	PlayBGM( 1, "semi", 120, 0 );
+	ModPlayBGM( 1, "semi", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雲雀１３</color>", NULL, "<color=#f5e6d3>Alouette des chants 13</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 49, "ps3/s14/49/vt4bc_13hibari1022", 128, TRUE);
@@ -2759,8 +2765,8 @@
 	ModPlayVoiceLS(4, 0, "ps3/s14/00/ugu0911003", 128, TRUE);
 	OutputLine(NULL, "…そこはトラップフィールドだと言ってるぞ…。",
 		   NULL, "Elle me dit que l'endroit où tu te trouves est une zone entièrement piégée.", GetGlobalFlag(GLinemodeSp));
-	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 3, "semi_r", 120, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModPlayBGM( 3, "semi_r", 120, 0, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鶯９</color>", NULL, "<color=#f5e6d3>Bouscarle chanteuse 9</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s14/00/ugu0911004", 128, TRUE);
 	OutputLine(NULL, "………え？",
@@ -2782,6 +2788,7 @@
 	ClearMessage();
 
 	DrawScene( "black", 300 );
+	ModPlayBGM( 3, "semi_r", 120, 0, 1 );
 	PlaySE( 0, "s_furu", 128, 64 );
 	Wait( 100 );
 	DrawBustshot(5, "eye/eye_base_r", 0, 60, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
@@ -2856,6 +2863,7 @@
 		   NULL, " ... Halte là ? Que pouvait-elle vouloir dire ?", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	FadeOutBGM( 3, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -3128,7 +3136,7 @@
 		   NULL, " Ahahahaha, alors, hein ?", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawScene( "black", 200 );
 	PlaySE( 0, "s_furu", 128, 64 );
 	Wait( 100 );
@@ -3147,6 +3155,7 @@
 	OutputLine(NULL, "「……だから、あなたは５歩でおしまいなんですのよ！！」",
 		   NULL, "— ... Et c'est bien pour cela que je vous ai donné cinq pas !", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
@@ -3578,7 +3587,7 @@
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	FadeOutBGM( 1, 400, FALSE );
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
 	DrawScene( "background/sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3642,6 +3651,7 @@
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ならば、富竹救出隊の方はどうか。",
@@ -3779,6 +3789,8 @@
 		   NULL, " La fenêtre était encore ouverte.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
+	ModPlayBGM( 0, "semi_r", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこから、銃で武装した４人がそろりそろりと入り込む。",
@@ -3833,7 +3845,8 @@
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 1, 400, FALSE );
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
+	ModFadeOutBGM( 0, 400, FALSE, 1 );
 	PlaySE( 0, "s_page", 128, 64 );
 	DrawScene( "background/tk_yo2", 400 );
 	PlayBGM( 0, "pros", 120, 0 );
@@ -4533,7 +4546,7 @@
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	PlaySE( 0, "s_interphone", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4560,6 +4573,7 @@
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	DrawFilm( 2, 255, 255, 255, 255, 0, 0, TRUE );
 	ModDrawCharacter(0, 10, "sprite/iri2_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	ModDrawCharacter(1, 6, "sprite/si1a_tohoho_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
@@ -4798,7 +4812,8 @@
 
 	FadeOutBGM( 1, 200, FALSE );
 	DrawScene( "background/chika_sekyurithi", 200 );
-	PlayBGM( 0, "G_Tactics", 120, 0 );
+	ModPlayBGM( 0, "G_Tactics", 120, 0, 0 );
+	ModPlayBGM( 0, "primal-beat-of-horrow_T", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鳳５</color>", NULL, "<color=#f5e6d3>Phénix 5</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_05ootori1003", 128, TRUE);
@@ -5204,12 +5219,12 @@
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
-	FadeOutBGM( 1, 2000, FALSE );
+	ModFadeOutBGM( 1, 2000, FALSE, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
 	DrawScene( "background/chika_sekyurithi", 400 );
-	PlayBGM( 1, "keihou", 120, 0 );
+	ModPlayBGM( 1, "keihou", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　セキュリティルーム内の保安隊員も、決して状況は予断を許さなかった。",
@@ -5461,7 +5476,7 @@
 		   NULL, "Pas vraiment dans le ton, mais dans ses sous-entendus -- et les gardes ne pouvaient pas faire croire qu'ils ne savaient pas ce que Kasai voulait dire.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "keihou", 120, 0 );
+	ModPlayBGM( 1, "keihou", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s13/15/ds41140066", 128, TRUE);
@@ -5554,7 +5569,8 @@
 	OutputLine(NULL, "返事せんかガキどもがぁああぁあッ！！！」",
 		   NULL, "VOUS ALLEZ RÉPONDRE, OUI OU MERDE ?", Line_Continue);
 
-	PlayBGM( 0, "samayoi", 120, 0 );
+	ModPlayBGM( 0, "samayoi", 120, 0, 0 );
+	ModPlayBGM( 0, "attack", 120, 0, 1 );
 
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
@@ -5743,7 +5759,7 @@
 		   NULL, "Ce n'était pas une chose dont il fallait se vanter, mais effectivement, il avait eu à se sortir de situations dangereuses bien plus souvent que les gardes en face de lui -- chiens de montagne ou pas...", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "keihou", 120, 0 );
+	ModPlayBGM( 1, "keihou", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s13/15/ds41140083", 128, TRUE);
@@ -5780,7 +5796,7 @@
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "wa_038", 128, 64 );
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　隊員のひとりが慌てて立ち上がり、コンソールのボタンのいくつかをいじり警報を解除した。",
@@ -6066,7 +6082,7 @@
 		   NULL, " Irie avait donc une chance, une seule, de pouvoir attaquer cet homme par surprise.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 	PlayBGM( 3, "semi_r", 120, 0 );
 
@@ -6205,6 +6221,7 @@
 	ClearMessage();
 
 	DisableWindow();
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	PlaySE( 0, "s_furu", 128, 64 );
 	DrawScene( "white", 50 );
 	DrawScene( "black", 100 );
@@ -6279,7 +6296,7 @@
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6289,6 +6306,7 @@
 		   NULL, " TU PEUX LE FAIRE !", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	FadeOutBGM( 1, 300, FALSE );
 	DrawScene( "background/chika_rouka", 300 );
 	ModDrawCharacterWithFiltering(0, 10, "sprite/iri2_warai_", "2", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
@@ -6874,6 +6892,7 @@
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+	ModPlayBGM( 1, "semi_r", 120, 0, 1 );
 	FadeOutBGM( 0, 2000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -6913,6 +6932,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "background/sinryou_sinsatu2", "maskc", 1, 0, 1300 );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	PlayBGM( 0, "T2", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

@@ -1962,6 +1962,7 @@
 		   NULL, "Vous ne trouvez pas ?", Line_Normal);
 	ClearMessage();
 
+	ModPlayBGM( 0, "higurashi", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070044", 128, TRUE);
@@ -1974,7 +1975,7 @@
 		   NULL, "Immédiatement, Hanyû se mit à gémir, respirant avec difficulté, comme en train de s'étouffer.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "higurashi", 120, 0 );
+	ModPlayBGM( 0, "higurashi", 120, 0, 0 );
 	ModDrawCharacter(2, 5, "sprite/ri1_majime_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/m_hi4", "maskup", 1, 0, 300 );
 
@@ -2065,7 +2066,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	FadeOutBGM( 0, 1000, FALSE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
 	ModDrawCharacterWithFiltering(0, 12, "sprite/ha3a_yowaki_", "0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 1300, TRUE );
 	PlayBGM( 1, "semi_r", 120, 0 );
 
@@ -2141,7 +2142,7 @@
 
 
 	DisableWindow();
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	PlayBGM( 3, "kaze", 120, 0 );
 	ModDrawCharacter(0, 12, "sprite/ha3a_au_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
@@ -2172,6 +2173,8 @@
 		   NULL, "Puis, d'un seul coup, Hanyû se releva, courut vers Rika et la saisit par le col de son chemisier.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 0, FALSE, 1 );
+	ModFadeOutBGM( 1, 0, FALSE, 1 );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawScene( "black", 50 );
 

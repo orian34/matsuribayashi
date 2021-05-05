@@ -201,7 +201,8 @@
 
 	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	PlayBGM( 0, "bellflower", 120, 0 );
+	ModPlayBGM( 0, "bellflower", 120, 0, 0 );
+	ModPlayBGM( 0, "tsutaetaikoto", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ホテル受付</color>", NULL, "<color=#f5e6d3>Réceptionniste</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_huke1001", 128, TRUE);
@@ -1037,7 +1038,8 @@
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "bellflower", 120, 0 );
+	ModPlayBGM( 0, "bellflower", 120, 0, 0 );
+	ModPlayBGM( 0, "tsutaetaikoto", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…私だって医者の端くれだ。",
@@ -2013,7 +2015,7 @@
 		   NULL, " et ma ********** finit *** ****** **** ** **** *******...", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 1000, FALSE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
 	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2038,6 +2040,7 @@
 		   NULL, " Il n'y a plus personne pour donner des coups de pieds...", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	DrawSceneWithMask( "background/ji2_01", "maskm1", 1, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 

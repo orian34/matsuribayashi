@@ -292,7 +292,8 @@
 
 	DrawScene( "black", 400 );
 
-	PlayBGM( 1, "semi_r", 120, 0 );
+	ModPlayBGM( 1, "semi_r", 120, 0, 0 );
+	ModPlayBGM( 1, "semi", 120, 0, 1 );
 
 	DrawScene( "background/sinryou_sinsatu4", 400 );
 
@@ -346,7 +347,8 @@
 		   NULL, "Ce n'est pas le caprice d'une femme au foyer qui va foutre toute ma vie en l'air, quand même !", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 3, "kaze", 120, 0 );
+	ModPlayBGM( 3, "kaze", 120, 0, 0 );
+	ModPlayBGM( 3, "semi_r", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………心を落ち着けろ。",
@@ -971,6 +973,7 @@
 		   NULL, "Enfin, je tenais l'occasion de me venger des dieux...", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	FadeOutBGM( 1, 300, FALSE );
 	FadeOutBGM( 3, 300, FALSE );
 
