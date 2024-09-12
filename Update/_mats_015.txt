@@ -676,18 +676,18 @@
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080050", 128, TRUE);
 	OutputLine(NULL, "それで施設に引き取られて、……くす、それがもう本当に劣悪な施設でして。",
 		   NULL, "J'ai été placée dans un orphelinat... ignoble, il n'y a pas d'autre mot.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano7010", 128, TRUE);
 	OutputLine(NULL, "あの頃、戦災孤児ってまだまだいたでしょう？",
 		   NULL, " À cette époque, ils avaient fort à faire, il restait encore beaucoup d'orphelins de la guerre. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano7011", 128, TRUE);
 	OutputLine(NULL, "　そういうのを集めて補助金だけをせしめるのを目的にしたような本当にひどい施設で。",
 		   NULL, "Alors des gens avaient construit des orphelinats, pour pouvoir encaisser les aides de l'État.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080053", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7012", 128, TRUE);
 	OutputLine(NULL, "そこを脱走した時に助けてくれたのが、…祖父、",
-		   NULL, "Après des mois de mauvais traitements, je me suis enfuie. Et la personne qui m'a recueillie... devint mon grand-père.", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "Après des mois de mauvais traitements, je me suis enfuie. Et la personne qui m'a recueillie... devint mon grand-père.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano7013", 128, TRUE);
 	OutputLine(NULL, "…高野先生でしたの。」",
 		   NULL, " C'était un certain Hifumi Takano.", Line_Normal);
 	ClearMessage();
@@ -705,11 +705,11 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080054", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7014", 128, TRUE);
 	OutputLine(NULL, "「……まぁ、大人の事情ですわ。",
 		   NULL, "— Aaaah, ça, ce sont des histoires de grandes personnes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080055", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7015", 128, TRUE);
 	OutputLine(NULL, "奇病研究のために予算を求めるのと、死んだおじいちゃんの研究のために予算を求めるのでは、少々事情が変わってきますから。」",
 		   NULL, "C'est une chose que d'aller demander des fonds pour mener des recherches sur une maladie étrange, et une autre que de demander des fonds publics pour mener à bien les recherches de son grand-père.", Line_Normal);
 	ClearMessage();

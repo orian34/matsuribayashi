@@ -585,7 +585,7 @@
 	OutputLine(NULL, "この時に大きな出力を出すため、エンジントラブルを起こすことがあるのだそうです。",
 		   NULL, " eh bien parfois, des avaries se déclarent. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>Nomura</color>", "<size=-3>", Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_nomura1095", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/s13/00/vt4a_nomura1095_org", 128, TRUE);
 	OutputLine(NULL, "その時、まだ大して速度が出ていないならブレーキを掛け、離陸を断念するそうですが、もしすでに充分な速度が出ていた場合は、ブレーキはかえって危険なため、そのまま離陸をしてしまうのだそうです。",
 		   NULL, "Il paraît que si la vitesse n'est pas trop importante, le pilote freine et retourne à son point de départ, mais que si la vitesse nécessaire pour décoller est atteinte, alors plutôt que de freiner, il vaut mieux décoller et essayer de se débrouiller ensuite avec l'avarie. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>Nomura</color>", NULL, Line_ContinueAfterTyping); }
@@ -2282,7 +2282,7 @@
 	PlayBGM( 0, "pros", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 13, "ps3/s13/13/ds41120298", 128, TRUE);
+	ModPlayVoiceLS(4, 13, "org/s13/13/ds41120298_org", 128, TRUE);
 	OutputLine(NULL, "　自らの危機を測るのはとても難しいことです。",
 		   NULL, "« Si jamais vous êtes en danger, composez le numéro, cachez le combiné et allez vous cacher dans un endroit sûr.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", "<size=-3>", Line_ContinueAfterTyping); }

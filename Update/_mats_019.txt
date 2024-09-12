@@ -1077,7 +1077,7 @@
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_adog1054", 128, TRUE);
 	OutputLine(NULL, "「……もしもし？",
 		   NULL, "— Allô ? Allô ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_adog1053", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_adog1055", 128, TRUE);
 	OutputLine(NULL, "　富竹二尉？」",
 		   NULL, " Mon Lieutenant ?", Line_Normal);
 	ClearMessage();

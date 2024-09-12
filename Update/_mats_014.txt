@@ -204,14 +204,13 @@
 	ModDrawCharacter(3, 8, "sprite/tomi1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090020", 128, TRUE);
+	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090021", 128, TRUE);
 	OutputLine(NULL, "「…………た、",
-		   NULL, "— ... Eh bien...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— ... Eh bien...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090021", 128, TRUE);
+
 	OutputLine(NULL, "………確かに、鷹野さんが新理事会に説明しに行って、かなり悪い評価をされたという話は聞いてるよ。",
 		   NULL, "Je sais qu'effectivement, elle est allée voir des membres du conseil d'administration, et j'ai entendu dire qu'ils avaient rendu un jugement très négatif sur le projet.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
@@ -655,9 +654,10 @@
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090049", 128, TRUE);
 	OutputLine(NULL, "「…………………………ど、どうだろう。",
 		   NULL, "— ... .... Je ne sais pas.", Line_WaitForInput);
-	OutputLine(NULL, "でも、今の東京のごたごたを見ていると、",
-		   NULL, " Mais si j'en crois les guerres intestines qui secouent l'organisation...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090050", 128, TRUE);
+	OutputLine(NULL, "でも、今の東京のごたごたを見ていると、",
+		   NULL, " Mais si j'en crois les guerres intestines qui secouent l'organisation...", Line_Continue);
+	Wait( 4000 );
 	OutputLine(NULL, "………なるほど、",
 		   NULL, " Oui...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -666,7 +666,7 @@
 	OutputLine(NULL, "…そんな恐ろしい絵を描いている連中がいたとしても、",
 		   NULL, " Disons que", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 3000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……、",
 		   NULL, " …", Line_Continue);
@@ -676,7 +676,7 @@
 	OutputLine(NULL, "…いや、",
 		   NULL, " ça ne m'étonnerait…", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 1100 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………ありえるかもしれない…。」",
 		   NULL, " qu'à moitié.", Line_Normal);
@@ -3817,7 +3817,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s13/13/ds41120200", 128, TRUE);
-	OutputLine(NULL, "「……梨花ちゃんの身が一番不安だよ。",
+	OutputLine(NULL, "「ということは……梨花ちゃんの身が一番不安だよ。",
 		   NULL, "— ... En attendant, je suis surtout inquiet pour Rika.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 13, "ps3/s13/13/ds41120201", 128, TRUE);
 	OutputLine(NULL, "どうしたものか…。」",
@@ -5284,7 +5284,7 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s13/05/ds41050348", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika7008", 128, TRUE);
 	OutputLine(NULL, "「きょ、今日のあんたは調子に乗りすぎ…！",
 		   NULL, "— Dis donc, toi, je te trouve bien sans-gêne, aujourd'hui !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5294,23 +5294,23 @@
 	FadeBustshot( 0, FALSE, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s13/05/ds41050349", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika7009", 128, TRUE);
 	OutputLine(NULL, "　そうね沙都子、おいしい食事をご馳走しないとね！",
 		   NULL, "Satoko, tu as raison, nous devons lui préparer un bon petit quelque chose.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s13/05/ds41050350", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika7010", 128, TRUE);
 	OutputLine(NULL, "　そうそう、冷蔵庫に入ってる徳用激辛キムチの大瓶を出してもらえる？",
 		   NULL, " D'ailleurs, si je me souviens bien, nous avons encore un grand pot avec du kimchi, non ? Tu peux le sortir ? ", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s13/05/ds41050351", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika7011", 128, TRUE);
 	OutputLine(NULL, "　それじゃない、懲罰用じゃなく死刑判決って書いてある方よ。",
 		   NULL, "Non, ça c'est celui pour les gages, il y en a un avec l'étiquette “kimchi spécial mises à mort” dessus.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s13/05/ds41050352", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika7012", 128, TRUE);
 	OutputLine(NULL, "今日はキムチチャーハンにしましょうです。",
 		   NULL, " Je vais faire un pilaf chinois au kimchi ce soir.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s13/05/ds41050353", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika7013", 128, TRUE);
 	OutputLine(NULL, "赤坂、辛いのは大丈夫ですか？」",
 		   NULL, " Akasaka, ça ira si c'est relevé ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

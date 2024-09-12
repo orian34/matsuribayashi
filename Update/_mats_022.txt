@@ -783,30 +783,27 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090183", 128, TRUE);
+	ModPlayVoiceLS(4, 8, "org/tomitake7000", 128, TRUE);
 	OutputLine(NULL, "「田無美代子という少女は、……両親を失って施設に送られた。",
 		   NULL, "— Miyoko Tanashi a perdu ses parents étant très jeune.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090184", 128, TRUE);
+	ModPlayVoiceLS(4, 8, "org/tomitake7001", 128, TRUE);
 	OutputLine(NULL, "…………そして、そこで虐待されて死んだ、",
-		   NULL, " Elle a été envoyée à l'orphelinat.", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
-
+		   NULL, " Elle a été envoyée à l'orphelinat.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "org/tomitake7002", 128, TRUE);
 	OutputLine(NULL, "……君はそう言ったね。」",
 		   NULL, " ... Elle a subi des maltraitances là-bas, et elle y est morte. C'est ce que tu m'as dit, je ne l'invente pas.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080315", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7016", 128, TRUE);
 	OutputLine(NULL, "「……えぇ、言ったわ。",
 		   NULL, "— ... Non, effectivement, tu n'inventes rien, c'est bien comme ça que je te l'ai raconté.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080316", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7017", 128, TRUE);
 	OutputLine(NULL, "…………私は、あの日のあの金網の中に戻らなければならない。",
 		   NULL, "... Je vais devoir retourner dans la cage où ils m'avaient enfermée ce jour-là.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080317", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7018", 128, TRUE);
 	OutputLine(NULL, "………ジロウさんは経験ある？」",
 		   NULL, "Tu as eu droit à cette punition quand tu étais plus jeune,Jirô ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5095,17 +5092,19 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "org/irie7005", 128, TRUE);
 	OutputLine(NULL, "「た、確か、ジフェニルシアノアルシンです。",
 		   NULL, "— Si j'ai bonne mémoire, c'est simplement du cyanure de diphénylarsine.", Line_WaitForInput);
-
+	ModPlayVoiceLS(4, 10, "org/irie7006", 128, TRUE);
 	OutputLine(NULL, "極めて高い濃度で吸えば危険ですが、命を直ちに脅かすものではありません。",
 		   NULL, " Il est mortel seulement à des doses extrêmes, sinon, il ne cause que certains désagréments pendant quelques minutes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-
+	ModPlayVoiceLS(4, 10, "org/irie7007", 128, TRUE);
 	OutputLine(NULL, "吸入後数分で作用。",
 		   NULL, "Par contre, l'effet est très rapide. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "org/irie7008", 128, TRUE);
 	OutputLine(NULL, "症状はいくつかありますが最大の特徴は約３０分間くしゃみが止まらなくなることです。」",
 		   NULL, "Les symptômes les plus graves s'estompent vite, mais ce gaz est connu pour provoquer des éternuements pendant presque une demi-heure.", Line_Normal);
 	ClearMessage();
@@ -6759,6 +6758,7 @@
 	PlaySE( 0, "s_furu", 128, 64 );
 	Wait( 300 );
 	DrawBustshot(0, "scene/irie_mih", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 10, "sprite/iri2_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );}
 	DrawScene( "background/furiker_c", 50 );
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	StartShakingOfWindow( 241, 40, 0, 2, 5*2, FALSE );
@@ -7372,7 +7372,6 @@
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
 	// (backup) SetValidityOfInput( TRUE );
-	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100463", 128, TRUE);
 	OutputLine(NULL, "……この１年、…脳波の傾向に回復の兆しが見られるのです。",
 		   NULL, " en un an, ses signes cérébraux ont changé. Il se remet, tout doucement.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100464", 128, TRUE);

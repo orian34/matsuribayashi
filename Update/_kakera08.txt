@@ -901,11 +901,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1131", 128, TRUE);
-	OutputLine(NULL, "…だから、",
-		   NULL, "Et ça...", GetGlobalFlag(GLinemodeSp));
-	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1131", 128, TRUE);
-	OutputLine(NULL, "…そんな僕をオヤシロさまは許さなかったんだ……。",
-		   NULL, "la déesse ne me le pardonnera pas.", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "…だから、…そんな僕をオヤシロさまは許さなかったんだ……。",
+		   NULL, "Et ça... la déesse ne me le pardonnera pas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1132", 128, TRUE);
 	OutputLine(NULL, "…僕は兄、",

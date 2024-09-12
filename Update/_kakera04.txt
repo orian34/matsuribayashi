@@ -640,11 +640,11 @@
 	ModDrawCharacter(0, 9, "sprite/ta2_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1131", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7800", 128, TRUE);
 	OutputLine(NULL, "「雛見沢症候群の研究は、生きた検体を捌くことでしか進められない。",
 		   NULL, "— Les recherches sur le syndrome de Hinamizawa ne peuvent progresser que par l'étude et la dissection de sujets vivants.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1132", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7801", 128, TRUE);
 	OutputLine(NULL, "それがわかってなお、あなたはこの研究を進めることに罪の意識を感じている。」",
 		   NULL, "Vous en avez eu la preuve incontestable cette année, et pourtant, vous continuez à vous comporter comme si c'était un crime.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -668,19 +668,19 @@
 	PlayBGM( 0, "Z02_Kyousou", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1133", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7802", 128, TRUE);
 	OutputLine(NULL, "「ご高説ですわね。",
 		   NULL, "— Ooh, mais c'est qu'en plus, vous montez sur vos grands chevaux ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1134", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7803", 128, TRUE);
 	OutputLine(NULL, "くすくす。",
 		   NULL, "Hmpfhfhfhf...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1135", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7804", 128, TRUE);
 	OutputLine(NULL, "……では入江所長？",
 		   NULL, "Eh bien alors, j'ai une question pour vous, Monsieur le Directeur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1136", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7805", 128, TRUE);
 	OutputLine(NULL, "　あなたはこれまで、人の脳を切り取ることに何度の事前承諾を取られたというんですの？」",
 		   NULL, "Vous pouvez me dire combien vous avez demandé d'autorisations quand vous pratiquiez la psychochirurgie ?", Line_Normal);
 	ClearMessage();
@@ -697,11 +697,11 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1137", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7806", 128, TRUE);
 	OutputLine(NULL, "「あなたの、人の罪は脳の疾患によるものという独り善がりで、一体何人の患者が事前承諾なく脳を切除されたんですの？",
 		   NULL, "— Combien de cerveaux avez-vous donc amputés sans autorisation lorsque vous vouliez prouver que tous les comportements criminels de l'être humain trouvaient leur source dans la maladie physique de l'organe du cerveau ? Vous voulez que je vous rafraîchisse la mémoire, peut-être ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1138", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7807", 128, TRUE);
 	OutputLine(NULL, "　くすくす。」",
 		   NULL, " Hmpfhfhfhf...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

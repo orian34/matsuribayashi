@@ -1313,11 +1313,11 @@
 	ModDrawCharacterWithFiltering(2, 3, "sprite/me1a_majime_a1_", "0", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030265", 128, TRUE);
-	OutputLine(NULL, "「梨花ちゃん、もう一度確認するわ。",
+	ModPlayVoiceLS(4, 3, "org/mion7024", 128, TRUE);
+	OutputLine(NULL, "「梨花ちゃん、もう一度確認するね。",
 		   NULL, "— Rika, je dois vérifier quelque chose.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030266", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion7025", 128, TRUE);
 	OutputLine(NULL, "…その緊急マニュアルってのは梨花ちゃんが死ぬと村人が４８時間以内に全員発狂するっていうから、そうなる前に村を鎮圧するために発動されるんだよね？」",
 		   NULL, "Dans ce fameux manuel, ils expliquent que quand tu mourras, tous les villageois deviendront fous dans les 48h et que donc avant que ça n'arrive, il faut envoyer des soldats pour tuer tout le monde, c'est bien ça ?", Line_Normal);
 	ClearMessage();
@@ -1350,13 +1350,13 @@
 	ModDrawCharacterWithFiltering(2, 2, "sprite/re1b_bikkuri_b1_", "1", "maskright", 7, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s13/02/ds41020140", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena7002", 128, TRUE);
 	OutputLine(NULL, "「た、確かにそうだね…。",
 		   NULL, "— Oui, maintenant que tu le dis,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s13/02/ds41020141", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena7003", 128, TRUE);
 	OutputLine(NULL, "うん、おかしいよそれ。",
 		   NULL, " c'est bizarre, en fait.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s13/02/ds41020142", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena7004", 128, TRUE);
 	OutputLine(NULL, "何で４８時間で村人がみんな発狂するなんて決め付けられるんだろ。」",
 		   NULL, " Comment peuvent-ils affirmer que les villageois seront en phase terminale dans les 48h ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1577,23 +1577,23 @@
 	ModDrawCharacterWithFiltering(0, 12, "sprite/ha2a_def_", "0", "maskleft", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070274", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu7008", 128, TRUE);
 	OutputLine(NULL, "「あぅあぅ！",
 		   NULL, "— Exactement !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070275", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu7009", 128, TRUE);
 	OutputLine(NULL, "　緊急マニュアルの意味はなんですか？",
 		   NULL, "Et qu'est-ce que ça signifie ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070276", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu7010", 128, TRUE);
 	OutputLine(NULL, "　それは雛見沢症候群の大騒ぎを災害のフリをして隠すためなのです。",
 		   NULL, "Le manuel sert à cacher l'existence de la maladie, en tuant tous les patients et en faisant croire à une catastrophe naturelle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070277", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu7011", 128, TRUE);
 	OutputLine(NULL, "だから、村人たちがおかしくなる４８時間以内に村を丸ごと抹殺してしまおうとする。",
 		   NULL, "C'est pourquoi l'Armée doit intervenir et tuer tout le monde en moins de 48h, avant que les habitants ne deviennent fous. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070278", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu7012", 128, TRUE);
 	OutputLine(NULL, "そしてそれが敵の狙いなのです。」",
 		   NULL, "Et c'est ça, ce que nos ennemis veulement déclencher.", Line_Normal);
 	ClearMessage();
@@ -1763,16 +1763,16 @@
 	ModDrawCharacterWithFiltering(1, 3, "sprite/me1b_akuwarai_a1_", "2", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030280", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion7025_ds41030280", 128, TRUE);
 	OutputLine(NULL, "「ほ〜〜〜〜〜？！",
 		   NULL, "— Ah ouais, carrément ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030281", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion7025_ds41030281", 128, TRUE);
 	OutputLine(NULL, "　言ってくれるじゃなぁい！！",
 		   NULL, " Eh bé, y a rien qui t'étouffe, dis voir ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030282", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion7025_ds41030282", 128, TRUE);
 	OutputLine(NULL, "　羽入、あんたますます気に入ったよ！",
 		   NULL, " Mais ça me plaît !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030283", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion7025_ds41030283", 128, TRUE);
 	OutputLine(NULL, "　この功績を認め、あんたには後で我が部謹製特別十字章を授与しよう！！",
 		   NULL, " Pour récompenser cette mauvaise foi, tu recevras la grande croix spéciale de notre club !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1781,13 +1781,13 @@
 	ModDrawCharacter(1, 3, "sprite/me1b_def_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030284", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion7025_ds41030284", 128, TRUE);
 	OutputLine(NULL, "　まぁそれは後に置いといて、今は作戦の説明に入ろう。",
 		   NULL, "Mais ça devra attendre, on a autre chose à faire maintenant. Voyons voir comment mettre notre stratégie à exécution...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030285", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion7025_ds41030285", 128, TRUE);
 	OutputLine(NULL, "やつらのゴールの最大の拠り所である緊急マニュアル。",
 		   NULL, " Alors, regardons d'un peu plus près ce manuel d'urgence.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030286", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion7025_ds41030286", 128, TRUE);
 	OutputLine(NULL, "これにはでっかいウィークポイントが隠されてる。",
 		   NULL, " En fait, il cache un énorme point faible :", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1796,10 +1796,10 @@
 	ModDrawCharacter(1, 3, "sprite/me1a_tokui_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030287", 128, TRUE);
-	OutputLine(NULL, "それは、雛見沢症候群は、女王感染者の死後に４８時間で村人が全員発狂するからそうなる前に抹殺せよ、というそもそもの根拠の部分。",
+	ModPlayVoiceLS(4, 3, "org/mion7026", 128, TRUE);
+	OutputLine(NULL, "それは、雛見沢症候群は、女王感染者の死後４８時間で村人が全員発狂するからそうなる前に抹殺せよ、というそもそもの根拠の部分。",
 		   NULL, "il n'y a pas grand'chose qui prouve que moins de 48h après la mort de la Reine Mère, tous les habitants vont devenir frappadingues.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030288", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion7027", 128, TRUE);
 	OutputLine(NULL, "つまり！！",
 		   NULL, " Et donc !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1808,7 +1808,7 @@
 	ModDrawCharacter(1, 3, "sprite/me1a_huteki_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030289", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion7028", 128, TRUE);
 	OutputLine(NULL, "　梨花ちゃんが４８時間前にすでに死んでいるのに、村に何も起こらず平和だったら、このマニュアルの根本が崩れるってことなんだよ！！」",
 		   NULL, "Si par hasard, il était constaté que même plus de 48h après la mort de Rika, les gens se comportaient normalement, alors ce manuel perdrait toute valeur !", Line_Normal);
 	ClearMessage();
@@ -1952,7 +1952,7 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "maskright" , 7, FALSE, 0, 0, 300, TRUE );
-	ModDrawCharacterWithFiltering(1, 4, "sprite/sa2a_akuwarai_a1_", "2", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 4, "sprite/sa2a_akuwarai_a1_", "2", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s13/04/ds41040138", 128, TRUE);

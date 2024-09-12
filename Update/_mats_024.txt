@@ -2646,16 +2646,16 @@
 	ModDrawCharacter(2, 9, "sprite/ta5_iradachi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080458", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7019", 128, TRUE);
 	OutputLine(NULL, "「な、何を言うの小此木！！",
 		   NULL, "— Mais enfin, qu'est-ce que vous racontez ?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080459", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7020", 128, TRUE);
 	OutputLine(NULL, "　まだよ、もう挫けるの？！",
 		   NULL, " Vous abandonnez déjà ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080460", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7021", 128, TRUE);
 	OutputLine(NULL, "　あなたもＲが生きているのを見たでしょう？！",
 		   NULL, " Mais pourtant, vous l'avez vu, R était vivante !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080461", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7022", 128, TRUE);
 	OutputLine(NULL, "　今日の一日が狂いだしたのはＲが死んだなんて噂が流れたからよ？！",
 		   NULL, " Toute cette journée s'est transformée en cauchemar à cause de la rumeur de sa mort,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2664,19 +2664,19 @@
 	ModDrawCharacter(2, 9, "sprite/ta5_sakebi_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080462", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7023", 128, TRUE);
 	OutputLine(NULL, "　でもＲは生きていた！！",
 		   NULL, "mais R est bel et bien vivante !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080463", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7024", 128, TRUE);
 	OutputLine(NULL, "　今日の一日はなかったことになるのよ！！",
 		   NULL, "Ce qui veut dire que tout ce qu'il s'est passé aujourd'hui ne compte pas !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080464", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7025", 128, TRUE);
 	OutputLine(NULL, "　緊急マニュアルはまだ生きてるわ。",
 		   NULL, "Nous pouvons encore nous servir du manuel des consignes d'urgence !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080465", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7026", 128, TRUE);
 	OutputLine(NULL, "女王感染者が生きている以上、あらためて殺せば、そこから４８時間の緊急マニュアル執行可能な時間が…！！」",
 		   NULL, "Puisque la Reine Mère est vivante, il nous suffira de la tuer, et encore une fois, le principe de précaution nous obligera à mener l'opération finale dans les 48h !", Line_Normal);
 	ClearMessage();
@@ -5265,7 +5265,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070427", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070425", 128, TRUE);
 	OutputLine(NULL, "「……梨花。",
 		   NULL, "— Rika.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
@@ -5317,6 +5317,8 @@
 	ClearMessage();
 
 	DrawScene( "scene/408a", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 9, "sprite/ta5_iradachi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );}
 	PlayBGM( 1, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -5328,6 +5330,7 @@
 		   NULL, " D'accord, d'accord, comme tu voudras.", Line_Continue);
 	Wait( 2400 );
 	DrawBustshot(5, "scene/408b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 200, TRUE );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 9, "sprite/ta5_sakebi_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );}
 	OutputLine(NULL, "なら死ねッ！！！」",
 		   NULL, " Alors meurs !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

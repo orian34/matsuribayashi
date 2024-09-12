@@ -96,10 +96,10 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoub1001", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7800", 128, TRUE);
 	OutputLine(NULL, "「ぁ、……あほんだらぁ…。",
 		   NULL, "— Couillon de la lune,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoub1002", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7801", 128, TRUE);
 	OutputLine(NULL, "し、死んでるに決まってンだろが…！」",
 		   NULL, " il est mort, ça se voit, quand même !", Line_Normal);
 	ClearMessage();
@@ -154,16 +154,16 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1006", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7802", 128, TRUE);
 	OutputLine(NULL, "「やっかましい…！",
 		   NULL, "— Oh, ta gueule !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1007", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7803", 128, TRUE);
 	OutputLine(NULL, "　死んでるに決まってンだろ！",
 		   NULL, " Il est forcément mort, regarde-le !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1008", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7804", 128, TRUE);
 	OutputLine(NULL, "　…仕方ねぇじゃねぇか！",
 		   NULL, " Et puis eh, c'est pas de not' faute, hein ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1009", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7805", 128, TRUE);
 	OutputLine(NULL, "　正当防衛だろ、正当防衛…！！」",
 		   NULL, " C'est de la légitime défense, que je dis !", Line_Normal);
 	ClearMessage();
@@ -454,16 +454,16 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1010", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7806", 128, TRUE);
 	OutputLine(NULL, "「ふ、ふざけんじゃねぇよ…！！",
 		   NULL, "— Eh, déconnez pas, hein !?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1011", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7807", 128, TRUE);
 	OutputLine(NULL, "　俺たちは殺されかかったんだぞ！",
 		   NULL, " C'est nous qu'on s'est fait attaquer, il a failli nous crever, ce con !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1012", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7808", 128, TRUE);
 	OutputLine(NULL, "　こいつが襲い掛かってこなけりゃ、俺たちだって反撃しなかったんだぞ！！",
 		   NULL, " On devait bien se défendre !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1013", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7809", 128, TRUE);
 	OutputLine(NULL, "　なぁ？！」",
 		   NULL, " Hein ?", Line_Normal);
 	ClearMessage();
@@ -499,40 +499,40 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1014", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7810", 128, TRUE);
 	OutputLine(NULL, "「い、いつまでもナヨナヨしてんじゃねぇ…！！",
 		   NULL, "— Bon, eh, on va pas pleurer toute la nuit non plus, hein ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1015", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7811", 128, TRUE);
 	OutputLine(NULL, "　仕方ねぇだろ！",
 		   NULL, " C'est arrivé, c'est arrivé !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1016", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7812", 128, TRUE);
 	OutputLine(NULL, "　殺ッちまったもんは仕方ねぇだろ！！",
 		   NULL, " On l'a tué, OK, maintenant il faut voir après !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1017", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7813", 128, TRUE);
 	OutputLine(NULL, "　俺たちゃな、もう殺人犯なんだよ！！",
 		   NULL, " On est des meurtriers,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1018", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7814", 128, TRUE);
 	OutputLine(NULL, "　覚悟を決めるんだよ！」",
 		   NULL, " alors il va falloir réfléchir à la suite !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1004", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7815", 128, TRUE);
 	OutputLine(NULL, "「まさかおめぇら、自首して懲役食らいてぇなんて思ってんじゃねぇだろな？！",
 		   NULL, "— Ou bien alors quoi, vous allez vous dénoncer, bien gentiment, pour aller faire de la taule ensuite ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1005", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7816", 128, TRUE);
 	OutputLine(NULL, "　冗談じゃねぇよ！！",
 		   NULL, " Laissez-moi rire !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1006", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7817", 128, TRUE);
 	OutputLine(NULL, "　ムショなんかこの年で行ってられっかよ！！」",
 		   NULL, " Moi, j'ai pas envie de retourner en taule cette année !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1019", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7818", 128, TRUE);
 	OutputLine(NULL, "「隠すんだよ！",
 		   NULL, "— Il faut cacher le corps !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1020", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7819", 128, TRUE);
 	OutputLine(NULL, "　こいつの死体を隠してスッとぼけるしかねぇんだッ！！」",
 		   NULL, " On va cacher son corps et on fait comme si de rien n'était !", Line_Normal);
 	ClearMessage();
@@ -612,19 +612,19 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1021", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7820", 128, TRUE);
 	OutputLine(NULL, "「甘ったれたこと言ってんじゃねぇ！！",
 		   NULL, "— Mais vous êtes complètement à la ramasse, les gars !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1022", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7821", 128, TRUE);
 	OutputLine(NULL, "　これだけズタボロに殺しちまってンだぞ！！",
 		   NULL, "Vous avez vu dans quel état on l'a mis, bordel de merde ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1023", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7822", 128, TRUE);
 	OutputLine(NULL, "　過剰防衛で済むかよ？！",
 		   NULL, "Vous croyez vraiment qu'on va s'en sortir avec la légitime défense ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1024", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7823", 128, TRUE);
 	OutputLine(NULL, "　親が見たって見分けがつかねぇくれえに殺っちまってんだぞ馬鹿野郎ッ！！！」",
 		   NULL, "Même ses parents le reconnaîtraient pas, couillons de la lune !", Line_Normal);
 	ClearMessage();
@@ -639,7 +639,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1025", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7824", 128, TRUE);
 	OutputLine(NULL, "「どうしようもねぇのは、おんどれの頭じゃいボケぇッ！！！」",
 		   NULL, "— Mais c'est contre ta connerie qu'y faut trouver quétchose, couillon de la lune !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -656,34 +656,34 @@
 	PlayBGM( 3, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1026", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7825", 128, TRUE);
 	OutputLine(NULL, "「いいかボケども？！",
 		   NULL, "— Écoutez-moi bien, bande de moules !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1027", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7826", 128, TRUE);
 	OutputLine(NULL, "　俺たちゃな、殺人犯なんだ殺人犯！！",
 		   NULL, "On sera accusés de meurtre, vous m'entendez, de meurtre !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1028", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7827", 128, TRUE);
 	OutputLine(NULL, "　グズグズ言ってりゃ、５年６年食らい込まれちまうんだよッ！！",
 		   NULL, "Ouvrez votre clapet et vous en prendrez facile pour 5 ou 6 ans !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1029", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7828", 128, TRUE);
 	OutputLine(NULL, "　俺らン中にひとり裏切り者がおってみろ！！",
 		   NULL, "Si jamais un seul d'entre nous ouvre sa schneuss,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1030", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7829", 128, TRUE);
 	OutputLine(NULL, "　全員が捕まっちまうんだよッ！！",
 		   NULL, "on est bon pour aller tous au turbin !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1031", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7830", 128, TRUE);
 	OutputLine(NULL, "　懲役を舐めんな？",
 		   NULL, "Et croyez pas que la prison, c'est de la rigolade, hein ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1032", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7831", 128, TRUE);
 	OutputLine(NULL, "　どうせ捕まる覚悟だっちゅうんなら、死ぬ気で逃げまくってやるんだ！！",
 		   NULL, "Je vous conseille de fuir et d'y mettre le paquet, parce que croyez-moi, vous ne voulez pas vous faire choper !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1033", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7832", 128, TRUE);
 	OutputLine(NULL, "　年貢の納め時になったら好きなだけ覚悟決めりゃええんだ！！」",
 		   NULL, " Vous n'avez qu'à vous dénoncer à la police quand il y aura prescription !", Line_Normal);
 	ClearMessage();
@@ -761,23 +761,23 @@
 	PlayBGM( 0, "higurashi_soundscape", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1034", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7833", 128, TRUE);
 	OutputLine(NULL, "「…そうだ。",
 		   NULL, "— Ah, j'ai une idée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1035", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7834", 128, TRUE);
 	OutputLine(NULL, "…………裏切り者を出さんためにな。",
 		   NULL, "... Oui, je crois que j'ai trouvé un moyen", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1036", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7835", 128, TRUE);
 	OutputLine(NULL, "いいこと思いついたわ。",
 		   NULL, "pour être sûr qu'il n'y ait pas de traître parmi nous.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1037", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7836", 128, TRUE);
 	OutputLine(NULL, "…へっへっへ。",
 		   NULL, "Ahahahaha...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1038", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7837", 128, TRUE);
 	OutputLine(NULL, "死体も隠しやすくなって一石二鳥だぞ…。」",
 		   NULL, "Et en plus, on cachera le corps plus facilement, comme ça, ça fait d'une pierre deux coups...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -791,11 +791,13 @@
 	DrawScene( "background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1039", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7838", 128, TRUE);
 	OutputLine(NULL, "「へっへっへ…。",
 		   NULL, "— Héhéhé,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8i7839", 128, TRUE);
 	OutputLine(NULL, "この野郎の死体をな。",
 		   NULL, " vous voyez ce corps ?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8i7840", 128, TRUE);
 	OutputLine(NULL, "………みんなで仲良く、この人数で割り算するんだ。」",
 		   NULL, " Eh ben on va... le découper, on est six, ben on fera six morceaux...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -826,36 +828,37 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8i7841", 128, TRUE);
 	OutputLine(NULL, "「全員でバラすんだ。",
 		   NULL, "— On va le couper en morceaux, ce corps.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1043", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7842", 128, TRUE);
 	OutputLine(NULL, "この野郎が日頃言ってンだろ。",
 		   NULL, "Il nous le répétait assez souvent, non ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1044", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7843", 128, TRUE);
 	OutputLine(NULL, "共同作業だよ。",
 		   NULL, "“C'est un travail d'équipe”.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1045", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7844", 128, TRUE);
 	OutputLine(NULL, "全員、共犯だ。",
 		   NULL, "Eh ben maintenant, on est tous dans la même équipe de tueurs.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1046", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7845", 128, TRUE);
 	OutputLine(NULL, "それで、バラした部品は各自が責任を持って隠すんだ。",
 		   NULL, "Alors chacun va découper un morceau et aura la responsabilité de le cacher,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1047", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7846", 128, TRUE);
 	OutputLine(NULL, "………な？",
 		   NULL, "et bien, hein ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Ouvrier</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1048", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7847", 128, TRUE);
 	OutputLine(NULL, "　これなら全員仲良く主犯だろ？",
 		   NULL, "Comme ça, on sera tous de manière égale dans la merde.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1049", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7848", 128, TRUE);
 	OutputLine(NULL, "　へっへっへ、自分だけ罪が軽いから自首しようなんてズル抜けは許さねぇってわけさ。",
 		   NULL, " Ahaha… Ça évitera qu'il y en ait un qui se dise qu'il a des chances de s'en sortir avec un sursis...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1050", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8i7849", 128, TRUE);
 	OutputLine(NULL, "…へへへへへへ！」",
 		   NULL, " Ahahahahahaha !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

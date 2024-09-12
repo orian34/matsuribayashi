@@ -1603,13 +1603,13 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000001", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7000", 128, TRUE);
 	OutputLine(NULL, "「初めまして先生。",
 		   NULL, "— Bonjour, Professeur, ravi de vous rencontrer.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000002", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7001", 128, TRUE);
 	OutputLine(NULL, "そして初めましてお嬢さん。",
 		   NULL, " Bonjour, Mademoiselle.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000003", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7002", 128, TRUE);
 	OutputLine(NULL, "いえ、お孫さんですかな？」",
 		   NULL, " Ah, c'est votre petite-fille ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1633,16 +1633,16 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000004", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7003", 128, TRUE);
 	OutputLine(NULL, "「賢そうな子ですね。",
 		   NULL, "— Elle a l'air très intelligente, en tout cas.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000005", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7004", 128, TRUE);
 	OutputLine(NULL, "……本日は小泉先生の代理で参りました。",
 		   NULL, " Je suis venu aujourd'hui en lieu et nom de Maître Koizumi.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000006", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7005", 128, TRUE);
 	OutputLine(NULL, "小泉先生は急な用事が入ってしまい本日は出席をすることができなくなってしまいました。",
 		   NULL, " Il a reçu une mission urgente et ne pourra pas venir.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000007", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7006", 128, TRUE);
 	OutputLine(NULL, "そのことを大変残念がっておりました。」",
 		   NULL, " Il en était très déçu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1670,18 +1670,19 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000008", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7007", 128, TRUE);
 	OutputLine(NULL, "「皆さん、ご紹介いたします。",
 		   NULL, "— Eh bien, Messieurs, laissez-moi faire les présentations.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000009", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7008", 128, TRUE);
 	OutputLine(NULL, "こちらは高野一二三先生です。",
 		   NULL, "Voici le professeur Hifumi Takano.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000010", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7009", 128, TRUE);
 	OutputLine(NULL, "高野先生は戦時中、満州の防疫研究所におられ、伝染病予防分野の第一人者として活躍されておりました。",
 		   NULL, "Pendant la guerre, il était stationné en Mandchourie, au centre médical de dépistage. Il était le chef du département d'épidémiologie. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8h7010", 128, TRUE);
 	OutputLine(NULL, "また、戦地での栄養失調、食糧難対策として、合成食品や合成酒の研究に特に顕著な功績を残されました。」",
 		   NULL, "Il a aussi cherché comment pallier le manque de nourriture et aux carences des soldats envoyés sur le front. Nous lui devons l'invention de plusieurs des repas et boissons aujourd'hui utilisés dans les rations militaires.", Line_Normal);
 	ClearMessage();
@@ -1849,7 +1850,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000011", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7011", 128, TRUE);
 	OutputLine(NULL, "「……それが、喉を自ら掻き毟る自傷行為だと仰るのですね？」",
 		   NULL, "— ... Cette fameuse crise aiguë qui mène le patient à s'arracher la carotide, donc ?", Line_Normal);
 	ClearMessage();
@@ -2062,22 +2063,22 @@
 	DrawSceneWithMask( "background/xta1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000012", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7012", 128, TRUE);
 	OutputLine(NULL, "「雛見沢という村が閉鎖的文化から独自の信仰を生み出したこと自体は、そう不思議には思いません。",
 		   NULL, "— Je ne suis pas surpris outre mesure de constater l'apparition et le développement d'un culte très particulier à Hinamizawa,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000013", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7013", 128, TRUE);
 	OutputLine(NULL, "日本各地に散見するよくあるケースです。",
 		   NULL, "après tout, chaque région a son propre folklore.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000014", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7014", 128, TRUE);
 	OutputLine(NULL, "だとしたら、日本中のそれらの文化は全て寄生虫によるものなのですか？",
 		   NULL, "Mais si l'on poursuit votre ordre d'idée, cela voudrait dire que chaque culte serait lié à un parasite différent, c'est ça ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000015", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7015", 128, TRUE);
 	OutputLine(NULL, "　それらは文化的なものであって、雛見沢の件に限っては寄生虫によるもの。",
 		   NULL, "Comment voulez-vous prouver la distinction entre une évolution culturelle et le cas de Hinamizawa ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000016", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7016", 128, TRUE);
 	OutputLine(NULL, "その区別をどう立証されたのですか。」",
 		   NULL, " Quel élément vous permet de faire ces affirmations ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2152,23 +2153,24 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000017", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7017", 128, TRUE);
 	OutputLine(NULL, "「出身者が祟りだと了解する行為は、どちらかというと文化依存症候群の範疇です。",
 		   NULL, "— Le fait de reconnaître dans certains actes le signe d'une malédiction relève d'un syndrome lié à la culture.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000018", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7018", 128, TRUE);
 	OutputLine(NULL, "それに対し、寄生虫妄想症を重ねられることは、",
 		   NULL, " Mais y rajouter encore la couche du délire de parasitose... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000019", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7019", 128, TRUE);
 	OutputLine(NULL, "…失礼だが、高野先生はユニークな雛見沢の信仰に心酔し、",
-		   NULL, "Je crois malheureusement que tout simplement, vous avez été tellement fasciné par Hinamizawa et sa culture", Line_Continue);
+		   NULL, "Je crois malheureusement que tout simplement, vous avez été tellement fasciné par Hinamizawa et sa culture", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8h7020", 128, TRUE);
 	OutputLine(NULL, "その結果、ご自身が文化依存症候群に取り込まれてしまっているのではないかと考えます。",
 		   NULL, " que cela vous a rendu vous-même victime de ce syndrome lié à la culture. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000020", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7021", 128, TRUE);
 	OutputLine(NULL, "いえいえ、神秘的分野を研究する人間にはよくありえることですよ。",
 		   NULL, "Il ne faut pas trop vous en vouloir, cela arrive fréquemment --", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000021", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7022", 128, TRUE);
 	OutputLine(NULL, "我々も日々、気をつけています。」",
 		   NULL, " même nous, nous sommes obligés de faire attention pour ne pas sombrer dans ce travers.", Line_Normal);
 	ClearMessage();
@@ -2216,17 +2218,18 @@
 	DrawSceneWithMask( "background/xta2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000022", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7023", 128, TRUE);
 	OutputLine(NULL, "「ただ、どんな発見も最初は理解されないものです。",
 		   NULL, "— Mais restons positifs : chaque découverte commence toujours par se heurter au scepticisme des autres.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000023", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7024", 128, TRUE);
 	OutputLine(NULL, "高野先生の研究もその内のひとつでないかと考えます。",
 		   NULL, "Et vos recherches ne font pas exception à cette règle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000024", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7025", 128, TRUE);
 	OutputLine(NULL, "当時、どんなに馬鹿馬鹿しいと思われていた研究でも、",
-		   NULL, "Certaines recherches étaient considérées comme des inepties avant la découverte de preuves irréfutables, et ce n'est qu'après-coup que les honneurs purent être rendus à qui de droit.", Line_Continue);
+		   NULL, "Certaines recherches étaient considérées comme des inepties avant la découverte de preuves irréfutables, et ce n'est qu'après-coup que les honneurs purent être rendus à qui de droit.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8h7026", 128, TRUE);
 	OutputLine(NULL, "その後、真実が解き明かされ、評価を改められるというのも、これまたよくある話です。」",
 		   NULL, " Cela arrive fréquemment.", Line_Normal);
 	ClearMessage();
@@ -2236,7 +2239,7 @@
 	PlayBGM( 0, "T2", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/550200187", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/s13/00/550200186_org", 128, TRUE);
 	OutputLine(NULL, "「……わ、……私は皆さんに比べれば素人です。",
 		   NULL, "— ... Je ne suis qu'un simple amateur comparé à vous, Messieurs.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2288,11 +2291,11 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000025", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7027", 128, TRUE);
 	OutputLine(NULL, "「その話の壮大さはとてもユニークです。",
 		   NULL, "— En tout cas, vous voyez les choses en grand, ça aussi c'est quand même quelque chose.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000026", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7028", 128, TRUE);
 	OutputLine(NULL, "高野先生は、我々のような人間にひっそりと論文を読ませるより、それで本を書かれて一般大衆に発表された方がよろしいでしょうな。」",
 		   NULL, "Monsieur Takano, plutôt que de nous envoyer vos écrits à nous, éminents professeurs, vous devriez l'envoyer à une maison d'édition, je suis sûr que vous feriez fortune !", Line_Normal);
 	ClearMessage();
@@ -2407,13 +2410,13 @@
 	DrawScene( "background/tk_ryou1", 3000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000027", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7029", 128, TRUE);
 	OutputLine(NULL, "「はい。",
 		   NULL, "— Oui, vraiment.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000028", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7030", 128, TRUE);
 	OutputLine(NULL, "非常に興味深い研究だと思っとります。",
 		   NULL, " C'est une étude qui m'intéresse au plus haut point.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000029", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7031", 128, TRUE);
 	OutputLine(NULL, "脳はまだまだ未知の領域です。」",
 		   NULL, " Vous savez, le cerveau est encore un domaine très peu exploré par la Science.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2460,17 +2463,17 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000030", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7032", 128, TRUE);
 	OutputLine(NULL, "「次世代に残すべきでない劣悪な人間が、",
 		   NULL, "— Si jamais l'on découvre que les fous, les malades mentaux, les criminels et les esprits haineux le sont du fait d'une infection, ", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000031", 128, TRUE);
-	OutputLine(NULL, "もし遺伝子によるものでなく、感染症によるものであると解明できたなら、外科的手段によって更生が可能になるということになる。",
+	ModPlayVoiceLS(4, 0, "org/mob8h7033", 128, TRUE);
+	OutputLine(NULL, "もし遺伝子によるものでなく、感染症によるものであると解明できたなら、外科的手段によって更生が可能だということになる。",
 		   NULL, "alors nous pourrons les traiter comme des patients “normaux”, avec un acte chirurgical. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000032", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7034", 128, TRUE);
 	OutputLine(NULL, "結果、我が国は未来に素晴らしい人間を残すことができるでしょう。",
 		   NULL, "Cela pourrait être très bénéfique pour les générations futures.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000033", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7035", 128, TRUE);
 	OutputLine(NULL, "優生学的見地から、高野氏の研究は早急に取り組まれるべきです。」",
 		   NULL, " En tant qu'eugéniste confirmé, je suis convaincu que les recherches de M. Takano doivent être conduites le plus rapidement possible.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2486,7 +2489,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000034", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7036", 128, TRUE);
 	OutputLine(NULL, "「小泉先生、この度の貴重な機会に深く感謝いたします。」",
 		   NULL, "— Maître Koizumi, c'est vraiment une chance formidable pour nous, nous vous en serons éternellement reconnaissants.", Line_Normal);
 	ClearMessage();
@@ -2784,10 +2787,10 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrate</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000035", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7037", 128, TRUE);
 	OutputLine(NULL, "「同感です。",
 		   NULL, "— Oui,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/552000036", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8h7038", 128, TRUE);
 	OutputLine(NULL, "こんな書斎に、ホルマリンの瓶を並べていても不健康なだけですな。」",
 		   NULL, " et puis, ce sera toujours mieux que de vivre au milieu de tout ce formol.", Line_Normal);
 	ClearMessage();
@@ -5082,6 +5085,8 @@
 	ClearMessage();
 
 	DrawScene( "scene/402a", 400 );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 12, "sprite/ha1_muhyou_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>少女</color>", NULL, "<color=#6972c1>Fille</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/550600005", 128, TRUE);
@@ -5143,6 +5148,8 @@
 	DrawBustshot(3, "scene/402b", 540, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 	MoveBustshot( 3, NULL, 0, 0, 0, 20, 250, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 12, "sprite/ha1_def2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 	Wait( 100 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>少女</color>", NULL, "<color=#6972c1>Fille</color>", NULL, Line_ContinueAfterTyping); }
@@ -5191,6 +5198,8 @@
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 12, "sprite/ha1_muhyou_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 	PlayBGM( 1, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>少女</color>", NULL, "<color=#6972c1>Fille</color>", NULL, Line_ContinueAfterTyping); }

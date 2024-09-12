@@ -5,7 +5,7 @@
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 1, "Rain", 120, 0 );
-	ModPlayBGM( 2, "Rain", 120, 0, 0 );
+
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -107,7 +107,7 @@
 	FadeOutBGM( 3, 400, FALSE );
 	DrawScene( "background/ymo3_01", 400 );
 	ModPlayBGM( 1, "Rain", 120, 0, 0 );
-	ModPlayBGM( 2, "Rain", 120, 0, 0 );
+
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……だから、私は絶対に慈愛の家に辿り着かなくてはならないのだ…。",
@@ -561,7 +561,7 @@
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 	PlayBGM( 1, "Rain", 120, 0 );
-	ModPlayBGM( 2, "Rain", 120, 0, 0 );
+
 	DrawSceneWithMask( "background/mo4_04", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -837,7 +837,7 @@
 	OutputLine(NULL, "　どうして私がこんな目に遭わなくちゃならないの？！",
 		   NULL, "Qu'est-ce que je t'ai fait pour mériter ça, hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efd4a3>美代子</color>", NULL, "<color=#efd4a3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600638", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s13/48/550100061", 128, TRUE);
 	OutputLine(NULL, "　私が何をしたの？",
 		   NULL, "Qu'est-ce que j'ai fait ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efd4a3>美代子</color>", NULL, "<color=#efd4a3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -871,6 +871,7 @@
 	ClearMessage();
 
 	DrawScene( "scene/401a", 400 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/ymo3_01", 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　天を仰いでも、私の顔面を冷たく大粒の雨が叩きつけるだけだ。",
@@ -906,6 +907,9 @@
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	DrawScene( "scene/401c", 100 );
 	DrawScene( "scene/401a", 600 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("white", 50 );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 100 );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/ymo3_01", 600 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　天にごろごろと雷鳴が轟いた。",
@@ -973,6 +977,9 @@
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	DrawScene( "scene/401d", 100 );
 	DrawScene( "scene/401b", 600 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("white", 50 );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 100 );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/ymo3_01", 600 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　天は再び相槌を打つ。",
@@ -1040,6 +1047,9 @@
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	DrawScene( "scene/401d", 100 );
 	DrawScene( "scene/401b", 500 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("white", 50 );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 100 );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/ymo3_01", 600 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　天はもう一度、唸り声をあげる。",
@@ -1295,7 +1305,7 @@
 	ClearMessage();
 
 	ModPlayBGM( 1, "Rain", 120, 0, 0 );
-	ModPlayBGM( 2, "Rain", 120, 0, 0 );
+
 	ModSetLayerFilter(1, 256, "night");
 	ModDrawCharacter(1, 48, "sprite/miyo3_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/ymo3_01", 1000 );
@@ -2078,12 +2088,9 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efd4a3>美代子</color>", NULL, "<color=#efd4a3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100051", 128, TRUE);
-	OutputLine(NULL, "「お父さん、",
-		   NULL, "— Papa,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100052", 128, TRUE);
-	OutputLine(NULL, "お父さんお父さんお父さん！！！」",
-		   NULL, " Papa ! Papa ! PAPAaaa !", Line_Normal);
+	ModPlayVoiceLS(4, 48, "org/s13/48/550100051_org", 128, TRUE);
+	OutputLine(NULL, "「お父さん、お父さんお父さんお父さん！！！」",
+		   NULL, "— Papa, Papa ! Papa ! PAPAaaa !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -2531,12 +2538,9 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efd4a3>美代子</color>", NULL, "<color=#efd4a3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100105", 128, TRUE);
-	OutputLine(NULL, "「あの、",
-		   NULL, "— Euh,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100106", 128, TRUE);
-	OutputLine(NULL, "私の父に高野先生に電話しろって言われたんです。",
-		   NULL, " mon père m'a dit d'appeler le professeur Takano.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 48, "org/s13/48/550100105_org", 128, TRUE);
+	OutputLine(NULL, "「あの、私の父に高野先生に電話しろって言われたんです。",
+		   NULL, "— Euh, mon père m'a dit d'appeler le professeur Takano.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100107", 128, TRUE);
 	OutputLine(NULL, "父は、田無武光と言います。」",
 		   NULL, " Mon père s'appelait Takemitsu Tanashi.", GetGlobalFlag(GLinemodeSp));
@@ -2654,24 +2658,15 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/550200102", 128, TRUE);
-	OutputLine(NULL, "「それで、",
-		   NULL, "— Et donc,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/550200103", 128, TRUE);
-	OutputLine(NULL, "田無くんは私に何と…？」",
-		   NULL, " que me voulait-il ?", GetGlobalFlag(GLinemodeSp));
+	ModPlayVoiceLS(4, 0, "org/s13/00/550200102_org", 128, TRUE);
+	OutputLine(NULL, "「それで、田無くんは私に何と…？」",
+		   NULL, "— Et donc, que me voulait-il ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efd4a3>美代子</color>", NULL, "<color=#efd4a3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100113", 128, TRUE);
-	OutputLine(NULL, "「あの、",
-		   NULL, "— Euh,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100114", 128, TRUE);
-	OutputLine(NULL, "…えっと、",
-		   NULL, " eh bien...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100115", 128, TRUE);
-	OutputLine(NULL, "……、」",
-		   NULL, "…", GetGlobalFlag(GLinemodeSp));
+	ModPlayVoiceLS(4, 48, "org/s13/48/550100113_org", 128, TRUE);
+	OutputLine(NULL, "「あの、…えっと、……、」",
+		   NULL, "— Euh, eh bien...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2870,7 +2865,7 @@
 	PlaySE( 0, "s_M_Door8k", 128, 64 );
 	DrawScene( "white", 100 );
 	PlayBGM( 1, "Rain", 120, 0 );
-	ModPlayBGM( 2, "Rain", 120, 0, 0 );
+
 	ModDrawCharacter(1, 48, "sprite/miyo3_komari_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/ymo3_01", 400 );
 
@@ -3171,7 +3166,7 @@
 	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
 	PlayBGM( 1, "Rain", 120, 0 );
-	ModPlayBGM( 2, "Rain", 120, 0, 0 );
+
 	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3362,7 +3357,7 @@
 	ClearMessage();
 
 	PlayBGM( 1, "Rain", 120, 0 );
-	ModPlayBGM( 2, "Rain", 120, 0, 0 );
+
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　両脇の職員は、私を二度と逃がさないというのを握力で示すかのように、私の両肩を握り締めていた。",
@@ -3865,13 +3860,17 @@
 	FadeFilm( 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>職員</color>", NULL, "<color=#f5e6d3>Surveillant</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/shokuin7002", 128, TRUE);
 	OutputLine(NULL, "「田無。",
 		   NULL, "— Tanashi...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/shokuin7003", 128, TRUE);
 	OutputLine(NULL, "これは施設のルールを守らない悪い子へのお仕置きなんだからな？",
 		   NULL, " Ça, c'est une punition trèèès spéciale, juste pour les petites filles pas sages qui ont enfreint le règlement.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/shokuin7004", 128, TRUE);
 	OutputLine(NULL, "　みんなちゃんとルールに沿って生活してる。",
 		   NULL, " Mais après tout, c'est normal. Tant que tu respectes le règlement, tout va bien.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>職員</color>", NULL, "<color=#f5e6d3>Surveillant</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/shokuin7005", 128, TRUE);
 	OutputLine(NULL, "それを守らなかったらお仕置きを受けなきゃならないのが法治国家のルールなんだからな…？」",
 		   NULL, "Mais si tu triches, il faut te punir, c'est la loi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

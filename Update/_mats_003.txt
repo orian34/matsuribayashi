@@ -188,11 +188,14 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7000", 128, TRUE);
 	OutputLine(NULL, "「大体ですね、自分の国の国旗に敬意を示すなという教育をしている国が、世界中のどこにあるというんですか！！",
 		   NULL, "— Et puis d'abord, vous en connaissez beaucoup, vous, des pays qui interdisent à leurs citoyens de rendre honneur à leur drapeau ?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8a7001", 128, TRUE);
 	OutputLine(NULL, "　ないよ、そんな国はどこにもない！",
 		   NULL, " Il n'y en a aucun, aucun, vous m'entendez ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7002", 128, TRUE);
 	OutputLine(NULL, "　日本だけなんです、そんなおかしい教育をしているのは！！」",
 		   NULL, "Aucun, sauf le Japon ! Nous sommes les seuls à proscrire la fierté nationale à travers notre système d'éducation !", Line_Normal);
 	ClearMessage();
@@ -201,6 +204,9 @@
 	StartShakingOfAllObjects( 241, 40, 0, 2, 5*2, FALSE );
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>客人たち</color>", NULL, "<color=#f5e6d3>Invités</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8b7000", 128, TRUE);
+	ModPlayVoiceLS(5, 0, "org/mob8c7000", 128, TRUE);
+	ModPlayVoiceLS(6, 0, "org/mob8d7000", 128, TRUE);
 	OutputLine(NULL, "「「「そうだそうだッ！！」」」",
 		   NULL, "— Il a raison, c'est n'importe quoi !", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -209,59 +215,75 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_gmema1005", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8a7003", 128, TRUE);
 	OutputLine(NULL, "「国旗や国歌を強制されることは心の自由への強制？",
 		   NULL, "— On entend dire que l'apprentissage obligatoire à l'école de l'hymne national est une contrainte imposée à la liberté de jugement ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_gmema1006", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8a7004", 128, TRUE);
 	OutputLine(NULL, "　馬鹿言っちゃいけない！",
 		   NULL, "Arrêtons donc ces idioties !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_gmema1007", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob8a7005", 128, TRUE);
 	OutputLine(NULL, "　いいですか、国旗や国歌を愛するというのはですね、自然に沸いてくるもんなんです。",
 		   NULL, "L'amour du drapeau et de la patrie est quelque chose qui vient tout naturellement ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7006", 128, TRUE);
 	OutputLine(NULL, "自分を知り、郷土を知り、歴史や国家を学ぶ。",
 		   NULL, "On commence par apprendre qui l'on est, puis où l'on vit, puis l'histoire et les institutions de son pays. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7007", 128, TRUE);
 	OutputLine(NULL, "そうしていく中で自然に自らが日本人であることを自覚していき、日本社会の一員を担う国民としての役割を理解していく。",
 		   NULL, "Et ce faisant, on se rend compte progressivement de son identité en tant que japonais, on apprend le rôle que l'on doit jouer, en tant que membre de ce groupe et de la société. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7008", 128, TRUE);
 	OutputLine(NULL, "その結果、自然と沸いてくるのが国を愛するという心なんです！！",
 		   NULL, "Et l'on finit tout naturellement par aimer son pays !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7009", 128, TRUE);
 	OutputLine(NULL, "　ところが反日教師どもは、それを軍国主義の洗脳だと、こう言っている。",
 		   NULL, "Mais les enseignants anti-nationalistes veulent nous faire croire que c'est du lavage de cerveau, de la propagande militaire !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8a7010", 128, TRUE);
 	OutputLine(NULL, "馬鹿言っちゃいけない！！",
 		   NULL, " Alors, je vous le redis, arrêtons donc ces idioties !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8a7011", 128, TRUE);
 	OutputLine(NULL, "　そう言ってる連中がやってることはなんですか？！",
 		   NULL, " À quoi jouent-ils, ces gens ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7012", 128, TRUE);
 	OutputLine(NULL, "　これから日本を背負っていく子供たちに反日妄想をすり込み、自虐教育で洗脳している！",
 		   NULL, "Je vais vous le dire, moi, ils rendent nos enfants masochistes, à leur inculquer des valeurs anti-japonaises ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7013", 128, TRUE);
 	OutputLine(NULL, "　日本は恥ずべき国で、貴様らはその国に生まれた恥ずべき人間であるとッ！",
 		   NULL, "Ils leur apprennent que le Japon est un pays honteux, et qu'ils devraient avoir honte d'être nés ici !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8a7014", 128, TRUE);
 	OutputLine(NULL, "　国家を蔑ろにし自分の生まれた国を否定せよと！！",
 		   NULL, " Ils leur apprennent à renier la Nation et à se moquer de l'État !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8a7015", 128, TRUE);
 	OutputLine(NULL, "　そんなことを吹き込んでいるわけです！",
 		   NULL, " Non mais vous imaginez ces pauvres enfants innocents ?", GetGlobalFlag(GLinemodeSp));
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7016", 128, TRUE);
 	OutputLine(NULL, "　無垢な子供たちはそれをそのまま鵜呑みにし、何の裏付けもなく信じてしまう。",
 		   NULL, "Bien sûr qu'ils croient ce que leurs professeurs leur disent !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8a7017", 128, TRUE);
 	OutputLine(NULL, "そりゃ当り前です！",
 		   NULL, " C'est une évidence !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8a7018", 128, TRUE);
 	OutputLine(NULL, "　学校は学ぶところなんですよ？",
 		   NULL, " L'école est un lieu où l'on apprend la vérité sur les choses et sur le monde,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7019", 128, TRUE);
 	OutputLine(NULL, "　そこで教師がそうだと教えれば、子供たちは何の疑いもなく信じるんです。",
 		   NULL, "donc si les enseignants leur disent une chose, ils ne la remettront pas en question ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7020", 128, TRUE);
 	OutputLine(NULL, "こんな卑劣な話がありますかッ？！",
 		   NULL, "C'est un scandale !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8a7021", 128, TRUE);
 	OutputLine(NULL, "　今こそ、日本の教育を私たちは体を張って守らなければならない時なのですッ！！」",
 		   NULL, " Il nous faut protéger l'Éducation Nationale, maintenant, ici, aujourd'hui ! Il nous faut nous impliquer dans ce combat pour sauver ce qui peut l'être !", Line_Normal);
 	ClearMessage();
@@ -304,60 +326,77 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7022", 128, TRUE);
 	OutputLine(NULL, "「憂国の同志、○○○○君を皆さんにご紹介いたします！！",
 		   NULL, "— Mes amis, mes camarades ! Je tenais à vous présenter ce soir ce jeune homme, il m'est très sympathique, il s'appelle ***** ********. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7023", 128, TRUE);
 	OutputLine(NULL, "　彼、○○君は、長年、前知事の下で知事室長を勤め、その懐刀として長いこと××県政を支えて参りました。",
 		   NULL, "Il a travaillé plusieurs années en tant qu'homme fort de l'équipe du précédent préfet. Et ce n'est pas tout, ***** a aussi veillé pendant longtemps sur la préfecture à d'autres postes. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7024", 128, TRUE);
 	OutputLine(NULL, "この度、前知事が高齢により勇退を決意され、その後任として指名されたのが、ここにいる○○君なのであります！！」",
 		   NULL, "Le préfet devant prendre sa retraite, il a désigné son successeur, et devinez qui c'est ? C'est lui, ***** ******** !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>為政家</color>", NULL, "<color=#f5e6d3>Politicien</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8e7000", 128, TRUE);
 	OutputLine(NULL, "「私の県にも、実に悔しいことに反日教師が何人もおります！",
 		   NULL, "— Dans ma préfecture aussi, j'ai affaire à ce genre de professeurs anti-nationalistes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>為政家</color>", NULL, "<color=#f5e6d3>Politicien</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8e7001", 128, TRUE);
 	OutputLine(NULL, "　教育の自由、心の自由などと宣いながら、子供たちに反日教育をしゃあしゃあと強いている！！",
 		   NULL, "Ils parlent de la liberté d'éducation, de la liberté de penser, mais ça ne les empêche pas de bourrer le mou de notre progéniture avec leurs idées ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>為政家</color>", NULL, "<color=#f5e6d3>Politicien</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8e7002", 128, TRUE);
 	OutputLine(NULL, "　正しい歴史を伝えず、連中お得意の捏造と歪曲で、日本は悪かったの一点張り！",
 		   NULL, "Ils ne leur enseignent pas l'Histoire telle qu'elle s'est déroulée, mais une version romancée qui nous place en malfaiteurs ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>為政家</color>", NULL, "<color=#f5e6d3>Politicien</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8e7003", 128, TRUE);
 	OutputLine(NULL, "　大東亜共栄圏の真の意味や、アジアを白人支配から解放しようとアジア各国のために血を流してくださった勇士たちのことは伝えようともしない！",
 		   NULL, "Ils n'ont cure des raisons qui ont poussé notre nation à œuvrer pour une grande Asie, au sang que nous et nos frères avons versé pour libérer nos pays de l'influence, que dis-je, du joug de l'homme blanc !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>為政家</color>", NULL, "<color=#f5e6d3>Politicien</color>", "<size=-4>", Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8e7004", 128, TRUE);
 	OutputLine(NULL, "　戦前、どれだけのアジアの国が白人植民地であったか、そして日本がアジア開放に立ち上がり、戦後、どれだけの国が自治を回復したか、その意味すらも伝えようともしない！！",
 		   NULL, "Ils ne reconnaissent même pas l'immigration massive de l'homme blanc, que l'Asie dut subir dans les années d'avant-guerre ! Ils ne reconnaissent pas les efforts consentis par le Japon pour redynamiser l'Asie, et ils n'ont même pas la décence de reconnaître que de nombreux pays purent enfin retrouver le contrôle de leurs administrations après la guerre ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>為政家</color>", NULL, "<color=#f5e6d3>Politicien</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8e7005", 128, TRUE);
 	OutputLine(NULL, "　情けない！！",
 		   NULL, "C'est une honte, parfaitement, une HONTE !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>為政家</color>", NULL, "<color=#f5e6d3>Politicien</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8e7006", 128, TRUE);
 	OutputLine(NULL, "　そんな連中が、真剣に教育を考える教師たちの中に混じり込み、神聖な学舎を汚し続けていることには、もう我慢がなりませんッ！！",
 		   NULL, "Et ces brebis galeuses se mêlent aux autres professeurs de notre pays, ceux qui font leur travail avec sérieux, et ils gâchent tout, ils ternissent l'image de l'école, ils souillent sa réputation et sa fonction sacrée ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>為政家</color>", NULL, "<color=#f5e6d3>Politicien</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8e7007", 128, TRUE);
 	OutputLine(NULL, "　私、○○○○は××県知事に就任し、そういった屑どもを全て追放しッ！",
 		   NULL, "Moi, ***** ********, je vous promets que dès mon entrée en fonction, je m'occuperai personnellement de sortir cette vermine de nos administrations !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>為政家</color>", NULL, "<color=#f5e6d3>Politicien</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8e7008", 128, TRUE);
 	OutputLine(NULL, "　××県の教育を正しッ！",
 		   NULL, "Je remettrai de l'ordre dans les directives données aux écoles dans toute la préfecture de **** !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>為政家</color>", NULL, "<color=#f5e6d3>Politicien</color>", "<size=-4>", Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8e7009", 128, TRUE);
 	OutputLine(NULL, "　日本の将来を担うことができる健全な若者たちを育てることができる環境を取り戻すことで、日本再生百年の計の礎を築いていく覚悟でおりますッ！」",
 		   NULL, "Et je referai de l'école un lieu où les élèves pourront apprendre des choses saines qui leur permettront, plus tard, de porter eux aussi une part de notre nation sur leurs épaules ! Et je suis prêt à poser les bases pour la construction future de notre nation, pour la faire renaître, dussions-nous y passer tout un siècle !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Membre Senior</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8a7025", 128, TRUE);
 	OutputLine(NULL, "「彼、○○○○君は、来年の××県知事選挙に立候補いたします！",
 		   NULL, "— Il sera le prochain candidat aux élections de la préfecture de **** l'année prochaine !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8a7026", 128, TRUE);
 	OutputLine(NULL, "　どうか皆さん、温かい応援とみなぎるお力で、彼、○○○○君をどうか男にしてやってくださいッ！！」",
 		   NULL, " Mesdames et Messieurs, je vous en prie, laissez-lui une chance ! ***** ******** !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>為政家</color>", NULL, "<color=#f5e6d3>Politicien</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob8e7010", 128, TRUE);
 	OutputLine(NULL, "「○○○○ッ、日本の教育を正して参ります！！",
 		   NULL, "— Je vous promets de remettre de l'ordre dans le système éducatif de ce pays !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob8e7011", 128, TRUE);
 	OutputLine(NULL, "　どうかよろしくお願いいたします！！」",
 		   NULL, " J'espère que vous me jugerez digne de votre confiance !", Line_Normal);
 	ClearMessage();
@@ -1153,22 +1192,15 @@
 	OutputLine(NULL, "時代にも恵まれんかった…。",
 		   NULL, "Il est né à la mauvaise époque.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300016", 128, TRUE);
-	OutputLine(NULL, "もし、何もない時代に研究をしておったなら、",
-		   NULL, "S'il avait mené ses recherches dans une période moins troublée, ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300017", 128, TRUE);
-	OutputLine(NULL, "あんたに引き継がせることもなく、見事、研究を完成させておっただろうの〜…。」",
-		   NULL, "je pense qu'il aurait pu terminer ses recherches sans avoir à te forcer à prendre sa relève.", GetGlobalFlag(GLinemodeSp));
+	ModPlayVoiceLS(4, 0, "org/s13/00/550300016_org", 128, TRUE);
+	OutputLine(NULL, "もし、何もない時代に研究をしておったなら、あんたに引き継がせることもなく、見事、研究を完成させておっただろうの〜…。」",
+		   NULL, "S'il avait mené ses recherches dans une période moins troublée, je pense qu'il aurait pu terminer ses recherches sans avoir à te forcer à prendre sa relève.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500021", 128, TRUE);
-	OutputLine(NULL, "「ですが、そういう時代だったからこそ、",
-		   NULL, "— Et pourtant, c'est bien à cause de ces temps troublés", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500022", 128, TRUE);
-	OutputLine(NULL, "「皮肉にも祖父は雛見沢症候群の存在に気付くことができました。」",
-		   NULL, " que grand-père a découvert l'existence du syndrome de Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	ModPlayVoiceLS(4, 9, "org/s13/09/550500021_org", 128, TRUE);
+	OutputLine(NULL, "「ですが、そういう時代だったからこそ、皮肉にも祖父は雛見沢症候群の存在に気付くことができました。」",
+		   NULL, "— Et pourtant, c'est bien à cause de ces temps troublés que grand-père a découvert l'existence du syndrome de Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1404,7 +1436,7 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500029", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7000", 128, TRUE);
 	OutputLine(NULL, "「あら、たくさんの愛人たちに気前良くおごるのも御国へのご恩返しなんですの？」",
 		   NULL, "— Mais pourtant, quand ils se montrent généreux avec leurs maîtresses, ils font fonctionner l'économie du pays, non ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1738,12 +1770,9 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500037", 128, TRUE);
-	OutputLine(NULL, "「はい。祖父はその研究が軍にとって価値のあるものになるのではないかと予想し、",
-		   NULL, "— Oui, je sais. Grand-père pensait que ses recherches pouvaient avoir un intérêt militaire,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500038", 128, TRUE);
-	OutputLine(NULL, "予算を求めましたが一笑に伏されたとか。」",
-		   NULL, " il fit une demande pour obtenir des fonds, mais sa demande fut rejetée avec un simple sourire méprisant.", Line_Normal);
+	ModPlayVoiceLS(4, 9, "org/s13/09/550500037_org", 128, TRUE);
+	OutputLine(NULL, "「はい。祖父はその研究が軍にとって価値のあるものになるのではないかと予想し、予算を求めましたが一笑に伏されたとか。」",
+		   NULL, "— Oui, je sais. Grand-père pensait que ses recherches pouvaient avoir un intérêt militaire, il fit une demande pour obtenir des fonds, mais sa demande fut rejetée avec un simple sourire méprisant.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -1845,12 +1874,9 @@
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500041", 128, TRUE);
 	OutputLine(NULL, "「祖父の手記にも、先生が色々と各方面に掛け合ってくださったことが記されています。",
 		   NULL, "— Le journal de grand-père rapporte que vous avez fait des pieds et des mains.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500042", 128, TRUE);
-	OutputLine(NULL, "……結局、祖父の研究が認められることはありませんでしたが、",
-		   NULL, " En fin de compte, cela n'eut pas le succès escompté,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500043", 128, TRUE);
-	OutputLine(NULL, "先生だけが理解者でいてくれたことは、きっと存命中、大きな心の支えになっていたものと思います。」",
-		   NULL, " mais je pense que votre compréhension lui fut d'un grand soutien moral, de son vivant.", GetGlobalFlag(GLinemodeSp));
+	ModPlayVoiceLS(4, 9, "org/s13/09/550500042_org", 128, TRUE);
+	OutputLine(NULL, "……結局、祖父の研究が認められることはありませんでしたが、先生だけが理解者でいてくれたことは、きっと存命中、大きな心の支えになっていたものと思います。」",
+		   NULL, " En fin de compte, cela n'eut pas le succès escompté, mais je pense que votre compréhension lui fut d'un grand soutien moral, de son vivant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }

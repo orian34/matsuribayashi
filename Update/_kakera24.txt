@@ -275,19 +275,19 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1049", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi7800", 128, TRUE);
 	OutputLine(NULL, "「……当時、私ゃ闇米の取り締まりばかりやらされてましてね。",
 		   NULL, "— ... À l'époque, j'étais jeune, on m'avait affecté à la section de la contrebande.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1050", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi7801", 128, TRUE);
 	OutputLine(NULL, "鉄道主要駅で、旅客を抜き打ち検査するんですよ。",
 		   NULL, "Nous faisions des contrôles dans les gares principales, pour vérifier la provenance du riz.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1051", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi7802", 128, TRUE);
 	OutputLine(NULL, "そりゃあもうぞろぞろ引っ掛かりましたっけ。",
 		   NULL, "Qu'est-ce qu'on a pu en choper, des gens qui revenaient du marché noir... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1052", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi7803", 128, TRUE);
 	OutputLine(NULL, "穀倉の辺りはこの辺じゃかなりでかい闇市が立ちましたからね。大阪界隈からはるばる買いに来てる連中も大勢いましたよ。」",
 		   NULL, "Il faut dire qu'il y avait un gros centre à Gogura. Les mafieux venaient même depuis Ôsaka pour s'approvisionner.", Line_Normal);
 	ClearMessage();
@@ -354,13 +354,17 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi7804", 128, TRUE);
 	OutputLine(NULL, "「ありましたねぇ…。",
 		   NULL, "— Oui, c'est vrai...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi7805", 128, TRUE);
 	OutputLine(NULL, "闇米は一切食わないと公言した判事が餓死したのが、…昭和２２年でしたっけ？",
 		   NULL, " Il avait juré qu'il ne toucherait pas au riz du marché noir pour manger, et il en est mort de faim. C'était en quelle année, en 22 je crois...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi7806", 128, TRUE);
 	OutputLine(NULL, "　………酷い話でした。",
 		   NULL, " Non mais tu te rends compte ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi7807", 128, TRUE);
 	OutputLine(NULL, "法律に従ってたら生きていけないことを、法の番人である裁判官が自ら示したんですからねぇ…。」",
 		   NULL, "Il a fallu la mort d'un fonctionnaire de l'État pour prouver qu'en 1947, au Japon, on ne pouvait même pas manger pour survivre en restant dans la légalité...", Line_Normal);
 	ClearMessage();
@@ -404,22 +408,28 @@
 	DrawScene( "background/greyscale/sora", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi7808", 128, TRUE);
 	OutputLine(NULL, "「……米の袋を抱えた連中を、次々と引っ立てて、駅脇の臨時の検問所に並べましてね。",
 		   NULL, "— ... Je me souviens encore, on demandait à tous ceux qui avaient du riz de se mettre debout le long des quais, jusqu'à notre poste de contrôle.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi7809", 128, TRUE);
 	OutputLine(NULL, "まるで戦時法廷みたいな感じなんですよ。",
 		   NULL, " On aurait dit des tribunaux de guerre, je te jure. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi7810", 128, TRUE);
 	OutputLine(NULL, "次々ポンポンと没収してひっ捕らえていく感じです。",
 		   NULL, "Un coup de marteau pour la sentence, un coup de tampon sur le procès, et deux personnes pour reprendre le riz et jeter le coupable en prison.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1059", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi7811", 128, TRUE);
 	OutputLine(NULL, "……ご婦人方はみんな泣かれるんですよ。",
 		   NULL, "... Toutes les femmes finissaient par pleurer.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi7812", 128, TRUE);
 	OutputLine(NULL, "その米を買うために、彼らは家財を売り払ってるんです。",
 		   NULL, " Elles avaient vendu les meubles, parfois même leur corps.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi7813", 128, TRUE);
 	OutputLine(NULL, "それを没収されたら何も残らないと。",
 		   NULL, " Sans ce riz, elles n'avaient plus rien à donner à manger à leurs enfants. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi7814", 128, TRUE);
 	OutputLine(NULL, "どうやって飢えた子供たちを食わせればいいのかと。」",
 		   NULL, "Combien de fois nous ont-elles demandé ce qu'elles devaient faire...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -434,13 +444,17 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi7816", 128, TRUE);
 	OutputLine(NULL, "「皆さんも敏感でしてね。",
 		   NULL, "— Et puis, ils sont devenus méfiants, ils ont eu du flair.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi7817", 128, TRUE);
 	OutputLine(NULL, "駅で検問があるかもしれないと察知すると、途中で列車から飛び降りたりして逃れるんですよ。",
 		   NULL, " Ils sautaient du train en marche quand ils sentaient qu'il y aurait un contrôle à la gare. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi7818", 128, TRUE);
 	OutputLine(NULL, "…そういう連中も逃さんと、私たちは駅近くの、飛び降り名所に重点的に警官を配備してましてね。",
 		   NULL, "Alors nous avons eu l'ordre de rester aussi en poste près des voies, pour pouvoir leur courir après.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi7819", 128, TRUE);
 	OutputLine(NULL, "……何十キロもある米袋を抱えたご婦人をよく追っ掛けましたっけ。」",
 		   NULL, " ... T'imagines, un policier en forme poursuivre une femme affamée portant un sac de plusieurs kilos de riz sur le dos ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -451,16 +465,16 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1067", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi7820", 128, TRUE);
 	OutputLine(NULL, "「いやぁ…驚きましたよ。",
 		   NULL, "— Aaah là là, quelle surprise, je te jure.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1068", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi7821", 128, TRUE);
 	OutputLine(NULL, "…私の親父にね？",
 		   NULL, " Il ressemblait à mon père,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1069", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi7822", 128, TRUE);
 	OutputLine(NULL, "　あまりにもそっくりだったんですよ！",
 		   NULL, " mais comme deux gouttes d'eau !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1070", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi7823", 128, TRUE);
 	OutputLine(NULL, "　私ゃね、てっきり、親父は名古屋の空襲を奇跡的に生き延びて、帰ってきてくれたんじゃないかって本気で思いましたよ。」",
 		   NULL, " Au début, réellement, j'ai cru qu'il avait survécu par miracle au bombardement et qu'il était enfin revenu.", Line_Normal);
 	ClearMessage();

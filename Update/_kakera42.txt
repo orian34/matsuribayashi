@@ -1417,12 +1417,12 @@
 	OutputLine(NULL, "雛見沢症候群の神秘を探る、という抽象的な目的を掲げ、いつまでも達成できず、自らの人生に疑問を抱かざるを得なかったのです。",
 		   NULL, "Votre but était trop vague, c'est pour ça que vous ne pouviez pas l'atteindre, et c'est pour ça que vous vous posez des questions sur votre misérable existence. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>若い女性</color>", NULL, "<color=#f5e6d3>Jeune femme</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/441200027", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "org/s20/00/441200027a_org", 128, TRUE);
 	OutputLine(NULL, "……そうでしょう？",
 		   NULL, "... N'ai-je pas raison ?", Line_Continue);
 	OutputLine(NULL, "　ふふふ？",
-		   NULL, " Hmpfhfhfhfhf...", Line_Continue);
-	Wait( 3000 );
+		   NULL, " Hmpfhfhfhfhf...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/s20/00/441200027b_org", 128, TRUE);
 	OutputLine(NULL, "　そう、それは違う。",
 		   NULL, " Cela ne vous intéresse pas tant que ça que de découvrir tous les secrets du syndrome de Hinamizawa.", Line_Continue);
 	OutputLine(NULL, "貴女の真の目的、いや、夢はそんな抽象的なものじゃない。",

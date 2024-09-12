@@ -1841,6 +1841,7 @@
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DrawScene( "scene/sil5", 400 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/aka1", 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　蹴らないで、蹴らないで…！！",
@@ -2639,13 +2640,14 @@
 	ModDrawCharacterWithFiltering(0, 10, "sprite/iri2_majime_", "2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100251", 128, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie7002", 128, TRUE);
 	OutputLine(NULL, "「……そうですね。",
 		   NULL, "— ... Vous avez raison.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100252", 128, TRUE);
-	OutputLine(NULL, "……そうそう、山狗ですが、やはり赤坂さんが仰られるように動き出しているようです。",
+	ModPlayVoiceLS(4, 10, "org/irie7003", 128, TRUE);
+	OutputLine(NULL, "……そうそう、山狗ですが、やはり赤坂さんが仰ったように動き出しているようです。",
 		   NULL, " Au fait, j'ai parlé aux chiens de montagne, vous aviez raison. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", "<size=-4>", Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "org/irie7004", 128, TRUE);
 	OutputLine(NULL, "小此木さんに予定を聞いたところ、５年目の祟りに便乗した愉快犯が梨花ちゃんを狙う可能性を考慮して、祭りの前後に警護体制のレベルを上げた、というのです。」",
 		   NULL, "J'ai demandé l'air de rien les plans de l'équipe à Okonogi, et il m'a dit qu'au vu de la proximité de la fête, il pourrait tout à fait y avoir une nouvelle victime. Rika pouvant être attaquée par un fou à lier, il a décidé d'engager les procédures de protection rapprochée pendant les quelques jours avant et après la fête du village.", Line_Normal);
 	ClearMessage();
